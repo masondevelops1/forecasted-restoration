@@ -315,7 +315,7 @@ local boatCutscenes = {
             cutscene:text("* Kris.[wait:10] You're actually so lame.", "teeth")
             cutscene:text("* Guess we could hold on to our Dark Dollars for now though...", "nervous_side")
         else
-            return cutscene:gotoCutscene("boatCutscenes.gamblingMain")
+            return cutscene:gotoCutscene("boatCutscenes.gamblingMain", event)
         end
     end;
     gamblingMain = function(cutscene, event)
