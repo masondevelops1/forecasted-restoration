@@ -377,6 +377,9 @@ sailor = function (cutscene)
   sailor:setSprite("paddle")
   local swoosh = Assets.playSound("swoosh")
   swoosh:setLooping(true)
+  cutscene:after(function()
+    swoosh:setLooping(false)
+  end)
   sailor.sprite:play(0.3, loop)
 
   img3:setScale(1) -- sets the scale of the sprite
