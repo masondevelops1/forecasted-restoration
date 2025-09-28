@@ -2,6 +2,14 @@ local lib = {}
 Registry.registerGlobal("UISkinLib", lib)
 UISkinLib = lib
 
+function UISkinLib:init()
+    Utils.hook(Actor, "getUISkin", function (_, actor)
+        ---@cast actor Actor
+        ---@diagnostic disable-next-line: redundant-return-value
+        return actor.ui_skin
+    end)
+end
+
 function UISkinLib:onRegistered()
     self.skins = {}
     for _, path, skin in (Registry.iterScripts("data/uiskins")) do

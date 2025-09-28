@@ -287,4 +287,15 @@ function Mod:quickerReload()
     Kristal.setState("Game")
 end
 
+function Mod:getUISkin()
+    if self.ui_skin_override then return self.ui_skin_override end
+    if not (Game.world and Game.world.map and Game.world.map.id) then return end
+    if Utils.startsWith(Game.world.map.id, "gateway") then
+        return "twilight"
+    end
+end
 
+function Mod:setUISkin(skin)
+    self.ui_skin_override = skin
+    UISkinLib:swapUISkin(Kristal.callEvent(KRISTAL_EVENT.getUISkin) or (Game:isLight() and "light" or "dark"))
+end
