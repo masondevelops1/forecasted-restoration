@@ -95,8 +95,8 @@ selection.
             Game:load(nil,nil,true)
             if party then
                 Game:setPartyMembers(unpack(party))
-                Game.world:loadMap(room)
             end
+            Game.world:loadMap(room)
             if cutscene_id then Game.world:startCutscene(cutscene_id) end
             Mod.info.map = orig_map
             coroutine.yield()
