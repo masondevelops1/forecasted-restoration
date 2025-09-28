@@ -152,6 +152,7 @@ Kristal Libraries
 [[
 Other help
   skarph: Original device menu
+  SylviBlossom: harbinger of silly mode
 ]];
 [[
 PLEASE tell me if I missed anyone.
