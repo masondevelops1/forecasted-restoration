@@ -91,11 +91,11 @@ selection.
         Game.state = "EXIT"
         Game.fader:fadeOut(function()
             local orig_map = Mod.info.map
-            Mod.info.map = room
+            Mod.info.map = "basket"
             Game:load(nil,nil,true)
             if party then
                 Game:setPartyMembers(unpack(party))
-                Game.world:loadMap(Game.world.map.id)
+                Game.world:loadMap(room)
             end
             if cutscene_id then Game.world:startCutscene(cutscene_id) end
             Mod.info.map = orig_map
@@ -108,7 +108,7 @@ selection.
     if choice == 4 then return startRoom("bumperzone") end
     if choice == 5 then
         Mod.post_bumper_room = "gateway/hallway"
-        return startRoom("bumperzone")
+        return startRoom("bumperzone", nil, {"kris", "susie", "noelle"})
     end
 
     return devicemenu.scenes(cutscene)
