@@ -106,7 +106,10 @@ selection.
     if choice == 2 then return startRoom("hometown/torielhouse/kris_room", "nightCutscenes.susie", {"kris"}) end
     if choice == 3 then return startRoom("hometown/school/school_lobby", nil, {"kris"}) end
     if choice == 4 then return startRoom("bumperzone") end
-    if choice == 5 then return startRoom("gateway/hallway") end
+    if choice == 5 then
+        Mod.post_bumper_room = "gateway/hallway"
+        return startRoom("bumperzone")
+    end
 
     return devicemenu.scenes(cutscene)
 end

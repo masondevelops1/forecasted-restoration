@@ -1,7 +1,8 @@
 ---@param cutscene WorldCutscene
 return function (cutscene)
     cutscene:after(function ()
-        Game.world:loadMap("fileselect")
+        Game.world:loadMap(Mod.post_bumper_room or "fileselect")
+        Mod.post_bumper_room = nil
     end)
     if Kristal.hasAnySaves() then
         return
