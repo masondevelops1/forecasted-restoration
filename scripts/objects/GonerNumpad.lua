@@ -8,11 +8,11 @@ function GonerNumpad.keypadInput(cutscene, count, callback)
     --setup the keypad
     local keypad =  GonerNumpad(1, 
     {
-            x      = 500,
-            y      = 388,
+            x      = 500 - (188/2) + 60,
+            y      = 388 - (230/2) - 34,
             step_x = 60,
             step_y = 60,
-            name_y = (SCREEN_WIDTH / 2),
+            name_y = (SCREEN_WIDTH / 2) + 1000,
             name_x = (SCREEN_WIDTH / 2),
             name_align = "center",
             keyboard = {
@@ -25,9 +25,11 @@ function GonerNumpad.keypadInput(cutscene, count, callback)
     nil, nil
     )
     --keypad.choicer.soul.inherit_color = false
-    keypad.choicer.soul:setColor(101/255, 1, 183/255, 1)
+    -- Creativity was invented by Chapter 0
+    -- keypad.choicer.soul:setColor(101/255, 1, 183/255, 1)
     --keypad.choicer.soul:addFX(RecolorFX(1.0,0.0,1.0,1.0))
     keypad.layer = WORLD_LAYERS.top
+    keypad:setParallax(0)
     
     --keypad.choicer.soul.alpha = 1
     --keypad:addFX(RecolorFX(0.5,1,0,1))

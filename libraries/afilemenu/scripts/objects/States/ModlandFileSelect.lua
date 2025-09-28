@@ -226,7 +226,10 @@ function ModlandFileSelect:onKeyPressed(key, is_repeat)
                     if self.chapter_select then
                         self:swapIntoMod(self.chapter_select)
                     else
-                        Game:returnToMenu()
+                        Game.state = "EXIT"
+                        Game.fader:fadeOut(function()
+                            Game:load(nil,nil,true)
+                        end)
                     end
                 end
             elseif self.selected_y == 5 then
@@ -452,7 +455,7 @@ function ModlandFileSelect:draw()
         Draw.printShadow(self:gasterize "Erase", 280, 380)
         if not self.chapter_select then
             setColor(3, 4)
-            Draw.printShadow(self:gasterize "Mod Select", self.bottom_row_heart[3] + 28, 380)
+            Draw.printShadow(self:gasterize "Scene Select", self.bottom_row_heart[3] + 28, 380)
         else
             setColor(3, 4)
             Draw.printShadow(self:gasterize "Chapter Select", self.bottom_row_heart[3] + 28, 380)

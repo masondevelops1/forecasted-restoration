@@ -17,11 +17,11 @@
     "chapter": 6,
 
     // The map that you start in when first starting the mod.
-    "map": "bumperzone",
+    "map": "device",
     "useSaves": false,
 
     // The party. The first character is the player.
-    "party": ["kris"],
+    "party": ["kris", "susie"],
 	
 	
     // The inventory. Contains three darkburgers, a cell phone and a shadow crystal by default.

@@ -11,8 +11,8 @@ device = function(cutscene, event)
 	--other fonts in assets/fonts
 	textbox:setFont("main", 24)
 	--if we just use :setTextColor(), we get this weird gloss to the text. you can see for yourself if you comment out the next line and uncomment the line after
-	textbox:addFX(RecolorFX(0,0.8,0,1))
-	--textbox.text:setTextColor(0,0.8,0,1)
+	-- textbox:addFX(RecolorFX(0,0.8,0,1))
+	textbox.text:setTextColor(0,0.8,0,1)
 	local signalStatus = ("No Signal...")
 	--double \\ on \\User to escape backslash
 	
@@ -65,5 +65,5 @@ end,
         )
         cutscene:text("number inputed: "..num2.."\nsum is ".. (num1+num2))
         
-    end
+    end,
 }
