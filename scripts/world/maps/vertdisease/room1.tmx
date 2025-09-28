@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="39">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="name" value="Test Map - Room 1"/>
+ </properties>
+ <imagelayer id="6" name="Image Layer 1">
+  <image source="../../../../assets/sprites/backgrounds/special/background.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#ff00ff" id="4" name="objects"/>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5"/>
+ <objectgroup color="#ff0000" id="12" name="paths">
+  <object id="37" name="up" x="226" y="414">
+   <polyline points="0,0 39.8285,-0.491386 60,-2 76.4449,-3.86484 88.3658,-6.47133 98,-10 112.996,-15.8724 127.054,-24.7352 135.202,-31.0413 142,-40 149.867,-49.4979 156.754,-61.1241 164,-78 168.563,-90.3125 171.849,-101.388 174.029,-111.714 177.266,-130.604 180,-158 180,-252"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="20" name="fountainspawn" x="406" y="480">
+   <point/>
+  </object>
+  <object id="38" name="spawn" x="-82" y="410">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

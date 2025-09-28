@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="14">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/torielhouse/bathroom.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="92" y="342" width="442" height="40"/>
+  <object id="2" x="534" y="120" width="40" height="262"/>
+  <object id="3" x="52" y="120" width="40" height="262"/>
+  <object id="4" x="144" y="250" width="192" height="40"/>
+  <object id="5" x="336" y="224" width="118" height="40"/>
+  <object id="6" x="144" y="292">
+   <polygon points="0,0 -40,0 -40,40"/>
+  </object>
+  <object id="7" x="550" y="360">
+   <polygon points="0,0 -40,-40 0,-40"/>
+  </object>
+  <object id="8" x="472" y="282">
+   <polygon points="0,0 0,-40 -40,-40"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="9" name="transition" x="472" y="280" width="40" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="right"/>
+    <property name="map" value="hometown/torielhouse/tor_house"/>
+    <property name="marker" value="entrybathroom"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="200" y="250" width="116" height="40">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.curtain"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="340" y="240" width="44" height="40">
+   <properties>
+    <property name="text">* (It's a toilet.)
+[wait:5]* (Kross is too lazy to program the flush cutscene.)</property>
+   </properties>
+  </object>
+  <object id="12" name="interactable" x="388" y="240" width="62" height="40">
+   <properties>
+    <property name="text1">* You looked inside the sink cupboard.
+[wait:5]* There's...</property>
+    <property name="text2" value="* A can of Ice-E's Cool Boys Body Spray &quot;Spray For The Boys,&quot; Flamin' Hot Pizza Flavor."/>
+    <property name="text3" value="* It seems to be almost entirely full."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="13" name="spawn" x="436" y="302">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

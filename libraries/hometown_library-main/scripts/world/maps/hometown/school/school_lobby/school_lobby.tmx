@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="47" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="53">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="cond" value="not Game"/>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/school.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/school/school_lobby.png" width="1880" height="840"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="4" name="collision">
+  <object id="1" x="80" y="520">
+   <polygon points="0,0 0,-40 40,-40"/>
+  </object>
+  <object id="2" x="120" y="480">
+   <polygon points="0,0 0,-40 40,-40"/>
+  </object>
+  <object id="3" x="160" y="400" width="40" height="40"/>
+  <object id="4" x="278" y="400" width="522" height="40"/>
+  <object id="5" x="760" y="80" width="40" height="320"/>
+  <object id="6" x="800" y="80" width="80" height="40"/>
+  <object id="7" x="840" y="0" width="40" height="80"/>
+  <object id="8" x="1000" y="0" width="40" height="80"/>
+  <object id="9" x="1000" y="80" width="80" height="40"/>
+  <object id="10" x="1080" y="80" width="40" height="320"/>
+  <object id="11" x="1080" y="400" width="560" height="40"/>
+  <object id="12" x="1718" y="400" width="42" height="40"/>
+  <object id="13" x="1760" y="400" width="40" height="160"/>
+  <object id="14" x="1080" y="520" width="680" height="40"/>
+  <object id="15" x="1080" y="560" width="40" height="80"/>
+  <object id="16" x="1000" y="640" width="120" height="40"/>
+  <object id="17" x="1000" y="680" width="40" height="160"/>
+  <object id="18" x="840" y="680" width="40" height="160"/>
+  <object id="19" x="760" y="640" width="120" height="40"/>
+  <object id="20" x="760" y="560" width="40" height="80"/>
+  <object id="21" x="80" y="520" width="720" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="objects">
+  <object id="22" name="transition" x="200" y="400" width="78" height="40">
+   <properties>
+    <property name="exit_delay" type="int" value="1"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/school/kris_class"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="23" name="transition" x="1640" y="400" width="78" height="40">
+   <properties>
+    <property name="exit_delay" type="int" value="1"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/school/toriel_class"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="24" name="transition" x="880" y="820" width="120" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/town_school"/>
+    <property name="marker" value="entryschool"/>
+   </properties>
+  </object>
+  <object id="25" name="transition" x="880" y="-40" width="120" height="40">
+   <properties>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/school/school_door"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="1208" y="360" width="114" height="80">
+   <properties>
+    <property name="text1" value="* Do you like,[wait:5] breathing?[wait:5] Moving fast,[wait:5] with or without,[wait:5] legs?"/>
+    <property name="text2" value="* But usually,[wait:5] with legs?"/>
+    <property name="text3" value="* Join the Track Team with Jockington,[wait:5] and Noelle!"/>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="1112" y="400" width="40" height="40">
+   <properties>
+    <property name="text">* (You ran the water fountain.)
+[wait:5]* (It's lukewarm.)</property>
+   </properties>
+  </object>
+  <object id="32" name="interactable" x="592" y="360" width="114" height="80">
+   <properties>
+    <property name="text1" value="* (There's a paper here.)"/>
+    <property name="text2" value="* (It's an advertisement for the Sadie Hawkmans' Dance.)"/>
+    <property name="text3" value="* (... it's been postponed.)"/>
+   </properties>
+  </object>
+  <object id="33" name="interactable" x="1400" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* (Locker.[wait:5] It's locked.)"/>
+   </properties>
+  </object>
+  <object id="35" name="interactable" x="1440" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* (Locker.[wait:5] It's locked.)"/>
+   </properties>
+  </object>
+  <object id="36" name="interactable" x="1480" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* (Locker.[wait:5] It's locked.)"/>
+   </properties>
+  </object>
+  <object id="37" name="interactable" x="1560" y="400" width="40" height="40">
+   <properties>
+    <property name="text">* (It's your locker.)
+[wait:5]* (It's empty.)</property>
+   </properties>
+  </object>
+  <object id="38" name="interactable" x="1520" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* (This used to be your brother's locker.)"/>
+   </properties>
+  </object>
+  <object id="39" name="interactable" x="320" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* The locker is locked."/>
+   </properties>
+  </object>
+  <object id="41" name="interactable" x="360" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* The locker is locked."/>
+   </properties>
+  </object>
+  <object id="42" name="interactable" x="400" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* The locker is locked."/>
+   </properties>
+  </object>
+  <object id="43" name="interactable" x="440" y="400" width="40" height="40">
+   <properties>
+    <property name="text" value="* The locker is locked."/>
+   </properties>
+  </object>
+  <object id="44" name="interactable" x="480" y="400" width="40" height="40">
+   <properties>
+    <property name="text1" value="* (The locker is covered in Jockington memorabilia.)"/>
+    <property name="text2" value="* (One of them is depicted wielding a basketball attached to a fork.)"/>
+   </properties>
+  </object>
+  <object id="47" name="npc" x="325.455" y="479.318">
+   <properties>
+    <property name="actor" value="susie_lw"/>
+    <property name="cond" value="not Game:hasPartyMember(&quot;susie&quot;)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="script" x="240.333" y="475.333">
+   <properties>
+    <property name="cond" value="not Game:hasPartyMember(&quot;susie&quot;)"/>
+    <property name="cutscene" value="nightCutscenes.outside"/>
+    <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="50" name="script" x="660" y="659" width="30.5" height="85">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.alphyswarn"/>
+   </properties>
+  </object>
+  <object id="51" name="script" x="795" y="655.25" width="283" height="28.5">
+   <properties>
+    <property name="cond" value="Game:hasPartyMember(&quot;alphys&quot;)"/>
+    <property name="cutscene" value="nightCutscenes.alphyswarn"/>
+   </properties>
+  </object>
+  <object id="52" name="script" x="1065.5" y="428.75" width="283" height="91.5">
+   <properties>
+    <property name="cond" value="Game:hasPartyMember(&quot;alphys&quot;)"/>
+    <property name="cutscene" value="nightCutscenes.alphyswarn"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="6" name="markers">
+  <object id="26" name="entrykris" x="240" y="476">
+   <point/>
+  </object>
+  <object id="27" name="spawn" x="940" y="800">
+   <point/>
+  </object>
+  <object id="28" name="entrytoriel" x="1680" y="480">
+   <point/>
+  </object>
+  <object id="29" name="entrydark" x="940" y="40">
+   <point/>
+  </object>
+  <object id="46" name="susie1" x="281.424" y="478.788">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="39">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/asgore_house.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="120" y="440" width="400" height="40"/>
+  <object id="2" x="600" y="0" width="40" height="480"/>
+  <object id="3" x="40" y="0" width="560" height="40"/>
+  <object id="4" x="0" y="0" width="40" height="480"/>
+  <object id="5" x="40" y="40" width="232" height="124"/>
+  <object id="6" x="356" y="40" width="244" height="123"/>
+  <object id="7" x="238" y="242" width="144" height="46"/>
+  <object id="8" x="382" y="242" width="50" height="132"/>
+  <object id="9" x="188" y="242" width="50" height="132"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="10" gid="6" x="290" y="270" width="46" height="62"/>
+  <object id="11" gid="5" x="230" y="270" width="46" height="62"/>
+  <object id="12" gid="9" x="346" y="270" width="46" height="62"/>
+  <object id="13" gid="4" x="190" y="300" width="46" height="62"/>
+  <object id="15" gid="8" x="190" y="350" width="46" height="62"/>
+  <object id="16" gid="7" x="384" y="302" width="46" height="62"/>
+  <object id="18" gid="10" x="384" y="352" width="46" height="62"/>
+  <object id="21" name="interactable" x="380" y="142" width="60" height="38">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (There is some dirty fur stuck in the drain.)"/>
+   </properties>
+  </object>
+  <object id="22" name="interactable" x="448" y="142" width="68" height="38">
+   <properties>
+    <property name="cutscene" value="hometown.asgorefridge"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="23" name="interactable" x="522" y="136" width="58" height="44">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a small TV.)"/>
+   </properties>
+  </object>
+  <object id="24" name="interactable" x="40" y="164" width="100" height="68">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (Various bags of soil.)"/>
+   </properties>
+  </object>
+  <object id="25" name="interactable" x="272" y="78" width="84" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text">* (It's a door.)
+[wait:5]* (It's locked.)</property>
+   </properties>
+  </object>
+  <object id="26" name="interactable" x="386" y="310" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a green flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="27" name="interactable" x="386" y="260" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a orange flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="28" name="interactable" x="348" y="228" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a yellow flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="29" name="interactable" x="292" y="228" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a golden flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="232" y="228" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a cyan flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="192" y="258" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a blue flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="32" name="interactable" x="192" y="308" width="42" height="40">
+   <properties>
+    <property name="text" value="* (It's a purple flower,[wait:5] protected in a container...)"/>
+   </properties>
+  </object>
+  <object id="33" name="transition" x="40" y="468" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/flower_shop"/>
+    <property name="marker" value="entrywest"/>
+    <property name="sound" value="escaped"/>
+   </properties>
+  </object>
+  <object id="35" name="transition" x="520" y="468" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/flower_shop"/>
+    <property name="marker" value="entryeast"/>
+    <property name="sound" value="escaped"/>
+   </properties>
+  </object>
+  <object id="36" name="interactable" x="140" y="164" width="60" height="42">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a dirty watering can.)"/>
+   </properties>
+  </object>
+  <object id="37" name="interactable" x="58" y="288" width="68" height="72">
+   <properties>
+    <property name="text1">* (It's a note.)
+* (It says...)</property>
+    <property name="text2">* No rent received.[wait:5] Again.
+[wait:5]* Stop giving away flowers.
+* Start selling them.</property>
+    <property name="text3">* You have one month.
+ 
+         - C</property>
+   </properties>
+  </object>
+  <object id="38" name="interactable" x="492" y="236" width="108" height="160">
+   <properties>
+    <property name="text">* (It's an air mattress.)
+[wait:5]* (It's certainly not king-sized...)</property>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="19" name="spawn" x="80" y="440">
+   <point/>
+  </object>
+  <object id="20" name="entryeast" x="560" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

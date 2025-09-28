@@ -1,0 +1,13 @@
+{
+    "maps": [
+        {
+            "fileName": "maps/depths/start.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

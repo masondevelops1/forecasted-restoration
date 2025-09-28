@@ -1,0 +1,7 @@
+{
+    "id": "qdplot",
+    "name": "Quick n' Dirty Plot",
+    "config": {
+        "digits": 3
+    }
+}

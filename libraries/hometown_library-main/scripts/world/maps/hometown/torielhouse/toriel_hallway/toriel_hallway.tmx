@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="18">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/torielhouse/toriel_hallway.png" width="1080" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="630" y="118" width="210" height="138"/>
+  <object id="2" x="232" y="118" width="336" height="138"/>
+  <object id="3" x="118" y="118" width="52" height="138"/>
+  <object id="4" x="78" y="118" width="40" height="256"/>
+  <object id="5" x="118" y="334" width="840" height="40"/>
+  <object id="6" x="958" y="118" width="40" height="256"/>
+  <object id="7" x="916" y="118" width="42" height="138"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="8" name="mirror" x="270" y="172" width="44" height="78">
+   <properties>
+    <property name="offset" value="10"/>
+   </properties>
+  </object>
+  <object id="9" name="interactable" x="478" y="222" width="40" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text">* A cactus.
+[wait:5]* There's not much to say about it.</property>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="354" y="222" width="102" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (...[wait:5] How to Draw Dragons is at the bottom of the drawer."/>
+    <property name="text2" value="* (The purple character on the cover is dressed...[wait:5] immodestly.)"/>
+    <property name="text3" value="* (...)"/>
+    <property name="text4" value="* (Your brother will never return this book.)"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="270" y="216" width="44" height="40">
+   <properties>
+    <property name="text" value="* (It's what they call &quot;you.&quot;)"/>
+   </properties>
+  </object>
+  <object id="12" name="interactable" x="170" y="214" width="62" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* The door is locked."/>
+   </properties>
+  </object>
+  <object id="13" name="interactable" x="676" y="224" width="102" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (There's no time to read books. Just generally.)"/>
+   </properties>
+  </object>
+  <object id="14" name="transition" x="840" y="182" width="76" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/torielhouse/tor_house"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="escaped"/>
+   </properties>
+  </object>
+  <object id="15" name="transition" x="568" y="214" width="62" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/torielhouse/kris_room"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="16" name="spawn" x="600" y="286">
+   <point/>
+  </object>
+  <object id="17" name="entryeast" x="880" y="268">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

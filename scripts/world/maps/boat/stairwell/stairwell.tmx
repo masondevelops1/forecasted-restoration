@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="40">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="depths" type="bool" value="true"/>
+  <property name="music" value="mystery"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="13">
+  <data encoding="csv">
+177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,
+177,177,177,177,177,246,247,243,177,177,177,246,247,243,177,177,
+177,177,177,177,177,314,315,311,176,176,176,314,315,311,177,177,
+177,246,249,248,243,314,315,311,176,176,176,314,315,311,177,177,
+177,314,1545,1546,311,382,383,379,176,176,176,382,383,379,177,177,
+177,314,1613,1614,311,447,448,448,448,448,448,448,448,450,177,177,
+177,382,1681,1682,379,515,517,516,516,517,517,517,517,518,177,177,
+177,447,449,448,449,728,517,516,516,516,516,516,517,518,177,177,
+177,515,517,517,517,517,517,516,517,516,517,517,517,518,177,177,
+177,583,584,584,585,660,516,516,516,516,516,517,517,518,177,177,
+177,177,177,177,177,515,517,517,516,517,517,517,517,518,177,177,
+177,177,177,177,177,793,584,584,660,517,659,585,585,796,177,177,
+177,177,177,177,177,177,177,177,866,865,867,177,177,177,177,177
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="16" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,316,0,0,0,0,0,316,0,0,0,
+0,0,0,0,0,0,657,0,0,0,0,0,657,0,0,0,
+0,0,0,0,0,0,725,0,0,0,0,0,725,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,161,162,162,162,164,0,238,0,0,
+0,0,1348,1349,1344,1345,0,229,231,230,230,232,0,306,0,0,
+0,0,0,0,1412,1413,0,229,230,231,230,232,0,374,0,0,
+0,0,0,0,0,0,0,229,231,230,231,232,0,0,0,0,
+0,0,0,0,0,0,0,297,299,299,299,300,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="guh" width="16" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,649,0,0,0,0,0,649,0,0,0,
+0,0,0,0,0,0,717,0,0,0,0,0,717,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1135,1136,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collisions" locked="1">
+  <object id="1" x="40" y="40" width="160" height="240"/>
+  <object id="2" x="200" y="40" width="120" height="160"/>
+  <object id="3" x="440" y="40" width="120" height="160"/>
+  <object id="4" x="0" y="280" width="40" height="120"/>
+  <object id="5" x="40" y="400" width="160" height="80"/>
+  <object id="6" x="200" y="480" width="120" height="80"/>
+  <object id="7" x="440" y="480" width="120" height="80"/>
+  <object id="8" x="560" y="200" width="80" height="280"/>
+  <object id="12" x="320" y="40" width="120" height="80"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="13" name="spawnStairs" x="379" y="490">
+   <point/>
+  </object>
+  <object id="14" name="spawnHall" x="379" y="248">
+   <point/>
+  </object>
+  <object id="21" name="spawnBoiler" x="120" y="320">
+   <point/>
+  </object>
+  <object id="28" name="kris1" x="379" y="339">
+   <point/>
+  </object>
+  <object id="31" name="susie1" x="379" y="386.75">
+   <point/>
+  </object>
+  <object id="38" name="foodGrabbedMove" x="188" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="6" name="objects">
+  <object id="17" name="transition" x="320" y="141.333" width="120" height="40">
+   <properties>
+    <property name="map" value="boat/mainHall"/>
+    <property name="marker" value="spawnStairwell"/>
+   </properties>
+  </object>
+  <object id="18" name="transition" x="320" y="520" width="120" height="40">
+   <properties>
+    <property name="exit_sound" value="escaped"/>
+    <property name="map" value="boat/roomsHallway"/>
+    <property name="marker" value="spawnStair"/>
+   </properties>
+  </object>
+  <object id="20" name="interactable" x="82.6667" y="240" width="80" height="40">
+   <properties>
+    <property name="!flagcheck" value="boilerRoom"/>
+    <property name="cutscene" value="boatCutscenes.doorBoilerRoom"/>
+   </properties>
+  </object>
+  <object id="22" name="npc" x="383.667" y="279">
+   <properties>
+    <property name="actor" value="boatnpcs/detective"/>
+    <property name="plotmax" value="*boat_act1_mapswitch"/>
+    <property name="plotmin" value="boat_leadup_scrap"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="npc" x="280" y="320">
+   <properties>
+    <property name="actor" value="boatnpcs/legsFlower"/>
+    <property name="plotmax" value="*boat_act1_mapswitch"/>
+    <property name="plotmin" value="boat_leadup_scrap"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="npc" x="480" y="320">
+   <properties>
+    <property name="actor" value="boatnpcs/screenguy_angry"/>
+    <property name="plotmax" value="*boat_act1_mapswitch"/>
+    <property name="plotmin" value="boat_leadup_scrap"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="script" x="320" y="480" width="120" height="40">
+   <properties>
+    <property name="cutscene" value="boatCutscenes.stairwellScene"/>
+    <property name="once" type="bool" value="false"/>
+    <property name="plotmax" value="*boat_act1_mapswitch"/>
+    <property name="plotmin" value="boat_leadup_scrap"/>
+   </properties>
+  </object>
+  <object id="33" name="npc" x="456" y="390.667">
+   <properties>
+    <property name="actor" value="boatnpcs/screenguy_neutral"/>
+    <property name="cutscene" value="boatCutscenes.neutral2"/>
+    <property name="plotmax" value="*boat_act3_mapswitch"/>
+    <property name="plotmin" value="boat_act2_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="npc" x="120" y="320">
+   <properties>
+    <property name="actor" value="boatnpcs/scientist"/>
+    <property name="cutscene" value="boatCutscenes.scientist2"/>
+    <property name="plotmax" value="*boat_act3_scientist_foodgive"/>
+    <property name="plotmin" value="boat_act3_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="npc" x="188" y="320">
+   <properties>
+    <property name="actor" value="boatnpcs/scientist"/>
+    <property name="cutscene" value="boatCutscenes.scientist3"/>
+    <property name="plotmax" value="*boat_end"/>
+    <property name="plotmin" value="boat_act3_scientist_foodgive"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

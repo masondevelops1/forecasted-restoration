@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="19">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/hospitalrudy.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="362" y="400" width="160" height="40"/>
+  <object id="2" x="522" y="180" width="40" height="260"/>
+  <object id="3" x="122" y="180" width="400" height="40"/>
+  <object id="4" x="82" y="180" width="40" height="260"/>
+  <object id="5" x="122" y="400" width="160" height="40"/>
+  <object id="6" x="242" y="440" width="40" height="40"/>
+  <object id="7" x="362" y="440" width="40" height="40"/>
+  <object id="8" x="280" y="220" width="80" height="100"/>
+  <object id="9" x="360" y="220" width="122" height="70"/>
+  <object id="10" x="478" y="290" width="44" height="48"/>
+  <object id="11" x="122" y="290" width="40" height="110"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="12" name="interactable" x="188" y="180" width="70" height="40">
+   <properties>
+    <property name="text">* (Patient Name:)
+[wait:5]* (Rudolph &quot;Rudy&quot; Holiday)</property>
+   </properties>
+  </object>
+  <object id="13" name="interactable" x="122" y="290" width="40" height="38">
+   <properties>
+    <property name="text">* (It's an angel doll.)
+[wait:5]* (Its lack of facial features is unsettling.)</property>
+   </properties>
+  </object>
+  <object id="14" name="interactable" x="478" y="290" width="44" height="48">
+   <properties>
+    <property name="text" value="* (It's a chair.)"/>
+   </properties>
+  </object>
+  <object id="15" name="interactable" x="400" y="250" width="82" height="40">
+   <properties>
+    <property name="text" value="* (It's a bunch of roses in a glass container.)"/>
+   </properties>
+  </object>
+  <object id="16" name="interactable" x="122.5" y="344" width="40" height="56">
+   <properties>
+    <property name="text" value="* (It's a sink.)"/>
+   </properties>
+  </object>
+  <object id="17" name="transition" x="282" y="480" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/hospital_hallway"/>
+    <property name="marker" value="entryrudy"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="18" name="spawn" x="320" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

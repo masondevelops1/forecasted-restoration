@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="33">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="depths" type="bool" value="true"/>
+  <property name="music" value="mystery"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
+ <tileset firstgid="2517" source="../../../tilesets/boatobjects.tsx"/>
+ <objectgroup id="3" name="objects_bg"/>
+ <layer id="1" name="Tile Layer 1" width="22" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+176,177,177,2265,2265,2265,2265,2265,2265,2265,2265,2265,2266,2265,2265,2265,2265,2265,2265,176,176,176,
+176,177,177,2334,2334,2334,2334,2334,2334,2334,2333,2261,2262,2334,2334,2334,2333,2334,2335,176,176,176,
+176,177,177,2334,2334,2334,2334,2334,2334,2334,2333,2329,2330,2334,2334,2334,2333,2334,2335,176,176,176,
+176,177,177,2401,2401,2401,2401,2403,2403,2403,2403,2397,2398,2403,2402,2402,2401,2402,2403,176,176,176,
+176,177,177,1993,1994,1994,1995,2201,2201,2201,2201,2201,2201,2201,2201,2201,2200,2201,2202,176,176,176,
+176,177,177,2061,2062,2062,2063,2201,2201,2201,2201,2201,2201,2201,2201,2201,2200,2201,2202,176,176,176,
+176,177,177,2061,2062,2062,2063,2201,2201,2201,2201,2201,2201,2201,2201,2201,2268,2269,2270,176,176,176,
+176,177,177,2061,2062,2062,2063,2201,2201,2201,2201,2201,2201,2201,2201,2201,2336,2337,2338,176,176,176,
+176,177,177,2129,2130,2130,2131,2201,2201,2201,2201,2201,2201,2201,2201,2201,2404,2405,2406,176,176,176,
+176,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,176,176,176,
+176,176,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,176,176,176,176,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="12" name="Tile Layer 4" width="22" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,1654,1655,1656,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1721,1722,1723,1724,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1789,1790,1791,1792,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="22" height="13" offsetx="4.66667" offsety="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2001,2002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2069,2070,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1865,1866,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1933,1934,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#ff00ff" id="4" name="objects_party">
+  <object id="1" gid="2588" x="125" y="215.5" width="66" height="104"/>
+  <object id="2" gid="2589" x="122" y="399.333" width="152" height="54"/>
+  <object id="4" name="interactable" x="238" y="358.667" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="boatCutscenes.funnypot"/>
+   </properties>
+  </object>
+  <object id="26" name="npc" x="202" y="339.25">
+   <properties>
+    <property name="actor" value="boatnpcs/chef"/>
+    <property name="cutscene" value="boatCutscenes.chef1"/>
+    <property name="plotmax" value="*boat_act2_mapswitch"/>
+    <property name="plotmin" value="boat_act1_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" gid="2539" x="334" y="160" width="72" height="70"/>
+  <object id="28" name="npc" x="200" y="320">
+   <properties>
+    <property name="actor" value="boatnpcs/chefRalsei"/>
+    <property name="cutscene" value="boatCutscenes.chefRalsei"/>
+    <property name="plotmax" value="*boat_act3_mapswitch"/>
+    <property name="plotmin" value="boat_act2_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="interactable" x="440" y="160" width="80" height="40">
+   <properties>
+    <property name="cutscene" value="boatCutscenes.doorKitchen"/>
+   </properties>
+  </object>
+  <object id="29" name="npc" x="640" y="240">
+   <properties>
+    <property name="actor" value="boatnpcs/spark"/>
+    <property name="cutscene" value="boatCutscenes.spark3"/>
+    <property name="plotmax" value="*boat_end"/>
+    <property name="plotmin" value="boat_act3_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="interactable" x="126.25" y="122" width="64" height="92.25">
+   <properties>
+    <property name="cutscene" value="boatCutscenes.fridge"/>
+   </properties>
+  </object>
+  <object id="16" name="npc" x="720" y="200">
+   <properties>
+    <property name="actor" value="boatnpcs/bartender"/>
+    <property name="cutscene" value="boatCutscenes.bartender3"/>
+    <property name="plotmax" value="*boat_end"/>
+    <property name="plotmin" value="boat_act3_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="npc" x="497" y="407">
+   <properties>
+    <property name="actor" value="boatnpcs/bartender"/>
+    <property name="cutscene" value="boatCutscenes.bartender1"/>
+    <property name="plotmax" value="*boat_act2_mapswitch"/>
+    <property name="plotmin" value="boat_act2_mapswitch"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f007f" id="5" name="objects_fg">
+  <properties>
+   <property name="depths" type="bool" value="true"/>
+  </properties>
+  <object id="3" gid="2585" x="236" y="390" width="36" height="62">
+   <properties>
+    <property name="sortlink" type="object" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="6" name="collision" locked="1">
+  <object id="8" x="120" y="120" width="640" height="80"/>
+  <object id="9" x="280" y="400" width="480" height="40"/>
+  <object id="10" x="120" y="400" width="160" height="40"/>
+  <object id="11" x="760" y="200" width="40" height="200"/>
+  <object id="12" x="80" y="200" width="40" height="200"/>
+ </objectgroup>
+ <objectgroup color="#00c000" id="7" name="controllers"/>
+ <objectgroup color="#7f00ff" id="8" name="markers">
+  <object id="7" name="spawn" x="480" y="240">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" id="9" name="battleareas"/>
+ <layer id="10" name="Tile Layer 3" width="22" height="13" offsetx="0" offsety="16.9167">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2093,2094,2095,2096,2097,2098,2099,2100,2101,2102,2103,2104,0,0,0,
+0,0,0,0,0,0,0,2161,2162,2163,2164,2165,2166,2167,2168,2169,2170,2171,2172,0,0,0,
+0,0,0,0,0,0,0,2229,2230,2231,2232,2233,2234,2235,2236,2237,2238,2239,2240,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

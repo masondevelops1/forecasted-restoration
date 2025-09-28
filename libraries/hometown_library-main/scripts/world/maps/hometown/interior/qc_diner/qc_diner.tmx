@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="17">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/qc_diner.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="238" y="362" width="40" height="118"/>
+  <object id="2" x="0" y="440" width="238" height="40"/>
+  <object id="3" x="0" y="96" width="40" height="344"/>
+  <object id="4" x="0" y="56" width="640" height="40"/>
+  <object id="5" x="600" y="96" width="40" height="344"/>
+  <object id="6" x="360" y="362" width="40" height="118"/>
+  <object id="7" x="400" y="440" width="240" height="40"/>
+  <object id="8" x="242" y="280">
+   <polygon points="0,0 -40,-40 0,-40"/>
+  </object>
+  <object id="9" x="202" y="182" width="40" height="58"/>
+  <object id="10" x="242" y="240" width="358" height="40"/>
+  <object id="11" x="316" y="280" width="284" height="32"/>
+  <object id="12" x="480" y="318" width="120" height="122"/>
+  <object id="13" x="40" y="196" width="120" height="244"/>
+  <object id="14" x="40" y="164" width="560" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="15" name="transition" x="278" y="480" width="82" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/town_mid"/>
+    <property name="marker" value="entrydiner"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="16" name="spawn" x="318" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+ <imagelayer id="6" name="over">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/qc_dinerup.png" width="640" height="480"/>
+ </imagelayer>
+</map>

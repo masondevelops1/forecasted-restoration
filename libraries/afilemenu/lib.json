@@ -1,0 +1,24 @@
+{
+    "id": "afilemenu",
+    "name": "File Select",
+    "authors": [
+        "Hyperboid",
+    ],
+    "config": {
+        // What map to load on a new file
+        "map": null,
+        "music": null,
+        "style": "DEVICE",
+        // Prevents the special color palette on the Options menu
+        "noStyledOptions": false,
+        // Set to false if you are hooking DarkConfigMenu yourself.
+        "configMenuOverride": true,
+        // Experimental. Makes holding ESC in-game bring you to the file select.
+        "hookOverlay": false,
+        // What we call "Chapters"
+        "chaptername": {
+            "long": "Chapter",
+            "short": "Ch"
+        }
+    }
+}

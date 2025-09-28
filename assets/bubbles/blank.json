@@ -1,0 +1,15 @@
+{
+    "auto": true,
+    "sprites": {
+        "left": "blank",
+        "right": "blank",
+        "top": "blank",
+        "bottom": "blank",
+        "top_left": "blank",
+        "top_right": "blank",
+        "bottom_left": "blank",
+        "bottom_right": "blank",
+        "tail": "blank",
+        "fill": "blank"
+    }
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="16">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/hospitalroom2.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="240" y="400" width="40" height="80"/>
+  <object id="3" x="200" y="80" width="360" height="40"/>
+  <object id="4" x="520" y="120" width="40" height="280"/>
+  <object id="5" x="360" y="400" width="40" height="80"/>
+  <object id="6" x="400" y="400" width="160" height="40"/>
+  <object id="7" x="200" y="120" width="40" height="320"/>
+  <object id="12" x="240" y="180" width="280" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="8" name="interactable" x="240" y="326" width="40" height="74">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a regular sink.)"/>
+   </properties>
+  </object>
+  <object id="9" name="interactable" x="480" y="326" width="40" height="74">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a clone of the other sink.)"/>
+    <property name="text2" value="* (Perhaps there was originally one tall sink that was cut in half to create both of them.)"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="428" y="220" width="82" height="100">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's an empty bed)"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="244" y="198" width="54" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (You looked inside the cupboard.)"/>
+    <property name="text2" value="* (... a very small obligatory piano is hiding inside.)"/>
+   </properties>
+  </object>
+  <object id="13" name="interactable" x="320" y="180" width="76" height="40">
+   <properties>
+    <property name="text1" value="* (It's a classic 1-to-10 pain scale,[wait:5] using ICE-E as a model.)"/>
+    <property name="text2">* (At 0 pain,[wait:5] he's happy.)
+[wait:5](At 10 pain,[wait:5] he's happy and sweating.)</property>
+   </properties>
+  </object>
+  <object id="14" name="transition" x="280" y="480" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/hospital_hallway"/>
+    <property name="marker" value="entryroom2"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="15" name="spawn" x="320" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

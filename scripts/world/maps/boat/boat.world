@@ -1,0 +1,97 @@
+{
+    "maps": [
+        {
+            "fileName": "kitchen/kitchen.tmx",
+            "height": 520,
+            "width": 880,
+            "x": 220,
+            "y": -1420
+        },
+        {
+            "fileName": "roomsHallway/roomsHallway.tmx",
+            "height": 480,
+            "width": 1760,
+            "x": 280,
+            "y": 440
+        },
+        {
+            "fileName": "suite/suite.tmx",
+            "height": 480,
+            "width": 800,
+            "x": 1760,
+            "y": 0
+        },
+        {
+            "fileName": "room104/room104.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 1320,
+            "y": -160
+        },
+        {
+            "fileName": "stairwell/stairwell.tmx",
+            "height": 480,
+            "width": 640,
+            "x": -400,
+            "y": 120
+        },
+        {
+            "fileName": "mainHall/mainHall.tmx",
+            "height": 1480,
+            "width": 680,
+            "x": -360,
+            "y": -1400
+        },
+        {
+            "fileName": "gameroom/gameroom.tmx",
+            "height": 520,
+            "width": 640,
+            "x": -1060,
+            "y": -1140
+        },
+        {
+            "fileName": "casino/casino.tmx",
+            "height": 520,
+            "width": 640,
+            "x": -1060,
+            "y": -660
+        },
+        {
+            "fileName": "club/club.tmx",
+            "height": 520,
+            "width": 640,
+            "x": 380,
+            "y": -1140
+        },
+        {
+            "fileName": "storageroom/storageroom.tmx",
+            "height": 520,
+            "width": 640,
+            "x": 380,
+            "y": -660
+        },
+        {
+            "fileName": "diningHall/diningHall.tmx",
+            "height": 680,
+            "width": 1200,
+            "x": -460,
+            "y": -2180
+        },
+        {
+            "fileName": "outerDeck/outerDeck.tmx",
+            "height": 2240,
+            "width": 1320,
+            "x": 2800,
+            "y": -1760
+        },
+        {
+            "fileName": "boilerRoom/boilerRoom.tmx",
+            "height": 480,
+            "width": 640,
+            "x": -1080,
+            "y": -80
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

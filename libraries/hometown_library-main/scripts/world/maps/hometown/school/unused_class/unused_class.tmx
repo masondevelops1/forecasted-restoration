@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="15">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="school"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/school/abandoned_class.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="160" y="210">
+   <polygon points="0,0 -40,0 -40,40"/>
+  </object>
+  <object id="2" x="120" y="250">
+   <polygon points="0,0 -40,0 -40,40"/>
+  </object>
+  <object id="3" x="40" y="80" width="40" height="250"/>
+  <object id="4" x="40" y="330" width="240" height="40"/>
+  <object id="6" x="360" y="330" width="240" height="40"/>
+  <object id="7" x="560" y="80" width="40" height="250"/>
+  <object id="8" x="40" y="40" width="560" height="40"/>
+  <object id="9" x="160" y="170" width="400" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="10" name="interactable" x="90" y="200" width="40" height="40">
+   <properties>
+    <property name="text" value="* (The door is locked.)"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="332" y="170" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's a lightswitch.)"/>
+   </properties>
+  </object>
+  <object id="12" name="interactable" x="510" y="170" width="40" height="40">
+   <properties>
+    <property name="text1" value="* (It's a yellowed, poorly-drawn picture of a green turtle.)"/>
+    <property name="text2" value="* (It's signed 'Alvin.')"/>
+   </properties>
+  </object>
+  <object id="13" name="transition" x="280" y="360" width="80" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/school/school_door"/>
+    <property name="marker" value="entryunused"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="14" name="spawn" x="320" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

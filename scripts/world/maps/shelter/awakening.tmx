@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="22" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="72">
+ <editorsettings>
+  <export target="awakening.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="shelter"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="in-the-shelter"/>
+ </properties>
+ <layer id="1" name="Tile Layer 1" width="22" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="awakening" opacity="0.97" offsetx="200" offsety="240">
+  <image source="../../../../assets/sprites/backgrounds/wakeup.png" width="506" height="364"/>
+ </imagelayer>
+ <objectgroup color="#0000ff" id="3" name="collisions">
+  <object id="2" x="460" y="318" width="222" height="68"/>
+  <object id="6" x="407.5" y="322.5" width="52" height="44.5"/>
+  <object id="41" x="347" y="322" width="66" height="62"/>
+  <object id="45" x="470" y="380.75" width="83" height="25.5"/>
+  <object id="48" x="200" y="496" width="304" height="103.5"/>
+  <object id="49" x="504" y="512" width="16" height="95.5"/>
+  <object id="50" x="518" y="604" width="166" height="25"/>
+  <object id="51" x="682" y="586" width="26" height="18"/>
+  <object id="52" x="682" y="298" width="27" height="182"/>
+  <object id="54" x="200" y="324" width="86.5" height="96">
+   <properties>
+    <property name="cutscene" value="shelter.uiopen"/>
+   </properties>
+  </object>
+  <object id="57" x="304.5" y="319.5" width="45.5" height="112"/>
+  <object id="58" x="160" y="240" width="40" height="360"/>
+  <object id="71" x="520" y="512">
+   <polygon points="0,0 -16,-16 -16,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="objects">
+  <object id="59" name="transition" x="706" y="480" width="32" height="106">
+   <properties>
+    <property name="map" value="shelter/mainroom"/>
+   </properties>
+  </object>
+  <object id="62" name="cameratarget" x="187.5" y="230" width="530.5" height="373.5" visible="0">
+   <properties>
+    <property name="lockx" type="bool" value="true"/>
+    <property name="locky" type="bool" value="true"/>
+    <property name="marker" value="camfocus"/>
+    <property name="time" type="float" value="0.1"/>
+   </properties>
+  </object>
+  <object id="64" name="interactable" x="210.5" y="357" width="80.5" height="86">
+   <properties>
+    <property name="cutscene" value="device.device"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="markers">
+  <object id="7" name="spawn" x="432.833" y="383.333">
+   <point/>
+  </object>
+  <object id="61" name="awakeningdoor" x="650" y="534">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

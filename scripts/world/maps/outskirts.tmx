@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="7">
+ <editorsettings>
+  <export target="outskirts.lua" format="lua"/>
+ </editorsettings>
+ <layer id="1" name="Tile Layer 1" width="15" height="10" offsetx="30" offsety="42">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="outskirts" offsetx="7" offsety="68">
+  <image source="../../../assets/sprites/backgrounds/castle_outskirts_entrance.png" width="854" height="392"/>
+ </imagelayer>
+ <objectgroup id="4" name="objects">
+  <object id="4" name="script" x="195.5" y="210" width="52.5" height="114.5">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.awakening"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="markers">
+  <object id="1" name="spawn" x="282.565" y="271.706">
+   <point/>
+  </object>
+  <object id="3" name="alphys10" x="162" y="256">
+   <point/>
+  </object>
+  <object id="5" name="kris10" x="429.5" y="261.5">
+   <point/>
+  </object>
+  <object id="6" name="susie10" x="292.5" y="259">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

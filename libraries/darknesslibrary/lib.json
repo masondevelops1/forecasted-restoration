@@ -1,0 +1,9 @@
+{
+    "id": "darkness",
+    "version": "1.0.0",
+    "engineVersion": "0.5.1",
+    "config": {
+        "style": "soft",
+        "overlap": true
+    }
+}

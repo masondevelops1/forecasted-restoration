@@ -1,0 +1,24 @@
+{
+    "auto": true,
+    "sprites": {
+        "left": "depths_left",
+        "right": "depths_right",
+        "top": "depths_top",
+        "bottom": "depths_bottom",
+        "top_left": "depths_top_left",
+        "top_right": "depths_top_right",
+        "bottom_left": "depths_bottom_left",
+        "bottom_right": "depths_bottom_right",
+        "tail": "depths_tail",
+        "fill": "depths_fill"
+    },
+    "text_padding": {
+        "left":   6,
+        "top":    5,
+        "right":  5,
+        "bottom": 5
+    },
+    // NONSTANDARD PROPERTIES ALERT!!
+    "uniform": true,
+    "dark": true,
+}

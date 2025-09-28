@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="13">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/library_library.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="92" y="322" width="468" height="40"/>
+  <object id="2" x="52" y="322" width="40" height="118"/>
+  <object id="3" x="92" y="400" width="354" height="40"/>
+  <object id="4" x="406" y="440" width="40" height="40"/>
+  <object id="5" x="526" y="440" width="40" height="40"/>
+  <object id="7" x="560" y="322" width="40" height="78"/>
+  <object id="8" x="526" y="400" width="74" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="9" name="interactable" x="404" y="322" width="78" height="40">
+   <properties>
+    <property name="cutscene" value="hometown.librarybook2"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="482" y="322" width="78" height="40">
+   <properties>
+    <property name="cutscene" value="hometown.librarybook1"/>
+   </properties>
+  </object>
+  <object id="12" name="transition" x="446" y="480" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/library_lobby"/>
+    <property name="marker" value="entrylibrary"/>
+    <property name="sound" value="escaped"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="11" name="spawn" x="486" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

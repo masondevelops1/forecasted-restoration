@@ -1,0 +1,39 @@
+
+	if choice == 4 then
+		textbox:setText([[
+		
+		Shutting down...
+		]])
+		cutscene:wait(2)
+		textbox:setText([[
+		
+		Unsaved data was found. Would you like to save?
+		]])
+		cutscene:wait(1)
+		local choice = cutscene:choicer({"Save Data", "Cancel"})
+		if choice == 1 then
+			cutscene:wait(1)
+			textbox:setText([[
+		
+			Saving Data. Please be patient.
+			-[wait:10]-[wait:10]-[wait:10]-[wait:10]-[wait:10]-[wait:10]-[wait:10]-[wait:10]-[wait:10]-[wait:10]
+			]])
+			cutscene:wait(5)
+			Kristal.saveGame()
+			
+			
+
+		end
+		cutscene:wait(2)
+		textbox:setText([[
+		
+		Data saved. Shutting down.[wait:10].[wait:10].[wait:10]
+		]])
+		cutscene:wait(2)
+		textbox:remove()
+		cutscene:endCutscene()
+
+	end		
+end
+
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="16">
+ <editorsettings>
+  <export target="start.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="depths" type="bool" value="true"/>
+  <property name="dusk" type="bool" value="false"/>
+  <property name="music" value="endless_expanse"/>
+  <property name="name" value="Gateway - Dark World?"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/gateway.tsx"/>
+ <layer id="6" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,500,501,501,501,501,501,501,501,501,501,501,502,0,0,
+0,0,532,533,533,533,533,533,533,533,533,533,533,533,501,501,
+0,0,532,533,533,533,533,533,533,533,533,533,533,533,533,533,
+0,0,532,533,533,533,533,533,533,533,533,533,533,533,565,565,
+0,0,564,565,565,565,565,565,565,565,565,565,565,566,597,598,
+0,0,596,597,597,597,597,597,597,597,597,597,597,597,629,630,
+0,0,628,629,629,629,629,629,629,629,629,629,629,629,661,662,
+0,0,660,661,661,661,661,661,661,661,661,661,661,661,693,694,
+0,0,692,693,693,693,693,693,693,693,693,693,693,693,725,726
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
+  <object id="1" x="40" y="120" width="40" height="200"/>
+  <object id="2" x="560" y="280" width="80" height="40"/>
+  <object id="3" x="560" y="120" width="80" height="40"/>
+  <object id="4" x="80" y="80" width="480" height="40"/>
+  <object id="7" x="80" y="320" width="480" height="40"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="markers">
+  <object id="5" name="spawn" x="360" y="220">
+   <point/>
+  </object>
+  <object id="8" name="entry" x="600" y="220">
+   <point/>
+  </object>
+  <object id="13" name="susiespawn" x="240" y="220">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="objects">
+  <object id="9" name="transition" x="640" y="160" width="40" height="120">
+   <properties>
+    <property name="map" value="room1"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
+  <object id="15" name="savepoint" x="560" y="120" width="40" height="40">
+   <properties>
+    <property name="text1" value="* ouch oof owie your bones hurt"/>
+    <property name="text2" value="* The power of lore-inaccurate tilesets shines within you."/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
