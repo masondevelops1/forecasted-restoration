@@ -1,6 +1,9 @@
 ---@type table<string, fun(cutscene:(WorldCutscene|{option:fun(self,txt,...):number, funnytextbox:Textbox}))>
 local devicemenu = {}
 local function getSignalStatus()
+    if love.math.random() > 0.95 then
+        return "New Signal Star new Star New Star City Signal City"
+    end
     return (GCSN and "Connected to Gaster's Cool Social Network" or "No Signal...")
 end
 devicemenu.init = function(cutscene)
@@ -42,7 +45,7 @@ DEVICE:\\DeviceUser1
 ===========================
 
 [1:] Scene Browser
-[2:] MISSING
+[2:] Credits
 [3:] MISSING
 [0:] Power Off
 
@@ -59,6 +62,8 @@ selection.
         return coroutine.yield()
     elseif choice == 1 then
         return cutscene:gotoCutscene("device-menu", "scenes")
+    elseif choice == 2 then
+        return cutscene:gotoCutscene("device-menu", "credits")
     end
 
     return devicemenu.main(cutscene, "invalid")
@@ -78,7 +83,7 @@ DEVICE:\\DeviceUser1\\Scenes
 [3:] The Beginning?
 [4:] The Voyage
 [5:] The Gateway
-[0:] Return to main menu
+[0:] Return to menu
 
 ===========================
 Type in a number to make a
@@ -112,6 +117,75 @@ selection.
     end
 
     return devicemenu.scenes(cutscene)
+end
+
+local credits_pages = {
+[[
+Programming
+  Fizz
+  Hyperboid
+  TheSkerch
+]];
+[[
+Music
+  Oftome
+  Toby Fox
+  Fizz
+]];
+[[
+Sprite art
+  melodots
+  Fizz
+  Hyperboid
+]];
+[[
+Sprite art
+  Oftome
+  Godlikk
+]];
+[[
+Kristal Libraries
+  Arlee: Hometown
+  Vitellary: Darkness
+  DiamondBor/undertaled: Berdly
+]];
+[[
+Other help
+  skarph: Original device menu
+]];
+}
+function devicemenu.credits(cutscene, pagenum)
+    pagenum = pagenum or 1
+    local text = (getSignalStatus())..([[
+
+
+===========================
+DEVICE:\\DeviceUser1\\Credits\\Page%dof%d
+===========================
+
+]]):format(pagenum, #credits_pages)
+    text = text .. credits_pages[pagenum]
+    if pagenum < #credits_pages then
+        text = text .."\n[1:] Next page"
+    end
+    if pagenum > 1 then
+        text = text .."\n[2:] Previous page"
+    end
+    local choice = cutscene:option(text..[[
+
+[0:] Return to menu
+
+===========================
+Type in a number to make a
+selection.
+> _
+]])
+    if choice == 2 then
+        return devicemenu.credits(cutscene, math.max(pagenum - 1, 1))
+    elseif choice == 1 then
+        return devicemenu.credits(cutscene, math.min(pagenum + 1, #credits_pages))
+    end
+    return devicemenu.main(cutscene)
 end
 
 return devicemenu
