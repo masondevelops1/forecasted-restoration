@@ -14,6 +14,7 @@ end)
         -- 1. ursula gets knight-cutscene-bullshit-swooned by omnis
         cutscene:wait(0.5)
         Game.battle.music:pause()
+        Game.battle.battle_ui.encounter_text.skipping = true
         Game.fader.alpha = 1
         local spr = Sprite("cutscenes/roaringknight_slash_white_horizontal",32,250)
         spr.layer = 10000
