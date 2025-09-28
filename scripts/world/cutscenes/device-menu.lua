@@ -153,6 +153,12 @@ Kristal Libraries
 Other help
   skarph: Original device menu
 ]];
+[[
+PLEASE tell me if I missed anyone.
+- Hyperboid
+
+Oh, and you, the player, I guess.
+]];
 }
 function devicemenu.credits(cutscene, pagenum)
     pagenum = pagenum or 1
