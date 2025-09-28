@@ -77,6 +77,7 @@ DEVICE:\\DeviceUser1\\Scenes
 [2:] Hometown Night
 [3:] The Beginning?
 [4:] The Voyage
+[5:] The Gateway
 [0:] Return to main menu
 
 ===========================
@@ -105,6 +106,7 @@ selection.
     if choice == 2 then return startRoom("hometown/torielhouse/kris_room", "nightCutscenes.susie", {"kris"}) end
     if choice == 3 then return startRoom("hometown/school/school_lobby", nil, {"kris"}) end
     if choice == 4 then return startRoom("bumperzone") end
+    if choice == 5 then return startRoom("gateway/hallway") end
 
     return devicemenu.scenes(cutscene)
 end
