@@ -56,7 +56,7 @@ selection.
 ]], reason == "invalid" and "Invalid selection." or getSignalStatus())
     if choice == 0 then
         love.audio.newSource(Assets.getMusicPath"DEVICE_OFF","static"):play()
-        cutscene.funnytextbox:setText("Shutting down...")
+        cutscene.funnytextbox:setText("[style:none][voice:none]Shutting down...")
         cutscene:wait(1)
         Kristal.returnToMenu()
         return coroutine.yield()
@@ -92,7 +92,7 @@ selection.
 ]])
     if choice == 0 then return devicemenu.main(cutscene) end
     local function startRoom(room, cutscene_id, party)
-        cutscene.funnytextbox:setText("Preparing scene...")
+        cutscene.funnytextbox:setText("[style:none][voice:none]Preparing scene...")
         Game.state = "EXIT"
         Game.fader:fadeOut(function()
             local orig_map = Mod.info.map
