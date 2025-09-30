@@ -12,6 +12,7 @@ return {
   nextlayerid = 6,
   nextobjectid = 12,
   properties = {
+    ["depths"] = true,
     ["name"] = "Test Map - Room 2"
   },
   tilesets = {
@@ -237,7 +238,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "dummy",
-            ["encounter"] = "dummy"
+            ["encounter"] = "omnis_boss"
           }
         },
         {

@@ -19,7 +19,7 @@ function Dummy:init()
     --self:addEnemy("dummy")
 
     if Game.world.map.id ~= "uhh whatever the id of the omnis fight room is (PLEASE CHANGE THIS AND NOT THE MAP ITSELF IN FACT HERE'S SOME SPECIAL CHARACTERS SO YOU LITERALLY HAVE TO \\ \" ><;: )" then
-        local bg = Sprite("objects/omnis_battle_bg_firetomb_route",0,-80)
+        local bg = Sprite("objects/omnis_battle_bg" .. ((Game.world.cutscene and Game.world.cutscene.id == "stupidbullshit.omniseveryman") and "_firetomb_route" or ""),0,-80)
         bg:setScale(2)
         bg.layer = BATTLE_LAYERS["bottom"] + 1
         bg.debug_select = false

@@ -5,6 +5,7 @@
  </editorsettings>
  <properties>
   <property name="name" value="Test Map - Room 2"/>
+  <property name="depths" type="boolean" value="true"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/castle.tsx"/>
  <layer id="1" name="tiles" width="20" height="12">
@@ -58,7 +59,7 @@
   <object id="6" name="enemy" x="530" y="220" width="40" height="40">
    <properties>
     <property name="actor" value="dummy"/>
-    <property name="encounter" value="dummy"/>
+    <property name="encounter" value="omnis_boss"/>
    </properties>
   </object>
   <object id="9" name="transition" x="-40" y="320" width="40" height="80">
