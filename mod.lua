@@ -162,8 +162,6 @@ function Mod:loadObject(world,name,data)
         self.shared_gonerbg:applyProperties(data and data.properties or {})
         self.shared_gonerbg:remove()
         return self.shared_gonerbg
-    elseif name == "sysfloor" then
-        return SystemFloor(data)
     end
 end
 
