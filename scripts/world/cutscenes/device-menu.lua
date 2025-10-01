@@ -113,7 +113,7 @@ selection.
     end
     if choice == 1 then return startRoom("depthsRaft", nil, {"kris"}) end
     if choice == 2 then return startRoom("hometown/torielhouse/kris_room", "nightCutscenes.susie", {"kris"}) end
-    if choice == 3 then return startRoom("hometown/school/school_lobby", nil, {"kris"}, "nf_school_init") end
+    if choice == 3 then return startRoom("hometown/school/kris_class", nil, {"kris"}, "nf_school_init") end
     if choice == 4 then return startRoom("bumperzone") end
     if choice == 5 then
         Mod.post_bumper_room = "gateway/hallway"

@@ -310,12 +310,14 @@ local nightCutsenes = {
             cutscene:wait(1)
             cutscene:text("* Tell her I said thank you.", "nervous")
             Plot:set("nf_school_interact2Alph")
+            event:remove()
         elseif interactionsAlph == 2 then
+            event:remove()
             --WHERE THE SUSIE FLAG SHOULD GO GRAHHHHHHHH
             Music:stop()
             local kris = cutscene:getCharacter("kris")
             local susie = cutscene:getCharacter("susie_lw")
-            local berdly = cutscene:getCharacter("berdly")
+            local berdly = cutscene:getCharacter("berdly_lw") or cutscene:spawnNPC("berdly_lw",0,0)
             cutscene:detachFollowers()
             cutscene:look(berdly, "up")
             kris.visible = false
@@ -433,8 +435,8 @@ local nightCutsenes = {
 
 
     berdly = function(cutscene, event)
-        local alphys = cutscene:getCharacter("alphys")
-        local berdly = cutscene:getCharacter("berdly")
+        local alphys = cutscene:getCharacter("alphys_lw")
+        local berdly = cutscene:getCharacter("berdly_lw")
         local susie = cutscene:getCharacter("susie_lw")
         local kris = cutscene:getCharacter("kris")
         cutscene:setSpeaker("berdly")
@@ -539,7 +541,7 @@ local nightCutsenes = {
         Assets.playSound("doorclose")
         img1.visible = false
         cutscene:wait(2)
-        cutscene:setSpeaker("alphys")
+        cutscene:setSpeaker("alphys_lw")
         cutscene:text("* Bye,[wait:5] S-Susie.", "nervous_concern")
         cutscene:wait(2)
         cutscene:look(alphys, "down")
@@ -638,6 +640,10 @@ local nightCutsenes = {
             kris:resetSprite()
             cutscene:look(susie, "left")
             cutscene:wait(1)
+            if choice == 2 then
+                cutscene:text("* Dude,[wait:5] I can HEAR the sarcasm.[wait:10] Now's not the time for that.", "nervous")
+                cutscene:wait(1)
+            end
             cutscene:text("* Okay.[wait:10] Alright.[wait:10] I'm okay.[wait:10] You're okay.[wait:10] Right??", "nervous")
             cutscene:wait(1.5)
             susie:setSprite("exasperated")
@@ -903,7 +909,9 @@ local nightCutsenes = {
             cutscene:text("* After her,[wait:5] Kris!!!", "teeth_b")
             cutscene:shakeCamera()
 
-            cutscene:gotoCutscene("createTransitionCutscene.outskirts")
+            cutscene:gotoCutscene("createTransitionCutscene.outskirts", {
+                characters = {kris, susie}
+            })
             Game.world.camera.keep_in_bounds = true
             cutscene:attachCamera()
         end
@@ -931,7 +939,7 @@ local nightCutsenes = {
         cutscene:wait(5)
         susie:setSprite("down")
         alphys:setSprite("fallen")
-        kris:setSprite("landed_1")
+        kris:setSprite("landed")
         cutscene:wait(1)
         cutscene:setSpeaker("alphys")
         cutscene:shakeCharacter("alphys")

@@ -123,7 +123,7 @@ function actor:init()
 
         ["fall"] = {-5, -6},
         ["ball"] = {1, 8},
-        ["landed"] = {-4, -2},
+        ["landed"] = {4, 0},
 
         ["fell"] = {-14, 1},
 
@@ -145,9 +145,9 @@ function actor:init()
     }
 end
 
-function actor:onSpriteInit(sprite)
-    sprite:addFX(PaletteFX("party/kris/mantle/palette", 1))
-    sprite:addFX(OutlineFX()):setColor(Utils.unpackColor(Utils.hexToRgb("#afafaf")))
-end
+-- function actor:onSpriteInit(sprite)
+--     sprite:addFX(PaletteFX("party/kris/mantle/palette", 1))
+--     sprite:addFX(OutlineFX()):setColor(Utils.unpackColor(Utils.hexToRgb("#afafaf")))
+-- end
 
 return actor

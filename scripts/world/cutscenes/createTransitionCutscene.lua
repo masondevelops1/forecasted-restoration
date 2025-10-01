@@ -1,5 +1,6 @@
-local function createTransitionCutscene(yval, config, map)
-    return function(cutscene)
+local function createTransitionCutscene(yval, base_config, map)
+    return function(cutscene, config)
+        setmetatable(config, {__index = base_config})
 
         -- Disable things that interfere with most cutscenes
         cutscene:detachCamera()
@@ -39,25 +40,25 @@ local function createTransitionCutscene(yval, config, map)
         if Game.world.followers[1] then
             Game.world.followers[1].visible = true
         end
-        local kx, ky = transition.kris_sprite:localToScreenPos(transition.kris_width / 2, 0)
+        local kx, ky = transition.character_data[1].sprite_holder:localToScreenPos(transition.character_data[1].sprite_1.width / 2, 0)
         Game.world.player:setScreenPos(kx - 2, transition.final_y - 2)
         Game.world.player.visible = true
         Game.world.player:setFacing("down")
     
         if Game.world.followers[1] then
-            local sx, sy = transition.susie_sprite:localToScreenPos(transition.susie_width / 2, 0)
+            local sx, sy = transition.character_data[2].sprite_holder:localToScreenPos(transition.character_data[2].sprite_1.width / 2, 0)
             Game.world.followers[1]:setScreenPos(sx - 2, transition.final_y - 2)
             Game.world.followers[1].visible = true
             Game.world.followers[1]:interpolateHistory()
             Game.world.followers[1]:setFacing("down")
         end
-        local kx, ky = transition.kris_sprite:localToScreenPos(transition.kris_width / 2, 0)
+        local kx, ky = transition.character_data[1].sprite_holder:localToScreenPos(transition.character_data[1].sprite_1.width / 2, 0)
         Game.world.player:setScreenPos(kx - 2, transition.final_y - 2)
         Game.world.player.visible = true
         Game.world.player:setFacing("down")
 
         if Game.world.followers[1] then
-            local sx, sy = transition.susie_sprite:localToScreenPos(transition.susie_width / 2, 0)
+            local sx, sy = transition.character_data[2].sprite_holder:localToScreenPos(transition.character_data[2].sprite_1.width / 2, 0)
             Game.world.followers[1]:setScreenPos(sx - 2, transition.final_y - 2)
             Game.world.followers[1].visible = true
             Game.world.followers[1]:interpolateHistory()
