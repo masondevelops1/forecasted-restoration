@@ -958,6 +958,18 @@ local nightCutsenes = {
         cutscene:look(alphys, "down")
         cutscene:wait(0.3)
         cutscene:look(alphys, "right")
+        cutscene:fadeOut(0)
+        Assets.playSound("locker")
+        cutscene:wait(1)
+        local wait, box = cutscene:text("[instant]To be Snew Future...[stopinstant][wait:4s]", {auto = true, wait = false})
+        box.box.visible = false
+        box.text.alpha = 0
+        box.text:fadeTo(1,1)
+        cutscene:wait(3)
+        box.text:fadeTo(0,1)
+        cutscene:wait(wait)
+        cutscene:wait(2)
+        Game:load(nil,4)
     end;
 
     test = function(cutscene, event)
