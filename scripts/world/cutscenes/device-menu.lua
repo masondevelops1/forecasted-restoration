@@ -98,7 +98,7 @@ selection.
         Game.fader:fadeOut(function()
             local orig_map = Mod.info.map
             Mod.info.map = "basket"
-            Game:load(nil,nil,true)
+            Game:load(nil,4,true)
             if party then
                 Game:setPartyMembers(unpack(party))
             end
