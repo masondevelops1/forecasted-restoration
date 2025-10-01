@@ -355,7 +355,7 @@ local boatCutscenes = {
                 local choice2 = cutscene:choicer({ "Yes!!!", "Absolutely not!!!" })
                 if choice2 == 1 then
                     cutscene:setSpeaker("susie")
-                    return cutscene:gotoCutscene("boatCutscenes.gamblingMain")
+                    return cutscene:gotoCutscene("boatCutscenes.gamblingMain", event)
                 else
                     cutscene:hideShop()
                     cutscene:setSpeaker("susie")
