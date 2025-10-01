@@ -25,7 +25,13 @@ end)
 
         spr:remove()
         Game.fader.alpha = 0
-        SystemFloor():smash(1,1)
+        Assets.playSound("impact");
+        Assets.playSound("closet_impact", 1, 1);
+        Assets.playSound("closet_impact", 1, 0.5);
+        Assets.playSound("bageldefeat", 0.8, 0.8);
+        Assets.playSound("damage");
+        Assets.playSound("glassbreak", 0.8, 0.4);
+        Assets.playSound("glassbreak", 0.6, 0.3);
         local omnis = assert(Game.battle:getEnemyBattler("omnis_boss"))
         local ursula = Game.battle:getPartyBattler("ursula")
         ursula:hurt(math.huge, true, nil, {swoon = true})
