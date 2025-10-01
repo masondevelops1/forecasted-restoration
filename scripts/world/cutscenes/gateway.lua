@@ -88,7 +88,11 @@ function gateway.chasestart(cutscene)
     Plot:set("gateway_collapse")
     susie:setSprite("drag_noelle_readyblush")
     cutscene:wait(.1)
-    noelle:setPosition(-100,-100)
+    if Game:getFlag("silly_mode") then
+        noelle:addFX(ShaderFX("mono"))
+    else
+        noelle:setPosition(-100,-100)
+    end
     susie:setAnimation("drag_noelle")
     Mod.shared_gonerbg.afterimage_timer = 0
     local walks = ({
