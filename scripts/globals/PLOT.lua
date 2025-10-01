@@ -14,6 +14,7 @@ local PLOT = {
     depths_enter = 99; -- gateway collapse finished
 
     -- TODO: Adjust these numbers to something more sensible once we get to that point
+    -- I hate that I can't do that anymore because it'd break save files
     boat_leadup_scrap               =  9998;
     boat_act1_start                 =  9999;
     boat_act1_mapswitch             = 10000;
@@ -29,6 +30,10 @@ local PLOT = {
     boat_act3_scientist_foodgive    = 30500;
     boat_act3_room101_confrontation = 30600;
     boat_end                        = 40000;
+
+    nf_school_init = 5000;
+    nf_school_interact1Alph = 5001;
+    nf_school_interact2Alph = 5002;
 }
 
 return PLOT

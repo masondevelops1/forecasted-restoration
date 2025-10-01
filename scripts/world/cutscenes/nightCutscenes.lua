@@ -235,22 +235,22 @@ local nightCutsenes = {
 
     school = function(cutscene, event)
         Game:setFlag("susieGone", true)
-        local interactionsAlph = Game:getFlag("interacted", 0)
+        local interactionsAlph = Plot:get() - 5000
         if interactionsAlph == 0 then
             Music:stop()
             local kris = cutscene:getCharacter("kris")
-            local susie = cutscene:getCharacter("susie")
+            local susie = cutscene:getCharacter("susie_lw") or cutscene:spawnNPC("susie_lw", 0, 0)
             kris.visible = false
             susie.visible = false
-            local berdly = cutscene:getCharacter("berdly")
+            local berdly = cutscene:getCharacter("berdly") or cutscene:spawnNPC("berdly_lw", 0, 0)
 
 
             local x, y = cutscene:getMarker("kris1")
             cutscene:walkTo(kris, x, y, 1, "down")
             cutscene:look(berdly, "up")
 
-            local alphys = cutscene:getCharacter("alphys")
-            cutscene:setSpeaker("alphys")
+            local alphys = cutscene:getCharacter("alphys_lw")
+            cutscene:setSpeaker(alphys)
             cutscene:wait(1)
             cutscene:text("* So,[wait:5] does everyone have a...", "smile")
             local img1 = Game.world.map:getImageLayer("dooropen")
@@ -298,9 +298,10 @@ local nightCutsenes = {
             cutscene:wait(1)
             Game.world.music:play("school")
             cutscene:look(kris, "down")
+            Plot:set("nf_school_interact1Alph")
         elseif interactionsAlph == 1 then
-            local alphys = cutscene:getCharacter("alphys")
-            cutscene:setSpeaker("alphys")
+            local alphys = cutscene:getCharacter("alphys_lw")
+            cutscene:setSpeaker("alphys_lw")
             cutscene:look(alphys, "right")
             cutscene:wait(1)
             cutscene:text("* H-hey Kris...", "smile")
@@ -308,18 +309,19 @@ local nightCutsenes = {
             cutscene:text("* If you see Susie in the halls...", "nervous_concern")
             cutscene:wait(1)
             cutscene:text("* Tell her I said thank you.", "nervous")
+            Plot:set("nf_school_interact2Alph")
         elseif interactionsAlph == 2 then
             --WHERE THE SUSIE FLAG SHOULD GO GRAHHHHHHHH
             Music:stop()
             local kris = cutscene:getCharacter("kris")
-            local susie = cutscene:getCharacter("susie")
+            local susie = cutscene:getCharacter("susie_lw")
             local berdly = cutscene:getCharacter("berdly")
             cutscene:detachFollowers()
             cutscene:look(berdly, "up")
             kris.visible = false
             susie.visible = false
-            local alphys = cutscene:getCharacter("alphys")
-            cutscene:setSpeaker("alphys")
+            local alphys = cutscene:getCharacter("alphys_lw")
+            cutscene:setSpeaker("alphys_lw")
             cutscene:look(alphys, "down")
             local x, y = cutscene:getMarker("kris1")
             cutscene:walkTo(kris, x, y, 1, "down")
@@ -362,7 +364,7 @@ local nightCutsenes = {
             cutscene:text("* And it's locked.[wait:10] I really need to get it because,[wait:5] uh...", "nervous_side")
             cutscene:look(susie, "down")
             cutscene:text("* ...y'know,[wait:5] I really don't want to fail that upcoming test.", "nervous")
-            cutscene:setSpeaker("alphys")
+            cutscene:setSpeaker("alphys_lw")
             cutscene:wait(1)
             cutscene:look(alphys, "left")
             cutscene:wait(0.5)
@@ -377,7 +379,7 @@ local nightCutsenes = {
             cutscene:look(susie, "down")
             cutscene:text("* ...Yeah I'll uh,[wait:10] I'll do better next time.", "nervous")
             cutscene:look(alphys, "right")
-            cutscene:setSpeaker("alphys")
+            cutscene:setSpeaker("alphys_lw")
             cutscene:wait(1)
             cutscene:look(susie, "left")
             cutscene:text("* You said the closet is locked...?", "concern")
@@ -427,7 +429,6 @@ local nightCutsenes = {
             cutscene:look(kris, "down")
             --Alphys joins party
         end
-        Game:setFlag("interacted", interactionsAlph + 1)
     end;
 
 
@@ -552,7 +553,7 @@ local nightCutsenes = {
     outside = function(cutscene, event)
         local interactionsSus = Game:getFlag("interactedSus", 0)
         if interactionsSus == 0 then
-            local susie = cutscene:getCharacter("susie")
+            local susie = cutscene:getCharacter("susie_lw")
 
             local kris = cutscene:getCharacter("kris")
 
@@ -670,7 +671,7 @@ local nightCutsenes = {
     end;
 
     closet = function(cutscene, event)
-        local susie = cutscene:getCharacter("susie")
+        local susie = cutscene:getCharacter("susie_lw")
         cutscene:setSpeaker("susie")
         cutscene:text("* It's...[wait:10] locked?", "surprise_frown")
         cutscene:text("* Why is it locked while school is in session?", "suspicious")
@@ -679,7 +680,7 @@ local nightCutsenes = {
 
     classroom1 = function(cutscene, event)
         if not Game:hasPartyMember("alphys") then
-            local susie = cutscene:getCharacter("susie")
+            local susie = cutscene:getCharacter("susie_lw")
             cutscene:setSpeaker("susie")
             cutscene:text("* This one's locked too??", "sad")
             cutscene:text("* I guess it has no use being unlocked anymore...?", "suspicious")
@@ -689,7 +690,7 @@ local nightCutsenes = {
             cutscene:look(susie, "right")
             cutscene:text("* Let's go talk to Alphys.[wait:10]\n* Maybe she has a key.", "nervous_side")
         else
-            local susie = cutscene:getCharacter("susie")
+            local susie = cutscene:getCharacter("susie_lw")
             local kris = cutscene:getCharacter("kris")
             local alphys = cutscene:getCharacter("alphys")
             cutscene:detachCamera()

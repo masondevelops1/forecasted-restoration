@@ -91,7 +91,8 @@ selection.
 > _
 ]])
     if choice == 0 then return devicemenu.main(cutscene) end
-    local function startRoom(room, cutscene_id, party)
+    ---@param plot PLOT|PLOT.key?
+    local function startRoom(room, cutscene_id, party, plot)
         cutscene.funnytextbox:setText("[style:none][voice:none]Preparing scene...")
         Game.state = "EXIT"
         Game.fader:fadeOut(function()
@@ -101,6 +102,9 @@ selection.
             if party then
                 Game:setPartyMembers(unpack(party))
             end
+            if plot then
+                Plot:set(plot)
+            end
             Game.world:loadMap(room)
             if cutscene_id then Game.world:startCutscene(cutscene_id) end
             Mod.info.map = orig_map
@@ -109,7 +113,7 @@ selection.
     end
     if choice == 1 then return startRoom("depthsRaft", nil, {"kris"}) end
     if choice == 2 then return startRoom("hometown/torielhouse/kris_room", "nightCutscenes.susie", {"kris"}) end
-    if choice == 3 then return startRoom("hometown/school/school_lobby", nil, {"kris"}) end
+    if choice == 3 then return startRoom("hometown/school/school_lobby", nil, {"kris"}, "nf_school_init") end
     if choice == 4 then return startRoom("bumperzone") end
     if choice == 5 then
         Mod.post_bumper_room = "gateway/hallway"
