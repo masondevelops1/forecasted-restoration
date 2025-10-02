@@ -38,8 +38,10 @@ function PartyBattler:update()
         -- TODO: Actual bleed condition
         if Game.battle:isBleeding() then
             self.bleed = self.bleed + 4
-        else
+        elseif Game.battle.state == "DEFENDING" then
             self.bleed = self.bleed - 1
+        else
+            self.bleed = self.bleed - 4
         end
     end
     self.bleed = Utils.clamp(self.bleed, 0, self.chara:getHealth())
