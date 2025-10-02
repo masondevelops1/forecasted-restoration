@@ -41,7 +41,7 @@ function PartyBattler:update()
         elseif Game.battle.state == "DEFENDING" then
             self.bleed = self.bleed - 1
         else
-            self.bleed = self.bleed - 4
+            self.bleed = self.bleed - 2
         end
     end
     self.bleed = Utils.clamp(self.bleed, 0, self.chara:getHealth())
