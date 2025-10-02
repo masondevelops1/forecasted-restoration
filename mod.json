@@ -56,7 +56,8 @@
             "speechBubble" : "depths"
         },
         "afilemenu": {
-            "map": "hometown/torielhouse/kris_room",
+            // "map": "hometown/torielhouse/kris_room",
+            "map": "depthsStation",
             "configMenuOverride": true,
             "hookOverlay": true,
         }
