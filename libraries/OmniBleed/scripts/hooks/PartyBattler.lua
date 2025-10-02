@@ -33,8 +33,8 @@ end
 function PartyBattler:update()
     super.update(self)
     self.bleed_clock = self.bleed_clock + DT
-    if self.bleed_clock > 0.2 then
-        self.bleed_clock = self.bleed_clock - 0.2
+    while self.bleed_clock > (1/30) do
+        self.bleed_clock = self.bleed_clock - (1/30)
         -- TODO: Actual bleed condition
         if Game.battle:isBleeding() then
             self.bleed = self.bleed + 4
