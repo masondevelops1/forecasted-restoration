@@ -297,3 +297,13 @@ function Mod:setUISkin(skin)
     self.ui_skin_override = skin
     UISkinLib:swapUISkin(Kristal.callEvent(KRISTAL_EVENT.getUISkin) or (Game:isLight() and "light" or "dark"))
 end
+
+function Mod:onFootstep(char, num)
+    if char.world.map.data.properties.step_sound then
+        local player_only, step_sound = Utils.startsWith(char.world.map.data.properties.step_sound, "player:")
+        if player_only and not char.is_player then return end
+        local sound_path = "steps/"..step_sound .. Utils.clampWrap(num, 2)
+        print(sound_path)
+        Assets.playSound(sound_path)
+    end
+end

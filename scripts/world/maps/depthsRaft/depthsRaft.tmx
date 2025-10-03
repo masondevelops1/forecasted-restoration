@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="21">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="21">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="waves"/>
+  <property name="step_sound" value="reverb"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/Core Tiles.tsx"/>
  <imagelayer id="2" name="raft" offsetx="560" offsety="560">
