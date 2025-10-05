@@ -6,6 +6,12 @@ Kristal mod used for "season 1" of [funnyFeline](https://www.youtube.com/@funnyf
 
 [Get Kristal](https://kristal.cc/wiki/downloading) and place this folder inside the mods folder. If done right, this file you're reading right now will be in kristal/mods/funny-feline-depths/README.md.
 
+# Contributing
+
+All changes must be either:
+1. Reasonably Forecasted canon compliant
+2. Silly mode exclusive, and compliant with [Dark Place's rules](https://github.com/Darkplace-dr/darkPlaceRebirth-Kristal/blob/main/CONTRIBUTING.md) (to be clear saying FUCK is fine)
+
 # Code reuse
 
 The only thing you can't use from this without asking is the Silly Mode popup. You'll need to ask SylviBlossom about that. Everything else is fair game (although I advise against it for your own sanity).
