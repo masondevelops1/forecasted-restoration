@@ -2,7 +2,7 @@ local lib = {}
 
 function lib:init()
     if Kristal.getLibConfig("afilemenu", "hookOverlay") then
-        Utils.hook(Kristal.Overlay, "update", function (orig, self)
+        HookSystem.hook(Kristal.Overlay, "update", function (orig, self)
             local do_orig = true
             if love.keyboard.isDown("escape") and not self.quit_release then
                 if Kristal.Config and Kristal.Config["instantQuit"] then

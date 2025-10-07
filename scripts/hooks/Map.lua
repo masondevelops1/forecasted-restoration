@@ -1,5 +1,5 @@
 ---@class Map : Map
-local Map, super = Utils.hookScript(Map)
+local Map, super = HookSystem.hookScript(Map)
 
 -- TODO: Delete this particular hook when KristalTeam/Kristal#359 is merged
 function Map:loadMapData(data)

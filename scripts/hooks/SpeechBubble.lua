@@ -1,9 +1,9 @@
 ---@class SpeechBubble : SpeechBubble
-local SpeechBubble, super = (Utils.hookScript or Class)(SpeechBubble)
+local SpeechBubble, super = (HookSystem.hookScript or Class)(SpeechBubble)
 
-if not Utils.hookScript then
+if not HookSystem.hookScript then
     Kristal.Console:warn("Bro's Kristal is ANCIENT :skull:")
-    Kristal.Console:warn("Bro doesn't have Utils.hookScript :jellycruel:")
+    Kristal.Console:warn("Bro doesn't have HookSystem.hookScript :jellycruel:")
     Kristal.Console:warn("Bro installed Kristal before Earthbound released :sobbing:")
 end
 

@@ -18,7 +18,7 @@ function goner1:init()
 end
 
 -- yknow its a miracle lua allows you to do this
--- Utils.hook(Battle, "init", function(orig, self, ...)
+-- HookSystem.hook(Battle, "init", function(orig, self, ...)
 --     orig(self,...)
 --     self.background = GonerBackground2();
 --     self:addChild(self.background)

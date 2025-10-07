@@ -55,21 +55,21 @@ function Mod:afmPostInit(new_file)
 end
 
 function Mod:init()
-    Utils.hook(Encounter, "createSoul", function(orig, self, x, y, color)
+    HookSystem.hook(Encounter, "createSoul", function(orig, self, x, y, color)
         if Game.battle.is_parry then
             return ParrySoul(x, y)
         end
         return orig(self, x, y, color)
     end)
 
-    Utils.hook(Encounter, "createSoul", function(orig, self, x, y, color)
+    HookSystem.hook(Encounter, "createSoul", function(orig, self, x, y, color)
         if Game.battle.is_fast then
             return FastSoul(x, y)
         end
         return orig(self, x, y, color)
     end)
 
-    Utils.hook(Battle, "postInit", function(orig, self, ...)
+    HookSystem.hook(Battle, "postInit", function(orig, self, ...)
         ---@cast self Battle
         orig(self,...)
         if self.encounter.background then
@@ -78,26 +78,26 @@ function Mod:init()
             self.background:setLayer(BATTLE_LAYERS["bottom"] - 1)
         end
     end)
-    Utils.hook(Battle, "update", function (orig, self, ...)
+    HookSystem.hook(Battle, "update", function (orig, self, ...)
         ---@cast self Battle
         orig(self, ...)
         if self.background then
             self.background.alpha = self.transition_timer / 10
         end
     end)
-    Utils.hook(Battle, "onStateChange", function (orig, self, old, new)
+    HookSystem.hook(Battle, "onStateChange", function (orig, self, old, new)
         ---@cast self Battle
         if new == "VICTORY" and self.background then
             self.background.timer.active = false
         end
         return orig(self, old, new)
     end)
-    -- Utils.hook(Battle, "drawBackground", function() end)
+    -- HookSystem.hook(Battle, "drawBackground", function() end)
 
 ---@diagnostic disable-next-line: redefined-local
     local self = Registry
     -- TODO: PR this to kristal, it's cool
-    Utils.hook(Registry, "createMap", function(_,id, world, ...)
+    HookSystem.hook(Registry, "createMap", function(_,id, world, ...)
         if self.maps[id] then
             local map = self.maps[id](world, self.map_data[id], ...)
             map.id = id

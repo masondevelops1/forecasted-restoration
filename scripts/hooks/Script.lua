@@ -1,5 +1,5 @@
 ---@class Script : Script
-local Script, super = Utils.hookScript(Script)
+local Script, super = HookSystem.hookScript(Script)
 
 function Script:init(x, y, shape, properties)
     super.init(self, x, y, shape, properties)

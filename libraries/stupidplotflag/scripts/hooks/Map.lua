@@ -1,5 +1,5 @@
 ---@class Map : Map
-local Map, super = Utils.hookScript(Map)
+local Map, super = HookSystem.hookScript(Map)
 
 ---@param a number
 ---@param b number

@@ -1,5 +1,5 @@
 ---@class WorldCutscene : WorldCutscene
-local WorldCutscene, super = Utils.hookScript(WorldCutscene)
+local WorldCutscene, super = HookSystem.hookScript(WorldCutscene)
 
 -- Hard-cuts to a title card. If you want a soft fade, you'll need to do cutscene:fadeIn and cutscene:fadeOut before and after respectively.
 ---@param act_num 1|2|3 Which act this is.
