@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="22">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/hospitalhallway.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="2" x="120" y="160" width="38" height="40"/>
+  <object id="3" x="240" y="160" width="158" height="40"/>
+  <object id="4" x="480" y="160" width="40" height="40"/>
+  <object id="8" x="520" y="160" width="40" height="138"/>
+  <object id="9" x="402" y="298" width="158" height="40"/>
+  <object id="10" x="362" y="298" width="40" height="102"/>
+  <object id="11" x="242" y="298" width="40" height="102"/>
+  <object id="12" x="80" y="298" width="162" height="40"/>
+  <object id="13" x="80" y="160" width="40" height="138"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="14" name="transition" x="158" y="160" width="82" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/interior/hospital_rudy"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="16" name="transition" x="398" y="160" width="82" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/interior/hospital_room2"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="17" name="transition" x="282" y="360" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="int" value="1"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/hospital_lobby"/>
+    <property name="marker" value="entryhallway"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="21" name="interactable" x="280" y="160" width="80" height="40">
+   <properties>
+    <property name="text" value="* (It's a diagram showing a bunch of lines and a circle.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="18" name="entryrudy" x="200" y="240">
+   <point/>
+  </object>
+  <object id="19" name="entryroom2" x="440" y="240">
+   <point/>
+  </object>
+  <object id="20" name="spawn" x="320" y="320">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

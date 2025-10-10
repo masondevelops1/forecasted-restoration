@@ -1,0 +1,11 @@
+{
+    "id": "forecasted",
+    "authors": [
+        "fizz", // Project lead, funny feline role
+        //
+        "Hyperboid", // This whole library
+    ],
+    "dependencies": [
+        "uiskins", // for The Gateway's unique menu
+    ]
+}

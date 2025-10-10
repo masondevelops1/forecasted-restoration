@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="35">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="school"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/school/toriel_class.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="10" x="252" y="178" width="186" height="38"/>
+  <object id="11" x="216" y="248" width="64" height="36"/>
+  <object id="12" x="216" y="306" width="64" height="36"/>
+  <object id="13" x="318" y="306" width="64" height="36"/>
+  <object id="14" x="418" y="306" width="64" height="36"/>
+  <object id="15" x="318" y="248" width="64" height="36"/>
+  <object id="16" x="418" y="248" width="64" height="36"/>
+  <object id="18" x="70" y="436" width="494" height="44"/>
+  <object id="21" x="70" y="104" width="32" height="40"/>
+  <object id="22" x="168" y="104" width="396" height="40"/>
+  <object id="23" x="564" y="104" width="40" height="376"/>
+  <object id="25" x="30" y="104" width="40" height="376"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="1" gid="27" x="522" y="430" width="34" height="118"/>
+  <object id="2" gid="28" x="416" y="342" width="70" height="52"/>
+  <object id="3" gid="28" x="316" y="342" width="70" height="52"/>
+  <object id="4" gid="28" x="214" y="342" width="70" height="52"/>
+  <object id="5" gid="28" x="214" y="284" width="70" height="52"/>
+  <object id="6" gid="28" x="316" y="284" width="70" height="52"/>
+  <object id="7" gid="28" x="416" y="284" width="70" height="52"/>
+  <object id="8" gid="29" x="252" y="216" width="188" height="90"/>
+  <object id="26" name="transition" x="102" y="102" width="66" height="40">
+   <properties>
+    <property name="exit_delay" type="int" value="1"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/school/school_lobby"/>
+    <property name="marker" value="entrytoriel"/>
+    <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="28" name="interactable" x="214" y="104" width="106" height="40">
+   <properties>
+    <property name="text1" value="* (&quot;Ms. Toriel&quot; is written in cursive on the dry-erase board.)"/>
+    <property name="text2" value="* (Seems like it hasn't been erased in a very long time.)"/>
+   </properties>
+  </object>
+  <object id="29" name="interactable" x="352" y="104" width="40" height="40">
+   <properties>
+    <property name="text1" value="* (You uncapped the scented green marker.)"/>
+    <property name="text2" value="* (It's almost dry,[wait:5] but that gives it a refined,[wait:5] aged apple bouquet.)"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="452" y="120" width="56" height="38">
+   <properties>
+    <property name="text">* (Kids' books.)
+[wait:5]* (Some of them used to be yours.)</property>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="518" y="118" width="32" height="40">
+   <properties>
+    <property name="text" value="* (It's a primitive drawing of your mom.)"/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="520" y="390" width="38" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text">* (The Throne of the Gods grows even higher.)
+* (Almost an sky-scrapper)</property>
+   </properties>
+  </object>
+  <object id="32" name="interactable" x="390" y="176" width="40" height="40">
+   <properties>
+    <property name="text" value="* (Hey Apple!)"/>
+   </properties>
+  </object>
+  <object id="33" name="interactable" x="406" y="104" width="42" height="40">
+   <properties>
+    <property name="text" value="* (Hyperdodecahedron...)"/>
+   </properties>
+  </object>
+  <object id="34" name="interactable" x="270" y="178" width="38" height="38">
+   <properties>
+    <property name="text1" value="* (The computer wallpaper is updated.)"/>
+    <property name="text2" value="* (It's a picture of your brother and you playing video games.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="27" name="spawn" x="136" y="176">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

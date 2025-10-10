@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="18">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/icee_room.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="224" y="400" width="40" height="80"/>
+  <object id="2" x="24" y="360" width="240" height="40"/>
+  <object id="3" x="24" y="28" width="40" height="332"/>
+  <object id="5" x="344" y="400" width="40" height="80"/>
+  <object id="6" x="344" y="360" width="258" height="40"/>
+  <object id="7" x="562" y="28" width="40" height="332"/>
+  <object id="8" x="64" y="154" width="498" height="40"/>
+  <object id="11" x="72" y="248" width="130" height="112"/>
+  <object id="12" x="424" y="248" width="130" height="112"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="9" gid="22" x="424" y="360" width="130" height="124"/>
+  <object id="10" gid="21" x="72" y="360" width="130" height="124"/>
+  <object id="13" name="interactable" x="120" y="236" width="36" height="40">
+   <properties>
+    <property name="text1" value="* (There's some condiments at the table.)"/>
+    <property name="text2" value="* ICE-E's &quot;Original&quot; Parmajohn Che&quot;E&quot;ese!"/>
+   </properties>
+  </object>
+  <object id="14" name="interactable" x="72" y="195" width="94" height="17">
+   <properties>
+    <property name="cutscene" value="hometown.iceesoda"/>
+   </properties>
+  </object>
+  <object id="15" name="interactable" x="440" y="114" width="122" height="80">
+   <properties>
+    <property name="text1" value="* (Try our new CHOCCOLATE PEZZA)"/>
+    <property name="text2" value="* (Melts in your pants not in your mouth)"/>
+   </properties>
+  </object>
+  <object id="17" name="transition" x="264" y="480" width="80" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/town_mid"/>
+    <property name="marker" value="entrypizza"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="markers">
+  <object id="16" name="spawn" x="304" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

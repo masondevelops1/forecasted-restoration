@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="25">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="house"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/torielhouse/kris_room.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="80" y="400" width="210" height="40"/>
+  <object id="2" x="250" y="440" width="40" height="40"/>
+  <object id="3" x="40" y="80" width="40" height="360"/>
+  <object id="4" x="40" y="40" width="520" height="160"/>
+  <object id="5" x="560" y="40" width="40" height="400"/>
+  <object id="6" x="370" y="400" width="190" height="40"/>
+  <object id="7" x="370" y="440" width="40" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="8" name="interactable" x="190" y="200" width="82" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* A very old school ID with an embarrassing haircut."/>
+   </properties>
+  </object>
+  <object id="9" name="interactable" x="378.5" y="188.25" width="82" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* There's nothing useful in the drawer."/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="276.5" y="198.75" width="25.75" height="28">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.picture"/>
+    <property name="solid" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="80" y="196" width="100" height="120">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1">* There are CDs under the bed.
+[wait:5]* Classical,[wait:5] jazz,[wait:5] religious ska...</property>
+    <property name="text2">* There's also a game console.
+[wait:5]* It has one normal controller,[wait:5] and one knock-off one.</property>
+   </properties>
+  </object>
+  <object id="12" name="interactable" x="466" y="200" width="94" height="120">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.susie"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="13" gid="34" x="470" y="390" width="74" height="60">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="14" gid="35" x="466" y="274" width="92" height="76"/>
+  <object id="15" gid="37" x="84" y="400" width="106" height="64"/>
+  <object id="16" name="interactable" x="88" y="366" width="92" height="34">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* On the computer's desktop is a folder called &quot;EPIC games Stuff!!!!&quot;"/>
+    <property name="text2" value="* It's a poorly-drawn design for a game..."/>
+    <property name="text3" value="* Seems the last boss is a creature with giant rainbow wings."/>
+    <property name="text4" value="* Doesn't seem like this game ever saw the light of day..."/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="486" y="354" width="58" height="36">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* It's a cage."/>
+   </properties>
+  </object>
+  <object id="18" name="interactable" x="532" y="322" width="24" height="28">
+   <properties>
+    <property name="text" value="* It's stained."/>
+   </properties>
+  </object>
+  <object id="20" name="transition" x="290" y="480" width="80" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/torielhouse/toriel_hallway"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="22" x="-95.3813" y="283.566" height="0.859291"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="19" name="spawn" x="330" y="440">
+   <point/>
+  </object>
+  <object id="23" name="krisstart" x="494" y="257">
+   <point/>
+  </object>
+  <object id="24" name="kriswalkbed" x="436" y="270">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="30">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/flowershop.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="40" y="268" width="210" height="52"/>
+  <object id="2" x="400" y="308" width="160" height="40"/>
+  <object id="3" x="400" y="200" width="160" height="40"/>
+  <object id="4" x="120" y="40" width="400" height="120"/>
+  <object id="5" x="600" y="40" width="40" height="360"/>
+  <object id="6" x="400" y="400" width="240" height="40"/>
+  <object id="7" x="360" y="400" width="40" height="80"/>
+  <object id="8" x="240" y="400" width="40" height="80"/>
+  <object id="9" x="0" y="400" width="240" height="40"/>
+  <object id="10" x="0" y="40" width="40" height="360"/>
+  <object id="11" x="0" y="0" width="640" height="40"/>
+  <object id="12" x="40" y="360" width="200" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="13" name="interactable" x="280" y="120" width="80" height="40">
+   <properties>
+    <property name="text" value="&quot;* (It's an expertly trimmed arrangement.)"/>
+   </properties>
+  </object>
+  <object id="14" name="interactable" x="136" y="120" width="130" height="40">
+   <properties>
+    <property name="text" value="* (There are various flowers inside.)"/>
+   </properties>
+  </object>
+  <object id="16" name="interactable" x="374" y="120" width="130" height="40">
+   <properties>
+    <property name="text" value="* (There are various flowers inside.)"/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="124" y="268" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's a flower.)"/>
+   </properties>
+  </object>
+  <object id="18" name="interactable" x="190" y="268" width="40" height="40">
+   <properties>
+    <property name="text">* (It's a cash register.)
+[wait:5]* (There's not much change inside.)</property>
+   </properties>
+  </object>
+  <object id="19" name="interactable" x="74" y="268" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's some kind of catalogue...[wait:5] There's a car magazine underneath.)"/>
+   </properties>
+  </object>
+  <object id="20" name="transition" x="40" y="80" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/interior/asgore_house"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="escaped"/>
+   </properties>
+  </object>
+  <object id="21" name="transition" x="520" y="80" width="80" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="facing" value="up"/>
+    <property name="map" value="hometown/interior/asgore_house"/>
+    <property name="marker" value="entryeast"/>
+    <property name="sound" value="escaped"/>
+   </properties>
+  </object>
+  <object id="26" gid="2" x="398" y="240" width="166" height="76"/>
+  <object id="27" gid="2" x="398" y="348" width="166" height="76"/>
+  <object id="28" gid="3" x="40" y="320" width="244" height="114"/>
+  <object id="29" name="transition" x="280" y="480" width="80" height="40">
+   <properties>
+    <property name="map" value="hometown/town_north"/>
+    <property name="marker" value="entryflower"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="22" name="entrywest" x="80" y="160">
+   <point/>
+  </object>
+  <object id="23" name="entryeast" x="560" y="160">
+   <point/>
+  </object>
+  <object id="24" name="spawn" x="320" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

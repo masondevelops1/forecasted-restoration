@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="37">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <imagelayer id="2" name="room">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/library_computer.png" width="640" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="2" x="240" y="410" width="40" height="70"/>
+  <object id="3" x="80" y="410" width="160" height="40"/>
+  <object id="4" x="40" y="30" width="40" height="420"/>
+  <object id="5" x="40" y="-10" width="576" height="40"/>
+  <object id="6" x="576" y="30" width="40" height="418"/>
+  <object id="10" x="360" y="408" width="40" height="72"/>
+  <object id="11" x="400" y="408" width="176" height="40"/>
+  <object id="12" x="170" y="176" width="76" height="186"/>
+  <object id="13" x="148" y="176" width="22" height="88"/>
+  <object id="14" x="308" y="192" width="200" height="104"/>
+  <object id="15" x="432" y="296" width="76" height="44"/>
+  <object id="16" x="508" y="198" width="18" height="124"/>
+  <object id="17" x="80" y="126" width="24" height="44"/>
+  <object id="18" x="104" y="86" width="472" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="19" name="interactable" x="490" y="370" width="60" height="36">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a recycling bin.)"/>
+    <property name="text2" value="* (Looks like someone accidentally printed off a lot of useless emails.)"/>
+   </properties>
+  </object>
+  <object id="20" name="interactable" x="82" y="362" width="36" height="38">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (It's a trashcan. You get the feeling it doesn't have any friends.)"/>
+    <property name="text2" value="* (It's hard to explain why you feel this way about a trashcan.)"/>
+   </properties>
+  </object>
+  <object id="21" name="interactable" x="470" y="104" width="98" height="40">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's full of many backup devices,[wait:5] like extra mice,[wait:5] extra keyboards,[wait:5] or extra maracas.)"/>
+   </properties>
+  </object>
+  <object id="22" name="interactable" x="100" y="86" width="42" height="40">
+   <properties>
+    <property name="text1" value="* (The closet is spacious and full of old electronics.)"/>
+    <property name="text2" value="* (A large person could easily fit inside.)"/>
+   </properties>
+  </object>
+  <object id="23" name="interactable" x="256" y="86" width="144" height="40">
+   <properties>
+    <property name="text" value="* (Various posters talking about Internet safety.)"/>
+   </properties>
+  </object>
+  <object id="25" name="transition" x="280" y="480" width="80" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/interior/library_lobby"/>
+    <property name="marker" value="entrycyber"/>
+   </properties>
+  </object>
+  <object id="26" gid="15" x="136" y="362" width="110" height="192"/>
+  <object id="27" gid="16" x="304" y="340" width="222" height="148"/>
+  <object id="28" name="interactable" x="318" y="256" width="62" height="40">
+   <properties>
+    <property name="text1" value="* (Looks like the library's state-of-the-art public laptop.)"/>
+    <property name="text2" value="* (Someone left it on.)"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="170" y="292" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's a computer. The monitor is flickering brightly.)"/>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="148" y="186" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's a computer. The monitor is flickering brightly.)"/>
+   </properties>
+  </object>
+  <object id="34" name="interactable" x="468" y="264" width="40" height="40">
+   <properties>
+    <property name="text1" value="* (It's a computer.)"/>
+    <property name="text2" value="* (Someone tried to check their email,[wait:5] but the Internet is down.)"/>
+   </properties>
+  </object>
+  <object id="35" name="interactable" x="468" y="212" width="40" height="40">
+   <properties>
+    <property name="text1" value="* (It's a computer.)"/>
+    <property name="text2" value="* (Someone tried to check their email,[wait:5] but the Internet is down.)"/>
+   </properties>
+  </object>
+  <object id="36" name="interactable" x="170" y="240" width="40" height="40">
+   <properties>
+    <property name="text" value="* (It's a computer. The monitor is flickering brightly.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="24" name="spawn" x="320" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

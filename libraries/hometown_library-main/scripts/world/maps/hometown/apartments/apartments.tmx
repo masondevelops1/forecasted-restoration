@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="4" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="13">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="leaves"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="hometown"/>
+ </properties>
+ <imagelayer id="2" name="room" offsetx="240" offsety="0">
+  <image source="../../../../../assets/sprites/world/maps/hometown/apartmentsroom.png" width="160" height="480"/>
+ </imagelayer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="240" y="120" width="160" height="40"/>
+  <object id="2" x="400" y="120" width="40" height="360"/>
+  <object id="3" x="200" y="120" width="40" height="360"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects_party">
+  <object id="4" name="transition" x="240" y="480" width="160" height="40">
+   <properties>
+    <property name="facing" value="down"/>
+    <property name="map" value="hometown/town_mid"/>
+    <property name="marker" value="entryeast"/>
+   </properties>
+  </object>
+  <object id="6" name="interactable" x="356" y="332" width="44" height="52">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a dirty trash can.)"/>
+   </properties>
+  </object>
+  <object id="7" name="interactable" x="356" y="278" width="44" height="52">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a dirty trash can.)"/>
+   </properties>
+  </object>
+  <object id="8" name="interactable" x="358" y="224" width="42" height="52">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a trash can full of well-kept flowers.)"/>
+   </properties>
+  </object>
+  <object id="9" name="interactable" x="358" y="174" width="42" height="50">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a trash can full of well-kept flowers.)"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="358" y="124" width="42" height="50">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a trash can full of well-kept flowers.)"/>
+   </properties>
+  </object>
+  <object id="11" name="interactable" x="240" y="224" width="40" height="14">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text" value="* (It's a saucer of milk.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="5" name="spawn" x="320" y="440">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="objects filter">
+  <object id="12" name="filter" x="0" y="-80">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
