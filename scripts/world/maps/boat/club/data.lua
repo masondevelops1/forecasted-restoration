@@ -140,7 +140,7 @@ return {
             ["actor"] = "boatnpcs/bartender",
             ["cutscene"] = "boatCutscenes.bartender",
             ["plotmax"] = "*boat_act2_mapswitch",
-            ["plotmin"] = "boat_act2_mapswitch"
+            ["plotmin"] = "boat_act1_start"
           }
         }
       }

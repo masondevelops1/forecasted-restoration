@@ -43,7 +43,7 @@
     <property name="actor" value="boatnpcs/bartender"/>
     <property name="cutscene" value="boatCutscenes.bartender"/>
     <property name="plotmax" value="*boat_act2_mapswitch"/>
-    <property name="plotmin" value="boat_act2_mapswitch"/>
+    <property name="plotmin" value="boat_act1_start"/>
    </properties>
    <point/>
   </object>
