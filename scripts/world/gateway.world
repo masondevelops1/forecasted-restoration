@@ -1,0 +1,34 @@
+{
+    "maps": [
+        {
+            "fileName": "maps/gateway/hallway.tmx",
+            "height": 480,
+            "width": 640,
+            "x": -3200,
+            "y": 2840
+        },
+        {
+            "fileName": "maps/gateway/albumart.tmx",
+            "height": 600,
+            "width": 2800,
+            "x": -840,
+            "y": 0
+        },
+        {
+            "fileName": "maps/gateway/chase_spiral/chase_spiral.tmx",
+            "height": 1160,
+            "width": 1240,
+            "x": -2480,
+            "y": 2040
+        },
+        {
+            "fileName": "maps/gateway/chase_upward/chase_upward.tmx",
+            "height": 2520,
+            "width": 640,
+            "x": -1040,
+            "y": 760
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

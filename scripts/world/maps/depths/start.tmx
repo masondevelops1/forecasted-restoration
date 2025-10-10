@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="22">
+ <editorsettings>
+  <export target="start.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="depths" type="bool" value="true"/>
+  <property name="dusk" type="bool" value="false"/>
+  <property name="music" value="endless_expanse"/>
+  <property name="name" value="Gateway - Dark World?"/>
+  <property name="step_sound" value="reverb"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/gateway.tsx"/>
+ <tileset firstgid="929" source="../../tilesets/depthstiles.tsx"/>
+ <tileset firstgid="3445" source="../../tilesets/Core Tiles.tsx"/>
+ <layer id="7" name="Tile Layer 2" width="16" height="12" offsetx="0" offsety="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,2451,2452,
+0,0,0,2451,2452,0,0,2110,2110,0,0,2451,2452,0,2519,2520,
+0,0,0,2519,2520,0,0,2110,2110,0,0,2519,2520,0,2587,2588,
+0,0,0,2587,2588,0,0,2110,2110,0,0,2587,2588,0,0,0,
+0,0,0,0,0,0,2110,2110,2110,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2369,2370,2371,2372,2373,2370,2371,2372,2373,2372,2373,2374,0,0,
+0,0,2505,2438,2439,2440,2441,2441,2441,2441,2438,2439,2440,2438,2370,2371,
+0,0,2437,2438,2438,2438,2439,2440,2441,2509,2506,2507,2508,2509,2438,2439,
+0,0,2505,2506,2506,2506,2507,2508,2509,2506,2507,2508,2509,2438,2574,2575,
+0,0,2573,2574,2575,2576,2577,2574,2575,2576,2577,2576,2577,2578,2642,2643,
+0,0,2641,2642,2643,2644,2645,2642,2643,2644,2645,2642,2643,2646,2110,2110,
+0,0,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,
+0,0,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,
+0,0,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110,2110
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
+  <object id="1" x="40" y="120" width="40" height="200"/>
+  <object id="2" x="560" y="280" width="80" height="40"/>
+  <object id="3" x="560" y="120" width="80" height="40"/>
+  <object id="4" x="80" y="80" width="480" height="40"/>
+  <object id="7" x="80" y="320" width="480" height="40"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="markers">
+  <object id="5" name="spawn" x="320" y="156">
+   <point/>
+  </object>
+  <object id="8" name="entry" x="600" y="220">
+   <point/>
+  </object>
+  <object id="13" name="susiespawn" x="227.71" y="156">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="objects">
+  <object id="9" name="transition" x="640" y="160" width="40" height="120">
+   <properties>
+    <property name="map" value="depths"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="15" name="savepoint" x="300.188" y="79.875" width="40" height="40">
+   <properties>
+    <property name="text1" value="* You look out into the darkness, and then down at yourself."/>
+    <property name="text2" value="* The light of your SOUL shines within you."/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

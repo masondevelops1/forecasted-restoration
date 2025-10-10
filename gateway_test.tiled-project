@@ -1,0 +1,13 @@
+{
+    "automappingRulesFile": "",
+    "commands": [
+    ],
+    "extensionsPath": "extensions",
+    "folders": [
+        "scripts/world",
+        "libraries/hometown_library-main/scripts/world"
+    ],
+    "objectTypesFile": "",
+    "propertyTypes": [
+    ]
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="30">
+ <editorsettings>
+  <export target="livingroom.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="rain_indoors"/>
+ </properties>
+ <imagelayer id="2" name="house" offsetx="12" offsety="7">
+  <image source="../../../../../assets/sprites/backgrounds/livingroom rainy.png" width="682" height="498"/>
+ </imagelayer>
+ <imagelayer id="7" name="overlay2" visible="0" offsetx="12" offsety="7">
+  <image source="../../../../../assets/sprites/backgrounds/lightning.png" width="682" height="498"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="22" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="collisions">
+  <object id="5" x="32" y="-150" width="672" height="172"/>
+  <object id="6" x="65.3333" y="178" width="46" height="51.3333"/>
+  <object id="8" x="447.5" y="329.5" width="37.5" height="27"/>
+  <object id="10" x="386.5" y="355" width="160" height="84"/>
+  <object id="11" x="602.227" y="296.818" width="93.5" height="84"/>
+ </objectgroup>
+ <objectgroup id="4" name="markers">
+  <object id="1" name="spawn" x="38.5" y="310.5">
+   <point/>
+  </object>
+  <object id="2" name="door" x="631" y="225">
+   <point/>
+  </object>
+  <object id="3" name="susie1" x="535" y="225">
+   <point/>
+  </object>
+  <object id="14" name="susie2" x="207" y="222.333">
+   <point/>
+  </object>
+  <object id="17" name="susie3" x="386.667" y="282.667">
+   <point/>
+  </object>
+  <object id="18" name="focus" x="350.667" y="260.333">
+   <point/>
+  </object>
+  <object id="19" name="susie4" x="556.667" y="209.333">
+   <point/>
+  </object>
+  <object id="21" name="door2" x="631" y="212.333">
+   <point/>
+  </object>
+  <object id="25" name="spawn" x="631" y="251.5">
+   <point/>
+  </object>
+  <object id="29" name="offscreen" x="-120.554" y="307.59">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="objects">
+  <object id="24" name="transition" x="583.75" y="104" width="90.5" height="36.5">
+   <properties>
+    <property name="map" value="noelles house/basement/basement"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <imagelayer id="5" name="overlay" offsetx="12" offsety="7">
+  <image source="../../../../../assets/sprites/backgrounds/livingroom overlay.png" width="682" height="498"/>
+ </imagelayer>
+</map>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="77" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="60">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="depths" type="bool" value="true"/>
+  <property name="music" value="depths"/>
+  <property name="name" value="Outer Harbors (North)"/>
+  <property name="step_sound" value="reverb"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/Core Tiles.tsx"/>
+ <objectgroup id="10" name="objects" parallaxx="1.4" parallaxy="1.4"/>
+ <imagelayer id="2" name="depthsmap">
+  <image source="../../../../assets/sprites/backgrounds/depthsmap.png" width="3052" height="973"/>
+ </imagelayer>
+ <imagelayer id="15" name="powered">
+  <image source="../../../../assets/sprites/backgrounds/powered.png" width="1948" height="1066"/>
+ </imagelayer>
+ <imagelayer id="14" name="Copy of boat2" offsetx="537" offsety="-103">
+  <image source="../../../../assets/sprites/backgrounds/boat1.png" width="536" height="417"/>
+ </imagelayer>
+ <imagelayer id="6" name="bridge1" visible="0" offsetx="920" offsety="0">
+  <image source="../../../../assets/sprites/backgrounds/bridge1.png" width="1028" height="788"/>
+ </imagelayer>
+ <imagelayer id="7" name="bridge2" visible="0" offsetx="920" offsety="0">
+  <image source="../../../../assets/sprites/backgrounds/bridge2.png" width="1028" height="788"/>
+ </imagelayer>
+ <imagelayer id="8" name="bridge3" visible="0" offsetx="920" offsety="0">
+  <image source="../../../../assets/sprites/backgrounds/bridge3.png" width="1028" height="788"/>
+ </imagelayer>
+ <imagelayer id="16" name="raft" offsetx="2799.47" offsety="836.273">
+  <image source="../../../../assets/sprites/backgrounds/raft.png" width="122" height="106"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="77" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1089,1089,1089,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="markers">
+  <object id="2" name="spawn" x="46.5" y="439.875">
+   <point/>
+  </object>
+  <object id="18" name="markerplatform" x="560.5" y="115.5" width="95" height="233"/>
+  <object id="21" name="markerbridge" x="947.5" y="116.5" width="95" height="233"/>
+  <object id="34" name="krisfallen" x="2494" y="242">
+   <point/>
+  </object>
+  <object id="36" name="susie2" x="2487.67" y="297.5">
+   <point/>
+  </object>
+  <object id="37" name="kris1" x="2494.67" y="257.333">
+   <point/>
+  </object>
+  <object id="38" name="susie1" x="2486" y="265.333">
+   <point/>
+  </object>
+  <object id="40" name="kris2" x="2496.67" y="323.333">
+   <point/>
+  </object>
+  <object id="43" name="spawn1" x="2996.5" y="280">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="collision">
+  <object id="3" x="1080" y="40" width="1972" height="185.839"/>
+  <object id="4" x="568.27" y="298.199" width="156.117" height="31.07"/>
+  <object id="5" x="1301.43" y="335.615" width="1749.68" height="230.824"/>
+  <object id="7" x="1196.14" y="305.877" width="104.791" height="70.8048"/>
+  <object id="29" x="375.545" y="102.182" width="1016" height="130"/>
+  <object id="30" x="83.75" y="200.667" width="294.917" height="31.4242"/>
+  <object id="31" x="373" y="329" width="823" height="639"/>
+  <object id="41" x="-6.5" y="504.166" width="95" height="16.6667"/>
+  <object id="50" x="272" y="968" width="104" height="84"/>
+  <object id="51" x="84" y="520" width="191" height="448"/>
+  <object id="52" x="375.864" y="-130.136" width="186" height="233"/>
+  <object id="53" x="0.166667" y="227.667" width="87" height="166.667"/>
+  <object id="56" x="660.192" y="232.715" width="21.617" height="66.82"/>
+  <object id="59" x="925.942" y="232.34" width="34.117" height="66.82"/>
+ </objectgroup>
+ <objectgroup id="9" name="objects">
+  <object id="8" name="interactable" x="1189.06" y="249.233" width="121.784" height="86.3819">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.doorInteract"/>
+   </properties>
+  </object>
+  <object id="9" name="interactable" x="1514.76" y="164.267" width="45.3151" height="60.8921">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.sign1"/>
+   </properties>
+  </object>
+  <object id="10" name="interactable" x="1572" y="154.667" width="55.6667" height="74.6667">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.door1"/>
+   </properties>
+  </object>
+  <object id="11" name="npc" x="561" y="115" width="95" height="233">
+   <properties>
+    <property name="actor" value="platform"/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="967" y="235" width="52" height="52">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.platform1"/>
+   </properties>
+  </object>
+  <object id="22" name="interactable" x="572.5" y="222" width="69" height="76">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.platform2"/>
+   </properties>
+  </object>
+  <object id="23" name="savepoint" x="1396" y="220" width="40" height="37"/>
+  <object id="26" name="interactable" x="1650" y="166" width="32" height="68">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.bridgeDeploy"/>
+   </properties>
+  </object>
+  <object id="27" name="interactable" x="392" y="123" width="154" height="109">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.terminal"/>
+   </properties>
+  </object>
+  <object id="42" name="transition" x="3042.06" y="226" width="38.1515" height="113.5">
+   <properties>
+    <property name="map" value="depths/crosswalk"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="44" name="enemy" x="232" y="360">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="transition" x="1196.18" y="560" width="105.455" height="40">
+   <properties>
+    <property name="map" value="sansArea"/>
+   </properties>
+  </object>
+  <object id="54" name="transition" x="-0.166667" y="394" width="26" height="112">
+   <properties>
+    <property name="map" value="depths/start"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
+  <object id="58" name="script" x="2354.75" y="201" width="52.5" height="138.5">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.krisSlip"/>
+    <property name="once" type="bool" value="false"/>
+    <property name="plotmax" value="*depths_slip"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <imagelayer id="12" name="boat2" offsetx="1659.67" offsety="654.667">
+  <image source="../../../../assets/sprites/backgrounds/boat2.png" width="536" height="417"/>
+ </imagelayer>
+ <imagelayer id="5" name="depthsmapabove">
+  <image source="../../../../assets/sprites/backgrounds/depthsmapabove.png" width="1948" height="1066"/>
+ </imagelayer>
+</map>

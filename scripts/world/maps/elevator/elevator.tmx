@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="24">
+ <editorsettings>
+  <export target="elevator.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../tilesets/tenna_encounter_leadup.tsx"/>
+ <imagelayer id="2" name="Image Layer 1" offsetx="213.333" offsety="-480">
+  <image source="../../../assets/sprites/backgrounds/skyline_elevator.png" width="256" height="768"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="15" height="15">
+  <data encoding="csv">
+370,370,370,370,205,206,207,208,209,210,370,370,370,370,370,
+370,370,370,370,301,302,303,304,305,306,370,370,370,370,370,
+370,370,370,370,325,326,327,328,329,330,370,370,370,370,370,
+370,370,370,370,500,477,478,478,480,499,370,370,370,370,370,
+370,370,370,370,524,525,526,527,528,523,370,370,370,370,370,
+370,370,370,370,548,549,550,551,552,547,370,370,370,370,370,
+370,370,370,370,572,573,574,575,576,571,370,370,370,370,370,
+370,370,370,370,395,396,396,396,396,397,370,370,370,370,370,
+370,370,370,370,419,420,420,420,420,421,370,370,370,370,370,
+370,370,370,370,419,420,420,420,420,421,370,370,370,370,370,
+370,370,370,370,443,444,444,444,444,445,370,370,370,370,370,
+370,370,370,370,370,370,467,469,370,370,370,370,370,370,370,
+370,370,370,370,370,370,491,493,370,370,370,370,370,370,370,
+370,370,370,370,370,370,515,517,370,370,370,370,370,370,370,
+370,370,370,370,370,370,539,541,370,370,370,370,370,370,370
+</data>
+ </layer>
+ <objectgroup id="3" name="collision">
+  <object id="2" x="156" y="115.333" width="248.667" height="166"/>
+  <object id="4" x="132.667" y="276" width="26" height="166"/>
+  <object id="6" x="397.333" y="274.667" width="42.6667" height="166.667"/>
+  <object id="9" x="118" y="435.333" width="121.333" height="44.6667"/>
+  <object id="15" x="320" y="439.333" width="121.333" height="38"/>
+  <object id="16" x="182.667" y="474" width="56.6667" height="110"/>
+  <object id="20" x="320.667" y="476.667" width="55.3333" height="107.333"/>
+ </objectgroup>
+ <objectgroup id="4" name="markers">
+  <object id="23" name="spawn" x="278.667" y="563.333">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

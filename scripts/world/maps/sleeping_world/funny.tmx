@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="18" height="14" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="18">
+ <editorsettings>
+  <export target="funny.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../tilesets/sleeping_world/props.tsx"/>
+ <objectgroup id="9" name="objects_bg">
+  <object id="7" name="parallax_tile" gid="4" x="258" y="196" width="128" height="110">
+   <properties>
+    <property name="px" type="float" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <imagelayer id="2" name="Image Layer 1">
+  <image source="../../../../assets/sprites/world/props/sleepwld/bg.png" width="720" height="560"/>
+ </imagelayer>
+ <objectgroup color="#0000ff" id="3" name="collision">
+  <object id="1" x="0" y="256" width="96" height="64"/>
+  <object id="2" x="96" y="320">
+   <polygon points="0,0 32,-32 0,-32"/>
+  </object>
+  <object id="3" x="256" y="288">
+   <polygon points="0,0 32,0 32,32"/>
+  </object>
+  <object id="4" x="96" y="256" width="192" height="32"/>
+  <object id="5" x="288" y="256" width="136" height="66"/>
+  <object id="6" x="416" y="256" width="304" height="32"/>
+  <object id="12" x="-40" y="280" width="40" height="280"/>
+  <object id="13" x="0" y="560" width="720" height="40"/>
+  <object id="14" x="720" y="280" width="40" height="280"/>
+  <object id="15" x="314" y="320" width="90" height="26"/>
+  <object id="16" name="the best collider ever... sleeping world stray pixel &lt;3" x="428" y="320" width="2" height="2"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="4" name="paths"/>
+ <objectgroup color="#ff00ff" id="5" name="objects_party">
+  <object id="9" gid="3" x="486" y="334" width="84" height="86"/>
+  <object id="10" gid="2" x="366" y="322" width="58" height="42"/>
+  <object id="11" gid="1" x="316" y="344" width="86" height="24"/>
+  <object id="17" name="script" x="380" y="320" width="80" height="240">
+   <properties>
+    <property name="cutscene" value="stupidbullshit.yoursavingthewakingworld"/>
+    <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00c000" id="6" name="controllers"/>
+ <objectgroup color="#7f00ff" id="7" name="markers">
+  <object id="8" name="spawn" x="217" y="434">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" id="8" name="battleareas"/>
+</map>

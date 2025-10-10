@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="26">
+ <editorsettings>
+  <export target="hallway.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="in-the-shelter"/>
+ </properties>
+ <imagelayer id="2" name="hallway" offsetx="125" offsety="437">
+  <image source="../../../../assets/sprites/backgrounds/hallway.png" width="678" height="180"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="21" height="30">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="collisions">
+  <object id="1" x="120" y="406" width="740.667" height="128.667"/>
+  <object id="2" x="120" y="614" width="720" height="66"/>
+  <object id="24" x="802.943" y="528.399" width="13.667" height="85.9274">
+   <properties>
+    <property name="plotmax" value="*shelter_heard_log"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="objects">
+  <object id="3" name="transition" x="117.333" y="518" width="37.3333" height="98">
+   <properties>
+    <property name="map" value="shelter/mainroom"/>
+    <property name="marker" value="mainroomdoor"/>
+   </properties>
+  </object>
+  <object id="15" name="transition" x="162.75" y="460.25" width="55.5" height="77.5">
+   <properties>
+    <property name="door" type="bool" value="true"/>
+    <property name="map" value="shelter/omnisroomold"/>
+   </properties>
+  </object>
+  <object id="16" name="transition" x="800" y="520" width="40" height="120">
+   <properties>
+    <property name="map" value="shelter/coreleadup"/>
+    <property name="plotmin" value="*shelter_enter"/>
+   </properties>
+  </object>
+  <object id="20" name="interactable" x="346.769" y="511.484" width="52.2126" height="29.0311">
+   <properties>
+    <property name="cutscene" value="shelter.smasheddoor"/>
+   </properties>
+  </object>
+  <object id="21" name="interactable" x="528.644" y="511.48" width="52.2126" height="29.0311">
+   <properties>
+    <property name="cutscene" value="shelter.lockeddoor"/>
+   </properties>
+  </object>
+  <object id="22" name="interactable" x="710.894" y="511.48" width="52.2126" height="29.0311">
+   <properties>
+    <property name="cutscene" value="shelter.lockeddoor"/>
+   </properties>
+  </object>
+  <object id="25" name="interactable" x="797.138" y="534.609" width="7.9626" height="79.9061">
+   <properties>
+    <property name="cutscene" value="shelter.lockdown"/>
+    <property name="plotmax" value="*shelter_heard_log"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="markers">
+  <object id="7" name="spawn" x="187" y="594.667">
+   <point/>
+  </object>
+  <object id="14" name="omnisroomold" x="195.136" y="566.818">
+   <point/>
+  </object>
+  <object id="23" name="gatewayexit" x="770.5" y="575.75">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

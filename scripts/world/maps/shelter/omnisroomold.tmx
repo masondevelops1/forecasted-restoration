@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="24" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="32">
+ <editorsettings>
+  <export target="omnisroomold.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="in-the-shelter"/>
+ </properties>
+ <imagelayer id="3" name="omnisroomold" offsetx="290" offsety="310">
+  <image source="../../../../assets/sprites/backgrounds/omnisroomold.png" width="396" height="294"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="24" height="24">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="collisions">
+  <object id="5" x="290.5" y="567" width="231.5" height="38.5"/>
+  <object id="6" x="238.5" y="304" width="50.5" height="309.5"/>
+  <object id="7" x="242.5" y="252.5" width="452" height="56.5"/>
+  <object id="9" x="686" y="260.5" width="92.5" height="360"/>
+  <object id="10" x="584.5" y="567" width="127" height="90.5"/>
+  <object id="11" x="290.5" y="521" width="46" height="44.5"/>
+  <object id="13" x="641.5" y="349" width="40.5" height="99"/>
+  <object id="16" x="433" y="307.5" width="12.5" height="176"/>
+  <object id="18" x="324" y="348.5" width="76.5" height="145.5"/>
+  <object id="20" x="445" y="347" width="169.5" height="82"/>
+  <object id="23" x="616" y="339.5" width="24.5" height="98"/>
+  <object id="24" x="283" y="295" width="40.5" height="113.5"/>
+  <object id="25" x="396" y="295.5" width="39" height="113.5"/>
+  <object id="29" name="interactable" x="610.227" y="350.193" width="75.5459" height="106.656">
+   <properties>
+    <property name="cutscene" value="shelter.boxes"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="541.894" y="361.484" width="51.5459" height="84.4269">
+   <properties>
+    <property name="cutscene" value="shelter.computer"/>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="512.56" y="390.984" width="29.2126" height="54.8852">
+   <properties>
+    <property name="cutscene" value="shelter.documents"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="objects">
+  <object id="22" name="transition" x="514.5" y="567.5" width="75" height="37.5">
+   <properties>
+    <property name="map" value="shelter/hallway"/>
+    <property name="marker" value="omnisroomold"/>
+   </properties>
+  </object>
+  <object id="26" name="cameratarget" x="148.667" y="164.667" width="742.667" height="596.667" visible="0">
+   <properties>
+    <property name="lockx" type="bool" value="true"/>
+    <property name="locky" type="bool" value="true"/>
+    <property name="marker" value="camfocus"/>
+   </properties>
+  </object>
+  <object id="28" name="cameratarget" x="241.333" y="246.667" width="502" height="416.667" visible="0">
+   <properties>
+    <property name="lockx" type="bool" value="true"/>
+    <property name="locky" type="bool" value="true"/>
+    <property name="marker" value="camfocus"/>
+    <property name="time" type="float" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="markers">
+  <object id="21" name="spawn" x="552.5" y="553">
+   <point/>
+  </object>
+  <object id="27" name="camfocus" x="482.667" y="478.667">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

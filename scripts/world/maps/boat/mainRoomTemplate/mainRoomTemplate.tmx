@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="51">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="depths" type="bool" value="true"/>
+  <property name="name" value="Your Suite (Cruise)"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
+ <objectgroup color="#c000c0" id="13" name="objects"/>
+ <imagelayer id="11" name="stars_small" offsetx="-475" offsety="-125" repeatx="1">
+  <image source="../../../../../assets/sprites/backgrounds/stars_small.png" width="692" height="376"/>
+ </imagelayer>
+ <imagelayer id="10" name="stars_mid" offsetx="-17" offsety="-138" repeatx="1">
+  <image source="../../../../../assets/sprites/backgrounds/stars_mid.png" width="692" height="376"/>
+ </imagelayer>
+ <imagelayer id="9" name="stars_big" offsetx="128" offsety="-126" repeatx="1">
+  <image source="../../../../../assets/sprites/backgrounds/stars_big.png" width="692" height="376"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="20" height="16">
+  <data encoding="csv">
+0,0,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,0,0,
+0,0,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,0,0,
+0,0,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,0,0,
+0,0,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,177,0,0,
+0,0,177,177,447,448,449,449,448,449,448,449,448,449,448,450,177,177,0,0,
+0,0,177,177,515,517,516,517,516,516,517,516,516,516,517,518,177,177,0,0,
+0,0,177,177,515,516,517,516,517,516,517,516,517,516,516,518,177,177,0,0,
+0,0,177,177,515,516,517,516,517,516,517,516,516,517,516,518,177,177,0,0,
+0,0,177,177,515,517,516,516,516,517,516,517,516,517,516,518,177,177,0,0,
+0,0,177,177,515,516,516,517,516,516,516,517,516,516,516,518,177,177,0,0,
+0,0,177,177,515,517,516,516,517,516,517,516,516,516,517,518,177,177,0,0,
+0,0,177,177,583,585,585,585,585,585,585,585,585,585,585,586,177,177,0,0,
+0,0,177,177,176,176,176,176,176,176,176,176,176,176,176,176,177,177,0,0,
+0,0,177,177,176,176,176,176,176,176,176,176,176,176,176,176,176,177,0,0,
+0,0,177,177,176,176,177,176,176,176,176,176,176,176,176,176,177,177,0,0,
+0,0,177,177,177,176,176,176,176,176,176,176,176,176,176,176,177,177,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="7" name="collisions"/>
+ <objectgroup color="#ff00ff" id="12" name="objects">
+  <object id="45" name="transition" x="360" y="622" width="80" height="40">
+   <properties>
+    <property name="exit_sound" value="doortransition"/>
+    <property name="map" value="boat/roomsHallway"/>
+    <property name="marker" value="spawn104"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="44" name="spawn" x="400" y="120">
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="6" name="Tile Layer 5" width="20" height="16" offsetx="161.333" offsety="-83" parallaxx="1.1" parallaxy="1.1">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,752,753,754,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,800,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

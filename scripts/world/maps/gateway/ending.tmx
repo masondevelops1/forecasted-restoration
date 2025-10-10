@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="19" nextobjectid="60">
+ <editorsettings>
+  <export target="ending.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="gateway"/>
+  <property name="name" value="The Gateway - Album Art"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/castle.tsx"/>
+ <tileset firstgid="41" source="../../tilesets/gateway.tsx"/>
+ <objectgroup id="18" name="objects_gonerbg">
+  <object id="59" name="gonerbg" x="0" y="0" width="40" height="40"/>
+ </objectgroup>
+ <layer id="16" name="Tile Layer 2" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,787,788,789,0,0,0,0,0,0,
+0,0,0,0,0,0,0,819,820,821,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,342,343,0,0,0,342,343,0,0,0,0,
+0,0,0,0,0,374,375,0,0,0,374,375,0,0,0,0,
+0,0,0,0,0,406,407,0,0,0,406,407,0,0,0,0,
+0,0,0,0,0,438,439,0,0,0,438,439,0,0,0,0,
+0,0,0,0,0,470,471,0,0,0,470,471,0,0,0,0,
+0,0,0,0,0,502,503,0,0,0,502,503,0,0,0,0,
+0,0,0,0,0,534,535,0,0,0,534,535,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Tile Layer 1" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,798,400,400,400,400,400,400,400,799,0,0,0,
+0,0,0,0,830,432,432,432,432,432,432,432,831,0,0,0,
+0,0,0,0,830,432,432,432,432,432,432,432,831,0,0,0,
+0,0,0,0,830,432,127,127,127,127,127,432,831,0,0,0,
+0,0,0,0,830,432,127,127,127,127,127,432,831,0,0,0,
+0,0,0,0,862,829,829,802,114,801,829,829,863,0,0,0,
+0,0,0,0,0,0,0,217,218,219,348,349,350,0,0,0,
+314,312,313,314,313,314,315,217,218,219,380,381,382,0,0,0,
+345,345,345,345,345,346,89,94,95,96,412,413,414,0,0,0,
+352,352,352,352,352,353,121,126,127,128,0,0,0,0,0,0,
+377,377,377,377,377,378,153,158,159,160,0,0,0,0,0,0,
+203,204,204,204,204,204,204,204,204,205,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="Tile Layer 3" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,722,723,724,725,726,0,0,0,0,0,
+0,0,0,0,0,0,754,755,756,757,758,0,0,0,0,0,
+0,0,0,0,0,0,786,787,788,789,790,0,0,0,0,0,
+0,0,0,0,0,0,818,819,820,821,822,0,0,0,0,0,
+0,0,0,0,0,849,850,851,852,853,854,855,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
+  <object id="46" x="0" y="400" width="280" height="80"/>
+  <object id="47" x="0" y="600" width="400" height="40"/>
+  <object id="48" x="400" y="400" width="120" height="200"/>
+  <object id="50" x="120" y="280" width="40" height="120"/>
+  <object id="51" x="520" y="280" width="40" height="120"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="27" name="savepoint" x="80" y="440" width="40" height="40">
+   <properties>
+    <property name="text1" value="* Inaccuracies echo in the light and dark of this incomprehensible scenery."/>
+    <property name="text2" value="* You are filled with the power of not knowing how long a bridge should be."/>
+   </properties>
+  </object>
+  <object id="45" name="floormirror" x="0" y="480" width="240" height="120">
+   <properties>
+    <property name="opacity" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="49" name="script" x="280" y="360" width="120" height="40">
+   <properties>
+    <property name="cutscene" value="gateway.enterdepths"/>
+   </properties>
+  </object>
+  <object id="58" name="transition" x="-40" y="480" width="40" height="120">
+   <properties>
+    <property name="map" value="gateway/albumart"/>
+    <property name="marker" value="east"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="20" name="spawn" x="40" y="550">
+   <point/>
+  </object>
+  <object id="52" name="suswalk" x="380" y="320">
+   <point/>
+  </object>
+  <object id="53" name="kriswalk" x="300" y="320">
+   <point/>
+  </object>
+  <object id="56" name="a" x="240" y="80">
+   <point/>
+  </object>
+  <object id="57" name="b" x="440" y="280">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="1" nextobjectid="1">
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="gateway"/>
+  <property name="name" value="The Gateway - ???"/>
+ </properties>
+ <tileset firstgid="41" source="../../tilesets/gateway.tsx"/>
+ <objectgroup id="18" name="objects_gonerbg">
+  <object id="59" name="gonerbg" x="0" y="0" width="40" height="40"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5"/>
+ <objectgroup color="#ff00ff" id="4" name="objects"/>
+ <objectgroup color="#7f00ff" id="5" name="markers"/>
+</map>

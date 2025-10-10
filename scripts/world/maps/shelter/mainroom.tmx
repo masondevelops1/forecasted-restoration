@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="10" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="60">
+ <editorsettings>
+  <export target="mainroom.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="in-the-shelter"/>
+ </properties>
+ <layer id="1" name="Tile Layer 1" width="23" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="mainroom" offsetx="120" offsety="0">
+  <image source="../../../../assets/sprites/backgrounds/mainroom.png" width="706" height="422"/>
+ </imagelayer>
+ <objectgroup id="3" name="collisions">
+  <object id="3" x="255.5" y="102.5" width="152" height="41.5"/>
+  <object id="8" x="408" y="81" width="280.5" height="42.5"/>
+  <object id="12" x="77" y="349" width="310" height="15"/>
+  <object id="15" x="380.5" y="364.5" width="173" height="34.5"/>
+  <object id="22" x="551.5" y="349.5" width="272.5" height="14.5"/>
+  <object id="24" x="827" y="132" width="25.5" height="133.5"/>
+  <object id="27" x="147" y="105.5" width="19.5" height="100.5"/>
+  <object id="30" x="230.023" y="37.6498" width="84" height="108.5"/>
+  <object id="32" x="689.787" y="143.519" width="44.1227" height="11.3073">
+   <polygon points="1.213,-23.5191 43.213,15.9809 15.6173,-10.7042 5.15523,-19.4485"/>
+  </object>
+  <object id="33" x="781.75" y="289.25" width="145.5" height="37.5">
+   <polygon points="4,-78 142.5,53 51.5,-35.5 17,-64.5"/>
+  </object>
+  <object id="34" x="693.75" y="160.25" width="145.5" height="37.5">
+   <polygon points="4,-78 142.5,53 51.5,-35.5 17,-64.5"/>
+  </object>
+  <object id="51" x="120.432" y="213.205" width="15.1364" height="46.6818"/>
+  <object id="52" x="135.705" y="198.841" width="15.1364" height="46.6818"/>
+  <object id="53" x="150.977" y="182.659" width="15.1364" height="46.6818"/>
+  <object id="54" x="152.795" y="169.932" width="15.1364" height="46.6818"/>
+  <object id="55" x="207.159" y="126.477" width="15.1364" height="46.6818"/>
+  <object id="56" x="220.977" y="113.023" width="15.1364" height="46.6818"/>
+  <object id="58" x="111" y="261" width="14.5" height="86"/>
+  <object id="59" x="821.25" y="258.75" width="8" height="93"/>
+ </objectgroup>
+ <objectgroup id="5" name="objects">
+  <object id="31" name="transition" x="192.468" y="136.3" width="38.5" height="64.1781" rotation="46.0159">
+   <properties>
+    <property name="map" value="shelter/awakening"/>
+    <property name="marker" value="awakeningdoor"/>
+   </properties>
+  </object>
+  <object id="35" name="transition" x="725.507" y="158.241" width="35.3229" height="81.5" rotation="317.208">
+   <properties>
+    <property name="map" value="shelter/hallway"/>
+   </properties>
+  </object>
+  <object id="40" name="cameratarget" x="-0.666667" y="-15.2727" width="920.667" height="416.667" visible="0">
+   <properties>
+    <property name="lockx" type="bool" value="false"/>
+    <property name="locky" type="bool" value="true"/>
+    <property name="marker" value="camfocus"/>
+    <property name="time" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="markers">
+  <object id="1" name="spawn" x="470.14" y="334.617">
+   <point/>
+  </object>
+  <object id="38" name="mainroomdoor" x="698.5" y="211.5">
+   <point/>
+  </object>
+  <object id="39" name="camfocus" x="470" y="184">
+   <point/>
+  </object>
+  <object id="47" name="awaken" x="253" y="214.5">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

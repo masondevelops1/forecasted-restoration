@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="26" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="24">
+ <editorsettings>
+  <export target="basement.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+ </properties>
+ <layer id="1" name="Tile Layer 1" width="26" height="24">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="basement" offsetx="128" offsety="192">
+  <image source="../../../../../assets/sprites/backgrounds/basement.png" width="570" height="454"/>
+ </imagelayer>
+ <objectgroup id="4" name="objects">
+  <object id="8" name="transition" x="207.333" y="350.667" width="69.3333" height="36">
+   <properties>
+    <property name="map" value="noelles house/living room/livingroom"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="11" name="npc" x="433.011" y="484.79">
+   <properties>
+    <property name="actor" value="noelle_lw"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <imagelayer id="5" name="basement overlay" offsetx="128" offsety="192">
+  <image source="../../../../../assets/sprites/backgrounds/basement overlay.png" width="570" height="454"/>
+ </imagelayer>
+ <objectgroup id="3" name="markers">
+  <object id="4" name="spawn" x="240" y="428.667">
+   <point/>
+  </object>
+  <object id="13" name="susie1" x="305.481" y="484.79">
+   <point/>
+  </object>
+  <object id="15" name="npc" x="413.95" y="397.049">
+   <properties>
+    <property name="actor" value="noelle-scene"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="noelle2" x="364.818" y="484.79">
+   <point/>
+  </object>
+  <object id="19" name="noelle3" x="240" y="484.79">
+   <point/>
+  </object>
+  <object id="20" name="susie2" x="305.48" y="458.5">
+   <point/>
+  </object>
+  <object id="21" name="noelle4" x="240" y="388">
+   <point/>
+  </object>
+  <object id="23" name="focus" x="413.167" y="425">
+   <point/>
+  </object>
+ </objectgroup>
+ <imagelayer id="7" name="darkness overlay" offsetx="160" offsety="192">
+  <image source="../../../../../assets/sprites/backgrounds/darkness overlay.png" width="570" height="454"/>
+ </imagelayer>
+ <imagelayer id="9" name="phone" offsetx="127" offsety="193">
+  <image source="../../../../../assets/sprites/backgrounds/phone.png" width="570" height="454"/>
+ </imagelayer>
+ <objectgroup id="8" name="objects">
+  <object id="12" name="npc" x="433" y="420.758">
+   <properties>
+    <property name="actor" value="flashlight"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
