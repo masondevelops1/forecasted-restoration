@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="25" nextobjectid="69">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="25" nextobjectid="70">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="depths" type="bool" value="true"/>
-  <property name="music" value=""/>
+  <property name="music" value="suite"/>
   <property name="name" value="Your Suite (Cruise)"/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
  <objectgroup id="13" name="objects">
@@ -291,6 +292,9 @@
     <point/>
    </object>
    <object id="60" name="susie5" x="610" y="215">
+    <point/>
+   </object>
+   <object id="69" name="spawn" x="57.25" y="301.75">
     <point/>
    </object>
   </objectgroup>

@@ -39,7 +39,7 @@ local evergroves = {
 
         cutscene:detachFollowers()
         susie:setPosition(cutscene:getMarker("suslift"))
-
+        Game:setFlag("got_money", false)
         cutscene:fadeIn(3)
         Game.world.music:play("mus_evergroves_lift", 0)
         Game.world.music:fade(1, 10)
@@ -88,11 +88,11 @@ local evergroves = {
         cutscene:look("kris", "down")
         cutscene:text("* ...", "neutral")
         cutscene:text("* We're here.", "shy_down")
-        cutscene:wait(5)
-        cutscene:text("* Heck,[wait:5] we're way in too deep to back out now!", "smile")
+        cutscene:wait(3)
+        cutscene:text("* Man,[wait:5] we're way in too deep to back out now!", "smile")
         cutscene:text("* We'll find Noelle and seal that fountain!", "sincere")
         cutscene:text("* Let's go,[wait:5] Kris!", "sincere_smile")
-
+        Game.money = Game.money + 10000
         Assets.playSound("swing")
         cutscene:look("kris", "down")
         cutscene:look("susie", "up")
@@ -151,7 +151,23 @@ local evergroves = {
     shop = function (cutscene)
         Assets.playSound("dooropen")
         Game.world:shopTransition("sailorShop")
-    end
+    end,
+    
+    sign1 = function(cutscene, event)
+        cutscene:text("* There's a sign here.[wait:10] It has a job notice attached: ")	
+        cutscene:text("* \"I need someone to watch this dock.\" ")	
+        cutscene:text("* \"It's basically guaranteed job security.[wait:10] Ships don't travel here anymore.\" ")	
+        cutscene:text("* \"You will be paid in free walls to sit on.\" ")	
+        cutscene:text("* - Signed,[wait:5] Egglebert III ")	        
+    end,
+    sign2 = function(cutscene, event)
+
+        cutscene:text("* There's a sign here.[wait:10] It has a notice attached: ")	
+        cutscene:text("* \"The Evergroves Capital has temporarily shut down this dock due to a high resident count.\" ")	
+        cutscene:text("* \"All of the buttons will work after this dock has been re-opened.\" ")	
+        cutscene:text("* \"We thank all of our residents for your cooperation in these hard times.\" ")	
+        cutscene:text("* - Signed,[wait:5] The Evergroves Capital.")
+    end,
 }
 
 return evergroves

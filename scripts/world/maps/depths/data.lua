@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 17,
-  nextobjectid = 60,
+  nextobjectid = 61,
   properties = {
     ["depths"] = true,
     ["music"] = "depths",
@@ -219,7 +219,7 @@ return {
       objects = {
         {
           id = 2,
-          name = "spawn",
+          name = "spawn1",
           type = "",
           shape = "point",
           x = 46.5,
@@ -328,6 +328,19 @@ return {
           shape = "point",
           x = 2996.5,
           y = 280,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 60,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 1415.33,
+          y = 293.667,
           width = 0,
           height = 0,
           rotation = 0,

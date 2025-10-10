@@ -1,12 +1,13 @@
-# DELTARUNE: Forecasted
+# funnyFeline depths
 
-## This is a fanmade take on DELTARUNE: Chapter 6 made originally by the [funnyFeline YT Channel](https://www.youtube.com/@funnyfeline1), but now, it's being restored! It was made public, and although it was buggy mess, I was able to restore most of it and fill in the blanks.
+Kristal mod used for "season 1" of [funnyFeline](https://www.youtube.com/@funnyfeline1). Please watch our newer videos. Please. Please. Please.
 
-PLEASE PLEASE PLEASE do not take me as the owner of this project. This is owned by the Forecasted team, and even if not canon to DELTARUNE: New Future, is not mine.
+# Code reuse
 
-Our Current Progress:
-- HOMETOWN: ✅100/100 [Completely done.]
-- GATEWAY: ✅70/100 [I probably will extend the Gateway one day, the track is too good to hear for a maximum of 2 minutes.]
-- DEPTHS: ✅95/100 [May have one last area added.]
-- BOAT RIDE: ✅90/100 [May need additional bug testing.]
-- EVERGROVES ❌05/100 [Barely started, requires a lot of work.]
+The only thing you can't use from this without asking is the Silly Mode popup. You'll need to ask SylviBlossom about that. Everything else is fair game (although I advise against it for your own sanity).
+
+# A word from Fizz regarding this mod:
+
+funny feline, uh yeah, its feline time! mmm yeah! we're funny felining it up in this bitch! oh yeah! feline time!!!!!!!!! whoooo!!!!
+
+What a way with words.

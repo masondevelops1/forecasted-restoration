@@ -10,10 +10,11 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 23,
-  nextobjectid = 130,
+  nextobjectid = 131,
   properties = {
     ["depths"] = true,
-    ["music"] = "waves"
+    ["music"] = "waves",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {
@@ -412,6 +413,7 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "boatCutscenes.coat",
+            ["plotmax"] = "boat_act3_coat",
             ["plotmin"] = "boat_act2_mapswitch"
           }
         },
@@ -428,6 +430,24 @@ return {
           gid = 2540,
           visible = true,
           properties = {}
+        },
+        {
+          id = 130,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 774.667,
+          y = 1444,
+          width = 185.667,
+          height = 35.6667,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "boatCutscenes.scientistblock",
+            ["once"] = false,
+            ["plotmax"] = "*boat_act3_mapswitch",
+            ["plotmin"] = "boat_act2_mapswitch"
+          }
         }
       }
     },
@@ -1132,9 +1152,9 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "evergroveLeadup",
-            ["marker"] = "spawnDock",
-            ["plotmin"] = "boat_end"
+            ["map"] = "depthsRaft",
+            ["marker"] = "spawn",
+            ["plotmin"] = "depthsRaft"
           }
         }
       }
@@ -1513,22 +1533,6 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
-        },
-        {
-          id = 129,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 775,
-          y = 1439.5,
-          width = 185.5,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["plotmax"] = "*boat_act3_mapswitch",
-            ["plotmin"] = "boat_act2_mapswitch"
-          }
         }
       }
     },

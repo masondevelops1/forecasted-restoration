@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="26" nextobjectid="109">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="26" nextobjectid="109">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -7,6 +7,7 @@
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mystery"/>
   <property name="name" value="Your Suite (Cruise)"/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
  <tileset firstgid="2517" source="../../../tilesets/boatobjects.tsx"/>
@@ -186,7 +187,7 @@
    <properties>
     <property name="cutscene" value="boatCutscenes.goldTable"/>
     <property name="plotmax" value="*boat_act3_mapswitch"/>
-    <property name="plotmin" value="boat_act3_mapswitch"/>
+    <property name="plotmin" value="boat_act2_mapswitch"/>
     <property name="solid" type="bool" value="true"/>
    </properties>
   </object>

@@ -181,6 +181,12 @@ local boatCutscenes = {
         cutscene:text("* (It's locked...)[wait:10]\n* (Looks like you'll need a key.)")
     end,
 
+    chasingpirates = function(cutscene, event)
+        local susie = cutscene:getCharacter("susie")
+        cutscene:setSpeaker("susie")
+        cutscene:text("* I don't think we need to go back there,[wait:5] Kris.", "stupid")
+    end,
+
     lockedDoor1 = function(cutscene, event)
         Assets.playSound("knock")
         cutscene:text("* (Knock,[wait:5] knock,[wait:5] knock...)")
@@ -194,7 +200,15 @@ local boatCutscenes = {
         cutscene:walkToSpeed("kris", 703, kris.y)
         
     end,
-
+    outsideStair = function(cutscene, event)
+        if Plot:isBefore("boat_act3_mapswitch") and not Plot:isBefore("boat_act2_mapswitch") then
+            local scientist = cutscene:getCharacter("boatnpcs/scientist")
+            cutscene:setSpeaker(scientist)
+            cutscene:text("* Hey,[wait:5] I'm studying that area next.[wait:5] You could mess up my delicate research.", nil, scientist)
+            local kris = cutscene:getCharacter("kris")
+            cutscene:walkToSpeed("kris", kris.x, kris.y+20)
+        end;
+    end,
     getKey104 = function(cutscene, event)
         local keyring = Game.inventory:getItemByID("keyring")
         keyring:setFlag("room104", true)
@@ -266,13 +280,16 @@ local boatCutscenes = {
     door101 = function(cutscene, event)
         local keyring = Game.inventory:getItemByID("keyring")
 
-        if keyring and keyring:getFlag("room101") then
+        if keyring and keyring:getFlag("room101") and not Game:getFlag("#boat/room101#75:used_once", 1) then
             cutscene:mapTransition("boat/room101", "spawn")
             Assets.playSound("doortransition")
+        else if Game:getFlag("#boat/room101#75:used_once", 1) then
+            cutscene:gotoCutscene("boatCutscenes.chasingpirates")
         else
             cutscene:gotoCutscene("boatCutscenes.lockedDoor")
         end
-    end,
+    end
+end,
 
     doorBoilerRoom = function(cutscene, event)
         local keyring = Game.inventory:getItemByID("keyring")

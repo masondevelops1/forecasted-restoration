@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="21">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="35">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="depths" type="bool" value="true"/>
-  <property name="music" value="waves"/>
+  <property name="music" value="evergrove-outskirts"/>
   <property name="step_sound" value="reverb"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/Core Tiles.tsx"/>
@@ -64,6 +64,14 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="11" name="collisions">
+  <object id="23" x="901.333" y="290" width="298" height="377.333"/>
+  <object id="27" x="-229.667" y="277.666" width="298" height="387.334"/>
+  <object id="28" x="10.3333" y="655" width="298" height="209.334"/>
+  <object id="29" x="719.667" y="656" width="183.333" height="210.667"/>
+  <object id="30" x="721.667" y="289.333" width="124.666" height="265.334"/>
+  <object id="31" x="239.667" y="549.916" width="13.6667" height="105.084"/>
+ </objectgroup>
  <objectgroup id="4" name="objects">
   <object id="2" name="npc" x="651.833" y="673">
    <properties>
@@ -78,19 +86,20 @@
     <property name="cutscene" value="depthsCutscenes.jump"/>
    </properties>
   </object>
-  <object id="18" name="transition" x="4" y="264" width="67" height="127">
+  <object id="18" name="transition" x="66" y="286.333" width="61" height="113.167">
    <properties>
     <property name="map" value="evergroveLeadup"/>
+    <property name="marker" value="spawnDock"/>
    </properties>
   </object>
-  <object id="20" name="transition" x="845" y="289" width="75" height="77">
+  <object id="20" name="transition" x="845" y="289" width="61" height="71.6667">
    <properties>
-    <property name="map" value="depths"/>
-    <property name="marker" value="spawn1"/>
+    <property name="map" value="boat/outerDeck"/>
+    <property name="marker" value="spawnDocks"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="3" name="markers" visible="0">
+ <objectgroup id="3" name="markers">
   <object id="1" name="spawn" x="875.5" y="431.5">
    <point/>
   </object>
@@ -109,6 +118,12 @@
   <object id="15" name="midair" x="677.333" y="482">
    <point/>
   </object>
-  <object id="17" name="cameratarget3" x="360" y="360" width="520" height="480"/>
+  <object id="17" name="cameratarget3" x="76" y="217" width="520" height="480"/>
+  <object id="26" name="spawn1" x="92" y="431.5">
+   <point/>
+  </object>
+  <object id="33" name="susie1" x="643.375" y="599.125">
+   <point/>
+  </object>
  </objectgroup>
 </map>

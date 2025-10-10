@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" class="boat/suite" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="19" nextobjectid="70">
+<map version="1.10" tiledversion="1.11.2" class="boat/suite" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="40" tileheight="40" infinite="0" nextlayerid="19" nextobjectid="70">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -7,6 +7,7 @@
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mystery"/>
   <property name="name" value=""/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
  <tileset firstgid="2517" source="../../../tilesets/boatobjects.tsx"/>

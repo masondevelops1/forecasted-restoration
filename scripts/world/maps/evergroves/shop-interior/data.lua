@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,12 +10,13 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 15,
+  nextobjectid = 16,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
     ["music"] = "mus_shop_amb",
-    ["name"] = "Cheron's Ship"
+    ["name"] = "Cheron's Ship",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {
@@ -276,11 +277,24 @@ return {
       objects = {
         {
           id = 10,
-          name = "spawn",
+          name = "evergrovesenter",
           type = "",
           shape = "point",
           x = 620,
           y = 454,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 15,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 200.444,
+          y = 218.739,
           width = 0,
           height = 0,
           rotation = 0,

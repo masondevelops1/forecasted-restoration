@@ -4,7 +4,7 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "Smart Scouter"
+    self.name = "Depth Glasses"
 
     -- Item type (item, key, weapon, armor)
     self.type = "armor"
@@ -14,10 +14,10 @@ function item:init()
     -- Battle description
     self.effect = ""
     -- Shop description
-    self.shop = ""
+    self.shop = "They're with\nyou in the dark."
     -- Menu description
     self.description = "Grazing bullets reduces\nthe turn length by 5%"
-    self.description = "An orange tinted lens and two white and green\npointed headsets."
+    self.description = "An orange tinted lens and two halves of a frame.\nThey're white and purple"
 
     -- Default shop price (sell price is halved)
     self.price = 1000
@@ -35,24 +35,25 @@ function item:init()
 
     -- Equip bonuses (for weapons and armor)
     self.bonuses = {
-        defense = 8,
+        defense = 12,
     }
     -- Bonus name and icon (displayed in equip menu)
-    self.bonus_name = "SocialStatus"
+    self.bonus_name = "Alertness"
     self.bonus_icon = "ui/menu/icon/exclamation"
 
     -- Equippable characters (default true for armors, false for weapons)
     self.can_equip = {
-        susie = false,
-        kris = false,
+        susie = true,
+        kris = true,
+        noelle = true,
     }
 
     -- Character reactions
     self.reactions = {
-        berdly = "Ah, yes, my fabled Smart Scouters! Good choice, Kristopher!",
-        susie = "How does this even fit on his head?",
+        berdly = "Not my style, Kris.",
+        susie = "Maybe Noelle would like these, too!",
         ralsei = "Oh! Orange!",
-        noelle = "(Does this... Make me a gamer???)",
+        noelle = "(Reminds me of Susie...)",
     }
 end
 

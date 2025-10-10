@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "boat/suite",
@@ -14,7 +14,8 @@ return {
   properties = {
     ["depths"] = true,
     ["music"] = "mystery",
-    ["name"] = ""
+    ["name"] = "",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {

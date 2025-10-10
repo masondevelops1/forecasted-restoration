@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="22">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="22">
  <editorsettings>
   <export target="start.lua" format="lua"/>
  </editorsettings>
@@ -59,7 +59,7 @@
   <object id="8" name="entry" x="600" y="220">
    <point/>
   </object>
-  <object id="13" name="susiespawn" x="227.71" y="156">
+  <object id="13" name="susiespawn" x="220" y="156">
    <point/>
   </object>
  </objectgroup>
@@ -67,7 +67,7 @@
   <object id="9" name="transition" x="640" y="160" width="40" height="120">
    <properties>
     <property name="map" value="depths"/>
-    <property name="marker" value="spawn"/>
+    <property name="marker" value="spawn1"/>
    </properties>
   </object>
   <object id="15" name="savepoint" x="300.188" y="79.875" width="40" height="40">

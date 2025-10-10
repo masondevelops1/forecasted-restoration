@@ -9,7 +9,7 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 9,
+  nextlayerid = 10,
   nextobjectid = 22,
   properties = {
     ["depths"] = true,
@@ -229,7 +229,7 @@ return {
           name = "susiespawn",
           type = "",
           shape = "point",
-          x = 227.71,
+          x = 220,
           y = 156,
           width = 0,
           height = 0,
@@ -266,7 +266,7 @@ return {
           visible = true,
           properties = {
             ["map"] = "depths",
-            ["marker"] = "spawn"
+            ["marker"] = "spawn1"
           }
         },
         {

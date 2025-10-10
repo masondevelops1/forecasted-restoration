@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,11 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 25,
-  nextobjectid = 69,
+  nextobjectid = 70,
   properties = {
     ["depths"] = true,
-    ["music"] = "",
-    ["name"] = "Your Suite (Cruise)"
+    ["music"] = "suite",
+    ["name"] = "Your Suite (Cruise)",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {
@@ -1085,6 +1086,19 @@ return {
               shape = "point",
               x = 610,
               y = 215,
+              width = 0,
+              height = 0,
+              rotation = 0,
+              visible = true,
+              properties = {}
+            },
+            {
+              id = 69,
+              name = "spawn",
+              type = "",
+              shape = "point",
+              x = 57.25,
+              y = 301.75,
               width = 0,
               height = 0,
               rotation = 0,

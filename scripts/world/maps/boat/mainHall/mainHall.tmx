@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="17" height="37" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="39">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="17" height="37" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="39">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mystery"/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="17" height="37">

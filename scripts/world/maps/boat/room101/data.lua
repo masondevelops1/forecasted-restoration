@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -486,7 +486,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "pirates/kris",
-            ["animation"] = "hit"
+            ["animation"] = "hit",
+            ["step_sound"] = "boat"
           }
         },
         {

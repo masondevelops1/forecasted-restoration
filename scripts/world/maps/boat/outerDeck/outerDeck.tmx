@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="33" height="56" tilewidth="40" tileheight="40" infinite="0" nextlayerid="23" nextobjectid="130">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="33" height="56" tilewidth="40" tileheight="40" infinite="0" nextlayerid="23" nextobjectid="131">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="waves"/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
  <tileset firstgid="2517" source="../../../tilesets/boatobjects.tsx"/>
@@ -224,10 +225,19 @@
   <object id="119" name="interactable" x="800" y="1200" width="120" height="80">
    <properties>
     <property name="cutscene" value="boatCutscenes.coat"/>
+    <property name="plotmax" value="boat_act3_coat"/>
     <property name="plotmin" value="boat_act2_mapswitch"/>
    </properties>
   </object>
   <object id="38" gid="2540" x="850.333" y="1145" width="76" height="44"/>
+  <object id="130" name="script" x="774.667" y="1444" width="185.667" height="35.6667">
+   <properties>
+    <property name="cutscene" value="boatCutscenes.scientistblock"/>
+    <property name="once" type="bool" value="false"/>
+    <property name="plotmax" value="*boat_act3_mapswitch"/>
+    <property name="plotmin" value="boat_act2_mapswitch"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="13" name="disappearonactstart" width="33" height="56">
   <data encoding="csv">
@@ -457,9 +467,9 @@
   </object>
   <object id="127" name="=&gt; eg" type="transition" x="1320" y="1120" width="80" height="160">
    <properties>
-    <property name="map" value="evergroveLeadup"/>
-    <property name="marker" value="spawnDock"/>
-    <property name="plotmin" value="boat_end"/>
+    <property name="map" value="depthsRaft"/>
+    <property name="marker" value="spawn"/>
+    <property name="plotmin" value="depthsRaft"/>
    </properties>
   </object>
  </objectgroup>
@@ -498,12 +508,6 @@
   <object id="112" x="640" y="1080" width="40" height="40"/>
   <object id="116" x="468.667" y="2041.33" width="64" height="27.3333"/>
   <object id="128" name="dock come on man (tf2 reference)" x="1120" y="1120" width="40" height="160"/>
-  <object id="129" x="775" y="1439.5" width="185.5" height="40">
-   <properties>
-    <property name="plotmax" value="*boat_act3_mapswitch"/>
-    <property name="plotmin" value="boat_act2_mapswitch"/>
-   </properties>
-  </object>
  </objectgroup>
  <objectgroup id="5" name="markers">
   <object id="1" name="spawn" x="280" y="1120">

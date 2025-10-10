@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="15">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="16">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -8,6 +8,7 @@
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mus_shop_amb"/>
   <property name="name" value="Cheron's Ship"/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/evergroves.tsx"/>
  <layer id="1" name="Tile Layer 1" width="21" height="12" parallaxx="1.05" parallaxy="1.05">
@@ -70,7 +71,10 @@
   </object>
  </objectgroup>
  <objectgroup color="#7f00ff" id="5" name="markers">
-  <object id="10" name="spawn" x="620" y="454">
+  <object id="10" name="evergrovesenter" x="620" y="454">
+   <point/>
+  </object>
+  <object id="15" name="spawn" x="200.444" y="218.739">
    <point/>
   </object>
  </objectgroup>

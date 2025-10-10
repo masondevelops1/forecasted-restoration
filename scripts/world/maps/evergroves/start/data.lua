@@ -10,11 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 23,
+  nextobjectid = 25,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
-    ["music"] = "mus_evergroves"
+    ["music"] = "mus_evergroves",
+    ["step_sound"] = "evergroves"
   },
   tilesets = {
     {
@@ -232,19 +233,6 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
-        },
-        {
-          id = 22,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 760,
-          y = -14.6667,
-          width = 118.667,
-          height = 14.6667,
-          rotation = 0,
-          visible = true,
-          properties = {}
         }
       }
     },
@@ -307,19 +295,18 @@ return {
           }
         },
         {
-          id = 21,
-          name = "interactable",
+          id = 23,
+          name = "transition",
           type = "",
           shape = "rectangle",
-          x = 760.067,
-          y = -5.87523,
-          width = 119.348,
-          height = 40,
+          x = 757.636,
+          y = -3.63636,
+          width = 123.5,
+          height = 9.5,
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* This path will take you to the Evergroves Plaza.",
-            ["text2"] = "* Unfortunately,[wait:5] you've reached the end of this restoration."
+            ["map"] = "evergroves/sailor shop"
           }
         }
       }
@@ -423,6 +410,19 @@ return {
           shape = "point",
           x = 82,
           y = 0,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 24,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 821.583,
+          y = 64.5,
           width = 0,
           height = 0,
           rotation = 0,

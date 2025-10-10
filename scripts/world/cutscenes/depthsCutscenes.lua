@@ -37,17 +37,6 @@ unused1 = function(cutscene, event)
 
 end,
 
-
-sign2 = function(cutscene, event)
-
-  cutscene:text("* There's a sign here.[wait:10] It has a job notice attached: ")	
-  cutscene:text("* \"I need someone to watch this dock.\" ")	
-  cutscene:text("* \"It's basically guaranteed job security.[wait:10] Ships don't travel here anymore.\" ")	
-  cutscene:text("* \"You will be paid in free walls to sit on.\" ")	
-  cutscene:text("* \"NOTE: You shouldn't be reading this,[wait:5] you've reached the end of the restoration.\" ")	
-  cutscene:text("* - Signed,[wait:5] Egglebert III ")	        
-  end,
-
 door1 = function(cutscene, event)
   
   cutscene:text("* It's boarded up and filled with debris.")	
@@ -334,11 +323,11 @@ meetPirates = function(cutscene, event)
     cutscene:setSpeaker(susie)
     cutscene:text("* There's...[wait:5] other parts to this place?", "sus_nervous")
     cutscene:setSpeaker()
-    cutscene:text("[miniface:pirates/susie]Yeah there's other parts to\nthis place![wait:10] How do youse not\nknows about the Evergroves!?", pSusie)
+    cutscene:text("[miniface:pirates/susie]Yeah there's other parts to\nthis place![wait:10] How do youse not\nknows about The Evergroves!?", pSusie)
     cutscene:setSpeaker(susie)
     cutscene:text("* The...[wait:5] Evergroves?[wait:5] What're those?", "stupid")
     cutscene:setSpeaker()
-    cutscene:text("[miniface:pirates/ralsei]Do ya lightners [shake:1]REALLY[shake:0] not get told about the Evergroves anymore!?", pRalsei)
+    cutscene:text("[miniface:pirates/ralsei]Do ya lightners [shake:1]REALLY[shake:0] not get told about The Evergroves anymore!?", pRalsei)
     cutscene:text("[miniface:pirates/noelle]It's where we're goin' soon![wait:10]\nThey said the Cruise would be\nleavin' soon.", pNoelle)
     cutscene:text("[miniface:pirates/kris]Y-[wait:5]Yeah![wait:10] T-[wait:5]They say it's this\nbig forest where only the most\nelegant of us live!", pKris)
     cutscene:text("[miniface:pirates/susie]And after years of savin' our GOLD up,[wait:5] we finally could\nafford a room on the Cruise!", pSusie)
@@ -357,7 +346,7 @@ meetPirates = function(cutscene, event)
     cutscene:setSpeaker(susie)
     cutscene:text("* You know him!?", "surprise_frown")
     cutscene:setSpeaker()
-    cutscene:text("[miniface:pirates/ralsei]Course' we know him![wait:10]\nHe's the most popular\nscientist in the Evergroves!", pRalsei)
+    cutscene:text("[miniface:pirates/ralsei]Course' we know him![wait:10]\nHe's the most popular\nscientist in The Evergroves!", pRalsei)
     cutscene:text("[miniface:pirates/ralsei]If you wanna find him,[wait:5] you'd\nbest find a way onto that\ncruise![wait:5] Hahaha!", pRalsei)
     Assets.playSound("jump")
     cutscene:jumpTo(pRalsei, "piratesOutside", 2, 0.6, "jump_ball", "land")
@@ -400,22 +389,31 @@ end,
 
 jump = function (cutscene)
   local kris = cutscene:getCharacter("kris")
-
+  local susie = cutscene:getCharacter("susie")
   local x, y = cutscene:getMarker("midair")
+  cutscene:detachFollowers()
   cutscene:slideTo(kris, x, y, 0.3)
+  cutscene:slideTo(susie, x, y, 0.3)
   kris:setSprite("ball")
+  susie:setSprite("ball")
   kris.sprite:play(0.3, loop)
+  susie.sprite:play(0.3, loop)
   cutscene:playSound("jump")
   cutscene:wait(0.2)
   local x, y = cutscene:getMarker("camfocus")
   cutscene:slideTo(kris, x, y, 0.3)
+  local x2, y2 = cutscene:getMarker("susie1")
+  cutscene:slideTo(susie, x2, y2, 0.3)
   cutscene:wait(0.3)
   kris:setSprite("landed_2")
+  susie:setSprite("landed_2")
   cutscene:playSound("impact")
   cutscene:shakeCamera()
   cutscene:wait(1)
   kris:resetSprite()
+  susie:resetSprite()
   cutscene:shakeCharacter(kris)
+  cutscene:shakeCharacter(susie)
   cutscene:playSound("noise")
 end,
 
@@ -423,9 +421,6 @@ end,
 signoutside = function (cutscene)
   cutscene:text("* This lift will take you to The Evergroves.")
   cutscene:text("* (Note:[wait:10] You may not be able to backtrack beyond this point.)")
-  if Game.money < 9821 then
-    Game.money = Game.money + 9821
-  end
   love.window.setTitle("DELTARUNE Chapter 6")
 
 end,
@@ -496,20 +491,24 @@ sailor = function (cutscene)
   local img5 = Game.world.map:getImageLayer("mangroves")
   local sailor = cutscene:getCharacter("sailor")
   local kris = cutscene:getCharacter("kris")
+  local susie = cutscene:getCharacter("susie")
+  cutscene:detachFollowers()
 
   cutscene:setSpeaker(sailor)
-  cutscene:text("* Welcome,[wait:5] friend.[wait:10] Another lost soul in the deep,[wait:5] I see.")
+  cutscene:text("* Welcome,[wait:5] friends.[wait:10] Some lost souls in the deep,[wait:5] I see.")
   cutscene:text("* Your light is fading.")
-  cutscene:text("* Let me show you the path,[wait:5] friend.")
+  cutscene:text("* Let me show you the path,[wait:5] friends.")
   cutscene:text("* It's important that we stick together...[wait:10] us wanderers of the dark.")
   cutscene:wait(1)
-  cutscene:text("* Where are you headed,[wait:5] young one?")
-  local choice = cutscene:choicer({"South Harbor", "West Harbor", "North Harbor"})
+  cutscene:text("* Where are you headed,[wait:5] young ones?")
+  local choice = cutscene:choicer({"Evergroves"})
 
   
-
+  cutscene:setSpeaker(susie)
+  cutscene:text("* The,[wait:5] uh,[wait:5] Evergroves.[wait:5] Yeah.", "nervous")
+  cutscene:setSpeaker()
   cutscene:text("* To explore the vast ocean of time.[wait:10] That's what we do in these depths.")
-  cutscene:text("* Let's go,[wait:5] friend.")
+  cutscene:text("* Let's go,[wait:5] friends.")
 
   sailor:setSprite("paddle")
   local swoosh = Assets.playSound("swoosh")
@@ -524,7 +523,10 @@ sailor = function (cutscene)
 
   cutscene:wait(6)
   
-  cutscene:text("* So you're one who comes from the light,[wait:5] aren't you?")
+  cutscene:text("* So you're ones who come from the light,[wait:5] aren't you?")
+  cutscene:setSpeaker(susie)
+  cutscene:text("* Yep,[wait:5] we sure are.", "closed_grin")
+  cutscene:setSpeaker()
   cutscene:text("* It's been a very long time since I've seen one of your kind.")
   cutscene:text("* But recently,[wait:5] all sorts of things have been changing down here.")
   cutscene:text("* I suppose a new face should be of no surprise to me.")
@@ -532,31 +534,48 @@ sailor = function (cutscene)
   cutscene:wait(2)
   
   cutscene:look(kris, "left")
+  cutscene:look(susie, "down")
   cutscene:playSound("wing")
   cutscene:wait(2)
-  cutscene:text("* You're looking for your friends?")
+  cutscene:text("* What brings you to these Depths?")
+  cutscene:setSpeaker(susie)
+  cutscene:text("* We're uh,[wait:5] looking for our friends...", "annoyed_down")
+  cutscene:setSpeaker()
   cutscene:text("* I see.[wait:10] We have an important matter on our hands,[wait:5] don't we.")
   
   cutscene:text("* It's been long since I've seen my own.[wait:10] It's the least I could do for a new one.")
   kris:resetSprite()
-  cutscene:text("* Make yourself comfortable,[wait:5] friend.[wait:10] It's a long,[wait:5] dark,[wait:5] journey ahead of us.")
+  cutscene:text("* Make yourself comfortable,[wait:5] friends.[wait:10] It's a long,[wait:5] dark,[wait:5] journey ahead of us.")
+  cutscene:setSpeaker(susie)
+  cutscene:text("* Looks like we're getting one last Cruise,[wait:5] huh,[wait:5] Kris?", "smile")
+  cutscene:setSpeaker()
   cutscene:wait(2)
   
   local x, y = cutscene:getMarker("kris1")
+  local x2, y2 = cutscene:getMarker("susie1")
   cutscene:walkTo(kris, x, y, 2, "left")
+  cutscene:walkTo(susie, x2, y2, 2, "left")
   cutscene:wait(2.5)
   cutscene:shakeCharacter("kris")
+  cutscene:shakeCharacter("susie")
   kris:setSprite("chilling")
+  susie:setSprite("down_happy")
   kris.sprite:play(0.3, loop)
   cutscene:playSound("noise2")
   cutscene:wait(0.5)
   cutscene:wait(3)
 
   cutscene:text("* I've never felt the desire to visit The Evergroves myself.")
-  cutscene:text("* Though I hear connections to it have been shut down due to recent phenomena.")
+  cutscene:text("* Though I hear connections to it are being shut down due to recent phenomena.")
+  cutscene:setSpeaker(susie)
+  cutscene:text("* Really?[wait:5] What recent phenomena?", "neutral_side")
+  cutscene:setSpeaker()
   cutscene:text("* Tales have been told of a forest dream that attracts people to the area.")
   cutscene:text("* Some of my friends traveled out there many years ago.")
   cutscene:text("* That would be,[wait:5] unfortunately, the last time I'd see them.")
+  cutscene:setSpeaker(susie)
+  cutscene:text("* Oh...[wait:5] that's pretty sad...", "neutral_side")
+  cutscene:setSpeaker()
   cutscene:wait(3)
   cutscene:text("* It has existed as long as time,[wait:5] but I spend my days sailing these waters,[wait:5] singing my songs.")
 
@@ -614,24 +633,28 @@ sailor = function (cutscene)
 
 
   cutscene:wait(2)
-  
-  img4:setScale(1) -- sets the scale of the sprite
-  img4.physics.speed_x = 0.40 -- automatic scroll speed of the background. Change the number whatever you think is most suitable.
-  local x, y = cutscene:getMarker("cameratarget3")
-  cutscene:panTo("cameratarget3", 13) --pan camera to marker named "camera_target" over 2 seconds
+  img4.physics.speed_x = 0.00 -- used to be 0.40 / automatic scroll speed of the background. Change the number whatever you think is most suitable.
   cutscene:text("* Your destination is right up ahead.")
-  cutscene:text("* Be careful,[wait:5] friend.")
+  cutscene:text("* Be careful,[wait:5] friends.")
   cutscene:text("* Fantasy is like water,[wait:5] swimming is safe but submerging yourself for too long is dangerous.")
-
-
-  cutscene:wait(9)
+  local x, y = cutscene:getMarker("cameratarget3")
+  cutscene:wait(cutscene:fadeOut(1.5))
+  cutscene:wait(5)
   cutscene:playSound("noise2")
+  cutscene:text("* My raft cannot go further than this,[wait:5] so you must be quick.")
+  cutscene:text("* If you find my friend Cheron's shop,[wait:5] say hello to them for me,[wait:5] please.")
   kris:resetSprite()
+  susie:resetSprite()
   sailor:resetSprite()
-  img4.physics.speed_x = 0.0 -- automatic scroll speed of the background. Change the number whatever you think is most suitable.
-
-cutscene:wait(1)
-
+  cutscene:attachFollowers()
+  cutscene:mapTransition("evergroveLeadup", 38.23, 323.96)
+  cutscene:wait(cutscene:fadeIn(1.5))
+  cutscene:setSpeaker(susie)
+  cutscene:text("* Kris,[wait:5] hey,[wait:5] you awake yet!?", "sad_frown")
+  cutscene:setSpeaker(susie)
+  cutscene:text("* I had to carry you through that damn liquid!", "agitated")
+  cutscene:text("* You're welcome,[wait:5] I guess...[wait:5] Let's just get going.", "nervous_side")
+  cutscene:wait(1)
 end,
 
 

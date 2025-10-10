@@ -4,19 +4,19 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "Gilded Halberd"
+    self.name = "Gilded Axe"
 
     -- Item type (item, key, weapon, armor)
     self.type = "weapon"
     -- Item icon (for equipment)
-    self.icon = "ui/menu/icon/halberd"
+    self.icon = "ui/menu/icon/axe"
 
     -- Battle description
     self.effect = ""
     -- Shop description
-    self.shop = ""
+    self.shop = "Made by the\nRoyal Family."
     -- Menu description
-    self.description = "A gilded halberd fabricated in the depths\nof EARTH."
+    self.description = "A gilded axe fabricated in the depths\nof EARTH."
 
     -- Default shop price (sell price is halved)
     self.price = 120
@@ -34,7 +34,7 @@ function item:init()
 
     -- Equip bonuses (for weapons and armor)
     self.bonuses = {
-        attack = 0,
+        attack = 12,
     }
     -- Bonus name and icon (displayed in equip menu)
     self.bonus_name = nil
@@ -42,15 +42,15 @@ function item:init()
 
     -- Equippable characters (default true for armors, false for weapons)
     self.can_equip = {
-        berdly = true,
+        susie = true,
     }
 
     -- Character reactions
     self.reactions = {
-        berdly = "Oh, going classy, are we, Kristopher? So be it!",
-        susie = "THAT thing? Hell if I do.",
+        berdly = "Too heavy, Kris!",
+        susie = "Still burning in my hands, cool!",
         ralsei = "Ummm... it's too heavy...",
-        noelle = "(Why does this smell like fried chicken???)",
+        noelle = "(Why does this smell like fried electronics...?)",
     }
 end
 

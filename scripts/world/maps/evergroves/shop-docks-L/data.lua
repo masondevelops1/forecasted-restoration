@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,11 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 15,
-  nextobjectid = 17,
+  nextobjectid = 18,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
-    ["music"] = "mus_evergroves"
+    ["music"] = "mus_evergroves",
+    ["step_sound"] = "evergroves"
   },
   tilesets = {
     {
@@ -543,6 +544,21 @@ return {
           properties = {
             ["map"] = "evergroves/sailor shop",
             ["marker"] = "spawnL"
+          }
+        },
+        {
+          id = 17,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 783.5,
+          y = 516,
+          width = 80,
+          height = 48.5,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "evergroves.sign2"
           }
         }
       }

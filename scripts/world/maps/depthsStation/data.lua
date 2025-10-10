@@ -13,7 +13,8 @@ return {
   nextobjectid = 53,
   properties = {
     ["depths"] = true,
-    ["music"] = "depths"
+    ["music"] = "depths",
+    ["step_sound"] = "reverb"
   },
   tilesets = {
     {

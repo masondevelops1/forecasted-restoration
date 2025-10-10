@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="17">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="17">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -8,6 +8,7 @@
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="evergrove-outskirts"/>
   <property name="name" value="Depths - Evergrove Entrance"/>
+  <property name="step_sound" value="reverb"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/Core Tiles.tsx"/>
  <objectgroup id="13" name="objects_bg">
@@ -33,8 +34,8 @@
   </object>
   <object id="4" name="transition" x="-80" y="280" width="80" height="120">
    <properties>
-    <property name="map" value="boat/outerDeck"/>
-    <property name="marker" value="spawnDocks"/>
+    <property name="map" value="depthsRaft"/>
+    <property name="marker" value="spawn1"/>
    </properties>
   </object>
   <object id="11" name="interactable" x="742" y="136" width="94" height="64">

@@ -6,6 +6,7 @@
  <properties>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="depths"/>
+  <property name="step_sound" value="reverb"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/depthstiles.tsx"/>
  <tileset firstgid="2517" source="../../tilesets/boatobjects.tsx"/>
