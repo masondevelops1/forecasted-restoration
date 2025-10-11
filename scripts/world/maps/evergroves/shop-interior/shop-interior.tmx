@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="16">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="17">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -67,6 +67,12 @@
   <object id="14" name="interactable" x="518" y="244" width="70" height="104">
    <properties>
     <property name="cutscene" value="evergroves.shop"/>
+   </properties>
+  </object>
+  <object id="16" name="interactable" x="72.6667" y="129" width="80" height="40">
+   <properties>
+    <property name="text1" value="* The backdoor has been blocked off by some new construction."/>
+    <property name="text2" value="* It seems the new visitors have really messed the place up."/>
    </properties>
   </object>
  </objectgroup>

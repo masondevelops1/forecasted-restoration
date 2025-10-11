@@ -4,6 +4,7 @@
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="ground_zero"/>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="suite"/>
   <property name="name" value="Your Suite (Cruise)"/>

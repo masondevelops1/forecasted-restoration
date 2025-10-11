@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 16,
+  nextobjectid = 17,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
@@ -257,6 +257,22 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "evergroves.shop"
+          }
+        },
+        {
+          id = 16,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 72.6667,
+          y = 129,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* The backdoor has been blocked off by some new construction.",
+            ["text2"] = "* It seems the new visitors have really messed the place up."
           }
         }
       }

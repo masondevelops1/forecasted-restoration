@@ -200,7 +200,7 @@ local boatCutscenes = {
         cutscene:walkToSpeed("kris", 703, kris.y)
         
     end,
-    outsideStair = function(cutscene, event)
+    scientistblocker = function(cutscene, event)
         if Plot:isBefore("boat_act3_mapswitch") and not Plot:isBefore("boat_act2_mapswitch") then
             local scientist = cutscene:getCharacter("boatnpcs/scientist")
             cutscene:setSpeaker(scientist)
@@ -280,14 +280,11 @@ local boatCutscenes = {
     door101 = function(cutscene, event)
         local keyring = Game.inventory:getItemByID("keyring")
 
-        if keyring and keyring:getFlag("room101") and not Game:getFlag("#boat/room101#75:used_once", 1) then
+        if keyring and keyring:getFlag("room101") then
             cutscene:mapTransition("boat/room101", "spawn")
             Assets.playSound("doortransition")
-        else if Game:getFlag("#boat/room101#75:used_once", 1) then
-            cutscene:gotoCutscene("boatCutscenes.chasingpirates")
         else
             cutscene:gotoCutscene("boatCutscenes.lockedDoor")
-        end
     end
 end,
 

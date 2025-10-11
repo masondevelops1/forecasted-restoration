@@ -253,7 +253,7 @@ local act1npcs = {
             cutscene:text("* But wait,[wait:5] what if we don't have any money?", "surprise")
             cutscene:setSpeaker(legsDefault)
             cutscene:text("* Ehhh...[wait:10] I'll give you some cash from my gambling funds.", nil, legsDefault)
-            Game.money = Game.money + 10000
+            Game.money = Game.money + 5000
             cutscene:setSpeaker("susie")
             cutscene:text("* Damn,[wait:5] alright![wait:10] If you say so!", "surprise_smile")   
             Game:setFlag("spokenTo", true)

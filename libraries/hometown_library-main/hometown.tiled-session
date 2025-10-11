@@ -3,18 +3,19 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "scripts/world/maps/hometown/town_shelter/town_shelter.tmx",
+    "activeFile": "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/sailor shop/sailor shop.tmx",
     "expandedProjectPaths": [
-        "scripts/world",
+        "scripts/world/maps/hometown/interior/sans_store",
         ".",
-        "scripts/world/maps/hometown/town_mid",
-        "scripts/world/maps/hometown/interior",
-        "scripts/world/maps/hometown",
-        "scripts",
-        "scripts/world/maps/hometown/town_shelter",
-        "scripts/world/maps/hometown/krisyard",
         "scripts/world/maps",
-        "scripts/world/maps/hometown/interior/sans_store"
+        "scripts",
+        "scripts/world/maps/hometown/krisyard",
+        "scripts/world/maps/hometown/interior",
+        "scripts/world/maps/hometown/town_shelter",
+        "scripts/world",
+        "scripts/world/maps/hometown/apartments",
+        "scripts/world/maps/hometown",
+        "scripts/world/maps/hometown/town_mid"
     ],
     "fileStates": {
         "C:/Users/mason/AppData/Roaming/kristal/funny-feline-depths-main [no more depths)/libraries/afilemenu/scripts/world/maps/fileselect/fileselect.tmx": {
@@ -88,18 +89,22 @@
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/club/club.tmx": {
+            "expandedObjectLayers": [
+                23,
+                12
+            ],
             "scale": 1.9724709784411274,
-            "selectedLayer": 0,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 401.0198419371112,
-                "y": 218.50765091642853
+                "x": 372.62905666722725,
+                "y": 159.19118883470662
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/diningHall/diningHall.tmx": {
             "scale": 1.4028333333333332,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 600.2138529167163,
+                "x": 600.2138529167162,
                 "y": 267.3161458952121
             }
         },
@@ -110,16 +115,19 @@
             "scale": 3,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 279.99999999999994,
+                "x": 280,
                 "y": 313
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/kitchen/kitchen.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
             "scale": 1.9021468926553673,
-            "selectedLayer": 0,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 442.65771652607816,
-                "y": 268.64381608649165
+                "x": 446.8634905548295,
+                "y": 307.0215040988475
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/mainHall/mainHall.tmx": {
@@ -148,7 +156,7 @@
             "scale": 2,
             "selectedLayer": 11,
             "viewCenter": {
-                "x": 1114.5,
+                "x": 1178.5,
                 "y": 1226
             }
         },
@@ -162,15 +170,15 @@
             "scale": 3,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 297.33333333333337,
-                "y": 447
+                "x": 262,
+                "y": 408
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/room102/room102.tmx": {
             "scale": 1.3814169570267132,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 325.75248024213886,
+                "x": 325.7524802421389,
                 "y": 332.2675298469817
             }
         },
@@ -186,7 +194,7 @@
             "scale": 1.3500567536889898,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 360.7255759206323,
+                "x": 360.72557592063225,
                 "y": 396.27963679165964
             }
         },
@@ -213,7 +221,7 @@
             "scale": 2.2873076923076923,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 320.02690432150666,
+                "x": 320.0269043215066,
                 "y": 260.1311585673449
             }
         },
@@ -264,7 +272,7 @@
             "scale": 0.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 810,
+                "x": 1066,
                 "y": 560
             }
         },
@@ -274,11 +282,11 @@
                 9,
                 4
             ],
-            "scale": 2,
-            "selectedLayer": 9,
+            "scale": 0.75,
+            "selectedLayer": 10,
             "viewCenter": {
-                "x": 1477,
-                "y": 235
+                "x": 916,
+                "y": 300
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depths/start.tmx": {
@@ -290,20 +298,19 @@
             "scale": 2,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 227.5,
+                "x": 291.5,
                 "y": 156
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depthsRaft/depthsRaft.tmx": {
             "expandedObjectLayers": [
                 3,
-                4,
-                11
+                4
             ],
             "scale": 3,
-            "selectedLayer": 8,
+            "selectedLayer": -1,
             "viewCenter": {
-                "x": 85.99999999999997,
+                "x": 86,
                 "y": 447.66666666666663
             }
         },
@@ -311,7 +318,7 @@
             "scale": 1.982333333333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 300.15133680847487,
+                "x": 300.1513368084749,
                 "y": 300.15133680847487
             }
         },
@@ -324,8 +331,16 @@
             "scale": 3,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 119.33333333333331,
+                "x": 162,
                 "y": 533.3333333333333
+            }
+        },
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/elevator/elevator.tmx": {
+            "scale": 0.8514814814814814,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 200.82644628099172,
+                "y": 361.72248803827756
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroveLeadup/evergroveLeadup.tmx": {
@@ -336,7 +351,7 @@
             "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 480.66666666666674,
+                "x": 566,
                 "y": 396
             }
         },
@@ -349,8 +364,8 @@
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": -149.33333333333337,
-                "y": 501.33333333333326
+                "x": 250,
+                "y": 500.66666666666663
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/shop-docks-L/shop-docks-L.tmx": {
@@ -358,22 +373,23 @@
                 14,
                 8
             ],
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 716,
-                "y": 530
+                "x": 1410,
+                "y": 580.6666666666666
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/shop-interior/shop-interior.tmx": {
             "expandedObjectLayers": [
-                5
+                5,
+                4
             ],
-            "scale": 1.2572068707991038,
-            "selectedLayer": 5,
+            "scale": 3,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 619.6275395033861,
-                "y": 454.1814185576809
+                "x": 248.66666666666666,
+                "y": 149.33333333333334
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/start/start.tmx": {
@@ -385,7 +401,7 @@
             "scale": 1.5,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 326.66666666666663,
+                "x": 411.9999999999999,
                 "y": 774
             }
         },
@@ -413,7 +429,7 @@
             "scale": 1.502614379084967,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 272.857764245324,
+                "x": 272.85776424532406,
                 "y": 299.47803392779474
             }
         },
@@ -421,8 +437,8 @@
             "scale": 2.4779166666666668,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 320.0269043215066,
-                "y": 240.12106944677987
+                "x": 338.5908861610896,
+                "y": 211.46796704220614
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/gateway/ending.tmx": {
@@ -449,7 +465,7 @@
             "scale": 1.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 327.33333333333326,
+                "x": 327.3333333333333,
                 "y": 226
             }
         },
@@ -484,8 +500,8 @@
             "scale": 0.33,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 606.060606060606,
-                "y": 1415.1515151515152
+                "x": -363.6363636363635,
+                "y": 869.6969696969697
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/sans_fixed/sans_fixed.tmx": {
@@ -521,8 +537,8 @@
             "scale": 2,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 284.5,
-                "y": 449
+                "x": 508.5,
+                "y": 539
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/shelter/coreleadup.tmx": {
@@ -547,8 +563,8 @@
             "scale": 8,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 841.125,
-                "y": 585.75
+                "x": 801.125,
+                "y": 563.25
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/shelter/mainroom.tmx": {
@@ -560,8 +576,8 @@
             "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 624.5,
-                "y": 205.5
+                "x": 464.5,
+                "y": 115.5
             }
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/shelter/omnisroomold.tmx": {
@@ -587,11 +603,24 @@
                 "y": 429.5
             }
         },
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/spire/spire.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 15,
+            "viewCenter": {
+                "x": -766,
+                "y": 7530
+            }
+        },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/tilesets/Core Tiles.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/tilesets/gateway.tsx": {
             "scaleInDock": 1
+        },
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/tilesets/tenna_encounter_leadup.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/vertdisease/room1.tmx": {
             "scale": 2.4779166666666668,
@@ -603,11 +632,15 @@
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/tilesets/Core Tiles.tsx": {
             "dynamicWrapping": false,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/tilesets/battleborder.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/tilesets/boatobjects.tsx": {
+            "scaleInDock": 1
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/tilesets/castle.tsx": {
             "scaleInDock": 1
@@ -622,7 +655,7 @@
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/tilesets/evergroves.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1,
+            "scaleInDock": 0.75,
             "scaleInEditor": 1
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/tilesets/gateway.tsx": {
@@ -640,6 +673,28 @@
         },
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/tilesets/hometownobjects.tsx": {
             "scaleInDock": 1
+        },
+        "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/maps/boat/casino/casino.tmx": {
+            "expandedObjectLayers": [
+                12
+            ],
+            "scale": 1.969205298013245,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 365.6297292752649,
+                "y": 211.252732470153
+            }
+        },
+        "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/maps/boat/diningHall/diningHall.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 3,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 160,
+                "y": 411
+            }
         },
         "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/maps/depths.tmx": {
             "scale": 0.49760567543600354,
@@ -669,6 +724,9 @@
             }
         },
         "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/tilesets/Core Tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/tilesets/boatobjects.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/tilesets/depthstiles.tsx": {
@@ -742,8 +800,8 @@
             "scale": 1,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 235,
-                "y": 239
+                "x": -85,
+                "y": 59
             }
         },
         "scripts/world/maps/hometown/interior/sans_store/sans_store.tmx": {
@@ -754,20 +812,20 @@
             "scale": 1,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 611,
+                "x": 739,
                 "y": 438
             }
         },
         "scripts/world/maps/hometown/krisyard/krisyard.tmx": {
             "expandedObjectLayers": [
-                5,
-                17
+                17,
+                5
             ],
             "scale": 0.5,
             "selectedLayer": 14,
             "viewCenter": {
-                "x": 2150,
-                "y": 1684
+                "x": 3046,
+                "y": 2044
             }
         },
         "scripts/world/maps/hometown/town_church/town_church.tmx": {
@@ -828,8 +886,8 @@
             "scale": 5.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 569.6363636363636,
-                "y": -2052.909090909091
+                "x": 511.45454545454544,
+                "y": -2085.636363636364
             }
         },
         "scripts/world/maps/hometown/town_south/town_south.tmx": {
@@ -855,7 +913,7 @@
         }
     },
     "last.exportedFilePath": "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depths",
-    "last.externalTilesetPath": "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/libraries/hometown_library-main/scripts/world/tilesets",
+    "last.externalTilesetPath": "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/assets/sprites/tilesets",
     "loadedWorlds": [
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/libraries/hometown_library-main/scripts/world/maps/hometown/hometown.world",
         "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/evergroves field.world"
@@ -865,24 +923,22 @@
     "map.lastUsedFormat": "tmx",
     "map.width": 40,
     "openFiles": [
-        "scripts/world/maps/hometown/apartments/apartments.tmx",
-        "scripts/world/maps/hometown/interior/sans_store/sans_store.tmx",
-        "scripts/world/maps/hometown/town_shelter/town_shelter.tmx"
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/sailor shop/sailor shop.tmx"
     ],
     "project": "hometown.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/suite/suite.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/start/start.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/shop-docks-L/shop-docks-L.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/roomsHallway/roomsHallway.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/stairwell/stairwell.tmx",
-        "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/maps/depths/start.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depthsRaft/depthsRaft.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroveLeadup/evergroveLeadup.tmx",
-        "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/maps/depths.tmx",
-        "C:/Users/mason/Documents/GitHub/forecasted-restoration/scripts/world/maps/depthsRaft/map.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depthsRaft/map.tmx",
-        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/boat/boilerRoom/boilerRoom.tmx"
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/evergroves/sailor shop/sailor shop.tmx",
+        "scripts/world/maps/hometown/interior/sans_store/sans_store.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depths/crosswalk.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depths/depths.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/shelter/awakening.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/shelter/mainroom.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/shelter/hallway.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depths/start.tmx",
+        "scripts/world/maps/hometown/town_shelter/town_shelter.tmx",
+        "scripts/world/maps/hometown/apartments/apartments.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/depthsStation/depthsStation.tmx",
+        "C:/Users/mason/AppData/Roaming/kristal/mods/funny-feline-depths-main/scripts/world/maps/sansArea/sansArea.tmx"
     ]
 }

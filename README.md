@@ -8,5 +8,5 @@ Our Current Progress:
 - HOMETOWN: ✅100/100 [Completely done.]
 - GATEWAY: ✅70/100 [I probably will extend the Gateway one day, the track is too good to hear for a maximum of 2 minutes.]
 - DEPTHS: ✅100/100 [May have one or two more rooms added for pacing.]
-- BOAT RIDE: ✅90/100 [May need additional bug testing.]
+- BOAT RIDE: ✅95/100 [May need additional bug testing. NOTE: Bug Testing Phase 1 Done.]
 - EVERGROVES ❌10/100 [Barely started, requires a lot of work.]

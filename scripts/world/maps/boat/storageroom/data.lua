@@ -12,6 +12,7 @@ return {
   nextlayerid = 31,
   nextobjectid = 135,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
     ["music"] = "mystery",
     ["name"] = "Your Suite (Cruise)",

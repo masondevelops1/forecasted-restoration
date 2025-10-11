@@ -1,128 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="35">
- <editorsettings>
-  <export target="data.lua" format="lua"/>
- </editorsettings>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="3">
  <properties>
-  <property name="depths" type="bool" value="true"/>
-  <property name="music" value="evergrove-outskirts"/>
-  <property name="step_sound" value="reverb"/>
+  <property name="border" value="ground_zero"/>
  </properties>
- <tileset firstgid="1" source="../../tilesets/Core Tiles.tsx"/>
- <imagelayer id="2" name="raft" offsetx="560" offsety="560">
-  <image source="../../../../assets/sprites/backgrounds/raft.png" width="122" height="106"/>
- </imagelayer>
- <imagelayer id="7" name="stars small" offsetx="-13" offsety="-11" repeatx="1">
-  <image source="../../../../assets/sprites/backgrounds/stars_small.png" width="692" height="376"/>
- </imagelayer>
- <imagelayer id="10" name="mangroves" offsetx="428" offsety="222">
-  <image source="../../../../assets/sprites/backgrounds/mangroves.png" width="364" height="208"/>
- </imagelayer>
- <imagelayer id="6" name="stars medium" offsetx="46" offsety="-56" repeatx="1">
-  <image source="../../../../assets/sprites/backgrounds/stars_mid.png" width="692" height="376"/>
- </imagelayer>
- <imagelayer id="5" name="stars big" offsetx="2" offsety="4.66667" repeatx="1">
-  <image source="../../../../assets/sprites/backgrounds/stars_big.png" width="692" height="376"/>
- </imagelayer>
- <imagelayer id="8" name="dock" offsetx="720" offsety="266">
-  <image source="../../../../assets/sprites/backgrounds/dock.png" width="724" height="434"/>
- </imagelayer>
- <imagelayer id="9" name="dockL" offsetx="-472" offsety="262">
-  <image source="../../../../assets/sprites/backgrounds/dockL.png" width="724" height="434"/>
- </imagelayer>
- <layer id="1" name="Tile Layer 1" width="30" height="30" visible="0">
+ <layer id="1" name="Tile Layer 1" width="15" height="15">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,289,289,289,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="11" name="collisions">
-  <object id="23" x="901.333" y="290" width="298" height="377.333"/>
-  <object id="27" x="-229.667" y="277.666" width="298" height="387.334"/>
-  <object id="28" x="10.3333" y="655" width="298" height="209.334"/>
-  <object id="29" x="719.667" y="656" width="183.333" height="210.667"/>
-  <object id="30" x="721.667" y="289.333" width="124.666" height="265.334"/>
-  <object id="31" x="239.667" y="549.916" width="13.6667" height="105.084"/>
+ <imagelayer id="2" name="raft" offsetx="240" offsety="240">
+  <image source="../../../../assets/sprites/backgrounds/raft.png" width="122" height="106"/>
+ </imagelayer>
+ <objectgroup id="3" name="markers">
+  <object id="1" name="spawn" x="256" y="271.333">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="objects">
-  <object id="2" name="npc" x="651.833" y="673">
+  <object id="2" name="npc" x="352.667" y="316.667">
    <properties>
     <property name="actor" value="sailor"/>
-    <property name="cutscene" value="depthsCutscenes.sailor"/>
    </properties>
-   <point/>
-  </object>
-  <object id="4" name="cameratarget" x="360" y="360" width="520" height="480"/>
-  <object id="12" name="interactable" x="720.667" y="525.333" width="81.3333" height="129.333">
-   <properties>
-    <property name="cutscene" value="depthsCutscenes.jump"/>
-   </properties>
-  </object>
-  <object id="18" name="transition" x="66" y="286.333" width="61" height="113.167">
-   <properties>
-    <property name="map" value="evergroveLeadup"/>
-    <property name="marker" value="spawnDock"/>
-   </properties>
-  </object>
-  <object id="20" name="transition" x="845" y="289" width="61" height="71.6667">
-   <properties>
-    <property name="map" value="boat/outerDeck"/>
-    <property name="marker" value="spawnDocks"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="3" name="markers">
-  <object id="1" name="spawn" x="875.5" y="431.5">
-   <point/>
-  </object>
-  <object id="5" name="camfocus" x="620" y="599">
-   <properties>
-    <property name="lockx" type="bool" value="true"/>
-    <property name="locky" type="bool" value="true"/>
-    <property name="marker" value="camfocus"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="9" name="cameratarget2" x="360" y="216" width="520" height="480"/>
-  <object id="10" name="kris1" x="558.242" y="599.818">
-   <point/>
-  </object>
-  <object id="15" name="midair" x="677.333" y="482">
-   <point/>
-  </object>
-  <object id="17" name="cameratarget3" x="76" y="217" width="520" height="480"/>
-  <object id="26" name="spawn1" x="92" y="431.5">
-   <point/>
-  </object>
-  <object id="33" name="susie1" x="643.375" y="599.125">
    <point/>
   </object>
  </objectgroup>

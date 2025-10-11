@@ -265,6 +265,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
+            ["border"] = "ground_zero",
             ["map"] = "depths",
             ["marker"] = "spawn1"
           }

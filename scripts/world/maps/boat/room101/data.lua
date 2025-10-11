@@ -12,6 +12,7 @@ return {
   nextlayerid = 25,
   nextobjectid = 97,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
     ["name"] = "Your Suite (Cruise)"
   },
@@ -258,7 +259,9 @@ return {
           height = 58,
           rotation = 0,
           visible = true,
-          properties = {}
+          properties = {
+            ["plotmax"] = "*boat_act3_room101_confrontation"
+          }
         },
         {
           id = 56,
@@ -271,7 +274,9 @@ return {
           height = 106.667,
           rotation = 0,
           visible = true,
-          properties = {}
+          properties = {
+            ["plotmax"] = "*boat_act3_room101_confrontation"
+          }
         },
         {
           id = 64,
@@ -383,7 +388,9 @@ return {
           rotation = 0,
           gid = 2542,
           visible = true,
-          properties = {}
+          properties = {
+            ["plotmax"] = "*boat_act3_room101_confrontation"
+          }
         },
         {
           id = 55,
@@ -397,7 +404,9 @@ return {
           rotation = 0,
           gid = 2598,
           visible = true,
-          properties = {}
+          properties = {
+            ["plotmax"] = "*boat_act3_room101_confrontation"
+          }
         },
         {
           id = 58,
@@ -470,7 +479,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "pirates/ralsei",
-            ["animation"] = "hit"
+            ["animation"] = "hit",
+            ["plotmax"] = "*boat_act3_room101_confrontation"
           }
         },
         {
@@ -487,6 +497,7 @@ return {
           properties = {
             ["actor"] = "pirates/kris",
             ["animation"] = "hit",
+            ["plotmax"] = "*boat_act3_room101_confrontation",
             ["step_sound"] = "boat"
           }
         },
@@ -502,7 +513,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "pirates/susie"
+            ["actor"] = "pirates/susie",
+            ["plotmax"] = "*boat_act3_room101_confrontation"
           }
         },
         {
@@ -517,7 +529,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "pirates/noelle"
+            ["actor"] = "pirates/noelle",
+            ["plotmax"] = "*boat_act3_room101_confrontation"
           }
         },
         {
@@ -533,7 +546,8 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "boatCutscenes.pirates",
-            ["once"] = true
+            ["once"] = true,
+            ["plotmax"] = "*boat_act3_room101_confrontation"
           }
         },
         {
@@ -548,6 +562,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
+            ["plotmax"] = "*boat_act3_room101_confrontation",
             ["speed"] = 0.1,
             ["texture"] = "npcs/pirates/ball"
           }

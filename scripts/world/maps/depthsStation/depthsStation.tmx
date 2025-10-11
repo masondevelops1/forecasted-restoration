@@ -4,6 +4,7 @@
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="ground_zero"/>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="depths"/>
   <property name="step_sound" value="reverb"/>

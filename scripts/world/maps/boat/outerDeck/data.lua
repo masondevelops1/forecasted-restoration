@@ -1152,6 +1152,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
+            ["border"] = "ground_zero",
             ["map"] = "depthsRaft",
             ["marker"] = "spawn",
             ["plotmin"] = "depthsRaft"

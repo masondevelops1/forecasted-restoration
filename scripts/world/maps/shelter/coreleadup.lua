@@ -12,6 +12,7 @@ return {
   nextlayerid = 6,
   nextobjectid = 48,
   properties = {
+    ["border"] = "shelterdark",
     ["light"] = true,
     ["music"] = "core_approach"
   },
