@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="10" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="60">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="10" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="61">
  <editorsettings>
   <export target="mainroom.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="shelter"/>
   <property name="light" type="bool" value="true"/>
   <property name="music" value="in-the-shelter"/>
  </properties>
@@ -27,9 +28,9 @@
  <objectgroup id="3" name="collisions">
   <object id="3" x="255.5" y="102.5" width="152" height="41.5"/>
   <object id="8" x="408" y="81" width="280.5" height="42.5"/>
-  <object id="12" x="77" y="349" width="310" height="15"/>
-  <object id="15" x="380.5" y="364.5" width="173" height="34.5"/>
-  <object id="22" x="551.5" y="349.5" width="272.5" height="14.5"/>
+  <object id="12" x="77" y="349" width="315.73" height="72.7805"/>
+  <object id="15" x="381.933" y="400.314" width="173" height="34.5"/>
+  <object id="22" x="545.292" y="349.5" width="278.708" height="72.2805"/>
   <object id="24" x="827" y="132" width="25.5" height="133.5"/>
   <object id="27" x="147" y="105.5" width="19.5" height="100.5"/>
   <object id="30" x="230.023" y="37.6498" width="84" height="108.5"/>
@@ -69,6 +70,11 @@
     <property name="locky" type="bool" value="true"/>
     <property name="marker" value="camfocus"/>
     <property name="time" type="float" value="0.1"/>
+   </properties>
+  </object>
+  <object id="60" name="interactable" x="381.915" y="358.436" width="173.074" height="76.775">
+   <properties>
+    <property name="text1" value="* Too late to back out now."/>
    </properties>
   </object>
  </objectgroup>

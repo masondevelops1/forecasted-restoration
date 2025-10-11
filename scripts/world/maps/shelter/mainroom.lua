@@ -10,8 +10,9 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 60,
+  nextobjectid = 61,
   properties = {
+    ["border"] = "shelter",
     ["light"] = true,
     ["music"] = "in-the-shelter"
   },
@@ -110,8 +111,8 @@ return {
           shape = "rectangle",
           x = 77,
           y = 349,
-          width = 310,
-          height = 15,
+          width = 315.73,
+          height = 72.7805,
           rotation = 0,
           visible = true,
           properties = {}
@@ -121,8 +122,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 380.5,
-          y = 364.5,
+          x = 381.933,
+          y = 400.314,
           width = 173,
           height = 34.5,
           rotation = 0,
@@ -134,10 +135,10 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 551.5,
+          x = 545.292,
           y = 349.5,
-          width = 272.5,
-          height = 14.5,
+          width = 278.708,
+          height = 72.2805,
           rotation = 0,
           visible = true,
           properties = {}
@@ -405,6 +406,21 @@ return {
             ["locky"] = true,
             ["marker"] = "camfocus",
             ["time"] = 0.1
+          }
+        },
+        {
+          id = 60,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 381.915,
+          y = 358.436,
+          width = 173.074,
+          height = 76.775,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* Too late to back out now."
           }
         }
       }
