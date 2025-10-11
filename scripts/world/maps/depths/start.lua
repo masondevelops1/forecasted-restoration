@@ -12,6 +12,7 @@ return {
   nextlayerid = 10,
   nextobjectid = 22,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
     ["dusk"] = false,
     ["music"] = "endless_expanse",
@@ -265,9 +266,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["border"] = "ground_zero",
             ["map"] = "depths",
-            ["marker"] = "spawn1"
+            ["marker"] = "spawn2"
           }
         },
         {
