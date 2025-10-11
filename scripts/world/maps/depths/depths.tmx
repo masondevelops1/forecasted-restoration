@@ -67,7 +67,7 @@
 </data>
  </layer>
  <objectgroup id="3" name="markers">
-  <object id="2" name="spawn1" x="46.5" y="439.875">
+  <object id="2" name="spawn2" x="46.5" y="439.875">
    <point/>
   </object>
   <object id="18" name="markerplatform" x="560.5" y="115.5" width="95" height="233"/>
@@ -107,8 +107,8 @@
   <object id="51" x="84" y="520" width="191" height="448"/>
   <object id="52" x="375.864" y="-130.136" width="186" height="233"/>
   <object id="53" x="0.166667" y="227.667" width="87" height="166.667"/>
-  <object id="56" x="660.192" y="232.715" width="21.617" height="66.82"/>
-  <object id="59" x="925.942" y="232.34" width="34.117" height="66.82"/>
+  <object id="56" x="666.192" y="231.715" width="21.617" height="66.82"/>
+  <object id="59" x="925.942" y="232.34" width="34.117" height="97.1533"/>
  </objectgroup>
  <objectgroup id="9" name="objects">
   <object id="8" name="interactable" x="1189.06" y="249.233" width="121.784" height="86.3819">

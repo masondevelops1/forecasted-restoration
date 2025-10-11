@@ -219,7 +219,7 @@ return {
       objects = {
         {
           id = 2,
-          name = "spawn1",
+          name = "spawn2",
           type = "",
           shape = "point",
           x = 46.5,
@@ -524,8 +524,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 660.192,
-          y = 232.715,
+          x = 666.192,
+          y = 231.715,
           width = 21.617,
           height = 66.82,
           rotation = 0,
@@ -540,7 +540,7 @@ return {
           x = 925.942,
           y = 232.34,
           width = 34.117,
-          height = 66.82,
+          height = 97.1533,
           rotation = 0,
           visible = true,
           properties = {}
