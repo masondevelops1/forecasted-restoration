@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="33">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="42">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
-  <property name="border" value="leaves"/>
+  <property name="border" value="ground_zero"/>
   <property name="depths" type="bool" value="true"/>
   <property name="light" type="bool" value="false"/>
-  <property name="music" value="muscle"/>
+  <property name="music" value="pirates"/>
  </properties>
  <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
  <imagelayer id="2" name="room">
@@ -85,7 +85,7 @@
   </object>
   <object id="25" name="interactable" x="240" y="200" width="80" height="16">
    <properties>
-    <property name="text1" value="* (You try to take the egg...)"/>
+    <property name="text1" value="* (You try to take an egg...)"/>
     <property name="text2" value="* (It's glued to the basket.)"/>
    </properties>
   </object>
@@ -109,20 +109,58 @@
    <properties>
     <property name="depths" type="bool" value="true"/>
     <property name="facing" value="down"/>
-    <property name="map" value="sansArea"/>
-    <property name="marker" value="spawn1"/>
+    <property name="map" value="depths/crosswalk"/>
+    <property name="marker" value="sans"/>
    </properties>
   </object>
-  <object id="32" name="npc" x="205.878" y="216.62">
+  <object id="32" name="npc" x="180.378" y="-45.88">
    <properties>
     <property name="actor" value="sans"/>
     <property name="cutscene" value="depthsCutscenes.sans"/>
    </properties>
    <point/>
   </object>
+  <object id="34" name="npc" x="646.292" y="224.167">
+   <properties>
+    <property name="actor" value="pirates/kris"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="npc" x="606.273" y="224.091">
+   <properties>
+    <property name="actor" value="pirates/ralsei"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="npc" x="568" y="224.667">
+   <properties>
+    <property name="actor" value="pirates/susie"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="npc" x="527.667" y="224.667">
+   <properties>
+    <property name="actor" value="pirates/noelle"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="script" x="560.25" y="418.75" width="79.5" height="62">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.meetPirates"/>
+    <property name="once" type="bool" value="false"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#ff00ff" id="5" name="markers">
   <object id="30" name="spawn" x="600" y="440">
+   <point/>
+  </object>
+  <object id="41" name="piratesOutside" x="886" y="-104">
    <point/>
   </object>
  </objectgroup>

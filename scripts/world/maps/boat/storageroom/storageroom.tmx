@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="31" nextobjectid="135">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="31" nextobjectid="135">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="ground_zero"/>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mystery"/>
   <property name="name" value="Your Suite (Cruise)"/>
+  <property name="step_sound" value="boat"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/depthstiles.tsx"/>
  <tileset firstgid="2517" source="../../../tilesets/boatobjects.tsx"/>
@@ -61,8 +63,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,1343,1344,1345,0,0,0,0,0,0,0,
-0,0,0,0,0,0,1411,1412,1413,0,1348,1349,1350,1351,0,0,
+0,0,0,0,0,1342,1343,1344,1345,0,0,0,0,0,0,0,
+0,0,0,0,0,1410,1411,1412,1413,0,1348,1349,1350,1351,0,0,
 0,0,0,0,0,0,0,0,0,0,1416,1417,1418,1419,0,0,
 0,0,0,0,0,0,0,0,0,0,1484,1485,1486,1487,0,0,
 0,0,0,0,0,0,0,0,0,1343,1344,1345,0,0,0,0,

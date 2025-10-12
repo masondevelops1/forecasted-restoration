@@ -1,23 +1,19 @@
-# funnyFeline depths
+# DELTARUNE: Forecasted
 
-Kristal mod used for "season 1" of [funnyFeline](https://www.youtube.com/@funnyfeline1). Please watch our newer videos. Please. Please. Please.
+## This is a fanmade take on DELTARUNE: Chapter 6 made originally by the [funnyFeline YT Channel](https://www.youtube.com/@funnyfeline1), but now, it's being restored! It was made public, and although it was buggy mess, I was able to restore most of it and fill in the blanks.
 
-# How to play
+## Custom Features:
+- Custom Borders <img width="2559" height="1439" alt="kris and susie chillin' with borders on" src="https://github.com/user-attachments/assets/e13954a0-ea79-402f-9d4f-c04050e8d9bb" />
+- Custom Enemies <img width="2559" height="1439" alt="battlin' with scrapscallions" src="https://github.com/user-attachments/assets/aa21ae5b-6842-4f1d-9c36-567c5838b34a" />
+- Beautiful Views <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/9faf1ecd-a717-4664-bfa5-3ca68194582d" />
+- Custom Puzzles <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/d9ba9633-cd5a-4493-bbd5-3a1bfb90ff0f" />
+- Another Night in Hometown <img width="2559" height="1439" alt="looking at noelle's house at night" src="https://github.com/user-attachments/assets/38237094-a241-4e3d-9955-b898b27ca373" />
 
-[Get Kristal](https://kristal.cc/wiki/downloading) and place this folder inside the mods folder. If done right, this file you're reading right now will be in kristal/mods/funny-feline-depths/README.md.
+### IMPORTANT: PLEASE PLEASE PLEASE do not take me as the owner of this project's entire concept. This concept is owned by the Forecasted team, and even if not canon to DELTARUNE: New Future, is not mine.
 
-# Contributing
-
-All changes must be either:
-1. Reasonably Forecasted canon compliant
-2. Silly mode exclusive, and compliant with [Dark Place's rules](https://github.com/Darkplace-dr/darkPlaceRebirth-Kristal/blob/main/CONTRIBUTING.md) (to be clear saying FUCK is fine)
-
-# Code reuse
-
-The only thing you can't use from this without asking is the Silly Mode popup. You'll need to ask SylviBlossom about that. Everything else is fair game (although I advise against it for your own sanity).
-
-# A word from Fizz regarding this mod:
-
-funny feline, uh yeah, its feline time! mmm yeah! we're funny felining it up in this bitch! oh yeah! feline time!!!!!!!!! whoooo!!!!
-
-What a way with words.
+## Our Current Progress:
+- HOMETOWN: ✅100/100 [Completely done.]
+- GATEWAY: ✅70/100 [I probably will extend the Gateway one day, the track is too good to hear for a maximum of 2 minutes.]
+- DEPTHS: ✅100/100 [May have one or two more rooms added for pacing.]
+- BOAT RIDE: ✅95/100 [May need additional bug testing. NOTE: Bug Testing Phase 1 Done.]
+- EVERGROVES ❌10/100 [Barely started, requires a lot of work.]

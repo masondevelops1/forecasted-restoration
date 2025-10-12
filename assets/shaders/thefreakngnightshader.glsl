@@ -1,3 +1,4 @@
+uniform float inversion = 0;
 // uniform vec3 red_out;
 // uniform vec3 blue_out;
 // uniform vec3 green_out;

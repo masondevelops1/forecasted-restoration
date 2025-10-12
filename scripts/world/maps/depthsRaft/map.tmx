@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="3">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="3">
  <editorsettings>
   <export target="depthsRaft.tmx" format="tmx"/>
  </editorsettings>
+ <properties>
+  <property name="border" value="ground_zero"/>
+ </properties>
  <layer id="1" name="Tile Layer 1" width="15" height="15">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

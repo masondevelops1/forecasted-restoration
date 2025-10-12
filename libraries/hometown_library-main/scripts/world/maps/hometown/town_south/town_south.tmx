@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="66" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="23" nextobjectid="50">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="66" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="23" nextobjectid="51">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -141,6 +141,7 @@
    <polygon points="0,0 -80,240 -160,240 -160,0"/>
   </object>
   <object id="28" x="546" y="0" width="216" height="216"/>
+  <object id="50" x="2626.5" y="218.5" width="13" height="220"/>
  </objectgroup>
  <objectgroup id="21" name="objects_deco">
   <object id="43" gid="342" x="460" y="242" width="302" height="242"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="29" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="17">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="29" height="50" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="18">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -7,6 +7,7 @@
   <property name="border" value="evergroves"/>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mus_evergroves"/>
+  <property name="step_sound" value="evergroves"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/evergroves.tsx"/>
  <layer id="7" name="trees background" width="29" height="50" offsetx="166.667" offsety="54.6667" parallaxx="1.07" parallaxy="1.07">
@@ -392,6 +393,11 @@
    <properties>
     <property name="map" value="evergroves/sailor shop"/>
     <property name="marker" value="spawnL"/>
+   </properties>
+  </object>
+  <object id="17" name="interactable" x="783.5" y="516" width="80" height="48.5">
+   <properties>
+    <property name="cutscene" value="evergroves.sign2"/>
    </properties>
   </object>
  </objectgroup>

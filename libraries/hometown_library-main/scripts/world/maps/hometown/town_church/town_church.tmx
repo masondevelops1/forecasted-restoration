@@ -265,7 +265,7 @@
   <object id="43" name="interactable" x="558" y="590" width="76" height="66">
    <properties>
     <property name="text1" value="* (It's locked...)"/>
-    <property name="text2" value="* (...[wait:5] the town it's pretty empty today.)"/>
+    <property name="text2" value="* (...[wait:5] you sit for second and think about your previous adventures.)"/>
    </properties>
   </object>
  </objectgroup>

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 18,
-  nextobjectid = 20,
+  nextobjectid = 21,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -502,6 +502,19 @@ return {
           y = 240,
           width = 40,
           height = 108,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 20,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 482.5,
+          y = 229,
+          width = 115,
+          height = 140.5,
           rotation = 0,
           visible = true,
           properties = {}

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 31,
-  nextobjectid = 69,
+  nextobjectid = 76,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -524,6 +524,45 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 70,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2172,
+          y = 163,
+          width = 87,
+          height = 45,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 72,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1193.39,
+          y = 201.727,
+          width = 58,
+          height = 29.3333,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 75,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 609,
+          y = 198,
+          width = 113,
+          height = 33.5,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -707,26 +746,6 @@ return {
           }
         },
         {
-          id = 31,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 1194,
-          y = 192,
-          width = 58,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["exit_delay"] = 0.3,
-            ["exit_sound"] = "doorclose",
-            ["facing"] = "up",
-            ["map"] = "hometown/interior/qc_diner",
-            ["marker"] = "spawn",
-            ["sound"] = "dooropen"
-          }
-        },
-        {
           id = 32,
           name = "interactable",
           type = "",
@@ -740,46 +759,6 @@ return {
           properties = {
             ["cutscene"] = "hometown.papyrushouse",
             ["solid"] = true
-          }
-        },
-        {
-          id = 33,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 2172,
-          y = 168,
-          width = 86,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["exit_delay"] = 0.3,
-            ["exit_sound"] = "doorclose",
-            ["facing"] = "up",
-            ["map"] = "hometown/interior/sans_store",
-            ["marker"] = "spawn",
-            ["sound"] = "dooropen"
-          }
-        },
-        {
-          id = 35,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 610,
-          y = 192,
-          width = 110,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["exit_delay"] = 0.3,
-            ["exit_sound"] = "doorclose",
-            ["facing"] = "up",
-            ["map"] = "hometown/interior/icee_room",
-            ["marker"] = "spawn",
-            ["sound"] = "dooropen"
           }
         },
         {
@@ -905,6 +884,51 @@ return {
           properties = {
             ["cutscene"] = "nightCutscenes.noShelterYet",
             ["once"] = false
+          }
+        },
+        {
+          id = 69,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 2172.75,
+          y = 180.5,
+          width = 87.25,
+          height = 27.75,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* (Despite the store's sign, it's closed.)"
+          }
+        },
+        {
+          id = 71,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 1194.16,
+          y = 193.095,
+          width = 58.1591,
+          height = 40.1136,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* (Despite the store's sign, it's closed.)"
+          }
+        },
+        {
+          id = 73,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 609.955,
+          y = 199.875,
+          width = 110.068,
+          height = 33.0227,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* (Despite the store's sign, it's closed.)"
           }
         }
       }

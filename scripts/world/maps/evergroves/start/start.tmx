@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="23" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="21">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="25">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -7,6 +7,7 @@
   <property name="border" value="evergroves"/>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="mus_evergroves"/>
+  <property name="step_sound" value="evergroves"/>
  </properties>
  <tileset firstgid="1" source="../../../tilesets/evergroves.tsx"/>
  <objectgroup id="8" name="objects_bg">
@@ -100,6 +101,11 @@
     <property name="text2" value="* Unfortunately,[wait:5] you're already there."/>
    </properties>
   </object>
+  <object id="23" name="transition" x="757.636" y="-3.63636" width="123.5" height="9.5">
+   <properties>
+    <property name="map" value="evergroves/sailor shop"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="10" name="butterflies" width="23" height="30">
   <data encoding="csv">
@@ -141,6 +147,9 @@
    <point/>
   </object>
   <object id="2" name="suslift" x="82" y="0">
+   <point/>
+  </object>
+  <object id="24" name="spawn" x="821.583" y="64.5">
    <point/>
   </object>
  </objectgroup>

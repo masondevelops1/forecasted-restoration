@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -12,8 +12,10 @@ return {
   nextlayerid = 9,
   nextobjectid = 39,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
-    ["music"] = "mystery"
+    ["music"] = "mystery",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {

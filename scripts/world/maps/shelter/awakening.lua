@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 72,
+  nextobjectid = 74,
   properties = {
     ["border"] = "shelter",
     ["light"] = true,
@@ -283,21 +283,6 @@ return {
       properties = {},
       objects = {
         {
-          id = 59,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 706,
-          y = 480,
-          width = 32,
-          height = 106,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["map"] = "shelter/mainroom"
-          }
-        },
-        {
           id = 62,
           name = "cameratarget",
           type = "",
@@ -307,7 +292,7 @@ return {
           width = 530.5,
           height = 373.5,
           rotation = 0,
-          visible = false,
+          visible = true,
           properties = {
             ["lockx"] = true,
             ["locky"] = true,
@@ -328,6 +313,22 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "device.device"
+          }
+        },
+        {
+          id = 73,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 706.054,
+          y = 480.035,
+          width = 32.0435,
+          height = 107,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "shelter/mainroom",
+            ["marker"] = "awaken"
           }
         }
       }
@@ -351,8 +352,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 432.833,
-          y = 383.333,
+          x = 259.5,
+          y = 446.666,
           width = 0,
           height = 0,
           rotation = 0,

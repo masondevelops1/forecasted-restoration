@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -310,7 +310,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* I'm Wing Gaster! The royal sciences LLC!"
+            ["text1"] = "* GATEWAY COLLAPSE IMMINENT. AUDIO LOGS OFFLINE."
           }
         },
         {

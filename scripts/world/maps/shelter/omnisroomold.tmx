@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="24" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="29">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="24" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="32">
  <editorsettings>
   <export target="omnisroomold.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="shelter"/>
   <property name="light" type="bool" value="true"/>
   <property name="music" value="in-the-shelter"/>
  </properties>
@@ -52,6 +53,21 @@
   <object id="23" x="616" y="339.5" width="24.5" height="98"/>
   <object id="24" x="283" y="295" width="40.5" height="113.5"/>
   <object id="25" x="396" y="295.5" width="39" height="113.5"/>
+  <object id="29" name="interactable" x="610.227" y="350.193" width="75.5459" height="106.656">
+   <properties>
+    <property name="cutscene" value="shelter.boxes"/>
+   </properties>
+  </object>
+  <object id="30" name="interactable" x="541.894" y="361.484" width="51.5459" height="84.4269">
+   <properties>
+    <property name="cutscene" value="shelter.computer"/>
+   </properties>
+  </object>
+  <object id="31" name="interactable" x="512.56" y="390.984" width="29.2126" height="54.8852">
+   <properties>
+    <property name="cutscene" value="shelter.documents"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="objects">
   <object id="22" name="transition" x="514.5" y="567.5" width="75" height="37.5">
@@ -60,14 +76,14 @@
     <property name="marker" value="omnisroomold"/>
    </properties>
   </object>
-  <object id="26" name="cameratarget" x="148.667" y="164.667" width="742.667" height="596.667">
+  <object id="26" name="cameratarget" x="148.667" y="164.667" width="742.667" height="596.667" visible="0">
    <properties>
     <property name="lockx" type="bool" value="true"/>
     <property name="locky" type="bool" value="true"/>
     <property name="marker" value="camfocus"/>
    </properties>
   </object>
-  <object id="28" name="cameratarget" x="241.333" y="246.667" width="502" height="416.667">
+  <object id="28" name="cameratarget" x="241.333" y="246.667" width="502" height="416.667" visible="0">
    <properties>
     <property name="lockx" type="bool" value="true"/>
     <property name="locky" type="bool" value="true"/>

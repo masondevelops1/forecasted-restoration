@@ -1,4 +1,4 @@
-local function createTransitionCutscene(yval, config, map)
+function createTransitionCutscene(yval, config, map)
     return function(cutscene)
 
         -- Disable things that interfere with most cutscenes

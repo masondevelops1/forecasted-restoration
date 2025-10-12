@@ -1,7 +1,7 @@
 return {
   version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.10.2",
+  tiledversion = "1.11.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -9,8 +9,8 @@ return {
   height = 16,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 19,
-  nextobjectid = 17,
+  nextlayerid = 20,
+  nextobjectid = 18,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -627,6 +627,35 @@ return {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         139, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 141, 140, 0, 0, 0,
         150, 151, 152, 150, 151, 152, 150, 151, 152, 150, 151, 152, 150, 151, 152, 150, 151, 152, 150, 151, 152, 150, 151, 150, 151, 152, 0, 0, 0
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 19,
+      name = "objects filter",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 17,
+          name = "filter",
+          type = "",
+          shape = "point",
+          x = 0,
+          y = 0,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,11 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 17,
-  nextobjectid = 16,
+  nextobjectid = 19,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
-    ["music"] = "mus_evergroves"
+    ["music"] = "mus_evergroves",
+    ["step_sound"] = "evergroves"
   },
   tilesets = {
     {
@@ -379,7 +380,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["cutscene"] = "depthsCutscenes.sign2"
+            ["cutscene"] = "evergroves.sign1"
           }
         },
         {
@@ -409,7 +410,39 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "evergroves/shop-interior"
+            ["map"] = "evergroves/shop-interior",
+            ["marker"] = "evergrovesenter"
+          }
+        },
+        {
+          id = 16,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 357.5,
+          y = 830.25,
+          width = 123.5,
+          height = 9.5,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "evergroves/start"
+          }
+        },
+        {
+          id = 18,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 810.667,
+          y = 477.333,
+          width = 29.3333,
+          height = 111.333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* This path will take you to the rest of The Evergroves.",
+            ["text2"] = "* Unfortunately,[wait:5] the rooms ahead aren't made yet."
           }
         }
       }
@@ -433,8 +466,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 420.333,
-          y = 839.667,
+          x = 419.333,
+          y = 771.167,
           width = 0,
           height = 0,
           rotation = 0,
@@ -488,9 +521,9 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 40,
+          x = 1.33333,
           y = 360,
-          width = 351.5,
+          width = 390.167,
           height = 120,
           rotation = 0,
           visible = true,
@@ -503,7 +536,7 @@ return {
           shape = "rectangle",
           x = 450.5,
           y = 360,
-          width = 349.5,
+          width = 389.833,
           height = 120,
           rotation = 0,
           visible = true,
@@ -514,10 +547,10 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 40,
+          x = -1,
           y = 588,
-          width = 320,
-          height = 92,
+          width = 361,
+          height = 251.75,
           rotation = 0,
           visible = true,
           properties = {}
@@ -529,8 +562,21 @@ return {
           shape = "rectangle",
           x = 480,
           y = 588,
-          width = 320,
-          height = 92,
+          width = 360.667,
+          height = 253.333,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 17,
+          name = "temporary_demo_end",
+          type = "",
+          shape = "rectangle",
+          x = 828.5,
+          y = 477.5,
+          width = 11.667,
+          height = 111.833,
           rotation = 0,
           visible = true,
           properties = {}

@@ -35,11 +35,11 @@ function Mod:postInit()
     love.window.setTitle("DELTARUNE Chapter 6")
     love.window.setIcon(Assets.getTextureData("icons/deltarune"))
     Kristal.setPresence({
-        details = "teem foreskins chapter 69hahaha in tuah derp",
-        state = "Laugh right now.",
-        largeImageKey = "https://yt3.googleusercontent.com/GTgHNqRtFFOnoie7MZUlBF5izhEcLAjm66vYYBaVpQZSOGI94b0gkl17BRM8IqG5ZOH8FTSNwCw=s120-c-k-c0x00ffffff-no-rj",
+        details = "DELTARUNE Chapter 6",
+        state = "- CONNECTION FAILURE -",
+        largeImageKey = "https://i.imgur.com/IKdy5Nz.jpeg",
         smallImageKey = "logo",
-        largeImageText = "That's the funny feline one!",
+        largeImageText = "DELTARUNE: Chapter 6 - In Too Deep",
         smallImageText = "Kristal v" .. tostring(Kristal.Version),
         startTimestamp = math.floor(os.time() - Game.playtime),
         instance = 0
@@ -55,21 +55,21 @@ function Mod:afmPostInit(new_file)
 end
 
 function Mod:init()
-    HookSystem.hook(Encounter, "createSoul", function(orig, self, x, y, color)
+    Utils.hook(Encounter, "createSoul", function(orig, self, x, y, color)
         if Game.battle.is_parry then
             return ParrySoul(x, y)
         end
         return orig(self, x, y, color)
     end)
 
-    HookSystem.hook(Encounter, "createSoul", function(orig, self, x, y, color)
+    Utils.hook(Encounter, "createSoul", function(orig, self, x, y, color)
         if Game.battle.is_fast then
             return FastSoul(x, y)
         end
         return orig(self, x, y, color)
     end)
 
-    HookSystem.hook(Battle, "postInit", function(orig, self, ...)
+    Utils.hook(Battle, "postInit", function(orig, self, ...)
         ---@cast self Battle
         orig(self,...)
         if self.encounter.background then
@@ -78,26 +78,26 @@ function Mod:init()
             self.background:setLayer(BATTLE_LAYERS["bottom"] - 1)
         end
     end)
-    HookSystem.hook(Battle, "update", function (orig, self, ...)
+    Utils.hook(Battle, "update", function (orig, self, ...)
         ---@cast self Battle
         orig(self, ...)
         if self.background then
             self.background.alpha = self.transition_timer / 10
         end
     end)
-    HookSystem.hook(Battle, "onStateChange", function (orig, self, old, new)
+    Utils.hook(Battle, "onStateChange", function (orig, self, old, new)
         ---@cast self Battle
         if new == "VICTORY" and self.background then
             self.background.timer.active = false
         end
         return orig(self, old, new)
     end)
-    -- HookSystem.hook(Battle, "drawBackground", function() end)
+    -- Utils.hook(Battle, "drawBackground", function() end)
 
 ---@diagnostic disable-next-line: redefined-local
     local self = Registry
     -- TODO: PR this to kristal, it's cool
-    HookSystem.hook(Registry, "createMap", function(_,id, world, ...)
+    Utils.hook(Registry, "createMap", function(_,id, world, ...)
         if self.maps[id] then
             local map = self.maps[id](world, self.map_data[id], ...)
             map.id = id

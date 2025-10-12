@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 47,
-  nextobjectid = 86,
+  nextobjectid = 87,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -989,6 +989,19 @@ return {
             { x = -40, y = 40 },
             { x = 0, y = 40 }
           },
+          properties = {}
+        },
+        {
+          id = 86,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 3587,
+          y = 184.25,
+          width = 13,
+          height = 220,
+          rotation = 0,
+          visible = true,
           properties = {}
         }
       }

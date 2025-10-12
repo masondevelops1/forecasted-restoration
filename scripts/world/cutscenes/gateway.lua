@@ -60,7 +60,7 @@ function gateway.chasestart(cutscene)
             noelle:setSprite("shocked")
             done = true
         end)
-        cutscene:text("* That asshole![wait:5]\n* We gotta get the hell out of here!", "angry_b", susie)
+        cutscene:text("* That asshole doctor![wait:5]\n* We gotta get the hell out of here!", "angry_b", susie)
         cutscene:wait(function() return done end)
 
         waitAll({
@@ -239,7 +239,6 @@ function gateway.fall_to_depths(cutscene)
     susie.physics.speed_y = 0.5
     cutscene:wait(3)
     cutscene:wait(cutscene:fadeOut(8, {global = true}))
-    Game:removePartyMember("susie")
     Game:removePartyMember("noelle")
     cutscene:loadMap("depths/start")
     Game.world.music:stop()

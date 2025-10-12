@@ -1,69 +1,86 @@
-
-
-local textbox = nil
 return {
-device = function(cutscene, event)
 
-   
-
-	textbox = Textbox(Game.world.camera:getRect())
-
-	--other fonts in assets/fonts
-	textbox:setFont("main", 24)
-	--if we just use :setTextColor(), we get this weird gloss to the text. you can see for yourself if you comment out the next line and uncomment the line after
-	-- textbox:addFX(RecolorFX(0,0.8,0,1))
-	textbox.text:setTextColor(0,0.8,0,1)
-	local signalStatus = ("No Signal...")
-	--double \\ on \\User to escape backslash
-	
-	textbox:setText(string.format([[
-		
-	%s
-
-	========================================
-	DEVICE:\\DeviceUser1
-	========================================
-	
-	[1:] File Explorer
-	[2:] Internet
-	[3:] Settings
-	[0:] Power Off
-	
-	========================================
-	Type in a number to make a selection
-	> _
-	]], signalStatus))
-
-	
-	--these should be self explanitory, you can see more state options in src/engine/objects/text.lua:105
-	textbox.text.state.typing_sound = nil
-	textbox.text.state.speed = 5
-	textbox.text.state.offset_x = 8
-	textbox.text.state.offset_y = 8
-	Game.world:addChild(textbox)
-	textbox:setLayer(100)
-    GonerNumpad.keypadInput(cutscene)
-end,	
-
-	--this has to happen last
-    
-    ["test"] = function(cutscene)
-        local num1 = GonerNumpad.keypadInput(cutscene)
-        --make a textbox that will ignore our input and that will not wait for our input
-        local _, textbox = cutscene:text("number inputed: "..num1.."\nnow give a 3 digit number. ill stay here unti you're done.",nil,nil,{wait = false})
-        textbox:setText(textbox.text.text, function() end)
-    
-        cutscene:wait(1)
-        local num2 = GonerNumpad.keypadInput(cutscene, 3,
-            function(key, x,y, keypad, done)
-                --close that textbox when we're done inputting our number
-                if(done) then
-                    cutscene:tryResume()
-                    textbox:remove()
-                end
-            end
-        )
-        cutscene:text("number inputed: "..num2.."\nsum is ".. (num1+num2))
-        
+    device = function(cutscene)
+		if Plot:isBefore("shelter_heard_log") then
+			local kris = assert(cutscene:getCharacter("kris"))
+			local susie = cutscene:getCharacter("susie") or kris
+			local noelle = cutscene:getCharacter("noelle") or susie
+		Kristal.Console:log("device_used")   
+			cutscene:setSpeaker(susie)
+			cutscene:text("* So...[wait:5] this is the device or whatever.", "nervous") 
+			cutscene:text("* Alright then,[wait:5] let's find out what the deal with this place is.", "nervous") 
+			cutscene:wait(cutscene:fadeOut())
+			Game.world.music:play("omnis")
+			cutscene:wait(1)
+			cutscene:setSpeaker()
+			cutscene:text("[color:green]EXPERIMENT LOG 59: [wait:5] \nTHIS IS DR. OMNIS,[wait:5] ASSISTANT TO DR. G.")
+			cutscene:text("[color:green]SINCE HIS DEATH,[wait:5] I'VE TAKEN CONTROL OVER THIS LAB.")
+			cutscene:text("[color:green]WITH THAT RESPONSIBILITY,[wait:5] A NEW EXPERIMENT BEGINS.")
+			cutscene:text("[color:green]THE DARK WORLD.[wait:5]\nA WORLD WHERE SHADOWS BLEND TOGETHER...")
+			cutscene:text("[color:green]...TO CREATE SOMETHING BETTER.[wait:5] AN ILLUSION,[wait:5] YES,[wait:5]BUT...")
+			cutscene:text("[color:green]IT MIGHT HELP THIS TOWN,[wait:5] MY HOMETOWN,[wait:5] IN FACT,[wait:5] OUR HOMETOWN,[wait:5] TO BE GREAT AGAIN.")
+			cutscene:text("[color:green]BUT WITH A WORLD WITHOUT RESPONSIBILITIES,[wait:5] THEY WOULD BECOME CORRUPTED.")
+			cutscene:text("[color:green]WHICH IS WHY I AM ALSO CREATING A KNIGHT.[wait:5] A ROARING KNIGHT.[wait:5] IT WILL PROTECT THESE WORLDS...") 
+			cutscene:text("[color:green]...AND CREATE A BETTER FUTURE.[wait:5] I ALREADY HAVE A WILLING PARTICIPANT,[wait:5]SO IT BEGINS TOMORROW.")
+			cutscene:text("[color:green]HOMETOWN WILL BECOME GREAT AGAIN.[wait:5] END LOG.")
+			cutscene:text("[color:green]EXPERIMENT LOG 63: [wait:5]\nTHIS IS OMNIS...[wait:5]MAIN SCIENTIST AT HOMETOWN LABORATORIES...")
+			cutscene:text("[color:green]IT'S BECAME TOO POWERFUL,[wait:5] I HAVE BEEN RUNNING FOR AGES...[wait:5] IT'S TASK HAS BECOME CLOUDED...")
+			cutscene:text("[color:green]HOMETOWN WILL BECOME SHROUDED IN A POWERFUL DARKNESS IF SOMETHING IS NOT DONE.")
+			cutscene:text("[color:green]I MUST USE THE LAST OUNCE OF THIS MACHINE'S POWER TO CREATE OUR SAVIOR...")
+			cutscene:text("[color:green]I'VE FOUND THAT HERE,[wait:5] THE SOUL IS MOST POWERFUL,[wait:5] ESPECIALLY ONE WITH DETERMINATION.")
+			cutscene:text("[color:green]DETERMINATION IS ONE ALMOST NOBODY POSSES IN THIS WORLD.[wait:5] BUT I'VE THOUGHT ABOUT SOMETHING...")
+			cutscene:text("[color:green]IF I CREATED SOMETHING TO BE DARKER THAN DARK...[wait:5] WHAT IF IT WAS LIGHTER THAN LIGHT?")
+			cutscene:text("[color:green]REALER THAN REAL...[wait:5] YES...[wait:5] THIS WILL DO NICELY.")
+			cutscene:text("[color:green]ENABLING BACKUP POWER SYSTEM ON THIS MACHINE,[wait:5] I MUST FINISH THIS QUICKLY.")
+			cutscene:text("[color:green]FOUNTAIN SYSTEMS UNDER REVERSAL...[wait:5] DONE.[wait:5] I HAVE AN EXTRA VESSEL...[wait:5] ESTABLISHING CONNECTION.")
+			cutscene:text("[color:green]CONNECTION FOUND.[wait:5] IT IS TIME TO SHAPE THIS VESSEL AS THEIR OWN.[wait:5] END LOG.")
+			cutscene:text("[color:red]CORRUPTED LOG 64:[wait:5] it's escaped it's escaped it's escaped it's-")
+			cutscene:text("[color:green]EXPERIMENT LOG 102:[wait:5] THIS IS DR. OMNIS.[wait:5] I'VE BEEN ABLE TO BROADCAST TO THIS MACHINE FROM...")
+			cutscene:text("[color:green]THE DEPTHS...?[wait:5] THAT'S WHAT I HAVE CHOSEN TO CALL THEM,[wait:5] THAT IS.")
+			cutscene:text("[color:green]IT IS...[wait:5] STRANGE,[wait:5] BUT AT LEAST I HAVE ACCESS TO THE GATEWAY MAIN CONTROLS.")
+			cutscene:text("[color:green]I'M STILL LOOKING FOR DR. G,[wait:5] BUT NO LUCK YET...[wait:5] VESSEL WAS A FAILURE,[wait:5] WHICH CAN BE GUESSED.")
+			cutscene:text("[color:green]THIS WILL BE MY LAST LOG,[wait:5] AS I DO NOT WANT TO WASTE THIS MACHINE'S POWER.")
+			cutscene:text("[color:green]I MUST CONTINUE MONITORING TO SEE WHO COMES INTO THE LABORATORIES... END LOG.")
+			cutscene:wait(cutscene:fadeIn())
+			cutscene:setSpeaker(susie)
+			cutscene:text("* Hang on a second...[wait:5] that scientist said something about...", "sad")
+			cutscene:text("* Monitoring who comes in here...[wait:5] damnit,[wait:5] that could mean-", "sad")
+			cutscene:setSpeaker()
+			Assets.playSound("phone")
+			cutscene:wait(0.5)
+			cutscene:text("[color:green]INCOMING BROADCAST... AUTOMATICALLY ACCEPTING...")
+			Assets.playSound("item")
+			cutscene:wait(0.3)
+			cutscene:text("[color:green]THAT I'D KNOW... SMART GIRL,[wait:5] YOU ARE...[wait:5] VERY CLEVER...")
+			cutscene:setSpeaker(noelle)
+			cutscene:text("* Wh-[wait:5] what do you...[wait:5] want from us...?", "surprise_frown")
+			cutscene:setSpeaker()
+			cutscene:text("[color:green]WELL...[wait:5] THAT IS NO LONGER THE QUESTION,[wait:5] SWEET \"NOELLE.\"")
+			cutscene:setSpeaker(noelle)
+			cutscene:text("* [speed:0.5][shake:1]HOW DO YOU KNOW MY NAME!?", "shock")
+			cutscene:setSpeaker(susie)
+			cutscene:text("* Look,[wait:5] whoever you are,[wait:5] how about you leave my friend alone...!", "shock")
+			cutscene:setSpeaker()
+			cutscene:text("[color:green]AS I WAS SAYING,[wait:5] THE QUESTION IS REALLY...[wait:5] WHAT DID I WANT?")
+			cutscene:text("[color:green]I WANTED YOU TO LEAVE MY SHELTER ALONE.")
+			cutscene:text("[color:green]BUT NOW...[wait:5] YOU HAVE FORSAKEN MY RESEARCH...[wait:5] YOU HAVE FORSAKEN DR. G...")
+			cutscene:text("[color:green]SO,[wait:5] I WILL MAKE SURE YOU-", {auto = true} )
+			cutscene:text("[color:red]ERROR:[wait:5] POWER LEVEL AT 1%.[wait:5] GATEWAY POWER LINE:[wait:5] OFFLINE.[wait:5] WORLD STATUS:[wait:5] UNSTABLE.[wait:5] POWERING OFF...")
+			Game.world.music:play("in-the-shelter")
+			cutscene:fadeIn(0.5, { music = true })
+			cutscene:setSpeaker(susie)
+			cutscene:text("* Hey,[wait:5] Noelle,[wait:5] you okay?", "sad")
+			cutscene:setSpeaker(noelle)
+			cutscene:text("* Yeah...[wait:5] I'll be fine...[wait:5] it just spooked me a bit...", "sad_smile_b")
+			cutscene:setSpeaker(susie)
+			cutscene:text("* Hang on a second...[wait:5] The machine said something about...", "sad")
+			cutscene:text("* ...a Gateway...?[wait:5] If we could turn the gateway power line back on...", "sad")
+			cutscene:text("* We could stop that damn scientist![wait:5] Yeah!", "sad")
+			SetPlot("shelter_heard_log")
+		else 
+			cutscene:setSpeaker("susie")
+			cutscene:text("* Let's turn the gateway power line back on,[wait:5] Kris.", "sad")
+		end;
     end,
-}
+
+    }

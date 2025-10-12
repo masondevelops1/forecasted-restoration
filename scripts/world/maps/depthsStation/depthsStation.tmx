@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="19" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="47">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="19" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="53">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="ground_zero"/>
   <property name="depths" type="bool" value="true"/>
   <property name="music" value="depths"/>
+  <property name="step_sound" value="reverb"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/depthstiles.tsx"/>
  <tileset firstgid="2517" source="../../tilesets/boatobjects.tsx"/>
@@ -150,6 +152,13 @@
     <property name="marker" value="spawnDocks"/>
    </properties>
   </object>
+  <object id="52" name="transition" x="-1.7893" y="392.884" width="29.5786" height="160.233">
+   <properties>
+    <property name="map" value="depths/crosswalk"/>
+    <property name="marker" value="spawn1"/>
+    <property name="step_sound" value="reverb"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="11" name="markers">
   <object id="4" name="susie1" x="602" y="202">
@@ -161,7 +170,7 @@
   <object id="42" name="susie2" x="573" y="168.333">
    <point/>
   </object>
-  <object id="45" name="spawn" x="0" y="480">
+  <object id="45" name="spawn" x="55.8197" y="478.702">
    <point/>
   </object>
   <object id="46" name="entryBoat" x="600" y="40">
@@ -182,12 +191,16 @@
   <object id="20" x="640" y="160" width="40" height="40"/>
   <object id="21" x="680" y="200" width="40" height="120"/>
   <object id="23" x="0" y="360" width="120" height="40"/>
-  <object id="24" x="0" y="560" width="120" height="40"/>
+  <object id="24" x="0" y="549.615" width="160.891" height="40"/>
   <object id="31" x="360" y="560" width="110" height="40"/>
   <object id="32" x="720" y="560" width="106" height="40"/>
   <object id="33" x="880" y="560" width="106" height="40"/>
   <object id="34" x="200" y="560" width="107" height="40"/>
   <object id="37" x="160" y="560" width="40" height="40"/>
   <object id="39" x="960" y="560" width="80" height="40"/>
+  <object id="48" x="210" y="351.5" width="103.5" height="40"/>
+  <object id="49" x="369.25" y="351" width="103.5" height="40"/>
+  <object id="50" x="726.25" y="353" width="103.5" height="40"/>
+  <object id="51" x="886.25" y="353" width="103.5" height="40"/>
  </objectgroup>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="102" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="31" nextobjectid="69">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="102" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="31" nextobjectid="76">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -130,6 +130,9 @@
   <object id="21" x="2382" y="100" width="160" height="124"/>
   <object id="22" x="2610" y="100" width="102" height="124"/>
   <object id="23" x="2712" y="100" width="48" height="120"/>
+  <object id="70" x="2172" y="163" width="87" height="45"/>
+  <object id="72" x="1193.39" y="201.727" width="58" height="29.3333"/>
+  <object id="75" x="609" y="198" width="113" height="33.5"/>
  </objectgroup>
  <objectgroup id="29" name="objects_deco">
   <object id="53" gid="345" x="1000" y="240" width="446" height="280"/>
@@ -162,40 +165,10 @@
     <property name="marker" value="spawn"/>
    </properties>
   </object>
-  <object id="31" name="transition" x="1194" y="192" width="58" height="40">
-   <properties>
-    <property name="exit_delay" type="float" value="0.3"/>
-    <property name="exit_sound" value="doorclose"/>
-    <property name="facing" value="up"/>
-    <property name="map" value="hometown/interior/qc_diner"/>
-    <property name="marker" value="spawn"/>
-    <property name="sound" value="dooropen"/>
-   </properties>
-  </object>
   <object id="32" name="interactable" x="2542" y="136" width="68" height="80">
    <properties>
     <property name="cutscene" value="hometown.papyrushouse"/>
     <property name="solid" type="bool" value="true"/>
-   </properties>
-  </object>
-  <object id="33" name="transition" x="2172" y="168" width="86" height="40">
-   <properties>
-    <property name="exit_delay" type="float" value="0.3"/>
-    <property name="exit_sound" value="doorclose"/>
-    <property name="facing" value="up"/>
-    <property name="map" value="hometown/interior/sans_store"/>
-    <property name="marker" value="spawn"/>
-    <property name="sound" value="dooropen"/>
-   </properties>
-  </object>
-  <object id="35" name="transition" x="610" y="192" width="110" height="40">
-   <properties>
-    <property name="exit_delay" type="float" value="0.3"/>
-    <property name="exit_sound" value="doorclose"/>
-    <property name="facing" value="up"/>
-    <property name="map" value="hometown/interior/icee_room"/>
-    <property name="marker" value="spawn"/>
-    <property name="sound" value="dooropen"/>
    </properties>
   </object>
   <object id="48" name="interactable" x="744" y="194" width="70" height="40">
@@ -242,6 +215,21 @@
    <properties>
     <property name="cutscene" value="nightCutscenes.noShelterYet"/>
     <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="69" name="interactable" x="2172.75" y="180.5" width="87.25" height="27.75">
+   <properties>
+    <property name="text1" value="* (Despite the store's sign, it's closed.)"/>
+   </properties>
+  </object>
+  <object id="71" name="interactable" x="1194.16" y="193.095" width="58.1591" height="40.1136">
+   <properties>
+    <property name="text1" value="* (Despite the store's sign, it's closed.)"/>
+   </properties>
+  </object>
+  <object id="73" name="interactable" x="609.955" y="199.875" width="110.068" height="33.0227">
+   <properties>
+    <property name="text1" value="* (Despite the store's sign, it's closed.)"/>
    </properties>
   </object>
  </objectgroup>

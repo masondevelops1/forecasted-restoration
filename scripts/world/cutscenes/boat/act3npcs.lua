@@ -65,7 +65,8 @@ local act3npcs = {
 
     pongStart = function(cutscene, event)
         if Plot:isAfter("boat_end") then
-            cutscene:text('test funckin dialign (like spmaonte and phones)')
+            cutscene:setSpeaker("susie")
+            cutscene:text("* I think it's time to get off the boat,[wait:5] Kris.")
             return
         end
         local susie = cutscene:getCharacter("susie")
@@ -94,7 +95,41 @@ local act3npcs = {
     pongFinish = function(cutscene, event)
         local susie = cutscene:getCharacter("susie")
         cutscene:setSpeaker("susie")
-        cutscene:text("* TEST FUCKING DIALOG", "smirk")
+        cutscene:text("* Hell yeah![wait:5] We showed em' who's boss!", "smirk")
+        cutscene:text("* Guess that's the end of that mystery.", "stupid")
+        cutscene:text("* Good work,[wait:5] \"detective.\"", "smirk")
+        cutscene:text("* Let's just go back to our room and chill.", "nervous_side")
+        cutscene:text("* We can't be THAT far from those Evergroves!", "sincere_smile")
+        cutscene:wait(cutscene:fadeOut(1.5, { music = true }))
+        Game:getPartyMember("kris"):setFlag("cool_hat", false)
+        cutscene:mapTransition("boat/suite", 540, 228)
+        cutscene:wait(5)
+        Assets.playSound("intercom_on")
+        cutscene:setSpeaker()
+        cutscene:wait(2)
+        cutscene:text([=[
+[miniface:speaker]Hello,[wait:5] It's ye Captain speakin' again!
+        ]=], some_args)
+        cutscene:text([=[
+[miniface:speaker]For anybody who's still on
+me ship,[wait:5] this is your final wake-up call!
+        ]=], some_args)
+        cutscene:text([=[
+[miniface:speaker]It's me advision to get 
+off the boat,[wait:5] as we've reached 
+our stop,[wait:5] The Evergroves!
+        ]=], some_args)
+        cutscene:text([=[
+[miniface:speaker]Toodles![wait:5] Hope you had a nice 
+stay on the Evergroves Cruise!
+        ]=], some_args)
+        Assets.playSound("intercom_off")
+        cutscene:wait(2)
+        cutscene:wait(cutscene:fadeIn(1.5, { music = true }))
+        cutscene:setSpeaker("susie")
+        cutscene:text("* Dang,[wait:5] guess we really overslept,[wait:5] huh...?", "suspicious")
+        cutscene:text("* Now's the time we get off the boat,[wait:5] can't even say goodbye either...", "nervous")
+        cutscene:text("* ... well,[wait:5] let's get going!", "smile")
     end,
 
     stain = function(cutscene, event)

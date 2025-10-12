@@ -4,7 +4,7 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "exitKey"
+    self.name = "StrangeKey"
     -- Name displayed when used in battle (optional)
     self.use_name = nil
 
@@ -16,9 +16,9 @@ function item:init()
     -- Battle description
     self.effect = ""
     -- Shop description
-    self.shop = ""
+    self.shop = "Strange..."
     -- Menu description
-    self.description = " "
+    self.description = "A special key to the Gateway Control Center."
 
     -- Default shop price (sell price is halved)
     self.price = 0
@@ -49,7 +49,7 @@ end
 
 function item:onWorldUse()
     Game.world:startCutscene(function(cutscene)
-        cutscene:text("* *")      
+        cutscene:text("* .[wait:5].[wait:5].[wait:5] you need to use this on a door.")      
     end)
 end
 

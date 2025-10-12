@@ -16,7 +16,7 @@ function item:init()
     -- Battle description
     self.effect = "Healing\nDrink"
     -- Shop description
-    self.shop = ""
+    self.shop = "Two drinks\nfor the price\nof one."
     -- Menu description
     self.description = "A drink for two.\nHeals 2 party members. +250HP"
 

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="34" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="46">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="34" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="48">
  <editorsettings>
   <export target="coreleadup.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="shelterdark"/>
   <property name="light" type="bool" value="true"/>
+  <property name="music" value="core_approach"/>
  </properties>
  <imagelayer id="2" name="coreleadup">
   <image source="../../../../assets/sprites/backgrounds/coreleadup.png" width="786" height="1360"/>
@@ -25,14 +27,23 @@
   <object id="1" name="spawn" x="341.751" y="1297.14">
    <point/>
   </object>
+  <object id="47" name="exitingforreal" x="393" y="384.5">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup color="#ff00ff" id="5" name="objects">
   <object id="4" name="transition" x="280.667" y="1235.33" width="30.3333" height="105.667">
    <properties>
-    <property name="map" value="shelter/mainroom"/>
-    <property name="marker" value="mainroomdoor"/>
+    <property name="map" value="shelter/hallway"/>
+    <property name="marker" value="gatewayexit"/>
    </properties>
   </object>
   <object id="45" name="gatewayentry" x="316" y="172" width="150" height="158"/>
+  <object id="46" name="transition" x="314.333" y="313.167" width="151.333" height="27.667">
+   <properties>
+    <property name="map" value="gateway/core"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

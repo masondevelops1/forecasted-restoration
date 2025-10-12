@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,10 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 15,
-  nextobjectid = 47,
+  nextobjectid = 53,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
-    ["music"] = "depths"
+    ["music"] = "depths",
+    ["step_sound"] = "reverb"
   },
   tilesets = {
     {
@@ -382,6 +384,23 @@ return {
             ["map"] = "boat/outerDeck",
             ["marker"] = "spawnDocks"
           }
+        },
+        {
+          id = 52,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = -1.7893,
+          y = 392.884,
+          width = 29.5786,
+          height = 160.233,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "depths/crosswalk",
+            ["marker"] = "spawn1",
+            ["step_sound"] = "reverb"
+          }
         }
       }
     },
@@ -443,8 +462,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 0,
-          y = 480,
+          x = 55.8197,
+          y = 478.702,
           width = 0,
           height = 0,
           rotation = 0,
@@ -655,8 +674,8 @@ return {
           type = "",
           shape = "rectangle",
           x = 0,
-          y = 560,
-          width = 120,
+          y = 549.615,
+          width = 160.891,
           height = 40,
           rotation = 0,
           visible = true,
@@ -735,6 +754,58 @@ return {
           x = 960,
           y = 560,
           width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 48,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 210,
+          y = 351.5,
+          width = 103.5,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 49,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 369.25,
+          y = 351,
+          width = 103.5,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 50,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 726.25,
+          y = 353,
+          width = 103.5,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 51,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 886.25,
+          y = 353,
+          width = 103.5,
           height = 40,
           rotation = 0,
           visible = true,

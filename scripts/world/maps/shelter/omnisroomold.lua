@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,8 +10,9 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 29,
+  nextobjectid = 32,
   properties = {
+    ["border"] = "shelter",
     ["light"] = true,
     ["music"] = "in-the-shelter"
   },
@@ -259,6 +260,51 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 29,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 610.227,
+          y = 350.193,
+          width = 75.5459,
+          height = 106.656,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "shelter.boxes"
+          }
+        },
+        {
+          id = 30,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 541.894,
+          y = 361.484,
+          width = 51.5459,
+          height = 84.4269,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "shelter.computer"
+          }
+        },
+        {
+          id = 31,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 512.56,
+          y = 390.984,
+          width = 29.2126,
+          height = 54.8852,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "shelter.documents"
+          }
         }
       }
     },
@@ -302,7 +348,7 @@ return {
           width = 742.667,
           height = 596.667,
           rotation = 0,
-          visible = true,
+          visible = false,
           properties = {
             ["lockx"] = true,
             ["locky"] = true,
@@ -319,7 +365,7 @@ return {
           width = 502,
           height = 416.667,
           rotation = 0,
-          visible = true,
+          visible = false,
           properties = {
             ["lockx"] = true,
             ["locky"] = true,

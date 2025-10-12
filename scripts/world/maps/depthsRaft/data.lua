@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -9,11 +9,12 @@ return {
   height = 30,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 11,
-  nextobjectid = 21,
+  nextlayerid = 12,
+  nextobjectid = 35,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
-    ["music"] = "waves",
+    ["music"] = "evergrove-outskirts",
     ["step_sound"] = "reverb"
   },
   tilesets = {
@@ -190,6 +191,100 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 11,
+      name = "collisions",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 23,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 901.333,
+          y = 290,
+          width = 298,
+          height = 377.333,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 27,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -229.667,
+          y = 277.666,
+          width = 298,
+          height = 387.334,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 28,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 10.3333,
+          y = 655,
+          width = 298,
+          height = 209.334,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 29,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 719.667,
+          y = 656,
+          width = 183.333,
+          height = 210.667,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 30,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 721.667,
+          y = 289.333,
+          width = 124.666,
+          height = 265.334,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 31,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 239.667,
+          y = 549.916,
+          width = 13.6667,
+          height = 105.084,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 4,
       name = "objects",
       class = "",
@@ -250,14 +345,15 @@ return {
           name = "transition",
           type = "",
           shape = "rectangle",
-          x = 4,
-          y = 264,
-          width = 67,
-          height = 127,
+          x = 66,
+          y = 286.333,
+          width = 61,
+          height = 113.167,
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "evergroveLeadup"
+            ["map"] = "evergroveLeadup",
+            ["marker"] = "spawnDock"
           }
         },
         {
@@ -267,13 +363,13 @@ return {
           shape = "rectangle",
           x = 845,
           y = 289,
-          width = 75,
-          height = 77,
+          width = 61,
+          height = 71.6667,
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "depths",
-            ["marker"] = "spawn1"
+            ["map"] = "boat/outerDeck",
+            ["marker"] = "spawnDocks"
           }
         }
       }
@@ -284,7 +380,7 @@ return {
       id = 3,
       name = "markers",
       class = "",
-      visible = false,
+      visible = true,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -366,10 +462,36 @@ return {
           name = "cameratarget3",
           type = "",
           shape = "rectangle",
-          x = 360,
-          y = 360,
+          x = 76,
+          y = 217,
           width = 520,
           height = 480,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 26,
+          name = "spawn1",
+          type = "",
+          shape = "point",
+          x = 92,
+          y = 431.5,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 33,
+          name = "susie1",
+          type = "",
+          shape = "point",
+          x = 643.375,
+          y = 599.125,
+          width = 0,
+          height = 0,
           rotation = 0,
           visible = true,
           properties = {}

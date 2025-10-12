@@ -33,15 +33,13 @@ end
 function PartyBattler:update()
     super.update(self)
     self.bleed_clock = self.bleed_clock + DT
-    while self.bleed_clock > (1/30) do
-        self.bleed_clock = self.bleed_clock - (1/30)
+    if self.bleed_clock > 0.2 then
+        self.bleed_clock = self.bleed_clock - 0.2
         -- TODO: Actual bleed condition
         if Game.battle:isBleeding() then
             self.bleed = self.bleed + 4
-        elseif Game.battle.state == "DEFENDING" then
-            self.bleed = self.bleed - 1
         else
-            self.bleed = self.bleed - 2
+            self.bleed = self.bleed - 1
         end
     end
     self.bleed = Utils.clamp(self.bleed, 0, self.chara:getHealth())

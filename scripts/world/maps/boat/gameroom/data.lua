@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -12,9 +12,11 @@ return {
   nextlayerid = 26,
   nextobjectid = 109,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
     ["music"] = "mystery",
-    ["name"] = "Your Suite (Cruise)"
+    ["name"] = "Your Suite (Cruise)",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {
@@ -664,7 +666,7 @@ return {
           properties = {
             ["cutscene"] = "boatCutscenes.goldTable",
             ["plotmax"] = "*boat_act3_mapswitch",
-            ["plotmin"] = "boat_act3_mapswitch",
+            ["plotmin"] = "boat_act2_mapswitch",
             ["solid"] = true
           }
         }

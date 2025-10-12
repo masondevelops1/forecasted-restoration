@@ -3,7 +3,7 @@ Registry.registerGlobal("UISkinLib", lib)
 UISkinLib = lib
 
 function UISkinLib:init()
-    HookSystem.hook(Actor, "getUISkin", function (_, actor)
+    Utils.hook(Actor, "getUISkin", function (_, actor)
         ---@cast actor Actor
         ---@diagnostic disable-next-line: redundant-return-value
         return actor.ui_skin

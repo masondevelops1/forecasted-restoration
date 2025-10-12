@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,9 +10,11 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 46,
+  nextobjectid = 48,
   properties = {
-    ["light"] = true
+    ["border"] = "shelterdark",
+    ["light"] = true,
+    ["music"] = "core_approach"
   },
   tilesets = {},
   layers = {
@@ -204,6 +206,19 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 47,
+          name = "exitingforreal",
+          type = "",
+          shape = "point",
+          x = 393,
+          y = 384.5,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -233,8 +248,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "shelter/mainroom",
-            ["marker"] = "mainroomdoor"
+            ["map"] = "shelter/hallway",
+            ["marker"] = "gatewayexit"
           }
         },
         {
@@ -249,6 +264,22 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 46,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 314.333,
+          y = 313.167,
+          width = 151.333,
+          height = 27.667,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "gateway/core",
+            ["marker"] = "spawn"
+          }
         }
       }
     }

@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 5,
-  nextobjectid = 20,
+  nextobjectid = 22,
   properties = {
     ["border"] = "core",
     ["light"] = true,
@@ -300,6 +300,22 @@ return {
             ["text1"] = "* A great feeling of dread\ncourses through you.",
             ["text2"] = "* You are filled with the power\nof being where you shouldn't be."
           }
+        },
+        {
+          id = 21,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = -16.9343,
+          y = 199.9,
+          width = 29.833,
+          height = 120.799,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "gateway/core",
+            ["marker"] = "exiting"
+          }
         }
       }
     },
@@ -374,8 +390,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 20,
-          y = 280,
+          x = 32.1069,
+          y = 267.489,
           width = 0,
           height = 0,
           rotation = 0,

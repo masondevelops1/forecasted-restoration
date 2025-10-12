@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -12,9 +12,11 @@ return {
   nextlayerid = 27,
   nextobjectid = 117,
   properties = {
+    ["border"] = "ground_zero",
     ["depths"] = true,
     ["music"] = "jukebox",
-    ["name"] = "Your Suite (Cruise)"
+    ["name"] = "Your Suite (Cruise)",
+    ["step_sound"] = "boat"
   },
   tilesets = {
     {
@@ -139,7 +141,7 @@ return {
             ["actor"] = "boatnpcs/bartender",
             ["cutscene"] = "boatCutscenes.bartender",
             ["plotmax"] = "*boat_act2_mapswitch",
-            ["plotmin"] = "boat_act2_mapswitch"
+            ["plotmin"] = "boat_act1_start"
           }
         }
       }

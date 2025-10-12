@@ -5,14 +5,14 @@ function spell:init()
     super.init(self)
 
     -- Display name
-    self.name = "LameAssHeal"
+    self.name = "LameHeal"
     -- Name displayed when cast (optional)
-    self.cast_name = "LAME-ASS HEAL"
+    self.cast_name = "LameHeal"
 
     -- Battle description
     self.effect = "Stupid\nhealing"
     -- Menu description
-    self.description = "Heals 1 party member. It's alright, I guess."
+    self.description = "Heals 1 party member. It's pretty lame."
 
     -- TP cost
     self.cost = 95

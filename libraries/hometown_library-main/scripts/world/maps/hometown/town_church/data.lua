@@ -759,7 +759,7 @@ return {
           visible = true,
           properties = {
             ["text1"] = "* (It's locked...)",
-            ["text2"] = "* (...[wait:5] the town it's pretty empty today.)"
+            ["text2"] = "* (...[wait:5] you sit for second and think about your previous adventures.)"
           }
         }
       }

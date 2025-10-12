@@ -5,7 +5,7 @@ function Dummy:init()
     super.init(self)
 
     -- Text displayed at the bottom of the screen at the start of the encounter
-    self.text = "* The royal scientist's boyfriend."
+    self.text = "* The scientist's assistant approaches."
 
     -- Battle music ("battle" is rude buster)
     self.music = "omnis battle theme"

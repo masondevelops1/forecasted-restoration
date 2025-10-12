@@ -1,7 +1,7 @@
 return {
   version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.10.2",
+  tiledversion = "1.11.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -10,12 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 33,
+  nextobjectid = 42,
   properties = {
-    ["border"] = "leaves",
+    ["border"] = "ground_zero",
     ["depths"] = true,
     ["light"] = false,
-    ["music"] = "muscle"
+    ["music"] = "pirates"
   },
   tilesets = {
     {
@@ -399,7 +399,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* (You try to take the egg...)",
+            ["text1"] = "* (You try to take an egg...)",
             ["text2"] = "* (It's glued to the basket.)"
           }
         },
@@ -463,8 +463,8 @@ return {
           properties = {
             ["depths"] = true,
             ["facing"] = "down",
-            ["map"] = "sansArea",
-            ["marker"] = "spawn1"
+            ["map"] = "depths/crosswalk",
+            ["marker"] = "sans"
           }
         },
         {
@@ -472,8 +472,8 @@ return {
           name = "npc",
           type = "",
           shape = "point",
-          x = 205.878,
-          y = 216.62,
+          x = 180.378,
+          y = -45.88,
           width = 0,
           height = 0,
           rotation = 0,
@@ -481,6 +481,87 @@ return {
           properties = {
             ["actor"] = "sans",
             ["cutscene"] = "depthsCutscenes.sans"
+          }
+        },
+        {
+          id = 34,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 646.292,
+          y = 224.167,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/kris",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 36,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 606.273,
+          y = 224.091,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/ralsei",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 37,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 568,
+          y = 224.667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/susie",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 38,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 527.667,
+          y = 224.667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/noelle",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 39,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 560.25,
+          y = 418.75,
+          width = 79.5,
+          height = 62,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "depthsCutscenes.meetPirates",
+            ["once"] = false,
+            ["plotmax"] = "*depths_pirates"
           }
         }
       }
@@ -506,6 +587,19 @@ return {
           shape = "point",
           x = 600,
           y = 440,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "piratesOutside",
+          type = "",
+          shape = "point",
+          x = 886,
+          y = -104,
           width = 0,
           height = 0,
           rotation = 0,

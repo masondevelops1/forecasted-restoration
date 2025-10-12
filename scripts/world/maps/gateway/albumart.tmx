@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="70" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="19" nextobjectid="54">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="70" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="19" nextobjectid="54">
  <editorsettings>
   <export target="albumart.lua" format="lua"/>
  </editorsettings>
@@ -104,7 +104,7 @@
  <objectgroup color="#ff00ff" id="4" name="objects">
   <object id="41" name="interactable" x="110" y="200" width="60" height="40">
    <properties>
-    <property name="text1" value="* I'm Wing Gaster! The royal sciences LLC!"/>
+    <property name="text1" value="* GATEWAY COLLAPSE IMMINENT. AUDIO LOGS OFFLINE."/>
    </properties>
   </object>
   <object id="45" name="floormirror" x="360" y="240" width="1240" height="120">

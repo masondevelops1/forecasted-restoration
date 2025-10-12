@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="22" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="72">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="22" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="74">
  <editorsettings>
   <export target="awakening.lua" format="lua"/>
  </editorsettings>
@@ -59,12 +59,7 @@
   </object>
  </objectgroup>
  <objectgroup color="#ff00ff" id="5" name="objects">
-  <object id="59" name="transition" x="706" y="480" width="32" height="106">
-   <properties>
-    <property name="map" value="shelter/mainroom"/>
-   </properties>
-  </object>
-  <object id="62" name="cameratarget" x="187.5" y="230" width="530.5" height="373.5" visible="0">
+  <object id="62" name="cameratarget" x="187.5" y="230" width="530.5" height="373.5">
    <properties>
     <property name="lockx" type="bool" value="true"/>
     <property name="locky" type="bool" value="true"/>
@@ -77,9 +72,15 @@
     <property name="cutscene" value="device.device"/>
    </properties>
   </object>
+  <object id="73" name="transition" x="706.054" y="480.035" width="32.0435" height="107">
+   <properties>
+    <property name="map" value="shelter/mainroom"/>
+    <property name="marker" value="awaken"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup color="#7f00ff" id="4" name="markers">
-  <object id="7" name="spawn" x="432.833" y="383.333">
+  <object id="7" name="spawn" x="259.5" y="446.666">
    <point/>
   </object>
   <object id="61" name="awakeningdoor" x="650" y="534">

@@ -1,5 +1,5 @@
 ---@class Cutscene : Cutscene
-local Cutscene, super = HookSystem.hookScript(Cutscene)
+local Cutscene, super = Utils.hookScript(Cutscene)
 
 -- Waits until a callback is called. TODO: PR this to Kristal
 ---@param func fun(callback:function)

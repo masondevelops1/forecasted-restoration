@@ -166,11 +166,11 @@ local boatCutscenes = {
         end
 
         if event.interact_count == 1 then
-            ScreenText("Hi Fizz")
-            ScreenText("You said this area was inaccessible anyway so...")
-            ScreenText("I'm here.")
+            ScreenText("The Evergroves...")
+            ScreenText("...a place where anybody can be anything...")
+            ScreenText("It may be getting nearer to the end of your adventure...")
         else
-            ScreenText("Yeah.")
+            ScreenText("DETERMINATION fills your SOUL.")
         end
     end,
 
@@ -179,6 +179,12 @@ local boatCutscenes = {
         Assets.playSound("knock")
         cutscene:text("* (Knock,[wait:5] knock,[wait:5] knock...)")
         cutscene:text("* (It's locked...)[wait:10]\n* (Looks like you'll need a key.)")
+    end,
+
+    chasingpirates = function(cutscene, event)
+        local susie = cutscene:getCharacter("susie")
+        cutscene:setSpeaker("susie")
+        cutscene:text("* I don't think we need to go back there,[wait:5] Kris.", "stupid")
     end,
 
     lockedDoor1 = function(cutscene, event)
@@ -194,7 +200,15 @@ local boatCutscenes = {
         cutscene:walkToSpeed("kris", 703, kris.y)
         
     end,
-
+    scientistblocker = function(cutscene, event)
+        if Plot:isBefore("boat_act3_mapswitch") and not Plot:isBefore("boat_act2_mapswitch") then
+            local scientist = cutscene:getCharacter("boatnpcs/scientist")
+            cutscene:setSpeaker(scientist)
+            cutscene:text("* Hey,[wait:5] I'm studying that area next.[wait:5] You could mess up my delicate research.", nil, scientist)
+            local kris = cutscene:getCharacter("kris")
+            cutscene:walkToSpeed("kris", kris.x, kris.y+20)
+        end;
+    end,
     getKey104 = function(cutscene, event)
         local keyring = Game.inventory:getItemByID("keyring")
         keyring:setFlag("room104", true)
@@ -271,8 +285,8 @@ local boatCutscenes = {
             Assets.playSound("doortransition")
         else
             cutscene:gotoCutscene("boatCutscenes.lockedDoor")
-        end
-    end,
+    end
+end,
 
     doorBoilerRoom = function(cutscene, event)
         local keyring = Game.inventory:getItemByID("keyring")

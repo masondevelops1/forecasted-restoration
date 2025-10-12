@@ -1,0 +1,28 @@
+{
+    "activeFile": "scripts/world/maps/fileselect/fileselect.tmx",
+    "expandedProjectPaths": [
+        "scripts/world/maps/fileselect",
+        "scripts/world",
+        "scripts/world/maps"
+    ],
+    "fileStates": {
+        "scripts/world/maps/fileselect/fileselect.tmx": {
+            "scale": 1.9158333333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 117.44236624619401,
+                "y": 214.0060896041757
+            }
+        },
+        "scripts/world/tilesets/castle.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "openFiles": [
+        "scripts/world/maps/fileselect/fileselect.tmx"
+    ],
+    "project": "fileselect.tiled-project",
+    "recentFiles": [
+        "scripts/world/maps/fileselect/fileselect.tmx"
+    ]
+}

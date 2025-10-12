@@ -1,7 +1,7 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.11.0",
+  tiledversion = "1.11.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -10,11 +10,12 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 21,
+  nextobjectid = 25,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
-    ["music"] = "mus_evergroves"
+    ["music"] = "mus_evergroves",
+    ["step_sound"] = "evergroves"
   },
   tilesets = {
     {
@@ -292,6 +293,21 @@ return {
             ["text1"] = "* This lift will take you to the evergroves.",
             ["text2"] = "* Unfortunately,[wait:5] you're already there."
           }
+        },
+        {
+          id = 23,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 757.636,
+          y = -3.63636,
+          width = 123.5,
+          height = 9.5,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "evergroves/sailor shop"
+          }
         }
       }
     },
@@ -394,6 +410,19 @@ return {
           shape = "point",
           x = 82,
           y = 0,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 24,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 821.583,
+          y = 64.5,
           width = 0,
           height = 0,
           rotation = 0,
