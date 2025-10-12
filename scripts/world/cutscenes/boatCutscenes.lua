@@ -200,7 +200,7 @@ local boatCutscenes = {
         cutscene:walkToSpeed("kris", 703, kris.y)
         
     end,
-    scientistblocker = function(cutscene, event)
+    scientistblock = function(cutscene, event)
         if Plot:isBefore("boat_act3_mapswitch") and not Plot:isBefore("boat_act2_mapswitch") then
             local scientist = cutscene:getCharacter("boatnpcs/scientist")
             cutscene:setSpeaker(scientist)
