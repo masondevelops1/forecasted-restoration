@@ -51,7 +51,7 @@ end
 
 function item:onWorldUse()
     Game.world:startCutscene(function(cutscene)
-        cutscene:text("* *")      
+        cutscene:text("* You look at the Key Ring in admiration.")      
     end)
 end
 

@@ -4,21 +4,18 @@ function Omnice:init()
     super.init(self)
 
     -- Enemy name
-    self.name = "???"
+    self.name = "Gateway Guard"
     -- Sets the actor, which handles the enemy's sprites (see scripts/data/actors/dummy.lua)
     self:setActor("fomnis")
-
     -- Enemy health
-    self.max_health = 6666666666
-    self.health = 6666666666
+    self.max_health = 999
+    self.health = 190
     -- Enemy attack (determines bullet damage)
-    self.attack = 20
+    self.attack = 7
     -- Enemy defense (usually 0)
-    self.defense = 6666666666
+    self.defense = 0
     -- Enemy reward
     self.money = 0
-
-    self.dialogue_bubble = "blank"
 
     -- Mercy given when sparing this enemy before its spareable (20% for basic enemies)
     self.spare_points = 0
@@ -32,23 +29,26 @@ function Omnice:init()
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
-        ""
+        "* Tomorrow means the surface.",
+        "* The Gateway will be what saves us.",
+        "* Must protect all of the Gateway...",
+        "* Error: Shutdown access denied."
     }
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
-    self.check = "AT DF \n* It has no mouth and it must smile."
+    self.check = "AT?? DF?? \n* Tomorrow means the surface."
 
     -- Text randomly displayed at the bottom of the screen each turn
     self.text = {
-        "* ???",
-        "* Something stands in your way..?",
-        "* Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong Nothing is wrong ",
+        "* They're just fulfilling their purpose.",
+        "* Their code seems to be glitching out.",
+        "* They cannot look any other way. They cannot lie. They must defeat you.",
     }
     -- Text displayed at the bottom of the screen when the enemy has low health
-    self.low_health_text = "* It seems scared."
+    self.low_health_text = "* They cannot look any other way. They cannot lie. They must defeat you."
 
     -- Register act called "Smile"
-    self:registerAct("Smile")
+    self:registerAct("Directive")
     -- Register party act with Ralsei called "Tell Story"
     -- (second argument is description, usually empty)
     self:registerAct("Talk", "", {"susie"})
@@ -56,16 +56,12 @@ function Omnice:init()
 end
 
 function Omnice:onAct(battler, name)
-    if name == "Smile" then
+    if name == "Directive" then
         -- Act text (since it's a list, multiple textboxes)
-        if self.hidden_mercy >= 2 then
-            return {
-                "* You smile.[wait:5]\n* It smiles back.",
-            }
+        if self.hidden_mercy >= 1 then
+            Game.battle:startActCutscene("everyman", "directive")
         else
-            return {
-                "* You smile.[wait:5]\n* It doesn't.",
-            }
+            Game.battle:startActCutscene("everyman", "failed")
         end
 
     elseif name == "Talk" then
@@ -73,7 +69,7 @@ function Omnice:onAct(battler, name)
         if self.hidden_mercy < 1 then
             Game.battle:startActCutscene("everyman", "talk")
         else
-            Game.battle:startActCutscene("everyman", "cry")
+            Game.battle:startActCutscene("everyman", "talk2")
         end
         return
     elseif name == "Comfort" then
@@ -90,11 +86,10 @@ function Omnice:onAct(battler, name)
             return "* Ralsei bowed politely.\n* The dummy spiritually bowed\nin return."
         elseif battler.chara.id == "susie" then
             -- S-Action: start a cutscene (see scripts/battle/cutscenes/dummy.lua)
-            Game.battle:startActCutscene("dummy", "susie_punch")
-            return
+            return "* Susie stared at the Gateway Guard."
         else
             -- Text for any other character (like Noelle)
-            return "* "..battler.chara:getName().." straightened the\ndummy's hat."
+            return "* "..battler.chara:getName().." stared at the\nGateway Guard."
         end
     end
 
