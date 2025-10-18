@@ -79,6 +79,23 @@ function actor:init()
 
     -- Table of sprite offsets (indexed by sprite name)
     self.offsets = {
+        -- Battle offsets
+        ["battle/idle"] = {-5, -1},
+
+        ["battle/attack"] = {-8, -6},
+        ["battle/attackready"] = {-8, -6},
+        ["battle/act"] = {-6, -6},
+        ["battle/actend"] = {-6, -6},
+        ["battle/actready"] = {-6, -6},
+        ["battle/item"] = {-6, -6},
+        ["battle/itemready"] = {-6, -6},
+        ["battle/defend"] = {-5, -3},
+
+        ["battle/defeat"] = {-8, -5},
+        ["battle/hurt"] = {-5, -6},
+
+        ["battle/intro"] = {-8, -9},
+        ["battle/victory"] = {-3, 0},
         -- Cutscene offsets
         ["fall"] = {-8, -2},
 
