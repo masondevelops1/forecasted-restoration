@@ -15,7 +15,7 @@ function Warstalker:init()
     self.max_health = 0
     self.health = 1500
     -- Enemy attack (determines bullet damage)
-    self.attack = 0
+    self.attack = 7
     -- Enemy defense (usually 0)
     self.defense = -10
     -- Enemy reward
