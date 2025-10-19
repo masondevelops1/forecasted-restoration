@@ -51,4 +51,64 @@ documents = function(cutscene, event)
     cutscene:setSpeaker("susie")
     cutscene:text("* It'd probably be a good idea to check out that \"device.\"", "sad")
 end;
+gatewayEnter = function(cutscene, event)
+    if Plot:isBefore("gateway_enter") then
+        local kris = assert(cutscene:getCharacter("kris"))
+        local susie = cutscene:getCharacter("susie") or kris
+        local noelle = cutscene:getCharacter("noelle") or susie
+        Kristal.Console:log("device_used")   
+        cutscene:setSpeaker(susie)
+        cutscene:text("* So...[wait:5] this is the Gateway...", "neutral_side")
+        cutscene:text("* Man,[wait:5] it really feels like we're about to step into something big,[wait:5] huh?", "nervous")
+        cutscene:text("* Earthquakes...[wait:5] creepy shelter...[wait:5] stupid doctor...", "neutral")
+        cutscene:text("* Can't believe it all leads up to this...", "neutral_side")
+        cutscene:text("* Alright,[wait:5] let's not waste another second!", "smile") 
+        SetPlot("gateway_enter")
+    end;
+end;
+firstTerminal = function(cutscene)
+    if Plot:isBefore("gateway_terminal1") then
+        local kris = assert(cutscene:getCharacter("kris"))
+		local susie = cutscene:getCharacter("susie") or kris
+		local noelle = cutscene:getCharacter("noelle") or susie
+		Kristal.Console:log("device_used")   
+		cutscene:setSpeaker(susie)
+		cutscene:text("* So...[wait:5] guess we should turn this on,[wait:5] shouldn't we?", "nervous")
+        cutscene:text("* Alright then,[wait:5] Kris,[wait:5] press that big red button!", "smile") 
+        cutscene:setSpeaker()
+        Assets.playSound("item")
+        cutscene:text("* You pressed the big red button.\n[wait:5]* 1/2 Terminals have been activated!")
+		SetPlot("gateway_terminal1")
+    end
+end,
+finalTerminal = function(cutscene)
+    if Plot:isBefore("gateway_lockdown_off") then
+        local kris = assert(cutscene:getCharacter("kris"))
+		local susie = cutscene:getCharacter("susie") or kris
+		local noelle = cutscene:getCharacter("noelle") or susie
+		Kristal.Console:log("device_used")   
+		cutscene:setSpeaker(susie)
+		cutscene:text("* So...[wait:5] guess this disables the lockdown.", "nervous")
+        cutscene:text("* Alright then,[wait:5] Kris,[wait:5] one more press of that big red button!", "smile") 
+        cutscene:setSpeaker()
+        Assets.playSound("item")
+        cutscene:text("* You pressed the big red button.\n[wait:5]* 2/2 Terminals have been activated!")
+        cutscene:text("[color:#ff00ff]* Deactivating Gateway Lockdown...")
+        cutscene:text("* You heard a big metal door slowly open...")
+        cutscene:text("[color:#ff00ff]* Complete![wait:5] [color:#ff4444]WARNING: Gateway Sector:[wait:5] B needs immediate maintenance.")
+        cutscene:text("[color:#ff00ff]* Security Guards will be immediately deactivated when Floor B2 is exited.")
+        SetPlot("gateway_lockdown_off")
+    end
+end,
+getHeal = function(cutscene)
+    if Plot:isBefore("gateway_lockdown_off") then
+        local kris = assert(cutscene:getCharacter("kris"))
+		local susie = cutscene:getCharacter("susie") or kris
+		local noelle = cutscene:getCharacter("noelle") or susie
+		Kristal.Console:log("device_used")   
+        Assets.playSound("item")
+        cutscene:text("You got the WingDing![wait:5] It wasn't added anywhere.")
+        cutscene:text("This is OBVIOUSLY Test fucking DIALOGUE!")
+    end
+end;
 }

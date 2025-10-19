@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 5,
-  nextobjectid = 22,
+  nextlayerid = 6,
+  nextobjectid = 25,
   properties = {
     ["border"] = "core",
     ["light"] = true,
@@ -29,7 +29,7 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
-      id = 18,
+      id = 5,
       name = "objects_gonerbg",
       class = "",
       visible = true,
@@ -41,7 +41,7 @@ return {
       properties = {},
       objects = {
         {
-          id = 59,
+          id = 24,
           name = "gonerbg",
           type = "",
           shape = "rectangle",
@@ -251,7 +251,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "[color:#ff00ff]* Current status: DEGRADED"
+            ["text1"] = "[color:#ff00ff]* Welcome to Gateway Sector:[wait:5] B.",
+            ["text2"] = "[color:#ff00ff]* Current status: DEGRADED"
           }
         },
         {
@@ -297,7 +298,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* A great feeling of dread\ncourses through you.",
+            ["text1"] = "* A feeling of relief washes over you after defeating the security guards.",
             ["text2"] = "* You are filled with the power\nof being where you shouldn't be."
           }
         },
@@ -313,8 +314,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["map"] = "gateway/core",
-            ["marker"] = "exiting"
+            ["map"] = "gateway/lockdown",
+            ["marker"] = "spawn1"
           }
         }
       }

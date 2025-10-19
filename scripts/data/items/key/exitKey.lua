@@ -4,7 +4,7 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "StrangeKey"
+    self.name = "ControlKey"
     -- Name displayed when used in battle (optional)
     self.use_name = nil
 
@@ -18,7 +18,7 @@ function item:init()
     -- Shop description
     self.shop = "Strange..."
     -- Menu description
-    self.description = "A special key to the Gateway Control Center."
+    self.description = "A special key to the Evergroves Control Center."
 
     -- Default shop price (sell price is halved)
     self.price = 0

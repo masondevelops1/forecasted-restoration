@@ -244,5 +244,4 @@ function gateway.fall_to_depths(cutscene)
     Game.world.music:stop()
     cutscene:gotoCutscene("depths", "start")
 end
-
 return gateway

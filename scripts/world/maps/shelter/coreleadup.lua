@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 48,
+  nextobjectid = 50,
   properties = {
     ["border"] = "shelterdark",
     ["light"] = true,
@@ -279,6 +279,22 @@ return {
           properties = {
             ["map"] = "gateway/core",
             ["marker"] = "spawn"
+          }
+        },
+        {
+          id = 49,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 337.818,
+          y = 445.909,
+          width = 108.242,
+          height = 28,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "shelter.gatewayEnter",
+            ["once"] = false
           }
         }
       }

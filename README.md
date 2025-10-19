@@ -5,15 +5,16 @@
 ## Custom Features:
 - Custom Borders <img width="2559" height="1439" alt="kris and susie chillin' with borders on" src="https://github.com/user-attachments/assets/e13954a0-ea79-402f-9d4f-c04050e8d9bb" />
 - Custom Enemies <img width="2559" height="1439" alt="battlin' with scrapscallions" src="https://github.com/user-attachments/assets/aa21ae5b-6842-4f1d-9c36-567c5838b34a" />
-- Beautiful Views <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/9faf1ecd-a717-4664-bfa5-3ca68194582d" />
-- Custom Puzzles <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/d9ba9633-cd5a-4493-bbd5-3a1bfb90ff0f" />
+- Beautiful Views <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/44cb8bb8-9b54-4dab-b06c-c8073673cc80" />
+- Custom Puzzles <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/143e9853-65d1-4f88-9e55-8ac6d28c2e10" />
 - Another Night in Hometown <img width="2559" height="1439" alt="looking at noelle's house at night" src="https://github.com/user-attachments/assets/38237094-a241-4e3d-9955-b898b27ca373" />
 
 ### IMPORTANT: PLEASE PLEASE PLEASE do not take me as the owner of this project's entire concept. This concept is owned by the Forecasted team, and even if not canon to DELTARUNE: New Future, is not mine.
 
 ## Our Current Progress:
 - HOMETOWN: ✅100/100 [Completely done.]
-- GATEWAY: ✅70/100 [I probably will extend the Gateway one day, the track is too good to hear for a maximum of 2 minutes.]
-- DEPTHS: ✅100/100 [May have one or two more rooms added for pacing.]
-- BOAT RIDE: ✅95/100 [May need additional bug testing. NOTE: Bug Testing Phase 1 Done.]
-- EVERGROVES ❌10/100 [Barely started, requires a lot of work.]
+- GATEWAY: ✅99/100 [May require more bug-testing.]
+- DEPTHS: ✅95/100 [May have one or two more rooms added for pacing.]
+- BOAT RIDE: ✅99/100 [Most likely completely done.]
+- EVERGROVES: ❌15/100 [Barely started, requires a lot of work.]
+- MANOR: ❌0/100 [Literally the final area of the game, no I have not started it.]

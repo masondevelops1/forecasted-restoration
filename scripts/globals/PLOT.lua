@@ -1,18 +1,21 @@
 ---@enum PLOT
 ---@enum (key)PLOT.key
 local PLOT = {
-    initial = 0;
-    night_met_susie = 10;
-    holidayhouse_enter = 20;
-    apartment_enter = 40;
-    apartment_exit = 55;
-    shelter_enter = 60;
-    shelter_heard_log = 70;
+    initial = 0; -- amir amir amir mir mir mir
+    night_met_susie = 10; -- susie scared you aaaaaaa
+    holidayhouse_enter = 20; -- noelle gets out before the squishing carol appears
+    apartment_enter = 40; -- we dont need supplies chat, the soul already knows what happened in this chapter!
+    apartment_exit = 55; -- noelle found out you're a criminal, susie. no more girlfriend for you.
+    shelter_enter = 60; -- you have no supplies, it was a lie.
+    shelter_heard_log = 70; -- i heard him whisper, i hear him whisper that he kissed wing dings gaster
     gateway_enter = 90; -- cutscene in shelter/coreleadup played
+    gateway_terminal1 = 92; -- im warning you this isn't gonna end well. dont disable the lockdown.
+    transferenabled = 93; -- winddings gaster's recreation would come on the ground zero tiles. but uh... not yet.
+    gateway_lockdown_off = 94; -- why would you disable the lockdown omnis is going to become your boyfriend now
     gateway_collapse = 95; -- gateway begins collapsing
     depths_enter = 100; -- gateway collapse finished
     depths_slip = 105; -- kris slipped and died, aw man...
-    depths_pirates = 110; -- kris slipped and died, aw man...
+    depths_pirates = 110; -- pirates arrrrrrrrrrrrrrr
 
     -- TODO: Adjust these numbers to something more sensible once we get to that point
     -- I hate that I can't do that anymore because it'd break save files

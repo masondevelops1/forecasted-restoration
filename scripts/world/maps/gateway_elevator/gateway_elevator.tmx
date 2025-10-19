@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="36">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="core"/>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="gateway"/>
+ </properties>
+ <objectgroup color="#0000ff" id="6" name="collision">
+  <object id="21" x="160" y="240" width="40" height="120"/>
+  <object id="23" x="201" y="200" width="240" height="41"/>
+  <object id="24" x="440" y="240" width="40" height="120"/>
+  <object id="25" x="200" y="360" width="80" height="120"/>
+  <object id="26" x="360" y="360" width="80" height="120"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="6" name="elevatorbuttons" x="360" y="200" width="40" height="40">
+   <properties>
+    <property name="plotmin" value="gateway_terminal1"/>
+   </properties>
+  </object>
+  <object id="7" name="transition" x="280" y="480" width="80" height="40">
+   <properties>
+    <property name="map" value="intro/lab_reception"/>
+    <property name="marker" value="entry_elevator"/>
+    <property name="sound" value="elecdoor_close"/>
+   </properties>
+  </object>
+  <object id="29" name="elevator" x="0" y="0" width="40" height="40">
+   <properties>
+    <property name="color_1" type="color" value="#ff6a5d7b"/>
+    <property name="color_2" type="color" value="#ff362f42"/>
+    <property name="color_3" type="color" value="#ff1c1921"/>
+    <property name="dest_1" value="gateway/creation"/>
+    <property name="dest_2" value="gateway/basement"/>
+    <property name="dest_3" value="gateway/broken"/>
+    <property name="length_1" type="int" value="1040"/>
+    <property name="length_2" type="int" value="1040"/>
+    <property name="length_3" type="int" value="1040"/>
+    <property name="name_1" value="Gateway B1"/>
+    <property name="name_2" value="Gateway B2"/>
+    <property name="name_3" value="Gateway B3"/>
+   </properties>
+  </object>
+  <object id="35" name="interactable" x="359.318" y="199.257" width="40.8182" height="56.7579">
+   <properties>
+    <property name="plotmax" value="*gateway_terminal1"/>
+    <property name="text1" value="[color:#ff4444]* Warning:[wait:5] Gateway Elevator is on Lockdown."/>
+    <property name="text2" value="[color:#ff4444]* Please disable Lockdown to continue use."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="5" name="entry" x="320" y="440">
+   <point/>
+  </object>
+  <object id="32" name="buttons" x="380" y="260">
+   <point/>
+  </object>
+  <object id="33" name="spawn" x="320" y="320">
+   <point/>
+  </object>
+  <object id="34" name="entry_up" x="320" y="260">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
