@@ -168,6 +168,22 @@ local evergroves = {
         cutscene:text("* \"We thank all of our residents for your cooperation in these hard times.\" ")	
         cutscene:text("* - Signed,[wait:5] The Evergroves Capital.")
     end,
+    sign3 = function(cutscene, event)
+        cutscene:text("* There's a sign here.[wait:10] It has a marketing notice attatched: ")	
+        cutscene:text("* \"New advancements in The Evergroves now allow for quicker and easier travel!\" ")	
+        cutscene:text("* \"All throughout The Evergroves are stations that can quickly transfer you to a destination.\"")	
+        cutscene:text("* \"We call them Transferers,[wait:5] and we're happy to finally release them to the public!\"")	
+        cutscene:text("* \"NOTICE:[wait:5] All Transferers are temporarily out of service.\"")	
+        cutscene:text("* \"They can be activated at the Evergroves Control Panel,[wait:5] which is locked with a royal key.\"")
+        cutscene:text("* - Signed,[wait:5] The Evergroves Marketing Team.")
+    end,
+    dockStation = function(cutscene, event)
+        cutscene:text("* There's a sign here.[wait:10] It has some information about the dock:")	
+        cutscene:text("* \"WELCOME TO AN EVERGROVES DOCKING STATION!\" ")	
+        cutscene:text("* \"ALL DOCKING STATIONS ARE MADE DUE TO THE RESIDENT COUNT GOING UP VERY QUICKLY.\"")	
+        cutscene:text("* \"STATIONS ARE ONLY TO BE USED BY BOATS COMING IN FROM DIFFERENT PARTS OF THE DEPTHS.\"")	
+        cutscene:text("* - Signed,[wait:5] The Evergroves Capital.")
+    end,
 }
 
 return evergroves

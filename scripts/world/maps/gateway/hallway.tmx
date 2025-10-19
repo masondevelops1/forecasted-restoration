@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="22">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="25">
  <editorsettings>
   <export target="hallway.lua" format="lua"/>
  </editorsettings>
@@ -10,8 +10,8 @@
   <property name="name" value="The Gateway - ???"/>
  </properties>
  <tileset firstgid="1" source="../../tilesets/gateway.tsx"/>
- <objectgroup id="18" name="objects_gonerbg">
-  <object id="59" name="gonerbg" x="0" y="0" width="40" height="40"/>
+ <objectgroup id="5" name="objects_gonerbg">
+  <object id="24" name="gonerbg" x="0" y="0" width="40" height="40"/>
  </objectgroup>
  <layer id="2" name="Tile Layer 0" width="16" height="12">
   <data encoding="csv">
@@ -84,7 +84,8 @@
  <objectgroup color="#ff00ff" id="4" name="objects">
   <object id="5" name="interactable" x="350" y="160" width="60" height="40">
    <properties>
-    <property name="text1" value="[color:#ff00ff]* Current status: DEGRADED"/>
+    <property name="text1" value="[color:#ff00ff]* Welcome to Gateway Sector:[wait:5] B."/>
+    <property name="text2" value="[color:#ff00ff]* Current status: DEGRADED"/>
    </properties>
   </object>
   <object id="6" name="script" x="480" y="200" width="80" height="120">
@@ -100,16 +101,15 @@
   </object>
   <object id="15" name="savepoint" x="40" y="160" width="40" height="40">
    <properties>
-    <property name="text1">* A great feeling of dread
-courses through you.</property>
+    <property name="text1" value="* A feeling of relief washes over you after defeating the security guards."/>
     <property name="text2">* You are filled with the power
 of being where you shouldn't be.</property>
    </properties>
   </object>
   <object id="21" name="transition" x="-16.9343" y="199.9" width="29.833" height="120.799">
    <properties>
-    <property name="map" value="gateway/core"/>
-    <property name="marker" value="exiting"/>
+    <property name="map" value="gateway/lockdown"/>
+    <property name="marker" value="spawn1"/>
    </properties>
   </object>
  </objectgroup>

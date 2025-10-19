@@ -1,7 +1,7 @@
 return {
   version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.10.2",
+  tiledversion = "1.11.2",
   name = "boatobjects",
   class = "",
   tilewidth = 120,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 70,
+  tilecount = 71,
   tiles = {
     {
       id = 0,
@@ -464,6 +464,12 @@ return {
       image = "../../../assets/sprites/objects/boat/spillAlt.png",
       width = 40,
       height = 26
+    },
+    {
+      id = 85,
+      image = "../../../assets/sprites/objects/spr_controlpanel.png",
+      width = 100,
+      height = 32
     }
   }
 }

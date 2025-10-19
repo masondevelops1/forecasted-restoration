@@ -4,7 +4,7 @@ function item:init()
     super.init(self)
 
     -- Display name
-    self.name = "Gilded Axe"
+    self.name = "GildedAxe"
 
     -- Item type (item, key, weapon, armor)
     self.type = "weapon"
@@ -34,7 +34,7 @@ function item:init()
 
     -- Equip bonuses (for weapons and armor)
     self.bonuses = {
-        attack = 12,
+        attack = 18,
     }
     -- Bonus name and icon (displayed in equip menu)
     self.bonus_name = nil

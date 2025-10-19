@@ -7,7 +7,7 @@ function Fomnis:init()
     self.text = "* Something stands in your way..?"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "mus_amalgam"
+    self.music = "mus_prebattle2"
     -- Enables the purple grid battle background
     self.background = false
 
