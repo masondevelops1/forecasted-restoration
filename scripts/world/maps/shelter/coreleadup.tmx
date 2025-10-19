@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="34" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="48">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="34" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="50">
  <editorsettings>
   <export target="coreleadup.lua" format="lua"/>
  </editorsettings>
@@ -43,6 +43,12 @@
    <properties>
     <property name="map" value="gateway/core"/>
     <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="49" name="script" x="337.818" y="445.909" width="108.242" height="28">
+   <properties>
+    <property name="cutscene" value="shelter.gatewayEnter"/>
+    <property name="once" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>

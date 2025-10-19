@@ -28,9 +28,9 @@ end
 
 function goner1:getPartyPosition(index)
     if index == 1 then
-            return 350, 170
+            return 320, 999
     else
-            return super:getPartyPosition(self, index)
+            return 320, 999
     end
 end
 

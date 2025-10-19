@@ -16,8 +16,7 @@ function item:init()
     -- Shop description
     self.shop = "They're with\nyou in the dark."
     -- Menu description
-    self.description = "Grazing bullets reduces\nthe turn length by 5%"
-    self.description = "An orange tinted lens and two halves of a frame.\nThey're white and purple"
+    self.description = "An orange tinted lens and two halves of a frame.\nIt's white and purple."
 
     -- Default shop price (sell price is halved)
     self.price = 1000
@@ -35,7 +34,7 @@ function item:init()
 
     -- Equip bonuses (for weapons and armor)
     self.bonuses = {
-        defense = 12,
+        defense = 22,
     }
     -- Bonus name and icon (displayed in equip menu)
     self.bonus_name = "Alertness"

@@ -9,8 +9,8 @@ return {
   height = 21,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 17,
-  nextobjectid = 19,
+  nextlayerid = 18,
+  nextobjectid = 23,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
@@ -435,14 +435,29 @@ return {
           type = "",
           shape = "rectangle",
           x = 810.667,
-          y = 477.333,
+          y = 0.333,
           width = 29.3333,
-          height = 111.333,
+          height = 59.833,
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* This path will take you to the rest of The Evergroves.",
-            ["text2"] = "* Unfortunately,[wait:5] the rooms ahead aren't made yet."
+            ["text1"] = "* This is placeholder text.",
+            ["text2"] = "* Now,[wait:5] I am going to wait.[wait:10] I love waiting."
+          }
+        },
+        {
+          id = 20,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 828.5,
+          y = 476,
+          width = 12,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "evergroves/shop-docks-R"
           }
         }
       }
@@ -494,6 +509,19 @@ return {
           shape = "point",
           x = 419.5,
           y = 495,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 21,
+          name = "spawnR",
+          type = "",
+          shape = "point",
+          x = 803,
+          y = 558.33,
           width = 0,
           height = 0,
           rotation = 0,
@@ -567,20 +595,48 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
-        },
-        {
-          id = 17,
-          name = "temporary_demo_end",
-          type = "",
-          shape = "rectangle",
-          x = 828.5,
-          y = 477.5,
-          width = 11.667,
-          height = 111.833,
-          rotation = 0,
-          visible = true,
-          properties = {}
         }
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 21,
+      height = 21,
+      id = 17,
+      name = "Tile Layer 13",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 3, 0, 0,
+        0, 69, 70, 71, 0, 0, 69, 70, 71, 0, 0, 0, 69, 70, 71, 0, 0, 69, 70, 71, 0,
+        139, 139, 137, 138, 139, 139, 139, 137, 140, 0, 0, 0, 136, 137, 139, 138, 139, 138, 137, 138, 139,
+        206, 206, 204, 205, 206, 206, 206, 204, 207, 0, 0, 0, 203, 204, 206, 205, 206, 205, 204, 205, 206,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
       }
     },
     {
@@ -633,7 +689,7 @@ return {
       id = 5,
       name = "houses FG",
       class = "",
-      visible = true,
+      visible = false,
       opacity = 1,
       offsetx = -41.3333,
       offsety = -51.6667,
