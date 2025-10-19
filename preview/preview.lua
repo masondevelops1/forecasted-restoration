@@ -3,7 +3,7 @@
 local preview = {}
 
 function preview:init(mod)
-    self.DEPTH = love.graphics.newImage(mod.path.."/assets/sprites/world/cutscenes/intro/DEPTH.png")
+    self.DEPTH = love.graphics.newImage(mod.path.."/assets/sprites/world/cutscenes/intro/menu.png")
 end
 
 function preview:draw(fade)
