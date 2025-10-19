@@ -70,7 +70,7 @@ function ModlandFileNamer:onLeave(new_state)
 end
 
 function ModlandFileNamer:draw()
-    local mod_name = string.upper(Mod.info.name or Mod.info.id)
+    local mod_name = "Chapter 6"
     Draw.printShadow(mod_name, 16, 8)
 end
 
