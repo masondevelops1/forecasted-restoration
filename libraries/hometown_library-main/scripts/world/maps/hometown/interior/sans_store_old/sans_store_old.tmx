@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="23" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="44">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="ground_zero"/>
+  <property name="depths" type="bool" value="true"/>
+  <property name="light" type="bool" value="false"/>
+  <property name="music" value="pirates"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../tilesets/hometownobjects.tsx"/>
+ <tileset firstgid="68" source="../../../../../../../../scripts/world/tilesets/depthstiles.tsx"/>
+ <tileset firstgid="2584" source="../../../../../../../../scripts/world/tilesets/gateway.tsx"/>
+ <imagelayer id="2" name="room" opacity="0">
+  <image source="../../../../../../assets/sprites/world/maps/hometown/interior/sans_store.png" width="920" height="480"/>
+ </imagelayer>
+ <layer id="13" name="Tile Layer 7" width="23" height="12">
+  <data encoding="base64" compression="zlib">
+   eJyT42JgkBvFODEywCWOTZ4Uc4nVT211tAgjSsIEm7nUUDOK6YcB85onEQ==
+  </data>
+ </layer>
+ <layer id="6" name="Tile Layer 1" width="23" height="12" offsetx="-21" offsety="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFww3cBeJ7VMAPsJityMjAoATEyhTSKoyEzSbXfGLMJofGZXYqUCydCjgDi9lDDQAAejYgGg==
+  </data>
+ </layer>
+ <layer id="11" name="Tile Layer 5" width="23" height="12" offsetx="-19" offsety="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjaYC4ndvGjLAwMx4D4OAv1zeZkZWDgAmJuVuqbPQqGP1BiZGBQZoTQ1AYwc5VpYDYx7gYAkl4FvQ==
+  </data>
+ </layer>
+ <layer id="10" name="Tile Layer 4" width="23" height="12" locked="1" offsetx="-23" offsety="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj6YC4ncZiQGcPJ7FEwCgYCAABZtRVn
+  </data>
+ </layer>
+ <layer id="9" name="Tile Layer 2" width="23" height="12" locked="1" offsetx="-6" offsety="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgZYC4nfjwSzR4Fo4DaAACXCg+R
+  </data>
+ </layer>
+ <layer id="7" name="Tile Layer 2" width="23" height="12" locked="1" offsetx="-6" offsety="7">
+  <data encoding="base64" compression="zlib">
+   eJztzLERgCAABMFP6c1MkLbMRGmLTNFWvCI+g5vZ9KQxWoK0IiJhQw6e987nQMGJC9X0bnxuPOh48Znes5m7H9BaC0o=
+  </data>
+ </layer>
+ <layer id="12" name="Tile Layer 6" width="23" height="12" offsetx="0" offsety="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgewIaDgcEWiO04qG92A9DMRiBuopLZbSwMDO1A3AHEnSwQsR4g3QvEfSyUmX0KqP80EJ8B4rNQsy4A6YtAfIlCs0fBKCAEANkYDAk=
+  </data>
+ </layer>
+ <objectgroup color="#5500ff" id="3" name="collision">
+  <object id="1" x="520" y="393.75" width="40" height="86.25"/>
+  <object id="2" x="20.25" y="394" width="500" height="40"/>
+  <object id="3" x="20.6667" y="40" width="40" height="360"/>
+  <object id="4" x="20.0833" y="39.6667" width="820" height="40"/>
+  <object id="5" x="640" y="393.5" width="40" height="86.5"/>
+  <object id="6" x="680" y="393.5" width="160" height="40"/>
+  <object id="7" x="800" y="40" width="40" height="360"/>
+  <object id="12" x="60" y="168" width="162" height="40"/>
+  <object id="13" x="221.75" y="168" width="578" height="40"/>
+  <object id="21" x="89" y="149.667" width="105" height="78"/>
+  <object id="42" x="244.167" y="152.333" width="106.333" height="78"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="24" name="interactable" x="475.25" y="197.25" width="236.75" height="18">
+   <properties>
+    <property name="text" value="* It's an empty help desk.[wait:5] It seems the cruise might be leaving soon."/>
+   </properties>
+  </object>
+  <object id="25" name="interactable" x="240" y="200" width="113.5" height="36.75">
+   <properties>
+    <property name="text1" value="* (It's an empty seat.)"/>
+   </properties>
+  </object>
+  <object id="29" name="transition" x="560" y="480" width="80" height="40">
+   <properties>
+    <property name="depths" type="bool" value="true"/>
+    <property name="facing" value="down"/>
+    <property name="map" value="depths/crosswalk"/>
+    <property name="marker" value="sans"/>
+   </properties>
+  </object>
+  <object id="32" name="npc" x="257.045" y="-413.88">
+   <properties>
+    <property name="actor" value="sans"/>
+    <property name="cutscene" value="depthsCutscenes.sans"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="npc" x="646.292" y="224.167">
+   <properties>
+    <property name="actor" value="pirates/kris"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="npc" x="606.273" y="224.091">
+   <properties>
+    <property name="actor" value="pirates/ralsei"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="npc" x="568" y="224.667">
+   <properties>
+    <property name="actor" value="pirates/susie"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="npc" x="527.667" y="224.667">
+   <properties>
+    <property name="actor" value="pirates/noelle"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="script" x="560.25" y="418.75" width="79.5" height="62">
+   <properties>
+    <property name="cutscene" value="depthsCutscenes.meetPirates"/>
+    <property name="once" type="bool" value="false"/>
+    <property name="plotmax" value="*depths_pirates"/>
+   </properties>
+  </object>
+  <object id="43" name="interactable" x="81.25" y="199.875" width="113.5" height="36.75">
+   <properties>
+    <property name="text1" value="* (It's an empty seat.)"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="markers">
+  <object id="30" name="spawn" x="600" y="440">
+   <point/>
+  </object>
+  <object id="41" name="piratesOutside" x="886" y="-104">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

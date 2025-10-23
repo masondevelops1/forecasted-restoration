@@ -7,11 +7,11 @@ function actor:init()
     self.name = "Wall"
 
     -- Width and height for this actor, used to determine its center
-    self.width = 60
-    self.height = 70
+    self.width = 35
+    self.height = 50
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
-    self.hitbox = {0, 50, 60, 20}
+    self.hitbox = {}
 
     -- Color for this actor used in outline areas (optional, defaults to red)
     self.color = {1, 0, 0}
@@ -20,9 +20,9 @@ function actor:init()
     self.flip = nil
 
     -- Path to this actor's sprites (defaults to "")
-    self.path = "npcs/egg"
+    self.path = "npcs/eggGuy"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
-    self.default = ""
+    self.default = "idle"
 
     -- Sound to play when this actor speaks (optional)
     self.voice = nil
@@ -36,7 +36,7 @@ function actor:init()
 
     -- Table of talk sprites and their talk speeds (default 0.25)
     self.talk_sprites = {
-        [""] = 0.2
+        ["talk"] = 0.2
     }
 
     -- Table of sprite animations

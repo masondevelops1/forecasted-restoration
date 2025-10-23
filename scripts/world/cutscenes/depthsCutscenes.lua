@@ -23,8 +23,14 @@ sign1 = function(cutscene, event)
   end,
 
 eggGuy = function(cutscene, event)
-  cutscene:text("* I'm meant to have an egg for you,[wait:5] but I don't!")
-  cutscene:text("* I am a failiure!")
+  local eggGuy = cutscene:getCharacter("eggGuy")
+  eggGuy:setSprite("talk")
+  cutscene:setSpeaker(eggGuy)
+  cutscene:text("* Hello,[wait:5] I'm the Wall Guardian.[wait:5] You might also know me as,[wait:5] \"a man.\"", eggGuy)
+  cutscene:text("* I think I've heard of you before,[wait:5] somewhere across my journey.", eggGuy)
+  cutscene:text("* I'd give you an egg if I could,[wait:5] but... I've ran out!", eggGuy)
+  cutscene:text("* I am such a failure...[wait:5] It's a wonder I'm not fired from my guard job yet!", eggGuy)
+  eggGuy:setSprite("idle")
 end,
 
 unused = function(cutscene, event)
@@ -43,22 +49,82 @@ door1 = function(cutscene, event)
           
   end,
 
-
 terminal = function(cutscene, event)
-  local img3 = Game.world.map:getImageLayer("powered")
-  local platform = cutscene:getCharacter("platform")
-  cutscene:playSound("noise")
-  cutscene:playSound("bell")
-  cutscene:shakeCamera()
-  img3.visible = true
-  cutscene:wait(1)
-  platform:setSprite("idle_online")
-  cutscene:wait(0.5)
-  cutscene:text("* DEPTHS terminal activated.")	
-  cutscene:text("* Main power restored!")	
-          
-  end,
-  
+  if not Plot:isBefore("depths_powered3") then --note: make powered3 1 after update done
+    local img3 = Game.world.map:getImageLayer("powered")
+    local platform = cutscene:getCharacter("platform")
+    cutscene:playSound("noise")
+    cutscene:playSound("bell")
+    cutscene:shakeCamera()
+    img3.visible = true
+    cutscene:wait(1)
+    platform:setSprite("idle_online")
+    cutscene:wait(0.5)
+    cutscene:text("* Depths main terminal activated.")	
+    cutscene:text("* Power fully restored![wait:5] Main platform power restored.")	
+    cutscene:text("* (It seems like you may be able to proceed forward now.)")
+    Plot:set("depths_powered3") --make 1 after all of depths update is done.
+  else
+    cutscene:text("* The terminal is online.")
+  end
+end,
+terminal_update = function(cutscene, event)
+  if not Plot:isBefore("depths_powered3") then --note: make powered3 1 after update done
+    local img3 = Game.world.map:getImageLayer("powered")
+    local platform = cutscene:getCharacter("platform")
+    cutscene:playSound("noise")
+    cutscene:playSound("bell")
+    cutscene:shakeCamera()
+    img3.visible = true
+    cutscene:wait(1)
+    platform:setSprite("idle_online")
+    cutscene:wait(0.5)
+    cutscene:text("* Northbound terminal activated.")	
+    cutscene:text("* Power partially restored!")	
+    cutscene:text("* (Remaining terminals:\n[wait:10]-Southbound terminal\n[wait:10]-Eastbound terminal)")
+    Plot:set("depths_powered3") --make 1 after all of depths update is done.
+  else
+    cutscene:text("* The terminal is online.")
+  end
+end,
+terminal2 = function(cutscene, event)
+  if not Plot:isBefore("depths_powered2") then
+    local img3 = Game.world.map:getImageLayer("powered")
+    local platform = cutscene:getCharacter("platform")
+    cutscene:playSound("noise")
+    cutscene:playSound("bell")
+    cutscene:shakeCamera()
+    img3.visible = true
+    cutscene:wait(1)
+    platform:setSprite("idle_online")
+    cutscene:wait(0.5)
+    cutscene:text("* Southbound terminal activated.")	
+    cutscene:text("* Power partially restored![wait:5] Platform power restored.")	
+    cutscene:text("* (Remaining terminals:\n[wait:10]-Eastbound terminal)")
+    Plot:set("depths_powered2")
+  else
+    cutscene:text("* The terminal is online.")
+  end
+end,
+terminal3 = function(cutscene, event)
+  if not Plot:isBefore("depths_powered3") then
+    local img3 = Game.world.map:getImageLayer("powered")
+    local platform = cutscene:getCharacter("platform")
+    cutscene:playSound("noise")
+    cutscene:playSound("bell")
+    cutscene:shakeCamera()
+    img3.visible = true
+    cutscene:wait(1)
+    platform:setSprite("idle_online")
+    cutscene:wait(0.5)
+    cutscene:text("* Eastbound terminal activated.")	
+    cutscene:text("* Power fully restored![wait:5] Main platform power restored.")	
+    cutscene:text("* (It seems like you may be able to proceed forward in a previous room now.)")
+    Plot:set("depths_powered3")
+  else
+    cutscene:text("* The terminal is online.")
+  end
+end,
 
 kriswakeup = function(cutscene, event)
   local kris = cutscene:getCharacter("kris")
@@ -78,7 +144,7 @@ end,
 platform1 = function(cutscene, event) 
   local platform = cutscene:getCharacter("platform")
   local kris = cutscene:getCharacter("kris")
-  --local susie = cutscene:getCharacter("susie")
+  local susie = cutscene:getCharacter("susie") or kris
 
   local x, y = cutscene:getMarker("markerplatform")
   cutscene:shakeCamera()
@@ -89,7 +155,7 @@ platform1 = function(cutscene, event)
   platform:setSprite("left")
 	rumble:setLooping(true)
   cutscene:slideToSpeed(kris, x, kris.y, 4)
-  --cutscene:slideToSpeed(susie, x, susie.y, 4)
+  cutscene:slideToSpeed(susie, x, susie.y, 4)
   cutscene:slideToSpeed(platform, x, y, 4)
   cutscene:wait(3.1)
   cutscene:playSound("impact")
@@ -101,26 +167,29 @@ end,
 
 
 platform2 = function(cutscene, event) 
-  local platform = cutscene:getCharacter("platform")
-  local kris = cutscene:getCharacter("kris")
- -- local susie = cutscene:getCharacter("susie")
-
-  local x, y = cutscene:getMarker("markerbridge")
-  cutscene:shakeCamera()
-  cutscene:playSound("noise")
-  cutscene:playSound("bell")
-  local rumble = Assets.playSound("rumble")
-  platform:setSprite("right")
-	rumble:setLooping(true)
-  cutscene:slideToSpeed(kris, x, kris.y, 4)
- -- cutscene:slideToSpeed(susie, x, susie.y, 4)
-  cutscene:slideToSpeed(platform, x, y, 4)
-  cutscene:wait(3.1)
-  cutscene:playSound("impact")
-  Assets.stopSound("rumble")
-  cutscene:shakeCamera()
-  kris:resetSprite()
-  platform:setSprite("idle_online")
+  if not Plot:isBefore("depths_powered3") then
+    local platform = cutscene:getCharacter("platform")
+    local kris = cutscene:getCharacter("kris")
+    local susie = cutscene:getCharacter("susie")
+    local x, y = cutscene:getMarker("markerbridge")
+    cutscene:shakeCamera()
+    cutscene:playSound("noise")
+    cutscene:playSound("bell")
+    local rumble = Assets.playSound("rumble")
+    platform:setSprite("right")
+    rumble:setLooping(true)
+    cutscene:slideToSpeed(kris, x, kris.y, 4)
+    cutscene:slideToSpeed(susie, x, susie.y, 4)
+    cutscene:slideToSpeed(platform, x, y, 4)
+    cutscene:wait(3.1)
+    cutscene:playSound("impact")
+    Assets.stopSound("rumble")
+    cutscene:shakeCamera()
+    kris:resetSprite()
+    platform:setSprite("idle_online")
+  else
+    cutscene:text("* The platform is offline.")	       
+  end
 end,
 
 krisSlip = function(cutscene, event)
@@ -128,7 +197,152 @@ krisSlip = function(cutscene, event)
     local kris = cutscene:getCharacter("kris")
     local susie = cutscene:getCharacter("susie")
     cutscene:detachFollowers()
-    cutscene:fadeOut(0.5, { music = true })
+    Assets.playSound("noise")
+    cutscene:fadeOut(0.0001, { music = true })
+    cutscene:text("* You felt a presence near your SOUL...[wait:5] and you started to hear a voice...")	       
+    local x, y = cutscene:getMarker("krisfallen")
+    cutscene:walkTo(kris, x, y, 1, "up")
+    kris:setSprite("grab")
+    cutscene:wait(2)
+    local x, y = cutscene:getMarker("susie1")
+    cutscene:walkTo(susie, x, y, 1, "up")
+    susie:setSprite("grab")
+    cutscene:wait(2)
+    --noelle text starts here
+    local text = DialogueText("", 120, 24, (SCREEN_WIDTH - 50 * 2) + 14, SCREEN_HEIGHT, nil, "GONER")
+    text.parallax_x = 0
+    text.parallax_y = 0
+    text.layer = WORLD_LAYERS["textbox"]
+    Game.world:addChild(text)
+    
+    text.alpha = 0
+    local textWait = function() return text:isDone() end
+
+
+
+    Game.world.timer:tween(3, text, { alpha = 1 })
+    cutscene:wait(1)
+    Assets.playSound("item")
+    cutscene:wait(0.5)
+    text:setText("[speed:0.5][color:#ff8a90][instant]CONNECTION FAULTY. . .")
+    text:setText("[speed:0.5][color:#909090][voice:noelle]Hello.[wait:5] This is Noelle.[wait:5] I-[wait:5]I've found a recorder down here...")
+    cutscene:wait(3)
+    Game.world.music:play("noelle")
+    Game.world.music:setLooping(false)
+    cutscene:wait(3)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]At the time I'm recording this,[wait:5] I'm in a place I don't know...")
+    cutscene:wait(9)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]I don't really know how to put this into words,[wait:5]\nBut it feels like I'm deep...[wait:5] [shake:1]\nREALLY deep.")
+    cutscene:wait(9)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]It feels weird,[wait:5] y'know?[wait:5] I feel like I'm right at home...")
+    cutscene:wait(9)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]...")
+    cutscene:wait(3.5)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]I came here with a couple friends...[wait:10]\nAnd I'm scared. ")
+    cutscene:wait(9)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]I-I'm scared that they'll forget me...\nThey'll escape and I'll\nbe stuck here... forever...[wait:10]")
+    cutscene:wait(9)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]Missing...[wait:10]\nMissing,[wait:5] to the point where everyone in town has \nforgotten about me. ")
+    cutscene:wait(11)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]And that,[wait:5]it scares me.\nI-I'll feel like the only one\nwho remembers myself...\n[wait:10]Just like her... ")
+    cutscene:wait(9)
+    text:setText("[speed:0.5][color:#909090][voice:noelle][shake:1]December.")
+    cutscene:wait(6)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]Oh,[wait:5] who am I kidding...[wait:5]\nNot like Kris is gonna hear...")
+    cutscene:wait(3)
+    Assets.playSound("wing")
+    cutscene:wait(2)
+    text:setText("[speed:0.5][color:#909090][voice:noelle]Kris...[wait:5] where are you...?")
+    cutscene:wait(3)
+    Assets.playSound("noise")
+    text:setText("[speed:0.5][color:#909090][voice:noelle]Kris...")
+    cutscene:wait(3)
+    text:setText("")
+    Game.world.music:fade(0, 1)
+    --end noelle text
+    Game.world.music:play("depths")
+    cutscene:fadeIn(0.1, { music = true })
+    cutscene:shakeCharacter("kris")
+    cutscene:playSound("bump")
+    cutscene:setSpeaker(susie)
+    cutscene:text("* KRIS!!", "angry")
+
+    cutscene:shakeCharacter("kris")
+    cutscene:playSound("bump")
+    cutscene:wait(0.5)
+    cutscene:shakeCharacter("kris")
+    cutscene:playSound("bump")
+    cutscene:wait(0.5)
+    cutscene:shakeCharacter("kris")
+    cutscene:playSound("bump")
+
+    local x, y = cutscene:getMarker("susie2")
+    cutscene:slideToSpeed(susie, x, y, 6)
+    cutscene:shakeCamera()
+    cutscene:playSound("impact")
+    
+
+    local x, y = cutscene:getMarker("kris1")
+    cutscene:walkTo(kris, x, y, 0.3, "up")
+    kris:setSprite("fell")
+    cutscene:playSound("noise")
+    cutscene:wait(0.5)
+
+    
+    cutscene:playSound("wing")
+    susie:setSprite("up_1")
+    cutscene:wait(0.3)
+    cutscene:text("* Kris?![wait:5] Are you alright??\n[wait:10]* You were completely out of it!!", "sad_frown")
+    cutscene:text("* Scared the CRAP out of me,[wait:5] y'know that?[wait:5]", "sad_frown")
+    cutscene:text("* You got so...[wait:10] dark,[wait:5] for a second there.", "surprise_frown")
+    cutscene:text("* And then you started to fall.[wait:5]", "nervous")
+    cutscene:wait(2)
+    cutscene:text("* Look, [wait:5]I know you didn't want to come back here, [wait:5]but...", "annoyed_down")
+    cutscene:text("* We can't give up right now. \n[wait:10]* We're in too deep.", "sus_nervous")
+    kris:setSprite("sit")
+    cutscene:playSound("bump")
+    cutscene:shakeCharacter("kris")
+    cutscene:text("* Ralsei never takes this long to find us in a Dark World.[wait:10]", "nervous")
+    susie:setSprite("left_1")
+    cutscene:playSound("wing")
+    cutscene:wait(1)
+    susie:setSprite("right_1")
+    cutscene:playSound("wing")
+    cutscene:wait(1)
+    cutscene:text("* Not to mention Noelle,[wait:5] she can't have gone that far.", "nervous")
+    cutscene:wait(1)
+    susie:setSprite("up_1")
+    cutscene:text("* But I'm worried about her.[wait:10] And I'm worried about him.", "neutral")
+    cutscene:text("* Hell, I'm not even sure if this is a Dark World anymore...", "nervous")
+    cutscene:text("* There's no fountain in sight, and we know how that went last time.", "nervous_side")
+    cutscene:text("* Something just feels..[wait:5] very wrong.", "nervous_side")
+    cutscene:wait(2)
+    cutscene:text("* Kris,[wait:5] I know you're afraid of that guy,[wait:5] but...", "nervous")
+    cutscene:text("* WE'RE GONNA KICK HIS ASS!!!", "teeth_b")
+    cutscene:text("* No matter what it takes.", "teeth_smile")
+    cutscene:wait(2)
+    cutscene:text("* Let's get out of here.", "neutral")
+    cutscene:text("* We gotta find the others.", "neutral" )
+    kris:resetSprite()
+    cutscene:playSound("bump")
+    cutscene:shakeCharacter("kris")
+    local x, y = cutscene:getMarker("kris2")
+    cutscene:walkTo(kris, x, y, 3, "down")
+    cutscene:wait(3.5)
+    susie:resetSprite()
+    cutscene:attachFollowers()
+    cutscene:text("* ...and make sure this thing doesn't explode.", "nervous" )
+    SetPlot("depths_slip")
+  end;
+end,
+
+krisSlipOld = function(cutscene, event)
+  if Plot:isBefore("depths_slip") then
+    local kris = cutscene:getCharacter("kris")
+    local susie = cutscene:getCharacter("susie")
+    cutscene:detachFollowers()
+    Assets.playSound("noise")
+    cutscene:fadeOut(0.0001, { music = true })
     cutscene:text("* You felt a presence near your SOUL...[wait:5] and you started to hear a voice...")	       
     local x, y = cutscene:getMarker("krisfallen")
     cutscene:walkTo(kris, x, y, 1, "up")
@@ -330,19 +544,18 @@ meetPirates = function(cutscene, event)
     cutscene:text("[miniface:pirates/ralsei]Do ya lightners [shake:1]REALLY[shake:0] not get told about The Evergroves anymore!?", pRalsei)
     cutscene:text("[miniface:pirates/noelle]It's where we're goin' soon![wait:10]\nThey said the Cruise would be\nleavin' soon.", pNoelle)
     cutscene:text("[miniface:pirates/kris]Y-[wait:5]Yeah![wait:10] T-[wait:5]They say it's this\nbig forest where only the most\nelegant of us live!", pKris)
-    cutscene:text("[miniface:pirates/susie]And after years of savin' our GOLD up,[wait:5] we finally could\nafford a room on the Cruise!", pSusie)
-    cutscene:setSpeaker(susie)
-    cutscene:text("* (This is getting annoying already...)", "suspicious")
-    cutscene:setSpeaker()
-    cutscene:text("[miniface:pirates/ralsei]And at a great time,[wait:5] too!", pRalsei)
-    cutscene:text("[miniface:pirates/ralsei]They're sayin' there's some special person at the deepest part of that place!", pRalsei)
-    cutscene:text("[miniface:pirates/ralsei]We can't wait to get there!")
+    cutscene:text("[miniface:pirates/susie]And after years of savin' our GOLD up,[wait:5] we finally could\nafford a room on ere'!", pSusie)
+    cutscene:text("[miniface:pirates/ralsei]Well,[wait:5] sort of,[wait:5] \"could afford\" is a bit of a stretch.", pRalsei)
+    cutscene:text("[miniface:pirates/noelle](Cap'n,[wait:5] not NOW!!!!)", pNoelle)
+    cutscene:text("[miniface:pirates/ralsei]Right![wait:5]Anyway,[wait:5]We got em' at a great time,[wait:5] too!", pRalsei)
+    cutscene:text("[miniface:pirates/ralsei]They've been sayin' there's some special Forest Dream over ere'!", pRalsei)
+    cutscene:text("[miniface:pirates/ralsei]We can't wait to get there,[wait:5] especially because-", {auto = true})
     cutscene:setSpeaker(susie)
     cutscene:text("* ALRIGHT!!!![wait:5] Can you just SHUT UP for one second!?", "teeth")
-    cutscene:text("* We don't wanna hear about your whole life story!", "suspicious")
-    cutscene:text("* We just wanna find that damn scientist!", "suspicious")
+    cutscene:text("* We don't wanna hear about your whole life story![wait:5] You wanna enjoy life on a cruise,[wait:5] JUST DO IT!", "suspicious")
+    cutscene:text("* ALL we wanna do is just find that damn scientist!", "suspicious")
     cutscene:setSpeaker()
-    cutscene:text("[miniface:pirates/kris]S-[wait:5]Scientist!?[wait:10] Y-you don't mean the doctor,[wait:5] d-do you...?", pKris)
+    cutscene:text("[miniface:pirates/kris]S-[wait:5]Scientist!?[wait:10] Y-you don't mean Dr. O,[wait:5] d-do you...?", pKris)
     cutscene:setSpeaker(susie)
     cutscene:text("* You know him!?", "surprise_frown")
     cutscene:setSpeaker()
@@ -355,12 +568,49 @@ meetPirates = function(cutscene, event)
     cutscene:jumpTo(pNoelle, "piratesOutside", 2, 0.6, "jump_ball", "land")
     cutscene:wait(1)
     cutscene:setSpeaker(susie)
-    cutscene:text("* Man...[wait:5] guess we're gonna have to find a way onto that cruise...", "sus_nervous")
+    cutscene:text("* WAIT,[wait:5] WAIT!!!! ...[wait:5] damnit.", "teeth")
+    cutscene:text("* Guess we're gonna have to find a way onto that cruise... damn pirates...", "sus_nervous")
     SetPlot("depths_pirates")
   end;
 end,
 
 bridgeDeploy = function(cutscene, event)
+  if Plot:isBefore("depths_bridge") then
+    cutscene:text("* There's a mechanism here.\n[wait:10] * A note is attached.")
+    cutscene:text("* \"Password for bridge deployment:[wait:5] 1234\"")
+    cutscene:text("* The mechanism is completely unresponsive.")
+    cutscene:text("* Kick it?")
+    local choice = cutscene:choicer({"Yes", "No"})
+    
+    if choice == 1 then
+      cutscene:playSound("impact")
+      cutscene:shakeCamera()
+      cutscene:text("* You kick the mechanism.")
+      cutscene:wait(2)
+      local img = Game.world.map:getImageLayer("bridge1")
+      local img1 = Game.world.map:getImageLayer("bridge2")
+      local img2 = Game.world.map:getImageLayer("bridge3")
+      cutscene:shakeCamera()
+      cutscene:playSound("noise")
+      img.visible = true
+      cutscene:wait(0.5)
+      cutscene:shakeCamera()
+      cutscene:playSound("noise")
+      img1.visible = true
+      cutscene:wait(0.5)
+      cutscene:shakeCamera()
+      cutscene:playSound("noise")
+      img2.visible = true
+      SetPlot("depths_bridge")
+    else
+      cutscene:text("* You decided not to kick the mechanism.")
+    end
+  else
+    cutscene:text("* The mechanism isn't needed anymore.")
+  end
+end,
+
+bridgeDeployUnresponsive = function(cutscene, event)
   cutscene:text("* There's a mechanism here.\n[wait:10] * A note is attached.")
   cutscene:text("* \"Password for bridge deployment:[wait:5] 1234\"")
   cutscene:text("* The mechanism is completely unresponsive.")

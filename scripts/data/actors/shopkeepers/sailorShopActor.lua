@@ -35,7 +35,9 @@ function actor:init()
 
     self.offsets = {
         ["explaining"] = {-26, 0},
-        ["explaining_talk"] = {-26, 0}
+        ["explaining_talk"] = {-26, 0},
+        ["sad"] = {-26, 0},
+        ["sad_talk"] = {-26, 0},
     }
 end
 
@@ -48,6 +50,8 @@ function actor:onTalkStart(text, sprite)
         sprite:setSprite("explaining_talk")
     elseif sprite.sprite == "happy" then
         sprite:setSprite("happy_talk")
+    elseif sprite.sprite == "sad" then
+        sprite:setSprite("sad_talk")
     end
 end
 
@@ -60,6 +64,8 @@ function actor:onTalkEnd(text, sprite)
         sprite:setSprite("explaining")
     elseif sprite.sprite == "happy_talk" then
         sprite:setSprite("happy")
+    elseif sprite.sprite == "sad_talk" then
+        sprite:setSprite("sad")
     end
 end
 

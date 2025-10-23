@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="24">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="35">
  <editorsettings>
-  <export target="elevator.lua" format="lua"/>
+  <export target="data.lua" format="lua"/>
  </editorsettings>
- <tileset firstgid="1" source="../tilesets/tenna_encounter_leadup.tsx"/>
- <imagelayer id="2" name="Image Layer 1" offsetx="213.333" offsety="-480">
-  <image source="../../../assets/sprites/backgrounds/skyline_elevator.png" width="256" height="768"/>
+ <properties>
+  <property name="border" value="simple"/>
+  <property name="depths" type="bool" value="false"/>
+  <property name="step_sound" value="evergroves"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/tenna_encounter_leadup.tsx"/>
+ <imagelayer id="8" name="loop" offsetx="121.995" offsety="-484" repeaty="1">
+  <image source="../../../../assets/sprites/backgrounds/skyline_elevator_looper.png" width="320" height="336"/>
+ </imagelayer>
+ <imagelayer id="6" name="Image Layer 1" locked="1" offsetx="0" offsety="-148">
+  <image source="../../../../assets/sprites/backgrounds/skyline_elevator.png" width="600" height="600"/>
  </imagelayer>
  <layer id="1" name="Tile Layer 1" width="15" height="15">
   <data encoding="csv">
-370,370,370,370,205,206,207,208,209,210,370,370,370,370,370,
-370,370,370,370,301,302,303,304,305,306,370,370,370,370,370,
-370,370,370,370,325,326,327,328,329,330,370,370,370,370,370,
-370,370,370,370,500,477,478,478,480,499,370,370,370,370,370,
-370,370,370,370,524,525,526,527,528,523,370,370,370,370,370,
-370,370,370,370,548,549,550,551,552,547,370,370,370,370,370,
-370,370,370,370,572,573,574,575,576,571,370,370,370,370,370,
-370,370,370,370,395,396,396,396,396,397,370,370,370,370,370,
-370,370,370,370,419,420,420,420,420,421,370,370,370,370,370,
-370,370,370,370,419,420,420,420,420,421,370,370,370,370,370,
-370,370,370,370,443,444,444,444,444,445,370,370,370,370,370,
-370,370,370,370,370,370,467,469,370,370,370,370,370,370,370,
-370,370,370,370,370,370,491,493,370,370,370,370,370,370,370,
-370,370,370,370,370,370,515,517,370,370,370,370,370,370,370,
-370,370,370,370,370,370,539,541,370,370,370,370,370,370,370
+666,666,666,666,666,666,666,666,666,666,666,666,666,666,731,
+666,666,666,666,1630,1631,1632,1633,1634,1629,666,666,666,666,731,
+666,666,666,666,1695,1696,1697,1698,1699,1694,666,666,666,666,731,
+666,666,666,666,1760,1761,1762,1763,1764,1759,666,666,666,666,731,
+666,666,666,666,1825,1826,1827,1828,1829,1824,666,666,666,666,731,
+666,666,666,666,1890,1891,1892,1893,1894,1889,666,666,666,666,731,
+666,666,666,666,1955,1956,1957,1958,1959,1954,666,666,666,666,731,
+666,666,666,666,1703,1704,1705,1706,1707,1708,666,666,666,666,731,
+666,666,666,666,1768,1769,1770,1771,1772,1773,666,666,666,666,731,
+666,666,666,666,1833,1834,1835,1836,1837,1838,666,666,666,666,731,
+666,666,666,666,1898,1899,1900,1901,1902,1903,666,666,666,666,731,
+666,666,666,666,666,666,1246,1248,666,666,666,666,666,666,731,
+666,666,666,666,666,666,1311,1313,666,666,666,666,666,666,731,
+666,666,666,666,666,666,1376,1378,666,666,666,666,666,666,731,
+666,666,666,666,666,666,1441,1443,666,666,666,666,666,666,731
 </data>
  </layer>
  <objectgroup id="3" name="collision">
@@ -32,11 +40,42 @@
   <object id="6" x="397.333" y="274.667" width="42.6667" height="166.667"/>
   <object id="9" x="118" y="435.333" width="121.333" height="44.6667"/>
   <object id="15" x="320" y="439.333" width="121.333" height="38"/>
-  <object id="16" x="182.667" y="474" width="56.6667" height="110"/>
-  <object id="20" x="320.667" y="476.667" width="55.3333" height="107.333"/>
+  <object id="16" x="182.667" y="474" width="56.6667" height="128"/>
+  <object id="20" x="320.667" y="476.667" width="55.3333" height="124.333"/>
+ </objectgroup>
+ <objectgroup id="5" name="objects">
+  <object id="25" name="interactable" x="159.333" y="213" width="49.3333" height="92.4997">
+   <properties>
+    <property name="cutscene" value="elevator.elevatorcutscene"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="markers">
   <object id="23" name="spawn" x="278.667" y="563.333">
+   <point/>
+  </object>
+  <object id="26" name="susie" x="185.83" y="335">
+   <point/>
+  </object>
+  <object id="27" name="kris" x="280" y="385.5">
+   <point/>
+  </object>
+  <object id="28" name="ralsei" x="341.5" y="335">
+   <point/>
+  </object>
+  <object id="29" name="susie2" x="279.5" y="305">
+   <point/>
+  </object>
+  <object id="30" name="susie3" x="313.75" y="335">
+   <point/>
+  </object>
+  <object id="31" name="susie4" x="230" y="305">
+   <point/>
+  </object>
+  <object id="32" name="ralsei2" x="328.5" y="305">
+   <point/>
+  </object>
+  <object id="33" name="kris2" x="279.5" y="431.5">
    <point/>
   </object>
  </objectgroup>

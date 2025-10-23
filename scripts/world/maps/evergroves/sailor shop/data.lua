@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 18,
-  nextobjectid = 23,
+  nextobjectid = 24,
   properties = {
     ["border"] = "evergroves",
     ["depths"] = true,
@@ -458,6 +458,22 @@ return {
           visible = true,
           properties = {
             ["map"] = "evergroves/shop-docks-R"
+          }
+        },
+        {
+          id = 23,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 600,
+          y = 485,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "eggGuy",
+            ["cutscene"] = "depthsCutscenes.eggGuy"
           }
         }
       }

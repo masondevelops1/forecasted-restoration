@@ -14,6 +14,10 @@ local PLOT = {
     gateway_lockdown_off = 94; -- why would you disable the lockdown omnis is going to become your boyfriend now
     gateway_collapse = 95; -- gateway begins collapsing
     depths_enter = 100; -- gateway collapse finished
+    depths_powered1 = 101; -- two terminals remain... time to go south!
+    depths_powered2 = 102; -- wow you activated it thats so cool
+    depths_powered3 = 103; -- wow you activated it again thats so cool
+    depths_bridge = 104; -- is the puzzle done yet? perhaps.
     depths_slip = 105; -- kris slipped and died, aw man...
     depths_pirates = 110; -- pirates arrrrrrrrrrrrrrr
 

@@ -11,7 +11,7 @@ function actor:init()
     self.height = 50
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
-    self.hitbox = {0, 50, 60, 20}
+    self.hitbox = {}
 
     -- Color for this actor used in outline areas (optional, defaults to red)
     self.color = {1, 0, 0}
@@ -20,7 +20,7 @@ function actor:init()
     self.flip = nil
 
     -- Path to this actor's sprites (defaults to "")
-    self.path = "npcs/eggGuy/"
+    self.path = "npcs/eggGuy"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
     self.default = "idle"
 

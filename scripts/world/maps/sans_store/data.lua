@@ -1,7 +1,7 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
-  tiledversion = "1.11.0",
+  tiledversion = "1.11.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -9,32 +9,42 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 53,
+  nextlayerid = 14,
+  nextobjectid = 44,
   properties = {
-    ["border"] = "leaves",
-    ["light"] = true,
-    ["music"] = "muscle"
+    ["border"] = "ground_zero",
+    ["depths"] = true,
+    ["light"] = false,
+    ["music"] = "pirates"
   },
   tilesets = {
     {
-      name = "hometownobjects",
+      name = "battleborder",
       firstgid = 1,
-      filename = "../../../../tilesets/hometownobjects.tsx"
+      filename = "../../tilesets/battleborder.tsx"
     },
     {
-      name = "hometownobjects",
-      firstgid = 21,
-      filename = "../../../../libraries/hometown_library/scripts/world/tilesets/hometownobjects.tsx",
-      exportfilename = "../../../../libraries/hometown_library/scripts/world/tilesets/hometownobjects.lua"
+      name = "depthstiles",
+      firstgid = 16,
+      filename = "../../tilesets/depthstiles.tsx",
+      exportfilename = "../../tilesets/depthstiles.lua"
+    },
+    {
+      name = "gateway",
+      firstgid = 2532,
+      filename = "../../tilesets/gateway.tsx",
+      exportfilename = "../../tilesets/gateway.lua"
     }
   },
   layers = {
     {
-      type = "imagelayer",
-      image = "../../../../libraries/hometown_library/assets/sprites/world/maps/hometown/interior/sans_store.png",
-      id = 2,
-      name = "room",
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 13,
+      name = "Tile Layer 7",
       class = "",
       visible = true,
       opacity = 1,
@@ -42,9 +52,214 @@ return {
       offsety = 0,
       parallaxx = 1,
       parallaxy = 1,
-      repeatx = false,
-      repeaty = false,
-      properties = {}
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 6,
+      name = "Tile Layer 1",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = -21,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 169, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 172, 0, 0,
+        0, 0, 237, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 240, 0, 0,
+        0, 0, 237, 238, 239, 238, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 240, 0, 0,
+        0, 0, 237, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 238, 239, 239, 240, 0, 0,
+        0, 0, 305, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 307, 308, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 11,
+      name = "Tile Layer 5",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = -19,
+      offsety = 8,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2409, 0, 0, 0, 0, 0, 1169, 1170, 1171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2409, 0, 0, 0, 0, 0, 1237, 1238, 1239, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2409, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 238, 239, 238, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 239, 238, 239, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 238, 239, 238, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 10,
+      name = "Tile Layer 4",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = -23,
+      offsety = 8,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 0, 0, 0, 0, 0, 0, 0, 2409, 0, 0,
+        0, 0, 0, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 0, 0, 0, 0, 0, 0, 0, 2409, 0, 0,
+        0, 0, 0, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 0, 0, 0, 0, 0, 0, 0, 2409, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 9,
+      name = "Tile Layer 2",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = -6,
+      offsety = 8,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 2409, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 7,
+      name = "Tile Layer 2",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = -6,
+      offsety = 7,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2328, 2335, 2336, 2337, 2338, 2339, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2396, 2403, 2404, 2405, 2406, 2407, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2464, 2471, 2472, 2473, 2474, 2475, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 23,
+      height = 12,
+      id = 12,
+      name = "Tile Layer 6",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 6,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 2056, 2057, 2058, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 2124, 2125, 2126, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 1106, 1107, 1108, 1109, 0, 1112, 1113, 1114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 1174, 1175, 1176, 1177, 0, 1180, 1181, 1182, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
     },
     {
       type = "objectgroup",
@@ -66,9 +281,9 @@ return {
           type = "",
           shape = "rectangle",
           x = 520,
-          y = 400,
+          y = 393.75,
           width = 40,
-          height = 80,
+          height = 86.25,
           rotation = 0,
           visible = true,
           properties = {}
@@ -78,8 +293,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 20,
-          y = 400,
+          x = 20.25,
+          y = 394,
           width = 500,
           height = 40,
           rotation = 0,
@@ -91,7 +306,7 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 20,
+          x = 20.6667,
           y = 40,
           width = 40,
           height = 360,
@@ -104,8 +319,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 20,
-          y = 0,
+          x = 20.0833,
+          y = 39.6667,
           width = 820,
           height = 40,
           rotation = 0,
@@ -118,9 +333,9 @@ return {
           type = "",
           shape = "rectangle",
           x = 640,
-          y = 400,
+          y = 393.5,
           width = 40,
-          height = 80,
+          height = 86.5,
           rotation = 0,
           visible = true,
           properties = {}
@@ -131,7 +346,7 @@ return {
           type = "",
           shape = "rectangle",
           x = 680,
-          y = 400,
+          y = 393.5,
           width = 160,
           height = 40,
           rotation = 0,
@@ -157,8 +372,8 @@ return {
           type = "",
           shape = "rectangle",
           x = 60,
-          y = 160,
-          width = 20,
+          y = 168,
+          width = 162,
           height = 40,
           rotation = 0,
           visible = true,
@@ -169,8 +384,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 222,
-          y = 160,
+          x = 221.75,
+          y = 168,
           width = 578,
           height = 40,
           rotation = 0,
@@ -182,9 +397,22 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 102,
-          y = 284,
-          width = 330,
+          x = 89,
+          y = 149.667,
+          width = 105,
+          height = 78,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 42,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 244.167,
+          y = 152.333,
+          width = 106.333,
           height = 78,
           rotation = 0,
           visible = true,
@@ -198,7 +426,7 @@ return {
       id = 4,
       name = "objects",
       class = "",
-      visible = false,
+      visible = true,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -207,146 +435,18 @@ return {
       properties = {},
       objects = {
         {
-          id = 14,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 670,
-          y = 160,
-          width = 28,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "hometown.sansplin"
-          }
-        },
-        {
-          id = 16,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 80,
-          y = 160,
-          width = 142,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["solid"] = true,
-            ["text"] = "* (Various frozen bagels and treats.)"
-          }
-        },
-        {
-          id = 17,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 112,
-          y = 322,
-          width = 58,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text1"] = "* Ice-E's Pizza Pin-Ups Mangazine.",
-            ["text2"] = "* HOt and fresh chease,[wait:5] pepperonie,[wait:5] Just like in your Dream's..."
-          }
-        },
-        {
-          id = 18,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 178,
-          y = 322,
-          width = 60,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text1"] = "* There're some car magazines on the racks.",
-            ["text2"] = "* It might be fun to look at them,",
-            ["text3"] = "* But there's other people around..."
-          }
-        },
-        {
-          id = 19,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 246,
-          y = 322,
-          width = 60,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text"] = "* It's a zine for Jockington fans. Seems popular."
-          }
-        },
-        {
-          id = 20,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 320,
-          y = 322,
-          width = 104,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text1"] = "* It's a bunch of cards and heart shaped chocolates.",
-            ["text2"] = "* \"Get well soon!\"\n* \"I'm glad your bike crashed\""
-          }
-        },
-        {
-          id = 22,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 658,
-          y = 336,
-          width = 42,
-          height = 42,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["solid"] = true,
-            ["text"] = "* It's a trash can."
-          }
-        },
-        {
-          id = 23,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 718,
-          y = 328,
-          width = 58,
-          height = 58,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["solid"] = true,
-            ["text1"] = "* (You can't reach the top,[wait:5] rendering it impossible to get a basket.)",
-            ["text2"] = "* (You'll never be able to buy something in this state...)"
-          }
-        },
-        {
           id = 24,
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 712,
-          y = 200,
-          width = 80,
+          x = 475.25,
+          y = 197.25,
+          width = 236.75,
           height = 18,
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* (It's a rack of candy[wait:5], jerky,[wait:5] and various nuts.)"
+            ["text"] = "* It's an empty help desk.[wait:5] It seems the cruise might be leaving soon."
           }
         },
         {
@@ -356,59 +456,12 @@ return {
           shape = "rectangle",
           x = 240,
           y = 200,
-          width = 80,
-          height = 16,
+          width = 113.5,
+          height = 36.75,
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* LOOSE EGGS $1",
-            ["text2"] = "* (It's too much responsibility for an egg.)"
-          }
-        },
-        {
-          id = 26,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 324,
-          y = 200,
-          width = 58,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text1"] = "* (It looks like a normal basket of fruit,[wait:5] but when you reach in...)",
-            ["text2"] = "* (...[wait:5] It's incredibly deep and holds all sorts of things.)"
-          }
-        },
-        {
-          id = 27,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 422,
-          y = 200,
-          width = 58,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text"] = "* (Grapes,[wait:5] melons,,[wait:5] oranges,,[wait:5] and the scent of fresh pineapples...)"
-          }
-        },
-        {
-          id = 28,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 384,
-          y = 200,
-          width = 36,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["text"] = "* (It looks like a normal palm tree,[wait:5] but it's chock-full of useful groceries.)"
+            ["text1"] = "* (It's an empty seat.)"
           }
         },
         {
@@ -425,51 +478,121 @@ return {
           properties = {
             ["depths"] = true,
             ["facing"] = "down",
-            ["map"] = "sansArea",
-            ["marker"] = "entrysans"
+            ["map"] = "depths/crosswalk",
+            ["marker"] = "sans"
           }
         },
         {
-          id = 31,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 94,
-          y = 370,
-          width = 344,
-          height = 150,
-          rotation = 0,
-          gid = 40,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 32,
-          name = "",
+          name = "npc",
           type = "",
-          shape = "rectangle",
-          x = 718,
-          y = 388,
-          width = 58,
-          height = 166,
+          shape = "point",
+          x = 257.045,
+          y = -413.88,
+          width = 0,
+          height = 0,
           rotation = 0,
-          gid = 37,
           visible = true,
-          properties = {}
+          properties = {
+            ["actor"] = "sans",
+            ["cutscene"] = "depthsCutscenes.sans"
+          }
         },
         {
-          id = 35,
-          name = "",
+          id = 34,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 646.292,
+          y = 224.167,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/kris",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 36,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 606.273,
+          y = 224.091,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/ralsei",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 37,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 568,
+          y = 224.667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/susie",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 38,
+          name = "npc",
+          type = "",
+          shape = "point",
+          x = 527.667,
+          y = 224.667,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "pirates/noelle",
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 39,
+          name = "script",
           type = "",
           shape = "rectangle",
-          x = 654,
-          y = 384,
-          width = 52,
-          height = 56,
+          x = 560.25,
+          y = 418.75,
+          width = 79.5,
+          height = 62,
           rotation = 0,
-          gid = 39,
           visible = true,
-          properties = {}
+          properties = {
+            ["cutscene"] = "depthsCutscenes.meetPirates",
+            ["once"] = false,
+            ["plotmax"] = "*depths_pirates"
+          }
+        },
+        {
+          id = 43,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 81.25,
+          y = 199.875,
+          width = 113.5,
+          height = 36.75,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* (It's an empty seat.)"
+          }
         }
       }
     },
@@ -479,7 +602,7 @@ return {
       id = 5,
       name = "markers",
       class = "",
-      visible = false,
+      visible = true,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -494,6 +617,19 @@ return {
           shape = "point",
           x = 600,
           y = 440,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "piratesOutside",
+          type = "",
+          shape = "point",
+          x = 886,
+          y = -104,
           width = 0,
           height = 0,
           rotation = 0,

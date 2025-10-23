@@ -1,0 +1,281 @@
+return {
+  version = "1.10",
+  luaversion = "5.1",
+  tiledversion = "1.11.2",
+  class = "",
+  orientation = "orthogonal",
+  renderorder = "right-down",
+  width = 21,
+  height = 12,
+  tilewidth = 40,
+  tileheight = 40,
+  nextlayerid = 7,
+  nextobjectid = 17,
+  properties = {
+    ["border"] = "evergroves",
+    ["depths"] = true,
+    ["music"] = "mus_evergroves",
+    ["name"] = "Cheron's Ship",
+    ["step_sound"] = "evergroves"
+  },
+  tilesets = {
+    {
+      name = "evergroves",
+      firstgid = 1,
+      filename = "../../../tilesets/evergroves.tsx",
+      exportfilename = "../../../tilesets/evergroves.lua"
+    }
+  },
+  layers = {
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 21,
+      height = 12,
+      id = 1,
+      name = "Tile Layer 1",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1.05,
+      parallaxy = 1.05,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 1811, 1812, 1813, 1814, 285, 286, 287, 1542, 1543, 1544, 1545, 1546, 1547, 1548, 0, 0, 0, 0, 0,
+        0, 0, 1878, 1879, 1880, 1881, 352, 353, 354, 0, 1610, 1611, 1612, 1613, 1614, 1615, 0, 0, 0, 0, 0,
+        0, 0, 1945, 1946, 1947, 1948, 1949, 0, 0, 1676, 1677, 1678, 1679, 1680, 1681, 1682, 0, 0, 0, 0, 0,
+        0, 0, 2012, 2013, 2014, 2015, 2016, 0, 0, 1743, 1744, 1745, 1746, 1747, 1748, 1749, 0, 0, 0, 0, 0,
+        0, 0, 2079, 2080, 2081, 2082, 2083, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2146, 2147, 2148, 2149, 2150, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 21,
+      height = 12,
+      id = 6,
+      name = "Tile Layer 2",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 74.5,
+      offsety = 41.25,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1074, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "imagelayer",
+      image = "../../../../../assets/sprites/backgrounds/smallhosue.png",
+      id = 2,
+      name = "lounge",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = -200,
+      offsety = -200,
+      parallaxx = 1,
+      parallaxy = 1,
+      repeatx = false,
+      repeaty = false,
+      properties = {}
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 3,
+      name = "collisions",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 2,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 454.5,
+          y = 160,
+          width = 6,
+          height = 286,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 4,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 454.5,
+          y = 443,
+          width = 129.5,
+          height = 37,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 6,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 656,
+          y = 440,
+          width = 184,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 7,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 800,
+          y = 181.083,
+          width = 40,
+          height = 258.917,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 9,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 460,
+          y = 10,
+          width = 340,
+          height = 338,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 4,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 11,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 574,
+          y = 480,
+          width = 96,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "evergroves/path1",
+            ["marker"] = "spawn1"
+          }
+        },
+        {
+          id = 14,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 577.5,
+          y = 244.313,
+          width = 70,
+          height = 104,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "evergroves.leave"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 5,
+      name = "markers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 10,
+          name = "evergrovesenter",
+          type = "",
+          shape = "point",
+          x = 620,
+          y = 454,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 15,
+          name = "evergrovesenter2",
+          type = "",
+          shape = "point",
+          x = 610.444,
+          y = 375.739,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    }
+  }
+}

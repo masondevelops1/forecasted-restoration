@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="17">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="evergroves"/>
+  <property name="depths" type="bool" value="true"/>
+  <property name="music" value="mus_evergroves"/>
+  <property name="name" value="Cheron's Ship"/>
+  <property name="step_sound" value="evergroves"/>
+ </properties>
+ <tileset firstgid="1" source="../../../tilesets/evergroves.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="21" height="12" parallaxx="1.05" parallaxy="1.05">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1811,1812,1813,1814,285,286,287,1542,1543,1544,1545,1546,1547,1548,0,0,0,0,0,
+0,0,1878,1879,1880,1881,352,353,354,0,1610,1611,1612,1613,1614,1615,0,0,0,0,0,
+0,0,1945,1946,1947,1948,1949,0,0,1676,1677,1678,1679,1680,1681,1682,0,0,0,0,0,
+0,0,2012,2013,2014,2015,2016,0,0,1743,1744,1745,1746,1747,1748,1749,0,0,0,0,0,
+0,0,2079,2080,2081,2082,2083,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2146,2147,2148,2149,2150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Tile Layer 2" width="21" height="12" offsetx="74.5" offsety="41.25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,1074,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="2" name="lounge" offsetx="-200" offsety="-200">
+  <image source="../../../../../assets/sprites/backgrounds/smallhosue.png" width="1264" height="858"/>
+ </imagelayer>
+ <objectgroup color="#0000ff" id="3" name="collisions">
+  <object id="2" x="454.5" y="160" width="6" height="286"/>
+  <object id="4" x="454.5" y="443" width="129.5" height="37"/>
+  <object id="6" x="656" y="440" width="184" height="40"/>
+  <object id="7" x="800" y="181.083" width="40" height="258.917"/>
+  <object id="9" x="460" y="10" width="340" height="338"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="4" name="objects">
+  <object id="11" name="transition" x="574" y="480" width="96" height="40">
+   <properties>
+    <property name="map" value="evergroves/path1"/>
+    <property name="marker" value="spawn1"/>
+   </properties>
+  </object>
+  <object id="14" name="interactable" x="577.5" y="244.313" width="70" height="104">
+   <properties>
+    <property name="cutscene" value="evergroves.leave"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="5" name="markers">
+  <object id="10" name="evergrovesenter" x="620" y="454">
+   <point/>
+  </object>
+  <object id="15" name="evergrovesenter2" x="610.444" y="375.739">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

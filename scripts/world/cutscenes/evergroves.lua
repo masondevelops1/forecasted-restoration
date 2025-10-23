@@ -152,7 +152,10 @@ local evergroves = {
         Assets.playSound("dooropen")
         Game.world:shopTransition("sailorShop")
     end,
-    
+    leave = function (cutscene)
+        Assets.playSound("dooropen")
+        Game.world:mapTransition("evergroves/path1", "spawn2")
+    end,
     sign1 = function(cutscene, event)
         cutscene:text("* There's a sign here.[wait:10] It has a job notice attached: ")	
         cutscene:text("* \"I need someone to watch this dock.\" ")	
@@ -178,11 +181,17 @@ local evergroves = {
         cutscene:text("* - Signed,[wait:5] The Evergroves Marketing Team.")
     end,
     dockStation = function(cutscene, event)
-        cutscene:text("* There's a sign here.[wait:10] It has some information about the dock:")	
-        cutscene:text("* \"WELCOME TO AN EVERGROVES DOCKING STATION!\" ")	
-        cutscene:text("* \"ALL DOCKING STATIONS ARE MADE DUE TO THE RESIDENT COUNT GOING UP VERY QUICKLY.\"")	
-        cutscene:text("* \"STATIONS ARE ONLY TO BE USED BY BOATS COMING IN FROM DIFFERENT PARTS OF THE DEPTHS.\"")	
-        cutscene:text("* - Signed,[wait:5] The Evergroves Capital.")
+        cutscene:text("* There's a sign here:")	
+        cutscene:text("* \"WELCOME TO THE EVERGROVES!\n[wait:10]ENJOY YOUR STAY!\"")	
+    end,
+    dock1 = function(cutscene, event)
+        cutscene:text("* There's a sign here:")	
+        cutscene:text("* \"EVERGROVES SOUTHERN DOCK\"")	
+        cutscene:text("* \"NOTICE:[wait:5] Until all Transferers are put in-service,[wait:5] this dock will remain one-way.\"")	
+    end,
+    demoend = function(cutscene, event)
+        cutscene:text("* It seems like there is no way to go forward at the moment.")	
+        cutscene:text("* This is the end of the Evergroves... for now...")	
     end,
 }
 
