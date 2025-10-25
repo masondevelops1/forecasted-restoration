@@ -1154,8 +1154,8 @@ return {
           visible = true,
           properties = {
             ["border"] = "ground_zero",
-            ["map"] = "depthsRaft",
-            ["marker"] = "spawn",
+            ["map"] = "evergroveLeadup",
+            ["marker"] = "spawnDock",
             ["plotmin"] = "depthsRaft"
           }
         }

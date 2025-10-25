@@ -469,8 +469,8 @@
   <object id="127" name="=&gt; eg" type="transition" x="1320" y="1120" width="80" height="160">
    <properties>
     <property name="border" value="ground_zero"/>
-    <property name="map" value="depthsRaft"/>
-    <property name="marker" value="spawn"/>
+    <property name="map" value="evergroveLeadup"/>
+    <property name="marker" value="spawnDock"/>
     <property name="plotmin" value="depthsRaft"/>
    </properties>
   </object>
