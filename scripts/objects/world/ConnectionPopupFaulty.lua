@@ -20,7 +20,7 @@ function ConnectionPopup:init(state)
     self.sprite.layer = -100
     self.sound = Assets.newSound("sonar")
     self.sound2 = Assets.newSound("electric")
-    self.state = state or "CONNECTED"
+    self.state = state or "FAULTY"
     if self.state == "CONNECTED" then
         self.text:setText("[spacing:1] CONNECTED ")
         self.sprite:setSprite("objects/connection/connected")
@@ -35,7 +35,7 @@ function ConnectionPopup:init(state)
             self.timer:tween(0.5, self, {origin_y = 1}, "out-quad")
             wait(0.5)
             self.sound:play()
-            wait(7)
+            wait(15)
             self.timer:tween(0.5, self, {origin_y = 0}, "out-quad")
             wait(0.5)
             self:remove()

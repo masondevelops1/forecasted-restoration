@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="97">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="border" value="ground_zero"/>
+  <property name="depths" type="bool" value="true"/>
+  <property name="dusk" type="bool" value="false"/>
+  <property name="music" value="endless_expanse"/>
+  <property name="name" value="Depths - Maintenance Tunnels"/>
+  <property name="step_sound" value="reverb"/>
+ </properties>
+ <tileset firstgid="1" source="../../tilesets/gateway.tsx"/>
+ <tileset firstgid="929" source="../../tilesets/depthstiles.tsx"/>
+ <tileset firstgid="3445" source="../../tilesets/Core Tiles.tsx"/>
+ <layer id="7" name="Tile Layer 2" width="32" height="32" offsetx="0" offsety="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,2451,2452,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2451,2452,0,0,2110,2110,0,0,2451,2452,0,2519,2520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2519,2520,0,0,2110,2110,0,0,2519,2520,0,2587,2588,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2587,2588,0,0,2110,2110,0,0,2587,2588,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2110,2110,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Tile Layer 1" width="32" height="32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1678,1679,1680,1681,1682,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1746,1747,1748,1749,1750,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1814,1815,1816,1817,1818,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1882,1883,1884,1885,1886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1123,1125,1124,1125,1124,1125,1124,1125,1124,1125,1124,1125,1125,1124,1125,1124,1125,1124,1125,1125,1124,1125,1124,1125,1124,1125,1124,1125,1124,1126,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1194,0,
+0,1191,1192,1192,1192,1193,1192,1193,1192,1193,1192,1193,1192,1192,1192,1192,1193,1192,1193,1192,1192,1192,1193,1192,1193,1192,1193,1192,1193,1192,1194,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1194,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1194,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1194,0,
+0,1191,1192,1192,1192,1193,1192,1193,1192,1193,1192,1193,1192,1192,1192,1192,1193,1192,1193,1192,1192,1192,1193,1192,1193,1192,1193,1192,1193,1192,1194,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1194,0,
+0,1259,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1261,1190,1192,1189,1261,1261,1261,1261,1261,1261,1261,1261,1262,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1191,1193,1194,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1191,1192,1194,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1191,1193,1194,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1191,1193,1194,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1191,1192,1194,0,0,0,0,0,0,0,0,0,0,
+0,1123,1125,1124,1125,1124,1125,1124,1125,1124,1125,1124,1125,1126,0,0,0,0,0,1191,1193,1194,0,0,0,0,0,0,0,0,0,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1257,1124,1125,1125,1125,1125,1258,1192,1194,0,0,0,0,0,0,0,0,0,0,
+0,1191,1192,1192,1192,1193,1192,1193,1192,1193,1192,1193,1192,1192,1193,1192,1192,1193,1192,1193,1192,1194,0,0,0,0,0,0,0,0,0,0,
+0,1191,1193,1192,1193,1192,1193,1192,1193,1192,1193,1192,1193,1189,1260,1261,1261,1261,1261,1261,1261,1262,0,0,0,0,0,0,0,0,0,0,
+0,1259,1261,1261,1261,1261,1190,1193,1189,1261,1261,1261,1261,1262,2642,2643,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2641,2641,2642,2643,2644,1191,1192,1194,2644,2645,2642,2643,2646,2110,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2110,2110,2110,2110,1191,1193,1194,2110,2110,2110,2110,2110,2110,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2110,2110,2110,2110,1191,1192,1194,2110,2110,2110,2110,2110,2110,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2110,2110,2110,2110,1191,1193,1194,2110,2110,2110,2110,2110,2110,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="powered" width="32" height="32">
+  <data encoding="csv">
+0,0,0,0,0,1002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1070,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1138,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1206,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1338,1339,1340,1341,1342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1406,1407,1408,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1474,1475,1476,1477,1478,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1542,1543,1544,1545,1546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="Tile Layer 3" width="32" height="32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2270,2271,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2338,2339,2276,2277,2278,2279,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2270,2271,2272,2273,2406,2407,2344,2345,2346,2347,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2338,2339,2340,2341,2342,0,2412,2413,2414,2415,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision" opacity="0.5">
+  <object id="1" x="0" y="920" width="40" height="200"/>
+  <object id="2" x="560" y="1080" width="80" height="40"/>
+  <object id="3" x="560" y="920" width="80" height="40"/>
+  <object id="4" x="39.75" y="880" width="520.25" height="40"/>
+  <object id="7" x="344" y="1120" width="216" height="40"/>
+  <object id="22" x="39.75" y="1120.25" width="216" height="40"/>
+ </objectgroup>
+ <objectgroup color="#7f00ff" id="4" name="markers">
+  <object id="5" name="spawn" x="320" y="956">
+   <point/>
+  </object>
+  <object id="8" name="entry" x="600" y="1020">
+   <point/>
+  </object>
+  <object id="13" name="susiespawn" x="220" y="956">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="5" name="objects">
+  <object id="15" name="savepoint" x="80" y="880" width="40" height="40">
+   <properties>
+    <property name="text1" value="* You cough on a piece of dust."/>
+    <property name="text2" value="* The power of old corridors fills you with courage."/>
+   </properties>
+  </object>
+  <object id="23" name="enemy" x="840" y="640">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="enemy" x="794" y="625.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="enemy" x="656" y="543.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="enemy" x="748" y="524.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="enemy" x="959.333" y="491.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="enemy" x="768" y="541.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="enemy" x="626.667" y="546.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="enemy" x="512" y="579.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="enemy" x="478" y="514">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="enemy" x="588.667" y="487.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="enemy" x="793.333" y="476.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="enemy" x="897.333" y="516">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="enemy" x="1015.33" y="586.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="enemy" x="1101.33" y="563.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="enemy" x="1027.33" y="472">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="enemy" x="910.667" y="419.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="enemy" x="708" y="410.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="enemy" x="583.333" y="412">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="enemy" x="432.667" y="426">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="enemy" x="322" y="470.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="enemy" x="316.667" y="511.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="enemy" x="284.667" y="550.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="enemy" x="194.667" y="526.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="enemy" x="202" y="491.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="enemy" x="371.333" y="587.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="enemy" x="484.667" y="628">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="enemy" x="734" y="632.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="enemy" x="785.333" y="600">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="enemy" x="603.333" y="578">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="enemy" x="538.667" y="624">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="enemy" x="396" y="618">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="enemy" x="251.333" y="584">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="enemy" x="204" y="597.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="enemy" x="187.333" y="622.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="enemy" x="324.667" y="660">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="enemy" x="386" y="660.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="enemy" x="582" y="648.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="enemy" x="666.667" y="643.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="enemy" x="782.667" y="650">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="enemy" x="874" y="642.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="enemy" x="1012" y="641.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="enemy" x="1026.67" y="626.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="enemy" x="928.667" y="568">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="enemy" x="824" y="544">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="enemy" x="804.667" y="500.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="enemy" x="631.333" y="469.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="enemy" x="546" y="503.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="enemy" x="408.667" y="515.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="enemy" x="319.333" y="524">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="enemy" x="330.667" y="590">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="enemy" x="664" y="622.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="enemy" x="750" y="650">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="enemy" x="937.333" y="641.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="enemy" x="1068" y="618.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="enemy" x="1076" y="551.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="enemy" x="954" y="553.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="enemy" x="912" y="590.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="enemy" x="771.333" y="568.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="enemy" x="679.333" y="561.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="enemy" x="655.333" y="574">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="enemy" x="588.667" y="577.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="enemy" x="518.667" y="549.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="enemy" x="509.333" y="540.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="enemy" x="456" y="566.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="enemy" x="398" y="584.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="enemy" x="403.333" y="546">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="enemy" x="412" y="544.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="enemy" x="336" y="515.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="enemy" x="260.667" y="584.667">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="enemy" x="286" y="615.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="enemy" x="330" y="589.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="enemy" x="459.333" y="621.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="enemy" x="580.667" y="625.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="enemy" x="667.333" y="635.333">
+   <properties>
+    <property name="actor" value="scrapscallion"/>
+    <property name="chase" type="bool" value="true"/>
+    <property name="encounter" value="scrapscallion"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

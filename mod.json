@@ -55,7 +55,7 @@
     "config": {
         "kristal": {
             // End of config
-            "enemyAuras": false,
+            "enemyAuras": true,
             "speechBubble" : "depths"
         },
         "afilemenu": {

@@ -33,10 +33,10 @@ return {
       exportfilename = "../../tilesets/depthstiles.lua"
     },
     {
-      name = "core_tiles",
+      name = "Core Tiles",
       firstgid = 3445,
       filename = "../../tilesets/Core Tiles.tsx",
-      exportfilename = "../../tilesets/core_tiles.lua"
+      exportfilename = "../../tilesets/Core Tiles.lua"
     }
   },
   layers = {

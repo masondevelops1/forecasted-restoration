@@ -15,7 +15,7 @@ function spell:init()
     self.description = "Heals 1 party member. It's pretty lame."
 
     -- TP cost
-    self.cost = 95
+    self.cost = 75
 
     -- Target mode (ally, party, enemy, enemies, or none)
     self.target = "ally"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="77" height="25" tilewidth="40" tileheight="40" infinite="0" nextlayerid="18" nextobjectid="62">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="77" height="25" tilewidth="40" tileheight="40" infinite="0" nextlayerid="18" nextobjectid="67">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -120,10 +120,12 @@
   <object id="60" name="spawn" x="1415.33" y="293.667">
    <point/>
   </object>
+  <object id="64" name="sansarea" x="317" y="957.125">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="collision">
   <object id="3" x="1080" y="40" width="1972" height="185.839"/>
-  <object id="4" x="568.27" y="298.199" width="156.117" height="31.07"/>
   <object id="5" x="1301.43" y="335.615" width="1749.68" height="230.824"/>
   <object id="7" x="1196.14" y="305.877" width="104.791" height="70.8048"/>
   <object id="29" x="375.545" y="102.182" width="1016" height="130"/>
@@ -133,9 +135,10 @@
   <object id="51" x="84" y="520" width="177" height="480"/>
   <object id="52" x="375.864" y="-130.136" width="186" height="233"/>
   <object id="53" x="0.166667" y="227.667" width="87" height="166.667"/>
-  <object id="56" x="674.442" y="231.965" width="21.617" height="66.82"/>
+  <object id="56" x="674.442" y="231.965" width="21.617" height="97.1836"/>
   <object id="59" x="925.942" y="232.34" width="34.117" height="97.1533"/>
   <object id="61" name="BRIDGE RUOK" x="1679.9" y="177" width="40" height="160"/>
+  <object id="65" x="232.833" y="908" width="177" height="480"/>
  </objectgroup>
  <objectgroup id="9" name="objects">
   <object id="8" name="interactable" x="1189.06" y="249.233" width="121.784" height="86.3819">
@@ -158,12 +161,12 @@
     <property name="actor" value="platform"/>
    </properties>
   </object>
-  <object id="17" name="interactable" x="967" y="235" width="52" height="52">
+  <object id="17" name="interactable" x="962.333" y="223.667" width="102" height="63.3333">
    <properties>
     <property name="cutscene" value="depthsCutscenes.platform1"/>
    </properties>
   </object>
-  <object id="22" name="interactable" x="572.5" y="222" width="69" height="76">
+  <object id="22" name="interactable" x="572.5" y="222" width="101" height="76">
    <properties>
     <property name="cutscene" value="depthsCutscenes.platform2"/>
    </properties>
@@ -188,7 +191,7 @@
   <object id="44" name="enemy" x="232" y="360">
    <properties>
     <property name="actor" value="scrapscallion"/>
-    <property name="cond" value="not enemyDefeated"/>
+    <property name="chase" type="bool" value="true"/>
     <property name="encounter" value="scrapscallion"/>
    </properties>
    <point/>
@@ -206,9 +209,19 @@
   </object>
   <object id="58" name="script" x="2354.75" y="201" width="52.5" height="138.5">
    <properties>
-    <property name="cutscene" value="depthsCutscenes.krisSlip"/>
+    <property name="cutscene" value="lost_connection.krisSlip"/>
     <property name="once" type="bool" value="false"/>
     <property name="plotmax" value="*depths_slip"/>
+   </properties>
+  </object>
+  <object id="62" name="transition" x="260.636" y="991.636" width="112.364" height="40">
+   <properties>
+    <property name="map" value="sansArea"/>
+   </properties>
+  </object>
+  <object id="66" name="interactable" x="253" y="862.333" width="135.667" height="76">
+   <properties>
+    <property name="text1" value="COMING SOON TO YOUR LOCAL DEPTHS![wait:10] THE DEPTHS UPDATE WILL RELEASE EVENTUALLY!"/>
    </properties>
   </object>
  </objectgroup>

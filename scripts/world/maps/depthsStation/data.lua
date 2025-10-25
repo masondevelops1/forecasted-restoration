@@ -232,8 +232,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "scrapscallion",
-            ["cond"] = "not enemyDefeated",
             ["cutscene"] = "boatCutscenes.scrapscallionEncounter",
+            ["plotmax"] = "*boat_leadup_scrap",
             ["sprite"] = "off_liketherpg"
           }
         },
@@ -582,8 +582,8 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 480,
-          y = 0,
+          x = 479.667,
+          y = -0.333333,
           width = 40,
           height = 360,
           rotation = 0,

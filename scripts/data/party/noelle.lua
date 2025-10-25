@@ -34,21 +34,22 @@ function character:init()
     self:addSpell("heal_prayer")
     self:addSpell("sleep_mist")
     self:addSpell("ice_shock")
+    self:addSpell("snowgrave")
 
     -- Current health (saved to the save file)
-    self.health = 90
+    self.health = 200
 
     -- Base stats (saved to the save file)
     self.stats = {
-        health = 90,
-        attack = 3,
-        defense = 1,
-        magic = 11
+        health = 200,
+        attack = 6,
+        defense = 9,
+        magic = 22
     }
 
     -- Max stats from level-ups
     self.max_stats = {
-        health = 999
+        health = 600
     }
 
     -- Weapon icon in equip menu
@@ -111,7 +112,7 @@ end
 function character:getTitle()
     local prefix = "LV"..self:getLevel().." "
     if self:checkWeapon("thornring") then
-        return prefix.."Ice Trancer\nReceives pain to\nbecome stronger."
+        return prefix..""
     elseif self:getFlag("iceshocks_used", 0) > 0 then
         return prefix.."Frostmancer\nFreezes the enemy."
     else

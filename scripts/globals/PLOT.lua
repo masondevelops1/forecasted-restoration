@@ -8,6 +8,7 @@ local PLOT = {
     apartment_exit = 55; -- noelle found out you're a criminal, susie. no more girlfriend for you.
     shelter_enter = 60; -- you have no supplies, it was a lie.
     shelter_heard_log = 70; -- i heard him whisper, i hear him whisper that he kissed wing dings gaster
+    shelter_found_loresecret = 71; -- i bet nobody's finding this one.
     gateway_enter = 90; -- cutscene in shelter/coreleadup played
     gateway_terminal1 = 92; -- im warning you this isn't gonna end well. dont disable the lockdown.
     transferenabled = 93; -- winddings gaster's recreation would come on the ground zero tiles. but uh... not yet.
@@ -23,7 +24,8 @@ local PLOT = {
 
     -- TODO: Adjust these numbers to something more sensible once we get to that point
     -- I hate that I can't do that anymore because it'd break save files
-    boat_leadup_scrap               =  115;
+    boat_leadup_scrap               =  114;
+    boat_leadup_keyget              =  115;
     boat_act1_start                 =  120;
     boat_act1_mapswitch             = 122;
     boat_act1_paddle                = 124;

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 18,
-  nextobjectid = 62,
+  nextobjectid = 67,
   properties = {
     ["border"] = "ground_zero",
     ["depths"] = true,
@@ -399,6 +399,19 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 64,
+          name = "sansarea",
+          type = "",
+          shape = "point",
+          x = 317,
+          y = 957.125,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -425,19 +438,6 @@ return {
           y = 40,
           width = 1972,
           height = 185.839,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 4,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 568.27,
-          y = 298.199,
-          width = 156.117,
-          height = 31.07,
           rotation = 0,
           visible = true,
           properties = {}
@@ -567,7 +567,7 @@ return {
           x = 674.442,
           y = 231.965,
           width = 21.617,
-          height = 66.82,
+          height = 97.1836,
           rotation = 0,
           visible = true,
           properties = {}
@@ -594,6 +594,19 @@ return {
           y = 177,
           width = 40,
           height = 160,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 65,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 232.833,
+          y = 908,
+          width = 177,
+          height = 480,
           rotation = 0,
           visible = true,
           properties = {}
@@ -679,10 +692,10 @@ return {
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 967,
-          y = 235,
-          width = 52,
-          height = 52,
+          x = 962.333,
+          y = 223.667,
+          width = 102,
+          height = 63.3333,
           rotation = 0,
           visible = true,
           properties = {
@@ -696,7 +709,7 @@ return {
           shape = "rectangle",
           x = 572.5,
           y = 222,
-          width = 69,
+          width = 101,
           height = 76,
           rotation = 0,
           visible = true,
@@ -776,7 +789,7 @@ return {
           visible = true,
           properties = {
             ["actor"] = "scrapscallion",
-            ["cond"] = "not enemyDefeated",
+            ["chase"] = true,
             ["encounter"] = "scrapscallion"
           }
         },
@@ -823,9 +836,39 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["cutscene"] = "depthsCutscenes.krisSlip",
+            ["cutscene"] = "lost_connection.krisSlip",
             ["once"] = false,
             ["plotmax"] = "*depths_slip"
+          }
+        },
+        {
+          id = 62,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 260.636,
+          y = 991.636,
+          width = 112.364,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "sansArea"
+          }
+        },
+        {
+          id = 66,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 253,
+          y = 862.333,
+          width = 135.667,
+          height = 76,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "COMING SOON TO YOUR LOCAL DEPTHS![wait:10] THE DEPTHS UPDATE WILL RELEASE EVENTUALLY!"
           }
         }
       }
