@@ -453,13 +453,6 @@
   <object id="207" x="283.711" y="400.63" width="80.579" height="1045.41"/>
  </objectgroup>
  <objectgroup id="3" name="objects">
-  <object id="99" name="enemy" x="1960" y="2400" width="41.3333" height="41.3333">
-   <properties>
-    <property name="actor" value="fomnis"/>
-    <property name="encounter" value="2 fomnis"/>
-    <property name="plotmax" value="*gateway_lockdown_off"/>
-   </properties>
-  </object>
   <object id="102" name="teevie_marquee" x="1089.33" y="2292.67" width="141.25" height="14">
    <properties>
     <property name="text" value="Welcome to Floor B2"/>
@@ -471,20 +464,6 @@
     <property name="marker" value="entry"/>
    </properties>
   </object>
-  <object id="107" name="enemy" x="2000" y="2400" width="41.3333" height="41.3333">
-   <properties>
-    <property name="actor" value="fomnis"/>
-    <property name="encounter" value="2 fomnis"/>
-    <property name="plotmax" value="*gateway_lockdown_off"/>
-   </properties>
-  </object>
-  <object id="108" name="enemy" x="1400" y="2280" width="41.3333" height="41.3333">
-   <properties>
-    <property name="actor" value="fomnis"/>
-    <property name="encounter" value="2 fomnis"/>
-    <property name="plotmax" value="*gateway_lockdown_off"/>
-   </properties>
-  </object>
   <object id="110" name="enemy" x="2760" y="2160" width="41.3333" height="41.3333">
    <properties>
     <property name="actor" value="fomnis"/>
@@ -493,13 +472,6 @@
    </properties>
   </object>
   <object id="111" name="fakechest" x="1160" y="880" width="40" height="40"/>
-  <object id="112" name="enemy" x="2560" y="2160" width="41.3333" height="41.3333">
-   <properties>
-    <property name="actor" value="fomnis"/>
-    <property name="encounter" value="2 fomnis"/>
-    <property name="plotmax" value="*gateway_lockdown_off"/>
-   </properties>
-  </object>
   <object id="113" name="enemy" x="2560" y="1840" width="41.3333" height="41.3333">
    <properties>
     <property name="actor" value="fomnis"/>

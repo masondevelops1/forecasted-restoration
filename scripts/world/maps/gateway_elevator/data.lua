@@ -163,9 +163,9 @@ return {
             ["dest_1"] = "gateway/creation",
             ["dest_2"] = "gateway/basement",
             ["dest_3"] = "gateway/broken",
-            ["length_1"] = 1040,
+            ["length_1"] = 400,
             ["length_2"] = 1040,
-            ["length_3"] = 1040,
+            ["length_3"] = 400,
             ["name_1"] = "Gateway B1",
             ["name_2"] = "Gateway B2",
             ["name_3"] = "Gateway B3"

@@ -1398,23 +1398,6 @@ return {
       properties = {},
       objects = {
         {
-          id = 99,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1960,
-          y = 2400,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
           id = 102,
           name = "teevie_marquee",
           type = "",
@@ -1446,40 +1429,6 @@ return {
           }
         },
         {
-          id = 107,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 2000,
-          y = 2400,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
-          id = 108,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1400,
-          y = 2280,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
           id = 110,
           name = "enemy",
           type = "",
@@ -1508,23 +1457,6 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
-        },
-        {
-          id = 112,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 2560,
-          y = 2160,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
         },
         {
           id = 113,

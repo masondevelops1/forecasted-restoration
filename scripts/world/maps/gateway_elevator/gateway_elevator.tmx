@@ -36,9 +36,9 @@
     <property name="dest_1" value="gateway/creation"/>
     <property name="dest_2" value="gateway/basement"/>
     <property name="dest_3" value="gateway/broken"/>
-    <property name="length_1" type="int" value="1040"/>
+    <property name="length_1" type="int" value="400"/>
     <property name="length_2" type="int" value="1040"/>
-    <property name="length_3" type="int" value="1040"/>
+    <property name="length_3" type="int" value="400"/>
     <property name="name_1" value="Gateway B1"/>
     <property name="name_2" value="Gateway B2"/>
     <property name="name_3" value="Gateway B3"/>
