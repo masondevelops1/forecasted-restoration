@@ -42,7 +42,7 @@ devicegateway.main = function(cutscene, reason)
 DEVICE:\\DeviceUser1
 ===========================
 
-[1:] Access_Platform
+[1:] Management
 [2:] [color:red]CORRUPTED[color:reset]
 [3:] [color:red]CORRUPTED[color:reset]
 [0:] Power Off
@@ -68,10 +68,9 @@ selection.
         else
             return devicegateway.main(cutscene, "nodrive")
         end
-
+    end
     return devicegateway.main(cutscene, "invalid")
 end
-end;
 
 function devicegateway.scenes(cutscene)
     devicegateway.init(cutscene)
@@ -79,7 +78,7 @@ function devicegateway.scenes(cutscene)
 [color:red]Warning: Drive data may get corrupted...[color:reset]
 
 ===========================
-DEVICE:\\DeviceUser1\\Access_Platform
+DEVICE:\\DeviceUser1\\Management
 ===========================
 
 Accessing data......
@@ -102,11 +101,11 @@ function devicegateway.confirmation(cutscene)
 [color:red]Warning: Drive data may get corrupted..[color:reset]
 
 ===========================
-DEVICE:\\DeviceUser1\\Access_Platform
+DEVICE:\\DeviceUser1\\Management
 ===========================
 
 Confirmation Successful.
-Activating Bridge: A....
+Deactivating lockdown...
 ........................
 ........................
 ........................
@@ -114,7 +113,7 @@ Activating Bridge: A....
 
 ===========================
 Complete. Press any button to 
-return to menu.
+complete procedure.
 > _
 ]])
     --if choice == 0 then 
@@ -122,8 +121,14 @@ return to menu.
         --return devicegateway.main(cutscene) 
         --end
     --@param plot PLOT|PLOT.key?
-    SetPlot("transferenabled")
-    return devicegateway.main(cutscene)
+    SetPlot("gateway_lockdown_off")
+    love.audio.newSource(Assets.getMusicPath"DEVICE_OFF","static"):play()
+    cutscene.funnytextbox:setText("[style:none][voice:none]Completing...")
+    cutscene:wait(1)
+    cutscene.funnytextbox:remove()
+    cutscene:wait(Game.world:mapTransition(Game.world.map.id, Game.world.player.x, Game.world.player.y))
+    Game:getQuest("gateway"):complete()
+    return
 --end
 end
 local credits_pages = {

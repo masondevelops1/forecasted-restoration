@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="163">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value=""/>
+ </properties>
+ <imagelayer id="2" name="house" offsetx="-0.00416667" offsety="0">
+  <image source="../../../../../assets/sprites/backgrounds/noelle room.png" width="512" height="378"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="collisions">
+  <object id="137" x="65.9063" y="2" width="370.138" height="141.97"/>
+  <object id="138" x="66.2111" y="158.017" width="55.7758" height="146.045"/>
+  <object id="139" x="133.998" y="321.998" width="217.998" height="45.5684"/>
+  <object id="140" x="355.996" y="322.003" width="71.9939" height="45.4763"/>
+  <object id="141" x="435.989" y="143.926" width="75.5694" height="62.2096"/>
+  <object id="142" x="436.033" y="285.532" width="75.5694" height="92.0278"/>
+  <object id="144" x="0.101664" y="1.40277" width="65.933" height="376.361"/>
+  <object id="145" x="88.2153" y="56.8195" width="85.7512" height="115.361"/>
+  <object id="146" x="65.9529" y="367.455" width="362.037" height="10.5905"/>
+  <object id="149" x="66.1304" y="361.87">
+   <polyline points="0,0 1.73913,0 1.86957,4.08696 5.78261,4.04348 5.82609,6.04348"/>
+  </object>
+  <object id="150" x="427.969" y="368">
+   <polyline points="0,0 2.03125,0 2,-1.9375 5.96875,-2.03125 6.03125,-6 8,-5.96875"/>
+  </object>
+  <object id="153" x="323.875" y="152.063" width="24.0625" height="33.875"/>
+  <object id="154" x="311.969" y="129.972" width="45.9716" height="21.6023"/>
+  <object id="155" x="186.029" y="140.794" width="121.999" height="117.164"/>
+ </objectgroup>
+ <objectgroup id="4" name="markers">
+  <object id="1" name="noelle2" x="268" y="167.333">
+   <point/>
+  </object>
+  <object id="2" name="spawn" x="480" y="256">
+   <point/>
+  </object>
+  <object id="151" name="susie2" x="192" y="192">
+   <point/>
+  </object>
+  <object id="152" name="kris1" x="363.545" y="192.182">
+   <point/>
+  </object>
+  <object id="160" name="noelle1" x="320" y="192">
+   <point/>
+  </object>
+  <object id="161" name="susie1" x="319.485" y="216.515">
+   <point/>
+  </object>
+  <object id="162" name="outsideofmap" x="480" y="256">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="objects">
+  <object id="115" name="transition" x="506.538" y="206.013" width="6.5" height="79.9219">
+   <properties>
+    <property name="map" value="noelles house/hallway"/>
+    <property name="marker" value="room"/>
+   </properties>
+  </object>
+  <object id="124" name="interactable" x="311.917" y="140.334" width="45.9792" height="45.5205">
+   <properties>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1" value="* There's a couple of pill bottles on the bedside table."/>
+   </properties>
+  </object>
+  <object id="156" name="interactable" x="87.9195" y="55.967" width="87.9792" height="117.884">
+   <properties>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1" value="* It's just a simple wardrobe.[wait:5] All of the clothes are the same."/>
+   </properties>
+  </object>
+  <object id="157" name="interactable" x="169.76" y="270.058" width="106.479" height="79.884">
+   <properties>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1" value="* It's an old television.[wait:5] It's off."/>
+   </properties>
+  </object>
+  <object id="158" name="interactable" x="277.76" y="317.808" width="44.229" height="79.884">
+   <properties>
+    <property name="border" value="leaves"/>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1" value="* It's a game console.[wait:5] There's a game of Dragon Blazers inserted."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <imagelayer id="9" name="aboveplayer">
+  <image source="../../../../../assets/sprites/backgrounds/noelle room above.png" width="512" height="378"/>
+ </imagelayer>
+</map>

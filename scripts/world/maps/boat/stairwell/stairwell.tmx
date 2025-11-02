@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="40">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="43">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -89,6 +89,12 @@
    <point/>
   </object>
   <object id="38" name="foodGrabbedMove" x="188" y="320">
+   <point/>
+  </object>
+  <object id="41" name="krissafeguard" x="103.25" y="350.5">
+   <point/>
+  </object>
+  <object id="42" name="susiesafeguard" x="140.5" y="350.5">
    <point/>
   </object>
  </objectgroup>

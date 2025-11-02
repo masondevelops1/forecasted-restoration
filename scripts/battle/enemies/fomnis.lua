@@ -4,7 +4,7 @@ function Omnice:init()
     super.init(self)
 
     -- Enemy name
-    self.name = "Gateway Guard"
+    self.name = "Guard Model 3"
     -- Sets the actor, which handles the enemy's sprites (see scripts/data/actors/dummy.lua)
     self:setActor("fomnis")
     -- Enemy health
@@ -29,10 +29,10 @@ function Omnice:init()
 
     -- Dialogue randomly displayed in the enemy's speech bubble
     self.dialogue = {
-        "* Tomorrow means the surface.",
-        "* The Gateway will be what saves us.",
-        "* Must protect all of the Gateway...",
-        "* Error: Shutdown access denied."
+        "* Tomorrow means the\nsurface.",
+        "* The Gateway will\nbe what saves\nus.",
+        "* Must protect all\nof the Gateway...",
+        "* Error: Shutdown\naccess denied."
     }
 
     -- Check text (automatically has "ENEMY NAME - " at the start)
@@ -48,7 +48,7 @@ function Omnice:init()
     self.low_health_text = "* They cannot look any other way. They cannot lie. They must defeat you."
 
     -- Register act called "Smile"
-    self:registerAct("Directive")
+    self:registerAct("Directive", "", {"susie"})
     -- Register party act with Ralsei called "Tell Story"
     -- (second argument is description, usually empty)
     self:registerAct("Talk", "", {"susie"})

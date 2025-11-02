@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="25" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="133">
+ <editorsettings>
+  <export target="data.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="light" type="bool" value="true"/>
+  <property name="music" value="noellehouse"/>
+ </properties>
+ <imagelayer id="2" name="house" offsetx="-0.00416667" offsety="-0.00555556">
+  <image source="../../../../../assets/sprites/backgrounds/noellekitchen normal.png" width="800" height="520"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="25" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="collisions">
+  <object id="5" x="32" y="-150" width="672" height="172"/>
+  <object id="6" x="545.333" y="207.333" width="46" height="162.667"/>
+  <object id="86" x="46.7087" y="33.948" width="537" height="172"/>
+  <object id="87" x="167.542" y="182.115" width="81" height="51.3333"/>
+  <object id="89" x="277.626" y="310.281" width="268.667" height="60"/>
+  <object id="91" x="11.9587" y="7.19801" width="51.5" height="248.333"/>
+  <object id="92" x="501.334" y="205.656" width="43.8333" height="105"/>
+  <object id="96" x="-79.9162" y="203.761" width="243.25" height="317.041"/>
+  <object id="98" x="279.542" y="137.281" width="222.667" height="84"/>
+  <object id="130" x="797.333" y="283.333">
+   <polyline points="0,0 -78,0.666667 -76.6667,-222"/>
+  </object>
+  <object id="131" x="238" y="518.667">
+   <polyline points="0,0 1.33333,-79.3333 403.333,-80 482.667,-158 561.333,-158"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="markers">
+  <object id="1" name="spawn1" x="38.5" y="310.5">
+   <point/>
+  </object>
+  <object id="2" name="upstairs" x="663" y="221.5">
+   <point/>
+  </object>
+  <object id="3" name="susie1" x="535" y="225">
+   <point/>
+  </object>
+  <object id="19" name="susie4" x="556.667" y="209.333">
+   <point/>
+  </object>
+  <object id="25" name="spawn" x="759.75" y="329.25">
+   <point/>
+  </object>
+  <object id="118" name="workroom" x="197.917" y="460.083">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="objects">
+  <object id="115" name="transition" x="619.538" y="148.174" width="90.5" height="36.5">
+   <properties>
+    <property name="map" value="noelles house/hallway"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="123" name="transition" x="785.583" y="281.75" width="14.5" height="80.5">
+   <properties>
+    <property name="map" value="noelles house/living room/livingroom"/>
+    <property name="marker" value="spawn1"/>
+   </properties>
+  </object>
+  <object id="124" name="interactable" x="312.167" y="97.3335" width="46.1667" height="126.833">
+   <properties>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1" value="* It's a sink.[wait:5] You don't need to wash your hands."/>
+   </properties>
+  </object>
+  <object id="125" name="interactable" x="167.5" y="114.084" width="79.5" height="126.833">
+   <properties>
+    <property name="cutscene" value="houseText.fridge"/>
+    <property name="solid" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="132" name="interactable" x="152.125" y="512.125" width="95.5" height="36.5">
+   <properties>
+    <property name="cutscene" value="houseText.workroom"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

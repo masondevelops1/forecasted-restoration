@@ -45,6 +45,7 @@ function depths.start(cutscene)
     cutscene:interpolateFollowers()
     cutscene:attachCamera()
     cutscene:wait(cutscene:attachFollowers())
+    Game:getQuest("mainline"):unlock()
 end
 
 return depths

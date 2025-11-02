@@ -65,7 +65,7 @@ return {
 			cutscene:text("[color:green][speed:0.2][shake:1]IS THAT YOU NEVER STOOD A CHANCE.[wait:5] GOODBYE!")
 			cutscene:text("[color:green]BROADCAST HAS ENDED.[wait:5] NEW PROTOCOL REICIEVED.")
 			cutscene:text("[color:red]ACTIVATING SHELTER PROTECTION PROTOCOL...[wait:5] ACCESSING DATA...")
-			cutscene:text("[color:red]ERROR:[wait:5] POWER LEVEL AT 1%.[wait:5] GATEWAY:[wait:5] UNSTABLE.[wait:5] WORLD STATUS:[wait:5] UNSTABLE.[wait:5] POWERING OFF...")
+			cutscene:text("[color:red]ERROR:[wait:5] POWER LEVEL AT 1%.[wait:5] GATEWAY:[wait:5] ON LOCKDOWN.[wait:5] WORLD STATUS:[wait:5] UNSTABLE.[wait:5] POWERING OFF...")
 			Game.world.music:fade(0, 1)
 			cutscene:wait(1)
 			Game.world.music:play("in-the-shelter")
@@ -79,6 +79,8 @@ return {
 			cutscene:text("* ...a Gateway...?[wait:5] If we could fix that Gateway...", "neutral")
 			cutscene:text("* We could probably stop that damn scientist![wait:5] Yeah!", "surprise_smile")
 			SetPlot("shelter_heard_log")
+			Game:getQuest("shelter"):complete()
+			Game:getQuest("gateway"):unlock()
 		else 
 			cutscene:setSpeaker("susie")
 			cutscene:text("* Let's fix that Gateway,[wait:5] Kris.", "nervous_side")

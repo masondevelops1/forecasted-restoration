@@ -130,6 +130,7 @@ stay on the Evergroves Cruise!
         cutscene:text("* Dang,[wait:5] guess we really overslept,[wait:5] huh...?", "suspicious")
         cutscene:text("* Now's the time we get off the boat,[wait:5] can't even say goodbye either...", "nervous")
         cutscene:text("* ... well,[wait:5] let's get going!", "smile")
+        Game:getQuest("mystery"):complete()
     end,
 
     stain = function(cutscene, event)
@@ -219,6 +220,7 @@ stay on the Evergroves Cruise!
     end,
 
     scientist2 = function(cutscene, event)
+        local kris = assert(cutscene:getCharacter("kris"), "no kris???")
         local susie = cutscene:getCharacter("susie")
         local scientist = cutscene:getCharacter("boatnpcs/scientist")
         if not Game:getFlag("foodGrabbed") and event.interact_count == 1 then
@@ -275,6 +277,12 @@ stay on the Evergroves Cruise!
             cutscene:text("* Hey,[wait:5] wow,[wait:5] these are my favorite!", nil, scientist)
             cutscene:text("* I suppose you guys may not be so bad.[wait:10] As you wish...", nil, scientist)
             cutscene:slideTo(scientist, "foodGrabbedMove", 2, nil)
+            kris:setFacing("down")
+            susie:setFacing("down")
+            cutscene:walkTo(kris, "krissafeguard", 0.5)
+            cutscene:walkTo(susie, "susiesafeguard", 0.5)
+            kris:setFacing("up")
+            susie:setFacing("up")
             cutscene:shakeCharacter(scientist)
             Assets.playSound("noise")
             cutscene:wait(2)

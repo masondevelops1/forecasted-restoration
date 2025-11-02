@@ -54,6 +54,20 @@ function Mod:afmPostInit(new_file)
     end
 end
 
+function Mod:unlockQuest(quest, silent)
+    if not silent and Game.stage then
+        local popup = Game.stage:addChild(QuestCreatedPopup(quest))
+        popup.layer = 1500
+    end
+end
+
+function Mod:completeQuest(quest, silent)
+    if not silent and Game.stage then
+        local popup = Game.stage:addChild(QuestCompletedPopup(quest))
+        popup.layer = 1500
+    end
+end
+
 function Mod:init()
     Utils.hook(Encounter, "createSoul", function(orig, self, x, y, color)
         if Game.battle.is_parry then

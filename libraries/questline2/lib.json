@@ -1,0 +1,21 @@
+{
+    "id": "questline2",
+    "version": "2.0.0",
+    "engineVersion": "0.10.0-dev",
+	"authors": [
+		"AcousticJamm", // Original library
+        "Hyperboid", // DPR Rewrite
+        "Mason", // Added complete quest popup, made mainline quest change, made achievement sound work.
+	],
+	"keybinds": [
+        {
+            "name": "Quest",
+            "id": "quest",
+            "keys": ["q"],
+            "gamepad": ["gamepad:start"]
+        },
+    ],
+    "config": {
+        "print_console_intro": true
+    }
+}

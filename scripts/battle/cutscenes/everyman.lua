@@ -29,7 +29,7 @@ return {
         for _, attacker in ipairs(Game.battle.enemies) do
             attacker:addMercy(100)
             attacker.text = {
-                "* The Gateway Guard seems to be at ease."
+                "* The Guard seems to be at ease."
             }
             attacker.waves = {
                 nil

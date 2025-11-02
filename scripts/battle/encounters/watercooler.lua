@@ -7,7 +7,7 @@ function Watercooler:init()
     self.text = "* A strong aura emanates from the Watercooler."
 
     -- Battle music ("battle" is rude buster)
-    self.music = "battle_vapor"
+    self.music = "enemy"
     -- Enables the purple grid battle background
     self.background = true
 

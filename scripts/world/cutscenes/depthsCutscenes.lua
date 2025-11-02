@@ -582,6 +582,7 @@ meetPirates = function(cutscene, event)
     cutscene:text("* Guess we're gonna have to find a way onto that cruise...", "sus_nervous")
     cutscene:text("* And I used to like pirates...[wait:5] damn you,[wait:5] pirate clones...", "sus_nervous")
     SetPlot("depths_pirates")
+    Game:getQuest("cruise"):unlock()
   end;
 end,
 

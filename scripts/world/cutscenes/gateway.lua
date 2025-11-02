@@ -107,6 +107,7 @@ function gateway.chasestart(cutscene)
     })
     Game.world:loadMap("gateway/chase_spiral")
     cutscene:fadeIn(.5)
+    Game:getQuest("meltdown"):unlock()
     return
 end
 
@@ -240,7 +241,9 @@ function gateway.fall_to_depths(cutscene)
     cutscene:wait(3)
     cutscene:wait(cutscene:fadeOut(8, {global = true}))
     Game:removePartyMember("noelle")
+    Game:getQuest("meltdown"):complete()
     cutscene:loadMap("depths/start")
+    Plot:set("depths_enter")
     Game.world.music:stop()
     cutscene:gotoCutscene("depths", "start")
 end

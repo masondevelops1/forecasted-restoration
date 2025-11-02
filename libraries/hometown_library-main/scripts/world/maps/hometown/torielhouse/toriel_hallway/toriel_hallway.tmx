@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="18">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="18">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
  <properties>
   <property name="border" value="leaves"/>
   <property name="light" type="bool" value="true"/>
+  <property name="music" value="house"/>
  </properties>
  <imagelayer id="2" name="room">
   <image source="../../../../../../assets/sprites/world/maps/hometown/torielhouse/toriel_hallway.png" width="1080" height="480"/>

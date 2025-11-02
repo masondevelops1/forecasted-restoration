@@ -7,23 +7,31 @@ function Fomnis:init()
     self.text = "* Something stands in your way..?"
 
     -- Battle music ("battle" is rude buster)
-    self.music = "mus_prebattle2"
+    self.music = "enemy"
     -- Enables the purple grid battle background
-    self.background = false
+    self.background = true
 
     -- Add the dummy enemy to the encounter
-    self:addEnemy("fomnis")
-    self:addEnemy("fomnis")
+    self:addEnemy("fomnis", 250, 210)
+    self:addEnemy("fomnis", 350, 210)
     --- Uncomment this line to add another!
     --self:addEnemy("dummy")
 
-    local bg = GonerBackground()
+    --local bg = GonerBackground()
 
-    bg:setLayer(BATTLE_LAYERS["bottom"])
+    --bg:setLayer(BATTLE_LAYERS["bottom"])
 
-    Game.battle:addChild(bg)
+    --Game.battle:addChild(bg)
 
     self.transition_timer = 0
+end
+
+function Fomnis:getPartyPosition(index)
+    if index == 1 then
+            return 320, 999
+    else
+            return 320, 999
+    end
 end
 
 function Fomnis:update()

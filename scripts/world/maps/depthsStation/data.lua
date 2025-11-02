@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 15,
-  nextobjectid = 56,
+  nextobjectid = 57,
   properties = {
     ["border"] = "ground_zero",
     ["depths"] = true,
@@ -400,6 +400,23 @@ return {
             ["map"] = "depths/crosswalk",
             ["marker"] = "spawn1",
             ["step_sound"] = "reverb"
+          }
+        },
+        {
+          id = 56,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 560,
+          y = -25,
+          width = 80,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["plotmax"] = "*boat_leadup_keyget",
+            ["solid"] = true,
+            ["text1"] = "* You need your Suite Key before continuing..."
           }
         }
       }

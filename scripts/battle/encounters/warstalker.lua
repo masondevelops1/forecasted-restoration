@@ -7,7 +7,7 @@ function Warstalker:init()
     self.text = "[instant]Error: attempted to create non existent experiment. Attempting to recover data..."
 
     -- The Project Spacetime inspiration is evident here
-    self.music = "mus_prebattle2"
+    self.music = "enemy"
     -- Enables the purple grid battle background
     self.background = true
 

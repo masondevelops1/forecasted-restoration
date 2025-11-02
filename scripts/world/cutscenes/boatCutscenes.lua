@@ -67,6 +67,7 @@ local boatCutscenes = {
         cutscene:text("* (You attach your Suite Key.)")
         Game.world.map:setFlag("roomLeaveCheck", true)
         cutscene:setSpeaker("susie")
+        Game:getQuest("keyring"):complete()
     end,
 
     roomLeaveCheck = function(cutscene, event)
@@ -455,6 +456,7 @@ end,
         cutscene:loadMap("boat/stairwell", "spawnStairs")
         cutscene:wait(1)
         cutscene:fadeIn(1.5)
+        Game:getQuest("mystery"):unlock()
     end,
 
     paddle = function(cutscene, event)

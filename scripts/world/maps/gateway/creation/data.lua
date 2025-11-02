@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 20,
-  nextobjectid = 116,
+  nextobjectid = 122,
   properties = {
     ["border"] = "core",
     ["light"] = true,
@@ -1165,8 +1165,8 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1399.34,
-          y = 652.667,
+          x = 1422.34,
+          y = 651.334,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
@@ -1174,6 +1174,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_1",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1205,8 +1207,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["actor"] = "dummy_lw",
+            ["encounter"] = "dummy",
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1222,23 +1224,6 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
-        },
-        {
-          id = 34,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1560,
-          y = 1040,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
         },
         {
           id = 36,
@@ -1306,22 +1291,6 @@ return {
           properties = {
             ["cutscene"] = "shelter.firstTerminal",
             ["plotmax"] = "*gateway_terminal1"
-          }
-        },
-        {
-          id = 48,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 599.667,
-          y = 560.5,
-          width = 71.167,
-          height = 80,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "shelter.finalTerminal",
-            ["plotmax"] = "*gateway_lockdown_off"
           }
         },
         {
@@ -1410,7 +1379,7 @@ return {
           type = "",
           shape = "rectangle",
           x = 1960,
-          y = 1400,
+          y = 1480,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
@@ -1418,23 +1387,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
-          id = 86,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1720,
-          y = 1520,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_maze1",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1443,32 +1397,16 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1440,
-          y = 1640,
+          x = 1400,
+          y = 1600,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
-          id = 88,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1960,
-          y = 1680,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["actor"] = "goner1_lw",
+            ["encounter"] = "goner1",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1477,32 +1415,16 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1440,
-          y = 1760,
+          x = 1400,
+          y = 1800,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
-          id = 90,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1520,
-          y = 1880,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["actor"] = "dummy_lw",
+            ["encounter"] = "dummy",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1520,6 +1442,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_maze2",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1528,15 +1452,16 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1800,
-          y = 2000,
+          x = 1799.33,
+          y = 2022.33,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["actor"] = "goner1_lw",
+            ["encounter"] = "goner1",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1546,14 +1471,15 @@ return {
           type = "",
           shape = "rectangle",
           x = 1400,
-          y = 2000,
+          y = 2040,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
           visible = true,
           properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["actor"] = "dummy_lw",
+            ["encounter"] = "dummy",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1562,8 +1488,8 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1480,
-          y = 2120,
+          x = 1960,
+          y = 2160,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
@@ -1571,6 +1497,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_maze3",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1579,8 +1507,8 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1720,
-          y = 2120,
+          x = 2000,
+          y = 2160,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
@@ -1588,40 +1516,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
-          id = 96,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1800,
-          y = 2240,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
-            ["plotmax"] = "*gateway_lockdown_off"
-          }
-        },
-        {
-          id = 97,
-          name = "enemy",
-          type = "",
-          shape = "rectangle",
-          x = 1720,
-          y = 2360,
-          width = 41.3333,
-          height = 41.3333,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "fomnis",
-            ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_maze3",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1630,8 +1526,8 @@ return {
           name = "enemy",
           type = "",
           shape = "rectangle",
-          x = 1799.67,
-          y = 2501.67,
+          x = 1741.36,
+          y = 2500.73,
           width = 41.3333,
           height = 41.3333,
           rotation = 0,
@@ -1639,6 +1535,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_last",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1656,6 +1554,8 @@ return {
           properties = {
             ["actor"] = "fomnis",
             ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_last",
+            ["once"] = true,
             ["plotmax"] = "*gateway_lockdown_off"
           }
         },
@@ -1801,6 +1701,117 @@ return {
             ["plotmin"] = "gateway_lockdown_off",
             ["text1"] = "[color:#ff4444]* Power levels:[wait:5] UNSTABLE.",
             ["text2"] = "[color:#ff4444]* Recharging will take 48 days...[wait:5] Recharging..."
+          }
+        },
+        {
+          id = 116,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 1960,
+          y = 960,
+          width = 41.3333,
+          height = 41.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "goner1_lw",
+            ["encounter"] = "goner1",
+            ["once"] = true,
+            ["plotmax"] = "*gateway_lockdown_off"
+          }
+        },
+        {
+          id = 117,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 2000,
+          y = 1480,
+          width = 41.3333,
+          height = 41.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "fomnis",
+            ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_maze1",
+            ["once"] = true,
+            ["plotmax"] = "*gateway_lockdown_off"
+          }
+        },
+        {
+          id = 118,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 1381.33,
+          y = 651.667,
+          width = 41.3333,
+          height = 41.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "fomnis",
+            ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_1",
+            ["once"] = true,
+            ["plotmax"] = "*gateway_lockdown_off"
+          }
+        },
+        {
+          id = 119,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 2000,
+          y = 1960,
+          width = 41.3333,
+          height = 41.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "fomnis",
+            ["encounter"] = "2 fomnis",
+            ["group"] = "fomnis_maze2",
+            ["once"] = true,
+            ["plotmax"] = "*gateway_lockdown_off"
+          }
+        },
+        {
+          id = 120,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 2360,
+          y = 1120,
+          width = 41.3333,
+          height = 41.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "dummy_lw",
+            ["encounter"] = "dummy",
+            ["once"] = true,
+            ["plotmax"] = "*gateway_lockdown_off"
+          }
+        },
+        {
+          id = 121,
+          name = "enemy",
+          type = "",
+          shape = "rectangle",
+          x = 1400,
+          y = 2320,
+          width = 41.3333,
+          height = 41.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["actor"] = "goner1_lw",
+            ["encounter"] = "goner1",
+            ["once"] = true,
+            ["plotmax"] = "*gateway_lockdown_off"
           }
         }
       }

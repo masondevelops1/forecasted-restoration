@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="30">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="121">
  <editorsettings>
   <export target="livingroom.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="leaves"/>
   <property name="light" type="bool" value="true"/>
-  <property name="music" value="rain_indoors"/>
+  <property name="music" value="noellehouse"/>
  </properties>
  <imagelayer id="2" name="house" offsetx="12" offsety="7">
-  <image source="../../../../../assets/sprites/backgrounds/livingroom rainy.png" width="682" height="498"/>
- </imagelayer>
- <imagelayer id="7" name="overlay2" visible="0" offsetx="12" offsety="7">
-  <image source="../../../../../assets/sprites/backgrounds/lightning.png" width="682" height="498"/>
+  <image source="../../../../../assets/sprites/backgrounds/livingroom normal.png" width="682" height="498"/>
  </imagelayer>
  <layer id="1" name="Tile Layer 1" width="22" height="16">
   <data encoding="csv">
@@ -38,13 +36,28 @@
   <object id="6" x="65.3333" y="178" width="46" height="51.3333"/>
   <object id="8" x="447.5" y="329.5" width="37.5" height="27"/>
   <object id="10" x="386.5" y="355" width="160" height="84"/>
-  <object id="11" x="602.227" y="296.818" width="93.5" height="84"/>
+  <object id="11" x="690.227" y="204.568" width="93.5" height="92.5"/>
+  <object id="86" x="46.7087" y="33.948" width="537" height="172"/>
+  <object id="87" x="67.042" y="167.615" width="46" height="51.3333"/>
+  <object id="88" x="447.334" y="325.073" width="37.5" height="27"/>
+  <object id="89" x="385.626" y="352.281" width="160" height="84"/>
+  <object id="90" x="9.93565" y="381.766" width="41.5" height="101.333"/>
+  <object id="91" x="11.9587" y="7.19801" width="51.5" height="248.333"/>
+  <object id="92" x="439.334" y="346.323" width="37.5" height="27"/>
+  <object id="93" x="455.334" y="313.823" width="29.625" height="27"/>
+  <object id="94" x="891.709" y="293.448">
+   <polyline points="0,0 -288,0.75 -336.75,48.75 -336,152.25"/>
+  </object>
+  <object id="95" x="349.527" y="443.539" width="208.583" height="203.708"/>
+  <object id="96" x="10.7505" y="445.094" width="243.25" height="203.708"/>
+  <object id="97" x="675.042" y="32.5313" width="216.333" height="172"/>
+  <object id="98" x="120.209" y="141.948" width="160" height="84"/>
  </objectgroup>
  <objectgroup id="4" name="markers">
-  <object id="1" name="spawn" x="38.5" y="310.5">
+  <object id="1" name="spawn1" x="38.5" y="310.5">
    <point/>
   </object>
-  <object id="2" name="door" x="631" y="225">
+  <object id="2" name="door" x="630.75" y="231.5">
    <point/>
   </object>
   <object id="3" name="susie1" x="535" y="225">
@@ -65,22 +78,46 @@
   <object id="21" name="door2" x="631" y="212.333">
    <point/>
   </object>
-  <object id="25" name="spawn" x="631" y="251.5">
+  <object id="25" name="spawn" x="669.75" y="247.25">
    <point/>
   </object>
   <object id="29" name="offscreen" x="-120.554" y="307.59">
    <point/>
   </object>
+  <object id="118" name="basement" x="630.811" y="231.595">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="8" name="objects">
-  <object id="24" name="transition" x="583.75" y="104" width="90.5" height="36.5">
+  <object id="114" name="interactable" x="-29.375" y="255.458" width="41.5" height="126.833">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (No need to go upstairs...)"/>
+   </properties>
+  </object>
+  <object id="115" name="transition" x="584.205" y="152.841" width="90.5" height="36.5">
    <properties>
     <property name="map" value="noelles house/basement/basement"/>
     <property name="marker" value="spawn"/>
    </properties>
   </object>
+  <object id="116" name="interactable" x="254.114" y="504.962" width="95.5" height="36.5">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* No need to go back..."/>
+   </properties>
+  </object>
+  <object id="119" name="transition" x="0.916667" y="255.583" width="14.5" height="126.5">
+   <properties>
+    <property name="map" value="noelles house/kitchen"/>
+    <property name="marker" value="spawn"/>
+   </properties>
+  </object>
+  <object id="120" name="interactable" x="584" y="77.8335" width="91.3182" height="126.833">
+   <properties>
+    <property name="cutscene" value="houseText.basement"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
- <imagelayer id="5" name="overlay" offsetx="12" offsety="7">
-  <image source="../../../../../assets/sprites/backgrounds/livingroom overlay.png" width="682" height="498"/>
- </imagelayer>
 </map>

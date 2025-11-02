@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="26" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="24">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="26" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="50">
  <editorsettings>
   <export target="basement.lua" format="lua"/>
  </editorsettings>
  <properties>
+  <property name="border" value="leaves"/>
   <property name="light" type="bool" value="true"/>
+  <property name="music" value="noellehouse"/>
  </properties>
  <layer id="1" name="Tile Layer 1" width="26" height="24">
   <data encoding="csv">
@@ -38,63 +40,32 @@
   <image source="../../../../../assets/sprites/backgrounds/basement.png" width="570" height="454"/>
  </imagelayer>
  <objectgroup id="4" name="objects">
-  <object id="8" name="transition" x="207.333" y="350.667" width="69.3333" height="36">
+  <object id="8" name="transition" x="206.458" y="329.792" width="69.3333" height="36">
    <properties>
     <property name="map" value="noelles house/living room/livingroom"/>
-    <property name="marker" value="spawn"/>
+    <property name="marker" value="basement"/>
    </properties>
   </object>
-  <object id="11" name="npc" x="433.011" y="484.79">
-   <properties>
-    <property name="actor" value="noelle_lw"/>
-   </properties>
+ </objectgroup>
+ <objectgroup id="3" name="markers">
+  <object id="4" name="spawn" x="239.333" y="419.334">
    <point/>
   </object>
+ </objectgroup>
+ <objectgroup id="10" name="collision">
+  <object id="39" x="269.833" y="302.129" width="381.5" height="84"/>
+  <object id="40" x="-169.667" y="301.754" width="381.5" height="84"/>
+  <object id="41" x="-218.917" y="384.879" width="381.5" height="260.5"/>
+  <object id="42" x="162.583" y="529.129" width="535" height="260.5"/>
+  <object id="43" x="660.06" y="301.311" width="36" height="306.136"/>
+  <object id="44" x="574.878" y="106.675" width="37.3333" height="306.136"/>
+  <object id="45" x="612.333" y="142.978" width="46.6666" height="306.136"/>
+  <object id="46" x="294.242" y="94.3713" width="253.667" height="306.136"/>
+  <object id="47" x="319.499" y="110.811" width="33.167" height="306.136"/>
+  <object id="48" x="381.249" y="96.8107" width="53.167" height="306.136"/>
+  <object id="49" x="383.249" y="407.811" width="80.167" height="46.136"/>
  </objectgroup>
  <imagelayer id="5" name="basement overlay" offsetx="128" offsety="192">
   <image source="../../../../../assets/sprites/backgrounds/basement overlay.png" width="570" height="454"/>
  </imagelayer>
- <objectgroup id="3" name="markers">
-  <object id="4" name="spawn" x="240" y="428.667">
-   <point/>
-  </object>
-  <object id="13" name="susie1" x="305.481" y="484.79">
-   <point/>
-  </object>
-  <object id="15" name="npc" x="413.95" y="397.049">
-   <properties>
-    <property name="actor" value="noelle-scene"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="18" name="noelle2" x="364.818" y="484.79">
-   <point/>
-  </object>
-  <object id="19" name="noelle3" x="240" y="484.79">
-   <point/>
-  </object>
-  <object id="20" name="susie2" x="305.48" y="458.5">
-   <point/>
-  </object>
-  <object id="21" name="noelle4" x="240" y="388">
-   <point/>
-  </object>
-  <object id="23" name="focus" x="413.167" y="425">
-   <point/>
-  </object>
- </objectgroup>
- <imagelayer id="7" name="darkness overlay" offsetx="160" offsety="192">
-  <image source="../../../../../assets/sprites/backgrounds/darkness overlay.png" width="570" height="454"/>
- </imagelayer>
- <imagelayer id="9" name="phone" offsetx="127" offsety="193">
-  <image source="../../../../../assets/sprites/backgrounds/phone.png" width="570" height="454"/>
- </imagelayer>
- <objectgroup id="8" name="objects">
-  <object id="12" name="npc" x="433" y="420.758">
-   <properties>
-    <property name="actor" value="flashlight"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
 </map>

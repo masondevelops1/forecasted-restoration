@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="19" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="56">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="19" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="57">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -157,6 +157,13 @@
     <property name="map" value="depths/crosswalk"/>
     <property name="marker" value="spawn1"/>
     <property name="step_sound" value="reverb"/>
+   </properties>
+  </object>
+  <object id="56" name="interactable" x="560" y="-25" width="80" height="40">
+   <properties>
+    <property name="plotmax" value="*boat_leadup_keyget"/>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* You need your Suite Key before continuing..."/>
    </properties>
   </object>
  </objectgroup>

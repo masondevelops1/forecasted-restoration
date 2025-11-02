@@ -4,7 +4,7 @@ function goner1:init()
     super.init(self)
 
     -- Text displayed at the bottom of the screen at the start of the encounter
-    self.text = "* That can't be good, can it?"
+    self.text = "* GATEWAY IS OUR FUTURE GATEWAY IS OUR HOME GATEWAY IS OUR EVERYTHING GATEWAY IS WHAT YOU SEEK GATEWAY IS WHAT YOU NEED GATEWAY IS PLACE OF ANGELS GATEWAY IS ENDLESS GATEWAY IS EXPANSE."
 
     -- Battle music ("battle" is rude buster)
     self.music = "enemy"
@@ -32,10 +32,6 @@ function goner1:getPartyPosition(index)
     else
             return 320, 999
     end
-end
-
-function goner1:onBattleEnd()
-    Game:setBorder("shelter", 3)  
 end
 
 

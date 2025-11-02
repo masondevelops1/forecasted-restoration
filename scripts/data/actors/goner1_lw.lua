@@ -7,8 +7,8 @@ function actor:init()
     self.name = "Goner"
 
     -- Width and height for this actor, used to determine its center
-    self.width = 18
-    self.height = 28
+    self.width = 30
+    self.height = 58
 
     -- Color for this actor used in outline areas (optional, defaults to red)
     

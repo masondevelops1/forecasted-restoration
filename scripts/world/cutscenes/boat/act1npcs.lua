@@ -121,6 +121,8 @@ local act1npcs = {
     end,
     
     security1 = function(cutscene, event)
+        local kris = assert(cutscene:getCharacter("kris"), "no kris???")
+        local susie = cutscene:getCharacter("susie")
         local security = cutscene:getCharacter("boatnpcs/security")
         if not Game:getFlag("kitchenPermission") then
             cutscene:text("* H-huh...?[wait:10] You wanna go into the kitchen?", nil, security)
@@ -130,6 +132,12 @@ local act1npcs = {
             cutscene:text("* Come on through!", nil, security)
         elseif Game:getFlag("kitchenPermission") then
             cutscene:text("* O-oh,[wait:5] you got permission?[wait:10] Come on through!", nil, security)
+            kris:setFacing("up")
+            susie:setFacing("up")
+            cutscene:walkTo(kris, "krissafeguard", 0.5)
+            cutscene:walkTo(susie, "susiesafeguard", 0.5)
+            kris:setFacing("down")
+            susie:setFacing("down")
             cutscene:slideTo(security, "securityMove", 2, nil)
             cutscene:shakeCharacter(security)
             Assets.playSound("noise")
@@ -226,8 +234,10 @@ local act1npcs = {
         local legsDefault = cutscene:getCharacter("boatnpcs/legsDefault")
         local susie = cutscene:getCharacter("susie")
         if not Plot:isBefore("boat_act1_end") then
-            cutscene:text("* This message should not appear. If it does, it's a bug.", nil, legsDefault)
-            cutscene:text("* Kris! We gotta report this!", "surprise_frown", "susie")
+            cutscene:text("* Great job detective,[wait:5] but I still gotta win it big!", nil, legsDefault)
+            cutscene:setSpeaker("susie")
+            cutscene:text("* (Jeez Kris,[wait:5] all of this is making my head spin.)", "stupid")
+            cutscene:text("* (Maybe let's go unpack it all at the suite?)", "nervous_side")
             return
         end
         if not not Plot:isBefore("boat_act1_chef_talk") and Plot:isBefore("boat_act1_gambler_spoken") then

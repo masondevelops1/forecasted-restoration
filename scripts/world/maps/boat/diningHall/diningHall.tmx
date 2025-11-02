@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="17" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="133">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="17" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="135">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -370,6 +370,12 @@
    <point/>
   </object>
   <object id="128" name="securityMove" x="1096" y="554">
+   <point/>
+  </object>
+  <object id="133" name="krissafeguard" x="999" y="480">
+   <point/>
+  </object>
+  <object id="134" name="susiesafeguard" x="1036.25" y="480">
    <point/>
   </object>
  </objectgroup>
