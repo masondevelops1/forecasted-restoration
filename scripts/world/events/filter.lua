@@ -3,6 +3,11 @@ local event, super = Class(Event, "filter")
 
 function event:init(data)
     super.init(self, data)
+    self:setSprite("world/maps/hometown/graveyardover")
+    self.sprite.wrap_texture_x = true
+    self.sprite.wrap_texture_y = true
+    self.parallax_x = 0.9
+    self.parallax_y = 0.9
     local properties = data and data.properties or {}
     self.fx = self:createFX(properties)
     self.fx.parent = self
