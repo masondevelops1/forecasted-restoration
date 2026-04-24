@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 40,
+  nextobjectid = 41,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -237,26 +237,8 @@ return {
           visible = true,
           polygon = {
             { x = 0, y = 0 },
-            { x = -40, y = 0 },
-            { x = -40, y = 40 }
-          },
-          properties = {}
-        },
-        {
-          id = 15,
-          name = "",
-          type = "",
-          shape = "polygon",
-          x = 138,
-          y = 422,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          polygon = {
-            { x = 0, y = 0 },
-            { x = 0, y = -40 },
-            { x = 40, y = -40 }
+            { x = -111.667, y = 0 },
+            { x = -111.667, y = 111.667 }
           },
           properties = {}
         },
@@ -329,26 +311,6 @@ return {
       properties = {},
       objects = {
         {
-          id = 17,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 166,
-          y = 342,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["exit_delay"] = 0.3,
-            ["exit_sound"] = "doorclose",
-            ["facing"] = "left",
-            ["map"] = "hometown/torielhouse/toriel_bathroom",
-            ["marker"] = "spawn",
-            ["sound"] = "dooropen"
-          }
-        },
-        {
           id = 18,
           name = "transition",
           type = "",
@@ -414,8 +376,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* It's a sink. You could wash your hands here.",
-            ["text2"] = "* ...[wait:5] but,[wait:5] isn't the sink in the bathroom better?"
+            ["text"] = "* It's a sink.[wait:5]\n* Turning it on would cause too much noise."
           }
         },
         {
@@ -460,7 +421,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* There's a photo on the fridge.[wait:5] It's of you,[wait:5] your mother, and your brother."
+            ["text"] = "* There's nothing useful in the fridge."
           }
         },
         {
@@ -506,7 +467,7 @@ return {
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text"] = "* It's a book of hymns."
+            ["text"] = "* It's a table for books."
           }
         },
         {
@@ -521,7 +482,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* It's a trashcan."
+            ["text"] = "* It's a trashcan.\n* It smells like campfire."
           }
         },
         {
@@ -567,6 +528,22 @@ return {
           visible = true,
           properties = {
             ["cutscene"] = "nightCutscenes.TV"
+          }
+        },
+        {
+          id = 40,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 180,
+          y = 340,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "nightCutscenes.bathroom",
+            ["once"] = false
           }
         }
       }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="35" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="40">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="35" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="41">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -35,10 +35,7 @@
    <polygon points="0,0 0,-40 -40,-40"/>
   </object>
   <object id="14" x="246" y="314">
-   <polygon points="0,0 -40,0 -40,40"/>
-  </object>
-  <object id="15" x="138" y="422">
-   <polygon points="0,0 0,-40 40,-40"/>
+   <polygon points="0,0 -111.667,0 -111.667,111.667"/>
   </object>
   <object id="16" x="236" y="80" width="40" height="236"/>
   <object id="20" x="158" y="400" width="1112" height="40"/>
@@ -46,16 +43,6 @@
   <object id="29" x="854" y="382" width="282" height="18"/>
  </objectgroup>
  <objectgroup color="#ff00ff" id="4" name="objects">
-  <object id="17" name="transition" x="166" y="342" width="40" height="40">
-   <properties>
-    <property name="exit_delay" type="float" value="0.3"/>
-    <property name="exit_sound" value="doorclose"/>
-    <property name="facing" value="left"/>
-    <property name="map" value="hometown/torielhouse/toriel_bathroom"/>
-    <property name="marker" value="spawn"/>
-    <property name="sound" value="dooropen"/>
-   </properties>
-  </object>
   <object id="18" name="transition" x="1192" y="320" width="40" height="42">
    <properties>
     <property name="exit_delay" type="float" value="0.3"/>
@@ -82,8 +69,8 @@
   </object>
   <object id="22" name="interactable" x="458" y="236" width="76" height="40">
    <properties>
-    <property name="text1" value="* It's a sink. You could wash your hands here."/>
-    <property name="text2" value="* ...[wait:5] but,[wait:5] isn't the sink in the bathroom better?"/>
+    <property name="text">* It's a sink.[wait:5]
+* Turning it on would cause too much noise.</property>
    </properties>
   </object>
   <object id="23" name="interactable" x="534" y="236" width="82" height="40">
@@ -98,7 +85,7 @@
   </object>
   <object id="25" name="interactable" x="412" y="260" width="44" height="40">
    <properties>
-    <property name="text" value="* There's a photo on the fridge.[wait:5] It's of you,[wait:5] your mother, and your brother."/>
+    <property name="text" value="* There's nothing useful in the fridge."/>
    </properties>
   </object>
   <object id="26" name="interactable" x="944.333" y="217" width="36.6667" height="57">
@@ -111,12 +98,13 @@
   <object id="30" name="interactable" x="1148" y="382" width="52" height="18">
    <properties>
     <property name="solid" type="bool" value="true"/>
-    <property name="text" value="* It's a book of hymns."/>
+    <property name="text" value="* It's a table for books."/>
    </properties>
   </object>
   <object id="31" name="interactable" x="684" y="280" width="44" height="40">
    <properties>
-    <property name="text" value="* It's a trashcan."/>
+    <property name="text">* It's a trashcan.
+* It smells like campfire.</property>
    </properties>
   </object>
   <object id="36" gid="39" x="846" y="324" width="94" height="104"/>
@@ -129,6 +117,12 @@
   <object id="39" name="interactable" x="982.667" y="189.333" width="69.6667" height="85">
    <properties>
     <property name="cutscene" value="nightCutscenes.TV"/>
+   </properties>
+  </object>
+  <object id="40" name="script" x="180" y="340" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.bathroom"/>
+    <property name="once" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>

@@ -9,17 +9,19 @@ function event:onLoad()
     super.onLoad(self)
     
     local s1 = Sprite("backgrounds/sunoverlay1")
+    s1.color = {.5,.5,.5}
     s1.wrap_texture_x = true
     s1.wrap_texture_y = true
-    s1.alpha = 0.5
+    s1.alpha = 0.7
 
     local s2 = Sprite("backgrounds/sunoverlay2")
     s2:setScale(2)
+    s2.color = {.5,.5,.5}
     s2.wrap_texture_x = true
     s2.wrap_texture_y = true
     s2.parallax_x = 0.9
     s2.parallax_y = 0.9
-    s2.alpha = 0.55
+    s2.alpha = 0.6
 
     Game.world:addChild(s1)
     Game.world:addChild(s2)

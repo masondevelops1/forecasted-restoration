@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 18,
-  nextobjectid = 21,
+  nextobjectid = 22,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -570,6 +570,21 @@ return {
             ["map"] = "hometown/torielhouse/tor_house",
             ["marker"] = "entryeast",
             ["sound"] = "dooropen"
+          }
+        },
+        {
+          id = 21,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 480,
+          y = 320,
+          width = 120,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text"] = "* It's your mother's car."
           }
         }
       }

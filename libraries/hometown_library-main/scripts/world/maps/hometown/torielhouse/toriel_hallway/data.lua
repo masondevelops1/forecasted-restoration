@@ -1,5 +1,5 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -171,22 +171,6 @@ return {
           }
         },
         {
-          id = 9,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 478,
-          y = 222,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["solid"] = true,
-            ["text"] = "* A cactus.\n[wait:5]* There's not much to say about it."
-          }
-        },
-        {
           id = 10,
           name = "interactable",
           type = "",
@@ -199,10 +183,7 @@ return {
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text1"] = "* (...[wait:5] How to Draw Dragons is at the bottom of the drawer.",
-            ["text2"] = "* (The purple character on the cover is dressed...[wait:5] immodestly.)",
-            ["text3"] = "* (...)",
-            ["text4"] = "* (Your brother will never return this book.)"
+            ["text"] = "* (There's nothing useful in the drawer.)"
           }
         },
         {
@@ -217,7 +198,8 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* (It's what they call \"you.\")"
+            ["text1"] = "* (Looking at yourself after all these days...)",
+            ["text2"] = "* (... You don't feel like yourself.)"
           }
         },
         {
@@ -233,7 +215,7 @@ return {
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text"] = "* The door is locked."
+            ["text"] = "* (Toriel's sleeping there.)\n* (Better to be quiet around this room.)"
           }
         },
         {

@@ -40,11 +40,6 @@ local spireCutsenes = {
         cutscene:text("* It's stuck on an image of a snowy landscape.")
     end;
 
-    picture = function(cutscene, event)
-        cutscene:text("* (A picture frame has fallen off the dresser onto the floor.)")
-        cutscene:text("* (What an unfortunate sight.)")
-    end;
-
     curtain = function(cutscene, event)
         cutscene:text("* (The curtains from the shower have been removed.)")
         cutscene:text("* (This bathroom has seen better days.)")

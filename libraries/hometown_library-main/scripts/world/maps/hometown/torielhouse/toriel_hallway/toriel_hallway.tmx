@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="18">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="18">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -26,31 +26,23 @@
     <property name="offset" value="10"/>
    </properties>
   </object>
-  <object id="9" name="interactable" x="478" y="222" width="40" height="40">
-   <properties>
-    <property name="solid" type="bool" value="true"/>
-    <property name="text">* A cactus.
-[wait:5]* There's not much to say about it.</property>
-   </properties>
-  </object>
   <object id="10" name="interactable" x="354" y="222" width="102" height="40">
    <properties>
     <property name="solid" type="bool" value="true"/>
-    <property name="text1" value="* (...[wait:5] How to Draw Dragons is at the bottom of the drawer."/>
-    <property name="text2" value="* (The purple character on the cover is dressed...[wait:5] immodestly.)"/>
-    <property name="text3" value="* (...)"/>
-    <property name="text4" value="* (Your brother will never return this book.)"/>
+    <property name="text" value="* (There's nothing useful in the drawer.)"/>
    </properties>
   </object>
   <object id="11" name="interactable" x="270" y="216" width="44" height="40">
    <properties>
-    <property name="text" value="* (It's what they call &quot;you.&quot;)"/>
+    <property name="text1" value="* (Looking at yourself after all these days...)"/>
+    <property name="text2" value="* (... You don't feel like yourself.)"/>
    </properties>
   </object>
   <object id="12" name="interactable" x="170" y="214" width="62" height="40">
    <properties>
     <property name="solid" type="bool" value="true"/>
-    <property name="text" value="* The door is locked."/>
+    <property name="text">* (Toriel's sleeping there.)
+* (Better to be quiet around this room.)</property>
    </properties>
   </object>
   <object id="13" name="interactable" x="676" y="224" width="102" height="40">

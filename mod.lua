@@ -447,7 +447,7 @@ function Mod:setUISkin(skin)
 end
 
 function Mod:onFootstep(char, num)
-    if char.world.map.data.properties.step_sound then
+    if char.world and char.world.map and char.world.map.data and char.world.map.data.properties.step_sound then
         local player_only, step_sound = Utils.startsWith(char.world.map.data.properties.step_sound, "player:")
         if player_only and not char.is_player then return end
         local sound_path = "steps/"..step_sound .. Utils.clampWrap(num, 2)

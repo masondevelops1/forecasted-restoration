@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 25,
+  nextlayerid = 7,
+  nextobjectid = 28,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -168,14 +168,14 @@ return {
           type = "",
           shape = "rectangle",
           x = 190,
-          y = 200,
+          y = 188.25,
           width = 82,
           height = 40,
           rotation = 0,
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text"] = "* A very old school ID with an embarrassing haircut."
+            ["text"] = "* There's nothing useful in the drawer."
           }
         },
         {
@@ -206,8 +206,9 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["cutscene"] = "nightCutscenes.picture",
-            ["solid"] = false
+            ["solid"] = false,
+            ["text1"] = "* A picture frame has fallen off the dresser onto the floor.",
+            ["text2"] = "* What an unfortunate sight."
           }
         },
         {
@@ -223,8 +224,8 @@ return {
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text1"] = "* There are CDs under the bed.\n[wait:5]* Classical,[wait:5] jazz,[wait:5] religious ska...",
-            ["text2"] = "* There's also a game console.\n[wait:5]* It has one normal controller,[wait:5] and one knock-off one."
+            ["text1"] = "* It's a bed.",
+            ["text2"] = "* It's better to not shuffle around it."
           }
         },
         {
@@ -233,6 +234,23 @@ return {
           type = "",
           shape = "rectangle",
           x = 466,
+          y = 200,
+          width = 94,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["solid"] = true,
+            ["text1"] = "* It's your bed.",
+            ["text2"] = "* It lacks a lot, but it is still pleasant to lie on."
+          }
+        },
+        {
+          id = 26,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 680,
           y = 200,
           width = 94,
           height = 120,
@@ -300,26 +318,7 @@ return {
           visible = true,
           properties = {
             ["solid"] = true,
-            ["text1"] = "* On the computer's desktop is a folder called \"EPIC games Stuff!!!!\"",
-            ["text2"] = "* It's a poorly-drawn design for a game...",
-            ["text3"] = "* Seems the last boss is a creature with giant rainbow wings.",
-            ["text4"] = "* Doesn't seem like this game ever saw the light of day..."
-          }
-        },
-        {
-          id = 17,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 486,
-          y = 354,
-          width = 58,
-          height = 36,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["solid"] = true,
-            ["text"] = "* It's a cage."
+            ["text"] = "* The computer's off."
           }
         },
         {
@@ -366,6 +365,21 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 27,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 307.25,
+          y = 158,
+          width = 59.5,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text"] = "* The curtrains are closed."
+          }
         }
       }
     },

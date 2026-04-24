@@ -39,19 +39,22 @@ local nightCutsenes = {
             end)
         
             text:remove()
-        end             
+        end  
 
         plainText("Hello?")
         plainText("You picked up!![wait:10]\nI was getting worried my\nnew phone wasn't working.")
-        plainText("Wake your ass up and\nmeet me in town!! [wait:10]\nI found something...[wait:10] bad.")
+        plainText("Get your ass up and\nmeet me in town!! [wait:10]\nI found something...[wait:10] bad.")
         plainText("I'll explain more when you get here.")
-        plainText("But try not to wake up Toriel.[wait:10]\nShe's not too happy about\nthe last time.")
+        plainText("But try not to wake up Toriel.[wait:10]\nShe's probably sleeping right now.")
+        plainText("And I don't really want\nthe same thing to happen as\nlast time, so...")
+        plainText("Y'know what to do, Kris.")
         plainText("I'll be waiting by QC's,[wait:5] 'kay?")
         Assets.playSound("item")
         cutscene:setSpeaker("kris")
         cutscene:wait(1)
 
         Game.world:loadMap("hometown/torielhouse/kris_room")
+        Game.world.music:stop()
         local kris = assert(cutscene:getCharacter("kris"), "no kris???")
         local susie = cutscene:getCharacter("susie")
         kris:setSprite("laying_phone")
@@ -100,11 +103,6 @@ local nightCutsenes = {
         cutscene:text("* It's stuck on an image of a snowy landscape.")
     end;
 
-    picture = function(cutscene, event)
-        cutscene:text("* (A picture frame has fallen off the dresser onto the floor.)")
-        cutscene:text("* (What an unfortunate sight.)")
-    end;
-
     curtain = function(cutscene, event)
         cutscene:text("* (The curtains from the shower have been removed.)")
         cutscene:text("* (This bathroom has seen better days.)")
@@ -113,6 +111,11 @@ local nightCutsenes = {
     cracks = function(cutscene, event)
         cutscene:text("* (Your fathers shop has suffered some minor cosmetic damages.)")
         cutscene:text("* (It'd be surprising if anyone else were to notice.)")
+    end;
+
+    bathroom = function(cutscene, event)
+        Game.world.player.x = Game.world.player.x + 5
+        cutscene:text("* (Not the right time for toilet flushing.)")
     end;
 
     susieMeeting = function(cutscene, event)
@@ -223,14 +226,14 @@ local nightCutsenes = {
 
     dumpstablook = function(cutscene, event)
         if event.interact_count == 1 then
-            Assets.playSound("slurp")
+            local sound = Assets.playSound("slurp")
             cutscene:text("* ") -- add slurp noise here
             cutscene:wait(0.03)
+            sound:stop()
             cutscene:text("* (They're drinking from a cup labeled \"Ghost Juice.\")")
             cutscene:text("* (It's best not to bother them.)")
         else
-            Assets.playSound("slurp")
-            cutscene:wait(1)
+            Assets.stopAndPlaySound("slurp", 1, Utils.random(.9, 1.1))
         end
     end;
 
