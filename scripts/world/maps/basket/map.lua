@@ -15,28 +15,18 @@ vec4 effect(vec4 color, sampler2D texture, vec2 texture_coords, vec2 screen_coor
 }
 ]]))
 
-    ------------------------------------------------
-    -- APPLY TO ALL TILE LAYERS EXCEPT PLAYER
-    ------------------------------------------------
     for _, layer in ipairs(self.layers) do
         if layer.render_type == "tile" or layer.render_type == "sprite" then
             layer:addFX(grey_shader)
         end
     end
 
-    ------------------------------------------------
-    -- APPLY TO ALL WORLD OBJECTS (EVENTS, NPCs)
-    -- Player is excluded because Kristal draws them separately.
-    ------------------------------------------------
     for _, obj in ipairs(self.world.children) do
         if obj ~= self.world.player then
             obj:addFX(grey_shader)
         end
     end
 
-    ------------------------------------------------
-    -- Basket special layer — leave this code as-is
-    ------------------------------------------------
     local basket = self:getImageLayer("basket") ---@type Sprite
     local basket_fx = ShaderFX(love.graphics.newShader([[
 vec4 effect( vec4 color, sampler2D texture, vec2 texture_coords, vec2 screen_coords )

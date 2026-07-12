@@ -468,8 +468,8 @@ return {
     {
       id = 85,
       image = "../../../assets/sprites/objects/spr_controlpanel.png",
-      width = 100,
-      height = 32
+      width = 64,
+      height = 40
     }
   }
 }

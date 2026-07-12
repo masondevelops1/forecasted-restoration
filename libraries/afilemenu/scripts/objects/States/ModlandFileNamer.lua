@@ -33,6 +33,7 @@ function ModlandFileNamer:onEnter(old_state)
 
         on_confirm = function(name)
             -- Kristal.loadMod(mod.id, self.menu.file_select.selected_y, name)
+            Game.save_name = name
             local orig_map = Mod.info.map
             Mod.info.map = Kristal.getLibConfig("afilemenu", "map")
             Game:load(nil, self.menu.file_select.selected_y, true)

@@ -7,8 +7,8 @@ function actor:init()
     self.name = "Kris"
     --self:setDepthsActor("kris_depths")
     -- Width and height for this actor, used to determine its center
-    self.width = 35
-    self.height = 39
+    self.width = 20
+    self.height = 40
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
     self.hitbox = {8, 27, 19, 14}
@@ -90,10 +90,10 @@ function actor:init()
     -- Table of sprite offsets (indexed by sprite name)
     self.offsets = {
         -- Movement offsets
-        --[[["walk/left"] = {-5, -1},
-        ["walk/right"] = {-5, -1},
-        ["walk/up"] = {0, 0},
-        ["walk/down"] = {-3, -1},]]
+        ["walk/left"] = {0, 2},
+        ["walk/right"] = {-7, 2},
+        ["walk/up"] = {0.5, 1},
+        ["walk/down"] = {0.5, 1},
         ["walk_detective"] = {0,-2},
 
         ["walk_blush/down"] = {0, 0},

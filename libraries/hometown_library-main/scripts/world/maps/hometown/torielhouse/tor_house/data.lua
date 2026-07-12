@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.11.2",
   class = "",
@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 41,
+  nextobjectid = 42,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -371,12 +371,12 @@ return {
           shape = "rectangle",
           x = 458,
           y = 236,
-          width = 76,
+          width = 70,
           height = 40,
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* It's a sink.[wait:5]\n* Turning it on would cause too much noise."
+            ["text1"] = "* It's a sink.\n* Turning it on could wake Toriel."
           }
         },
         {
@@ -391,7 +391,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* (Mom didn't cooked anything today.)"
+            ["text"] = "* There's nothing but grease on the stovetop."
           }
         },
         {
@@ -399,14 +399,14 @@ return {
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 616,
+          x = 620.55,
           y = 236,
-          width = 80,
+          width = 75,
           height = 40,
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* (Cookie cutters for gingerbread monsters and gingerbread humans.)"
+            ["text"] = "* The microwave is off."
           }
         },
         {
@@ -482,7 +482,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* It's a trashcan.\n* It smells like campfire."
+            ["text"] = "* It's a trashcan.\n* Smells like smoke."
           }
         },
         {
@@ -532,7 +532,23 @@ return {
         },
         {
           id = 40,
-          name = "script",
+          name = "_script",
+          type = "",
+          shape = "rectangle",
+          x = 180,
+          y = 340,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = false,
+          properties = {
+            ["cutscene"] = "nightCutscenes.bathroom",
+            ["once"] = false
+          }
+        },
+        {
+          id = 41,
+          name = "transition",
           type = "",
           shape = "rectangle",
           x = 180,
@@ -542,8 +558,12 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["cutscene"] = "nightCutscenes.bathroom",
-            ["once"] = false
+            ["exit_delay"] = 0.3,
+            ["exit_sound"] = "doorclose",
+            ["facing"] = "left",
+            ["map"] = "hometown/torielhouse/toriel_bathroom",
+            ["marker"] = "spawn",
+            ["sound"] = "dooropen"
           }
         }
       }

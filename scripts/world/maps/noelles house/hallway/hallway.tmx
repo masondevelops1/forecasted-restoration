@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="34" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="156">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="34" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="162">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -49,12 +49,6 @@
   <object id="136" x="417.329" y="386.658">
    <polyline points="0,0 146.004,-143.991"/>
   </object>
-  <object id="137" x="617" y="189">
-   <polyline points="0,0 18.6667,-19 175,-20.3333"/>
-  </object>
-  <object id="138" x="885.333" y="169.667">
-   <polyline points="0,0 177.667,-0.333333 -414.333,592.667 -842,593.667 -768.333,517.333"/>
-  </object>
   <object id="140" x="563.375" y="242.625">
    <polyline points="0,0 53.7614,-53.7415"/>
   </object>
@@ -64,9 +58,18 @@
   <object id="145" x="270.063" y="532.438">
    <polyline points="0,0 48.5114,-46.1165"/>
   </object>
+  <object id="156" x="617.636" y="188.364">
+   <polyline points="0,0 18.5455,-18.5455 78,-18.9091"/>
+  </object>
+  <object id="159" x="786.36" y="153.27">
+   <polyline points="0,0 0,16.1818 143.273,16.1818 -448.727,610 -742.727,610 -669.273,534.364"/>
+  </object>
+  <object id="161" x="695.82" y="169.64">
+   <polyline points="0,0 0,-16.3636"/>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="markers">
-  <object id="2" name="spawn" x="841" y="215">
+  <object id="2" name="spawn" x="740" y="215">
    <point/>
   </object>
   <object id="155" name="room" x="477" y="377.75">
@@ -74,7 +77,7 @@
   </object>
  </objectgroup>
  <objectgroup id="8" name="objects">
-  <object id="115" name="transition" x="793.288" y="116.757" width="92.5" height="36.5">
+  <object id="115" name="transition" x="694.29" y="116.757" width="92.5" height="36.5">
    <properties>
     <property name="map" value="noelles house/kitchen"/>
     <property name="marker" value="upstairs"/>

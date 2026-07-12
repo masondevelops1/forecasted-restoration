@@ -223,6 +223,6 @@
   <image source="../../../assets/sprites/objects/boat/spillAlt.png" width="40" height="26"/>
  </tile>
  <tile id="85">
-  <image source="../../../assets/sprites/objects/spr_controlpanel.png" width="100" height="32"/>
+  <image source="../../../assets/sprites/objects/spr_controlpanel.png" width="64" height="40"/>
  </tile>
 </tileset>

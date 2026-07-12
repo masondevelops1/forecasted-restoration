@@ -45,11 +45,12 @@ local nightCutsenes = {
         plainText("You picked up!![wait:10]\nI was getting worried my\nnew phone wasn't working.")
         plainText("Get your ass up and\nmeet me in town!! [wait:10]\nI found something...[wait:10] bad.")
         plainText("I'll explain more when you get here.")
-        plainText("But try not to wake up Toriel.[wait:10]\nShe's probably sleeping right now.")
-        plainText("And I don't really want\nthe same thing to happen as\nlast time, so...")
-        plainText("Y'know what to do, Kris.")
-        plainText("I'll be waiting by QC's,[wait:5] 'kay?")
+        plainText("But try not to wake up Toriel.[wait:10]\nShe's probably still sleeping.")
+        plainText("And we both know what happened\nlast time,[wait:5] she wasn't\ntoo happy.")
+        plainText("I'll be waiting by QC's,[wait:5]\nbut DON'T take too lon--")
         Assets.playSound("item")
+        cutscene:wait(1)
+        cutscene:text("* She hung up the phone.")
         cutscene:setSpeaker("kris")
         cutscene:wait(1)
 
@@ -77,7 +78,6 @@ local nightCutsenes = {
         cutscene:wait(cutscene:walkTo(kris, "kriswalkbed"))
         Game.world.menu = nil
         --Kristal.callEvent("createQuest", "Meet Susie", "susiemeet", "Susie found something strange. She's waiting by QC's for you.", 0)
-        Game:getQuest("meetsusie"):unlock()
     end;
 
     chariel = function(cutscene, event)
@@ -204,8 +204,6 @@ local nightCutsenes = {
             cutscene:attachFollowers()
             Game.world.music:play("hometown")
             Game.world.music:fade(1, 1)
-            Game:getQuest("meetsusie"):complete()
-            Game:getQuest("getnoelle"):unlock()
         else
             local susie = assert(cutscene:getCharacter("susie_lw"), "tf you mean there's no susie??? how??")
             susie:resetSprite()
@@ -1158,16 +1156,19 @@ local nightCutsenes = {
         if Game:getFlag("silly_mode") then
             return cutscene:gotoCutscene("nightCutscenes.gateSilly")
         end
+    end;
+
+    noellething = function(cutscene)
         Plot:set("holidayhouse_enter")
         local kris = assert(cutscene:getCharacter("kris"))
         local susie = cutscene:getCharacter("susie")
         local noelle = cutscene:getCharacter("noelle")
         Game:addPartyMember("noelle")
         cutscene:setSpeaker(susie)
-        cutscene:text("* Oh, damn,[wait:5] forgot about this gate.", "neutral")
-        cutscene:text("* So, uh... How the hell are we gonna get past it?", "neutral")
+        cutscene:text("* Damn,[wait:5] forgot about this gate.", "neutral")
+        cutscene:text("* So,[wait:5] uh...[wait:10] how the hell are we gonna get past it...?", "nervous")
         if cutscene:choicer({ "Climb over", "Brute force" }) == 1 then
-            cutscene:text("* That's a pretty damn good idea.[wait:5] Uhhh...[wait:5] step on my head,[wait:5] Kris!", "smile")
+            cutscene:text("* Hell yeah,[wait:5] step on my shoulders,[wait:5] Kris!", "smile")
             cutscene:detachFollowers()
             cutscene:detachCamera()
             kris:walkTo(susie.x - 20, susie.y, 0.5, "left")
@@ -1175,13 +1176,25 @@ local nightCutsenes = {
             cutscene:wait(1)
             kris:walkTo(susie.x + 20, susie.y, 0.5)
             cutscene:wait(0.5)
+            kris:setFacing("left")
             kris:slideTo(susie.x, susie.y - 80, 0.5)
             cutscene:wait(1)
-            cutscene:text("* Alright![wait:5] Jump over and open it for me,[wait:5] okay!?", "sincere_smile")
+            cutscene:text("* Alright![wait:5] Jump over and get Noelle to open it,[wait:5] okay!?", "sincere_smile")
+            cutscene:wait(cutscene:jumpTo(kris, 280, 340, 20, 0.75, "kris_jump", "splat"))
+            Assets.playSound("splat")
+            kris:setSprite("splat")
+            cutscene:wait(1)
+            Assets.playSound("bump")
+            kris:shake()
+            kris:resetSprite()
+            cutscene:wait(0.75)
+            kris:walkTo(-120, 360, 3)
+            cutscene:wait(1)
         else
-            cutscene:text("* Hell yeah![wait:5] That's the spirit!", "surprise_smile")
-            cutscene:text("* Uh...[wait:5] that actually might not be the best idea.", "stupid")
-            cutscene:text("* How about we...[wait:5] climb over it![wait:5] Yeah![wait:5] Step on my head,[wait:5] Kris!", "smile")
+            cutscene:text("* Hell yeah,[wait:5] that's the spirit!", "surprise_smile")
+            cutscene:text("* But,[wait:5] uh,[wait:5] the gate's metal...[wait:5] Brute force wouldn't do much...", "stupid")
+            cutscene:text("* Guess we should find another way to get around it...", "nervous_side")
+            cutscene:text("* Like climbing over it![wait:5] Kris,[wait:5] step on my shoulders!", "surprise_smile")
             cutscene:detachFollowers()
             cutscene:detachCamera()
             kris:walkTo(susie.x - 20, susie.y, 0.5, "left")
@@ -1189,24 +1202,71 @@ local nightCutsenes = {
             cutscene:wait(1)
             kris:walkTo(susie.x + 20, susie.y, 0.5)
             cutscene:wait(0.5)
+            kris:setFacing("left")
             kris:slideTo(susie.x, susie.y - 80, 0.5)
             cutscene:wait(1)
-            cutscene:text("* Alright![wait:5] Jump over and open it for me,[wait:5] okay!?", "sincere_smile")
+            cutscene:text("* Alright![wait:5] Jump over and get Noelle to open it,[wait:5] okay!?", "sincere_smile")
+            cutscene:wait(cutscene:jumpTo(kris, 280, 340, 20, 0.75, "kris_jump", "splat"))
+            Assets.playSound("splat")
+            kris:setSprite("splat")
+            cutscene:wait(1)
+            Assets.playSound("bump")
+            kris:shake()
+            kris:resetSprite()
+            cutscene:wait(0.75)
+            kris:walkTo(-120, 360, 3)
+            cutscene:wait(1)
         end
         cutscene:setSpeaker()
         cutscene:wait(cutscene:fadeOut(1.5, { music = true }))
         cutscene:setSpeaker()
-        cutscene:text("* You knocked on the door to Noelle's house.[wait:5] She saw you and let you inside.")
         cutscene:setSpeaker(noelle)
-        cutscene:text("* H-Hi guys![wait:5] What're you over here for?", "happy", "noelle")
+        cutscene:wait(0.6)
+        Assets.playSound("knock")
+        cutscene:wait(1)
+        Assets.playSound("dooropen")
+        cutscene:wait(1)
+        cutscene:text("* K-Kris?[wait:5] What're you doing over here so late??", "confused_surprise_b", "noelle")
+        cutscene:text("* You want me to open the gate for Susie?", "blush_surprise", "noelle")
+        cutscene:text("* Yeah,[wait:5] I c-can open it for you guys...", "blush_surprise_smile", "noelle")
+        Assets.playSound("doorclose")
+        cutscene:wait(2)
+        Assets.playSound("bell_bounce_short")
+        cutscene:wait(1)
+        Assets.playSound("dooropen")
+        cutscene:wait(1)
+        cutscene:text("* It should be opening...[wait:10] any moment no-", "confused_surprise", "noelle", { auto = true })
+        Assets.playSound("screenshake")
+        cutscene:wait(2)
         cutscene:setSpeaker(susie)
-        cutscene:text("* We're uh...[wait:5] here to talk to you about something important.")
+        cutscene:text("* Hey,[wait:5] Kris,[wait:5] Noelle!!", "surprise_smile")
         cutscene:setSpeaker(noelle)
-        cutscene:text("* Okay![wait:5] Let's go to my room,[wait:5] we'll talk there!", "happy", "noelle")
+        cutscene:text("* H-Hi,[wait:5] Susie...!", "blush_side", "noelle")
+        cutscene:wait(1)
+        cutscene:setSpeaker(susie)
+        cutscene:text("* Alright,[wait:5] so Noelle...[wait:10] we wanted to talk to you about something.", "sus_nervous")
+        cutscene:text("* You good with talking about it in your room?", "small_smile")
+        cutscene:setSpeaker(noelle)
+        cutscene:text("* Y-Yeah,[wait:5] of course!", "blush_smile_closed", "noelle")
+        cutscene:text("* Come inside!", "blush_finger", "noelle")
+        Assets.playSound("escaped")
+        cutscene:wait(1)
+        Assets.playSound("doorclose")
+        cutscene:wait(1)
         cutscene:mapTransition("noelles house/living room/livingroom", 300, 465)
         Game.world.music:play("noellehouse")
         cutscene:fadeIn(1.5, { music = true })
-    end;
+    end,
+
+    workRoom = function(cutscene)
+        cutscene:setSpeaker("noelle")
+        cutscene:text("* Umm,[wait:5] no need to be in there![wait:5] Mom doesn't like people in her office...", "blush_big_smile")
+    end,
+
+    basementBlock = function(cutscene)
+        cutscene:setSpeaker("susie")
+        cutscene:text("* Kris,[wait:5] I don't think the basement is the right place to be...", "stupid")
+    end,
 
     susieApartment = function (cutscene)
         if not Plot:isBefore("apartment_exit") then
@@ -1214,7 +1274,7 @@ local nightCutsenes = {
             return
         elseif Plot:isBefore("holidayhouse_enter") then
             cutscene:setSpeaker("susie")
-            cutscene:text("* We should go get Noelle first,[wait:5] okay Kris?", "sad")
+            cutscene:text("* Hey,[wait:5] we should go get Noelle from her house.", "nervous", "susie")
             return
         end
         -- All placeholder. Eventually, there will be a whole scene that plays. Hopefully. Mason note: no thanks.
@@ -1228,6 +1288,8 @@ local nightCutsenes = {
         local rumble = Assets.playSound("rumble")
         rumble:setLooping(true)
         susie:setSprite("shocked")
+        noelle:setSprite("shocked")
+        Assets.playSound("noelle_scared")
         cutscene:shakeCamera()
         susie:alert()
         kris:alert()
@@ -1237,6 +1299,7 @@ local nightCutsenes = {
         end, 12)
         cutscene:wait(3)
         susie:resetSprite()
+        noelle:resetSprite()
         Assets.stopSound("rumble")
         cutscene:wait(0.3)
         cutscene:wait(0.3)
@@ -1244,32 +1307,20 @@ local nightCutsenes = {
         cutscene:wait(cutscene:fadeOut())
         cutscene:wait(1)
         cutscene:setSpeaker(noelle)
-        cutscene:text("* Susie!![wait:5] Why do you have my coat on your floor???")
+        cutscene:text("* S-Susie,[wait:5] what should I grab??")
         cutscene:setSpeaker(susie)
-        cutscene:text("* Uh...![wait:5] Just start grabbing stuff![wait:5] We've gotta hurry to the shelter!")
+        cutscene:text("* Uh...![wait:5] Just,[wait:5] anything to defend yourself with!")
         cutscene:setSpeaker(noelle)
-        cutscene:text("* (O-okay,[wait:5] Susie...)")
+        cutscene:text("* (O-okay...)")
         cutscene:wait(1)
         Assets.playSound("wing")
         cutscene:wait(1)
-        Assets.playSound("wing")
-        cutscene:wait(1)
-        Assets.playSound("wing")
-        cutscene:wait(1)
-        Assets.playSound("wing")
-        cutscene:wait(1)
-        Assets.playSound("wing")
-        cutscene:wait(0.5)
-        Assets.playSound("wing")
-        cutscene:wait(0.5)
         Assets.playSound("wing")
         cutscene:wait(2)
         cutscene:setSpeaker(susie)
-        cutscene:text("* Alright![wait:5] I think we've got enough![wait:5] Out the door!!!!")
+        cutscene:text("* Alright![wait:5] I think that's enough stuff,[wait:5] let's go!")
         cutscene:wait(cutscene:fadeIn())
-        cutscene:text("* Okay Kris,[wait:5] lead the way.[wait:5] And uh...[wait:5] hurry.", "sad")
-        Game:getQuest("supplies"):complete()
-        Game:getQuest("shelter"):unlock()
+        cutscene:text("* Okay Kris,[wait:5] lead the way to the shelter!", "shy")
     end;
 
     noShelterYet = function (cutscene)
@@ -1277,14 +1328,13 @@ local nightCutsenes = {
         local kris = assert(cutscene:getCharacter("kris"))
         local susie = cutscene:getCharacter("susie")
         local noelle = cutscene:getCharacter("noelle")
-        cutscene:text("* You think about if it's time to go to the shelter yet...", "neutral_side")
-
+        cutscene:text("* There's things to do before going to the shelter.", "neutral_side")
         if Plot:isBefore("holidayhouse_enter") then
-            cutscene:text("* But you couldn't find Noelle.", "nervous")
+            cutscene:text("* Hey,[wait:5] we should go get Noelle from her house.", "nervous", "susie")
         else
-            cutscene:text("* But you didn't have any supplies.", "nervous")
+            cutscene:text("* My apartment is at the end of the road,[wait:5] we'll get stuff there.", "nervous", "susie")
         end
-        cutscene:text("* You decided to take care of that first.")
+
         cutscene:wait(cutscene:walkTo(kris, kris.x, kris.y-20))
     end;
 
@@ -1331,6 +1381,30 @@ local nightCutsenes = {
         Mod.ghast_tear_real = true
         Game:load()
     end;
+
+    --START weird route implementations
+    blocked = function(cutscene, event)
+        cutscene:text("* (No need to go there.)", "confused_surprise_b")
+    end;
+
+    locked = function(cutscene, event)
+        cutscene:text("* (It's locked.)", "frown")
+    end;
+
+    coat = function(cutscene, event)
+        cutscene:text("* (Looks like someone left their coat.)", "frown")
+    end;
+
+    paper = function(cutscene, event)
+        cutscene:text("* There's a paper on the table.[wait:5] It reads:", "frown")
+        cutscene:text("* \"To the scientists at Hometown's Shelter...\"")
+        cutscene:text("* \"We would like to inform you that you must vacate the shelter premises immediately.\"")
+        cutscene:text("* \"We will be beginning an investigation of recent 'Hometown Incidents'.\"")
+        cutscene:text("* \"This investigation is planned to last exactly 30 days.\"")
+        cutscene:text("* \"If you fail to comply,[wait:5] we will be forced to terminate your positions.\"")
+        cutscene:text("* \"-Regards, Hometown County Town Hall.\"")
+    end;
+    --END weird route implementations
 }
 
 return nightCutsenes

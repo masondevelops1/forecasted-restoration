@@ -17,6 +17,7 @@ local function createTransitionCutscene(yval, base_config, map)
         end
         -- Visible state gets reset when loading the new map. Looks weird if we don't have this.
         transition.land_callback = function() 
+            Kristal.Console:warn("LANDING LANDING CALLBACK")
             Game.world.player.visible = false
             if Game.world.followers[1] then
                 Game.world.followers[1].visible = false
@@ -25,10 +26,10 @@ local function createTransitionCutscene(yval, base_config, map)
         
         
         -- Load map when it's time to
-        transition.loading_callback = function() Game.world:loadMap(map) end
+        transition.loading_callback = function() Kristal.Console:warn("LOADING LOADING CALLBACK") Game.world:loadMap(map) end
         -- Wait for transition to complete
         local waiting = true
-        transition.end_callback = function() waiting = false end
+        transition.end_callback = function() Kristal.Console:warn("END END CALLBACK") waiting = false end
         local wait_func = function() return not waiting end
         cutscene:wait(wait_func)
 

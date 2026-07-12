@@ -30,7 +30,7 @@ function actor:init()
         ["talk"] = 0.125,
         ["explaining_talk"] = 0.125,
         ["left_talk"] = 0.125,
-        ["happy_talk"] = 0.125
+        ["happy"] = 0.125
     }
 
     self.offsets = {

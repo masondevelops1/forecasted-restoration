@@ -183,14 +183,12 @@
   </object>
   <object id="50" name="interactable" x="3036" y="174" width="48" height="66">
    <properties>
-    <property name="text1" value="* (It's locked...)"/>
-    <property name="text2" value="* (...[wait:5] the town it's pretty empty today.)"/>
+    <property name="text1" value="* (It's locked.)"/>
    </properties>
   </object>
   <object id="51" name="interactable" x="3316" y="174" width="48" height="66">
    <properties>
-    <property name="text1" value="* (It's locked...)"/>
-    <property name="text2" value="* (...[wait:5] the town it's pretty empty today.)"/>
+    <property name="text1" value="* (It's locked.)"/>
    </properties>
   </object>
   <object id="52" name="interactable" x="3756" y="174" width="48" height="66">
@@ -219,17 +217,17 @@
   </object>
   <object id="69" name="interactable" x="2172.75" y="180.5" width="87.25" height="27.75">
    <properties>
-    <property name="text1" value="* (Despite the store's sign, it's closed.)"/>
+    <property name="text1" value="* (Despite the store's sign, the door is locked.)"/>
    </properties>
   </object>
   <object id="71" name="interactable" x="1194.16" y="193.095" width="58.1591" height="40.1136">
    <properties>
-    <property name="text1" value="* (Despite the store's sign, it's closed.)"/>
+    <property name="text1" value="* (It's locked.)"/>
    </properties>
   </object>
   <object id="73" name="interactable" x="609.955" y="199.875" width="110.068" height="33.0227">
    <properties>
-    <property name="text1" value="* (Despite the store's sign, it's closed.)"/>
+    <property name="text1" value="* (It's locked.)"/>
    </properties>
   </object>
  </objectgroup>

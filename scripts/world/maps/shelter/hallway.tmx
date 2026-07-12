@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="26">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="17" height="30" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="33">
  <editorsettings>
   <export target="hallway.lua" format="lua"/>
  </editorsettings>
@@ -8,101 +8,116 @@
   <property name="light" type="bool" value="true"/>
   <property name="music" value="in-the-shelter"/>
  </properties>
- <imagelayer id="2" name="hallway" offsetx="125" offsety="437">
+ <imagelayer id="2" name="hallway" offsetx="5" offsety="437">
   <image source="../../../../assets/sprites/backgrounds/hallway.png" width="678" height="180"/>
  </imagelayer>
- <layer id="1" name="Tile Layer 1" width="21" height="30">
+ <layer id="1" name="Tile Layer 1" width="17" height="30">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
  <objectgroup id="3" name="collisions">
-  <object id="1" x="120" y="406" width="740.667" height="128.667"/>
-  <object id="2" x="120" y="614" width="720" height="66"/>
-  <object id="24" x="802.943" y="528.399" width="13.667" height="85.9274">
-   <properties>
-    <property name="plotmax" value="*shelter_heard_log"/>
-   </properties>
-  </object>
+  <object id="1" x="0" y="406" width="44.875" height="128.667"/>
+  <object id="2" x="0" y="614" width="720" height="66"/>
+  <object id="26" x="96.9403" y="408.228" width="586.146" height="128.667"/>
  </objectgroup>
  <objectgroup id="4" name="objects">
-  <object id="3" name="transition" x="117.333" y="518" width="37.3333" height="98">
+  <object id="3" name="transition" x="-40" y="520" width="37.3333" height="98">
    <properties>
     <property name="map" value="shelter/mainroom"/>
     <property name="marker" value="mainroomdoor"/>
    </properties>
   </object>
-  <object id="15" name="transition" x="162.75" y="460.25" width="55.5" height="77.5">
+  <object id="15" name="transition" x="44.875" y="454.375" width="52.125" height="77.5">
    <properties>
     <property name="door" type="bool" value="true"/>
+    <property name="exit_sound" value="doorclose"/>
     <property name="map" value="shelter/omnisroomold"/>
+    <property name="sound" value="dooropen"/>
    </properties>
   </object>
-  <object id="16" name="transition" x="800" y="520" width="40" height="120">
+  <object id="16" name="transition" x="680" y="520" width="40" height="120">
    <properties>
     <property name="map" value="shelter/coreleadup"/>
     <property name="plotmin" value="*shelter_enter"/>
    </properties>
   </object>
-  <object id="20" name="interactable" x="346.769" y="511.484" width="52.2126" height="29.0311">
+  <object id="20" name="interactable" x="226.769" y="511.484" width="52.2126" height="29.0311">
    <properties>
     <property name="cutscene" value="shelter.smasheddoor"/>
    </properties>
   </object>
-  <object id="21" name="interactable" x="528.644" y="511.48" width="52.2126" height="29.0311">
+  <object id="21" name="interactable" x="408.644" y="511.48" width="52.2126" height="29.0311">
    <properties>
-    <property name="cutscene" value="shelter.lockeddoor"/>
+    <property name="cutscene" value="shelter.lockeddoor1"/>
    </properties>
   </object>
-  <object id="22" name="interactable" x="710.894" y="511.48" width="52.2126" height="29.0311">
+  <object id="22" name="interactable" x="590.894" y="511.48" width="52.2126" height="29.0311">
    <properties>
-    <property name="cutscene" value="shelter.lockeddoor"/>
+    <property name="cutscene" value="shelter.lockeddoor2"/>
    </properties>
   </object>
-  <object id="25" name="interactable" x="797.138" y="534.609" width="7.9626" height="79.9061">
+  <object id="31" name="script" x="480" y="520" width="40" height="111.031">
    <properties>
-    <property name="cutscene" value="shelter.lockdown"/>
+    <property name="cutscene" value="device.omnistime"/>
+    <property name="plotmin" value="shelter_heard_log"/>
+   </properties>
+  </object>
+  <object id="32" name="script" x="678.257" y="520.03" width="4.03078" height="94.6675">
+   <properties>
+    <property name="cutscene" value="shelter.gatewayblocker"/>
+    <property name="once" value="false"/>
     <property name="plotmax" value="*shelter_heard_log"/>
+    <property name="solid" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="markers">
-  <object id="7" name="spawn" x="187" y="594.667">
+  <object id="7" name="spawn" x="67" y="594.667">
    <point/>
   </object>
-  <object id="14" name="omnisroomold" x="195.136" y="566.818">
+  <object id="14" name="omnisroomold" x="75.136" y="566.818">
    <point/>
   </object>
-  <object id="23" name="gatewayexit" x="770.5" y="575.75">
+  <object id="23" name="gatewayexit" x="650.5" y="575.75">
+   <point/>
+  </object>
+  <object id="28" name="susie1" x="618" y="555">
+   <point/>
+  </object>
+  <object id="29" name="kris1" x="595" y="585">
+   <point/>
+  </object>
+  <object id="30" name="noelle1" x="640" y="585">
    <point/>
   </object>
  </objectgroup>

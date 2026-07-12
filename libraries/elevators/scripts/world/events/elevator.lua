@@ -53,8 +53,11 @@ function Elevator:init(data)
             self.floors[floor_number][floor_property] = Utils.parseColorProperty(value)
         end
     end
-
-    self:setCurrentFloor(1)
+    if Game.world.map.id == "gateway_elevator" then
+        self:setCurrentFloor(3)
+    else
+        self:setCurrentFloor(1)
+    end
 end
 
 function Elevator:moveTo(number)
@@ -85,10 +88,10 @@ function Elevator:setCurrentFloor(number)
 end
 
 function Elevator:postLoad()
-    if Mod.lastMap == nil then return end
+    if Game:getFlag("lastMap") == nil then return end
 
     for floor_number, floor in pairs(self.floors) do
-        if floor.dest == Mod.lastMap then
+        if floor.dest == Game:getFlag("lastMap") then
             self:setCurrentFloor(floor_number)
             break
         end

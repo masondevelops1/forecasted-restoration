@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 14,
+  nextobjectid = 15,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -166,6 +166,24 @@ return {
             { x = -40, y = -40 }
           },
           properties = {}
+        },
+        {
+          id = 14,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 104,
+          y = 332,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = -40, y = 0 },
+            { x = -40, y = 40 }
+          },
+          properties = {}
         }
       }
     },
@@ -230,7 +248,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text"] = "* (It's a toilet.)\n[wait:5]* (Kross is too lazy to program the flush cutscene.)"
+            ["text"] = "* (It's a toilet.)\n[wait:5]* (It's not the time to flush it.)"
           }
         },
         {
@@ -245,9 +263,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* You looked inside the sink cupboard.\n[wait:5]* There's...",
-            ["text2"] = "* A can of Ice-E's Cool Boys Body Spray \"Spray For The Boys,\" Flamin' Hot Pizza Flavor.",
-            ["text3"] = "* It seems to be almost entirely full."
+            ["text1"] = "* It's a sink.\n* Turning it on could wake Toriel."
           }
         }
       }

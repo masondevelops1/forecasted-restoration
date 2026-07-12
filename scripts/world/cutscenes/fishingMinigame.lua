@@ -1,17 +1,32 @@
 return {
-
-    terminal1 = function(cutscene)
-    
-    Kristal.Console:log("test")   
-        cutscene:text("* I see an audio log here.[wait:5]\n * It reads as follows:") 
-        cutscene:text("[color:purple]HELLO, [wait:5] \nTHIS IS WING GASTER.")
-        cutscene:text("[color:purple]THE EXPERIMENTS HAVE BEEN, [wait:5] \nINTERESTING.[wait:5].[wait:5].[wait:5]")
-        cutscene:text("[color:purple]THINGS HAVE BEEN GETTING A BIT FREAKY HERE IN THE CORE.")
-        cutscene:text("[color:purple]THE POOL IS LOOKING REALLY NICE TODAY.[wait:5]\nMAYBE I WILL TAKE A DIP!")
-        cutscene:text("[color:purple]GOOD BY!")
-        cutscene:text("* I hear a distant splash,[wait:5] followed by harrowing screams.")
-        cutscene:text("* That can't be good.")
-    
-    end,
-
-    }
+    fish = function(cutscene)
+        kris = cutscene:getCharacter("kris")
+        local count = "three"
+        for i = 1,4 do
+            local countdown = Sprite("objects/fishing-assets/screen-elements/" ..count.. "-countdown", SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
+            countdown.layer = WORLD_LAYERS["top"]
+            countdown:setScale(2)
+            countdown.alpha = 0
+            Game.world:addChild(countdown)
+            Game.world.timer:tween(0.25, countdown, { alpha = 1 }, "out-cubic")
+            cutscene:wait(0.25)
+            if i == 1 then
+                count = "two"
+            elseif i == 2 then
+                count = "one"
+            elseif i == 3 then
+                count = "go"
+            else
+                count = "DONE"
+            end
+            cutscene:wait(0.5)
+            Game.world.timer:tween(0.25, countdown, { alpha = 0 }, "out-cubic")
+            cutscene:wait(0.25)
+            Game.world:removeChild(countdown)
+        end
+        if count == "DONE" then
+            kris:setSprite("fishing")
+            kris:play()
+        end
+    end
+}

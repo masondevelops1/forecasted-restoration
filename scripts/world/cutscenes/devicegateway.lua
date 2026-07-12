@@ -51,7 +51,7 @@ DEVICE:\\DeviceUser1
 Type in a number to make a
 selection.
 > _
-]], reason == "invalid" and "Invalid selection." or reason == "nodrive" and "Access denied. Insert access drive." or getSignalStatus())
+]], reason == "invalid" and "Invalid selection." or reason == "nodrive" and "Access denied. Insert GatewayAccessDrive." or getSignalStatus())
     if choice == 0 then
         love.audio.newSource(Assets.getMusicPath"DEVICE_OFF","static"):play()
         cutscene.funnytextbox:setText("[style:none][voice:none]Shutting down...")
@@ -127,7 +127,6 @@ complete procedure.
     cutscene:wait(1)
     cutscene.funnytextbox:remove()
     cutscene:wait(Game.world:mapTransition(Game.world.map.id, Game.world.player.x, Game.world.player.y))
-    Game:getQuest("gateway"):complete()
     return
 --end
 end

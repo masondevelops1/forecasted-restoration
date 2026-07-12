@@ -7,6 +7,7 @@
   <property name="border" value="shelterdark"/>
   <property name="light" type="bool" value="true"/>
   <property name="music" value="core_approach"/>
+  <property name="step_sound" value="metal"/>
  </properties>
  <imagelayer id="2" name="coreleadup">
   <image source="../../../../assets/sprites/backgrounds/coreleadup.png" width="786" height="1360"/>
@@ -24,7 +25,7 @@
   <object id="27" x="472" y="1102" width="88" height="258"/>
  </objectgroup>
  <objectgroup color="#7f00ff" id="4" name="markers">
-  <object id="1" name="spawn" x="341.751" y="1297.14">
+  <object id="1" name="spawn" x="335" y="1296.64">
    <point/>
   </object>
   <object id="47" name="exitingforreal" x="393" y="384.5">

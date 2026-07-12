@@ -1,5 +1,5 @@
 ---@class World : World
-local World, super = Class(World)
+local World, super = HookSystem.hookScript(World)
 
 function World:showHealthBars()
     if self.healthbar then

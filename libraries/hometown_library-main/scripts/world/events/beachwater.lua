@@ -1,7 +1,7 @@
 local BeachWater, super = Class(Event, "beachwater")
 
 function BeachWater:init(data)
-    super:init(self, data.x, data.y, data.width, data.height)
+    super.init(self, data.x, data.y, data.width, data.height)
 
     self.sprite = Sprite("world/maps/hometown/beachwater", 0, 0)
     self.sprite:setScale(2)

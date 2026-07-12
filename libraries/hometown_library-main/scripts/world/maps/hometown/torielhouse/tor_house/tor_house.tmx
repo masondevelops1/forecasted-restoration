@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="35" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="41">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="35" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="42">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -67,20 +67,20 @@
     <property name="cutscene" value="nightCutscenes.phone"/>
    </properties>
   </object>
-  <object id="22" name="interactable" x="458" y="236" width="76" height="40">
+  <object id="22" name="interactable" x="458" y="236" width="70" height="40">
    <properties>
-    <property name="text">* It's a sink.[wait:5]
-* Turning it on would cause too much noise.</property>
+    <property name="text1">* It's a sink.
+* Turning it on could wake Toriel.</property>
    </properties>
   </object>
   <object id="23" name="interactable" x="534" y="236" width="82" height="40">
    <properties>
-    <property name="text" value="* (Mom didn't cooked anything today.)"/>
+    <property name="text" value="* There's nothing but grease on the stovetop."/>
    </properties>
   </object>
-  <object id="24" name="interactable" x="616" y="236" width="80" height="40">
+  <object id="24" name="interactable" x="620.55" y="236" width="75" height="40">
    <properties>
-    <property name="text" value="* (Cookie cutters for gingerbread monsters and gingerbread humans.)"/>
+    <property name="text" value="* The microwave is off."/>
    </properties>
   </object>
   <object id="25" name="interactable" x="412" y="260" width="44" height="40">
@@ -104,7 +104,7 @@
   <object id="31" name="interactable" x="684" y="280" width="44" height="40">
    <properties>
     <property name="text">* It's a trashcan.
-* It smells like campfire.</property>
+* Smells like smoke.</property>
    </properties>
   </object>
   <object id="36" gid="39" x="846" y="324" width="94" height="104"/>
@@ -119,10 +119,20 @@
     <property name="cutscene" value="nightCutscenes.TV"/>
    </properties>
   </object>
-  <object id="40" name="script" x="180" y="340" width="40" height="40">
+  <object id="40" name="_script" x="180" y="340" width="40" height="40" visible="0">
    <properties>
     <property name="cutscene" value="nightCutscenes.bathroom"/>
     <property name="once" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="41" name="transition" x="180" y="340" width="40" height="40">
+   <properties>
+    <property name="exit_delay" type="float" value="0.3"/>
+    <property name="exit_sound" value="doorclose"/>
+    <property name="facing" value="left"/>
+    <property name="map" value="hometown/torielhouse/toriel_bathroom"/>
+    <property name="marker" value="spawn"/>
+    <property name="sound" value="dooropen"/>
    </properties>
   </object>
  </objectgroup>

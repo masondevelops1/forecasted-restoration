@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 10,
-  nextobjectid = 22,
+  nextobjectid = 23,
   properties = {
     ["border"] = "ground_zero",
     ["depths"] = true,

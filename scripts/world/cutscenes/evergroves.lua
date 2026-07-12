@@ -152,6 +152,9 @@ local evergroves = {
         Assets.playSound("dooropen")
         Game.world:shopTransition("sailorShop")
     end,
+    shop_GONER = function (cutscene)
+        Game.world:shopTransition("gonerShop")
+    end,
     leave = function (cutscene)
         Assets.playSound("dooropen")
         Game.world:mapTransition("evergroves/path1", "spawn2")

@@ -17,11 +17,11 @@ function item:init()
     -- Battle description
     self.effect = "Heals\n10HP"
     -- Shop description
-    self.shop = "Cures you\ninstantly."
+    self.shop = "Heals 10HP.\nHastens the\nbody's healing\nprocess."
     -- Menu description
     self.description = "A cure to your pain. +10HP"
     -- Light world check text
-    self.check = "It's made to cure your pain.[wait:5] +10HP."
+    self.check = "Heals 10HP.\n* Temporarily hastens your body's healing process."
     -- Amount healed (HealItem variable)
     self.heal_amount = 20
     -- Amount this item heals for specific characters
@@ -58,8 +58,14 @@ function item:init()
 
 end;
 function item:onWorldUse()
-    Game.world:showText("* You stared at the Pills' Label.[wait:5] It seems they can only be used in battles.")
-    return false
+    -- Heal 1 HP
+    Game.world:heal(Game.party[1], 10, "* You swallowed the pill.")
+    --[[for i=1,#Game.party do
+        Game.party[i]:heal(20)
+    end]]
+    
+    -- Consume
+    return true
 end
 
 function item:onToss()

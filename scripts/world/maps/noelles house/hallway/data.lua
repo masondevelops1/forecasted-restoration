@@ -10,7 +10,7 @@ return {
   tilewidth = 32,
   tileheight = 32,
   nextlayerid = 9,
-  nextobjectid = 156,
+  nextobjectid = 162,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -144,44 +144,6 @@ return {
           properties = {}
         },
         {
-          id = 137,
-          name = "",
-          type = "",
-          shape = "polyline",
-          x = 617,
-          y = 189,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          polyline = {
-            { x = 0, y = 0 },
-            { x = 18.6667, y = -19 },
-            { x = 175, y = -20.3333 }
-          },
-          properties = {}
-        },
-        {
-          id = 138,
-          name = "",
-          type = "",
-          shape = "polyline",
-          x = 885.333,
-          y = 169.667,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          polyline = {
-            { x = 0, y = 0 },
-            { x = 177.667, y = -0.333333 },
-            { x = -414.333, y = 592.667 },
-            { x = -842, y = 593.667 },
-            { x = -768.333, y = 517.333 }
-          },
-          properties = {}
-        },
-        {
           id = 140,
           name = "",
           type = "",
@@ -231,6 +193,62 @@ return {
             { x = 48.5114, y = -46.1165 }
           },
           properties = {}
+        },
+        {
+          id = 156,
+          name = "",
+          type = "",
+          shape = "polyline",
+          x = 617.636,
+          y = 188.364,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polyline = {
+            { x = 0, y = 0 },
+            { x = 18.5455, y = -18.5455 },
+            { x = 78, y = -18.9091 }
+          },
+          properties = {}
+        },
+        {
+          id = 159,
+          name = "",
+          type = "",
+          shape = "polyline",
+          x = 786.36,
+          y = 153.27,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polyline = {
+            { x = 0, y = 0 },
+            { x = 0, y = 16.1818 },
+            { x = 143.273, y = 16.1818 },
+            { x = -448.727, y = 610 },
+            { x = -742.727, y = 610 },
+            { x = -669.273, y = 534.364 }
+          },
+          properties = {}
+        },
+        {
+          id = 161,
+          name = "",
+          type = "",
+          shape = "polyline",
+          x = 695.82,
+          y = 169.64,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polyline = {
+            { x = 0, y = 0 },
+            { x = 0, y = -16.3636 }
+          },
+          properties = {}
         }
       }
     },
@@ -253,7 +271,7 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 841,
+          x = 740,
           y = 215,
           width = 0,
           height = 0,
@@ -295,7 +313,7 @@ return {
           name = "transition",
           type = "",
           shape = "rectangle",
-          x = 793.288,
+          x = 694.29,
           y = 116.757,
           width = 92.5,
           height = 36.5,

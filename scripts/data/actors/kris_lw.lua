@@ -72,8 +72,11 @@ function actor:init()
         ["walk/right"] = "walk/right",
     }
 
-    self.reflect_offset = {
-        ["walk/down"] = {8, 999},
+    self.reflect_offsets = {
+        ["walk/down"] = {0, 4.5},
+        ["walk/left"] = {0, 4.5},
+        ["walk/right"] = {0, 4.5},
+        ["walk/up"] = {0, 4.5},
     }
 
 
@@ -100,6 +103,7 @@ function actor:init()
         ["fall"] = {-8, -2},
 
         ["fallen"] = {-8, 16},
+        ["splat"] = {-8, 16},
 
         ["sit"] = {-4, -8},
 

@@ -92,8 +92,6 @@ local opening = {
                 cutscene:text("* Ye can find a key ring to keep it safe in yer drawer in the room.")
                 event.interact_count = 2
                 cutscene:wait(Game.world:mapTransition(Game.world.map.id, Game.world.player.x, Game.world.player.y))
-                Game:getQuest("cruise"):complete()
-                Game:getQuest("keyring"):unlock()
             end
         elseif Game.world.map:getFlag("enemyDefeated") and event.interact_count ~= 3 then
             if Plot:isBefore("boat_leadup_keyget") then 
@@ -106,8 +104,6 @@ local opening = {
                 cutscene:text("* Ye can find a key ring to keep it safe in yer drawer in the room.")
                 event.interact_count = 2
                 cutscene:wait(Game.world:mapTransition(Game.world.map.id, Game.world.player.x, Game.world.player.y))
-                Game:getQuest("cruise"):complete()
-                Game:getQuest("keyring"):unlock()
             else
                 cutscene:setSpeaker(captain)
                 event.interact_count = 3

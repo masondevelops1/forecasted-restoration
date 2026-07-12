@@ -10,7 +10,7 @@ return {
   tilewidth = 32,
   tileheight = 32,
   nextlayerid = 9,
-  nextobjectid = 133,
+  nextobjectid = 147,
   properties = {
     ["light"] = true,
     ["music"] = "noellehouse"
@@ -84,58 +84,6 @@ return {
       properties = {},
       objects = {
         {
-          id = 5,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 32,
-          y = -150,
-          width = 672,
-          height = 172,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 6,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 545.333,
-          y = 207.333,
-          width = 46,
-          height = 162.667,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 86,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 46.7087,
-          y = 33.948,
-          width = 537,
-          height = 172,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 87,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 167.542,
-          y = 182.115,
-          width = 81,
-          height = 51.3333,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 89,
           name = "",
           type = "",
@@ -144,58 +92,6 @@ return {
           y = 310.281,
           width = 268.667,
           height = 60,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 91,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 11.9587,
-          y = 7.19801,
-          width = 51.5,
-          height = 248.333,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 92,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 501.334,
-          y = 205.656,
-          width = 43.8333,
-          height = 105,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 96,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = -79.9162,
-          y = 203.761,
-          width = 243.25,
-          height = 317.041,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 98,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 279.542,
-          y = 137.281,
-          width = 222.667,
-          height = 84,
           rotation = 0,
           visible = true,
           properties = {}
@@ -235,6 +131,163 @@ return {
             { x = 403.333, y = -80 },
             { x = 482.667, y = -158 },
             { x = 561.333, y = -158 }
+          },
+          properties = {}
+        },
+        {
+          id = 135,
+          name = "",
+          type = "",
+          shape = "polyline",
+          x = 547.636,
+          y = 170.182,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polyline = {
+            { x = 0, y = 0 },
+            { x = 0.181818, y = 201.455 },
+            { x = -269.455, y = 202 },
+            { x = -269.818, y = 200 }
+          },
+          properties = {}
+        },
+        {
+          id = 136,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 552.182,
+          y = 342,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = 10, y = 7.81818 },
+            { x = 13.6364, y = 8 },
+            { x = 13.8182, y = 12.1818 },
+            { x = 10, y = 16.3636 },
+            { x = 17.0909, y = 23.4545 },
+            { x = 25.0909, y = 17.0909 },
+            { x = 21.8182, y = 12.1818 },
+            { x = 22, y = 8.36364 },
+            { x = 24.9091, y = 8.36364 },
+            { x = 35.8182, y = -0.181818 },
+            { x = 35.8182, y = -13.2727 },
+            { x = 25.4545, y = -22.1818 },
+            { x = 10, y = -22.1818 },
+            { x = 0, y = -14.1818 }
+          },
+          properties = {}
+        },
+        {
+          id = 137,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 552,
+          y = 288.182,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = 10, y = 7.81818 },
+            { x = 13.6364, y = 8 },
+            { x = 13.8182, y = 12.1818 },
+            { x = 10, y = 16.3636 },
+            { x = 17.0909, y = 23.4545 },
+            { x = 25.0909, y = 17.0909 },
+            { x = 21.8182, y = 12.1818 },
+            { x = 22, y = 8.36364 },
+            { x = 24.9091, y = 8.36364 },
+            { x = 35.8182, y = -0.181818 },
+            { x = 35.8182, y = -13.2727 },
+            { x = 25.4545, y = -22.1818 },
+            { x = 10, y = -22.1818 },
+            { x = 0, y = -14.1818 }
+          },
+          properties = {}
+        },
+        {
+          id = 138,
+          name = "",
+          type = "",
+          shape = "polygon",
+          x = 552.063,
+          y = 236.25,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polygon = {
+            { x = 0, y = 0 },
+            { x = 10, y = 7.81818 },
+            { x = 13.6364, y = 8 },
+            { x = 13.8182, y = 12.1818 },
+            { x = 10, y = 16.3636 },
+            { x = 17.0909, y = 23.4545 },
+            { x = 25.0909, y = 17.0909 },
+            { x = 21.8182, y = 12.1818 },
+            { x = 22, y = 8.36364 },
+            { x = 24.9091, y = 8.36364 },
+            { x = 35.8182, y = -0.181818 },
+            { x = 35.8182, y = -13.2727 },
+            { x = 25.4545, y = -22.1818 },
+            { x = 10, y = -22.1818 },
+            { x = 0, y = -14.1818 }
+          },
+          properties = {}
+        },
+        {
+          id = 140,
+          name = "",
+          type = "",
+          shape = "polyline",
+          x = 547.25,
+          y = 197.5,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polyline = {
+            { x = 0, y = 0 },
+            { x = 71.25, y = 0.5 },
+            { x = 71.25, y = -50.5 },
+            { x = 164.5, y = -50 },
+            { x = 164.75, y = 2.25 },
+            { x = 172.25, y = 2.25 }
+          },
+          properties = {}
+        },
+        {
+          id = 143,
+          name = "",
+          type = "",
+          shape = "polyline",
+          x = 160,
+          y = 512.13,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          polyline = {
+            { x = 0, y = 0 },
+            { x = -0.125, y = -311.875 },
+            { x = 7.875, y = -311.875 },
+            { x = 7.875, y = -278.25 },
+            { x = 88.375, y = -278.625 },
+            { x = 88.625, y = -312.25 },
+            { x = 119.875, y = -312.125 },
+            { x = 120.125, y = -292.375 },
+            { x = 121.875, y = -292.25 },
+            { x = 121.875, y = -290.25 },
+            { x = 341.75, y = -290.125 },
+            { x = 341.5, y = -202 }
           },
           properties = {}
         }
@@ -311,21 +364,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 759.75,
-          y = 329.25,
-          width = 0,
-          height = 0,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 118,
-          name = "workroom",
-          type = "",
-          shape = "point",
-          x = 197.917,
-          y = 460.083,
+          x = 768,
+          y = 330,
           width = 0,
           height = 0,
           rotation = 0,
@@ -369,7 +409,7 @@ return {
           name = "transition",
           type = "",
           shape = "rectangle",
-          x = 785.583,
+          x = 797.58,
           y = 281.75,
           width = 14.5,
           height = 80.5,
@@ -378,38 +418,6 @@ return {
           properties = {
             ["map"] = "noelles house/living room/livingroom",
             ["marker"] = "spawn1"
-          }
-        },
-        {
-          id = 124,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 312.167,
-          y = 97.3335,
-          width = 46.1667,
-          height = 126.833,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["solid"] = false,
-            ["text1"] = "* It's a sink.[wait:5] You don't need to wash your hands."
-          }
-        },
-        {
-          id = 125,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 167.5,
-          y = 114.084,
-          width = 79.5,
-          height = 126.833,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "houseText.fridge",
-            ["solid"] = false
           }
         },
         {
@@ -424,8 +432,53 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["cutscene"] = "houseText.workroom",
+            ["cutscene"] = "nightCutscenes.workRoom",
             ["solid"] = true
+          }
+        },
+        {
+          id = 144,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 165.979,
+          y = 181.782,
+          width = 84.5,
+          height = 53.2083,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* It's a fridge.[wait:5] Nothing of interest here."
+          }
+        },
+        {
+          id = 145,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 306.937,
+          y = 172.5,
+          width = 53.5,
+          height = 51.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* It's a sink.\n* You don't need to wash your hands."
+          }
+        },
+        {
+          id = 146,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 495.187,
+          y = 237.5,
+          width = 53.5,
+          height = 51.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* Someone's left a drink on the counter."
           }
         }
       }

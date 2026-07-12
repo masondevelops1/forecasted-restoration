@@ -19,10 +19,10 @@ return {
   },
   tilesets = {
     {
-      name = "core_tiles",
+      name = "Core Tiles",
       firstgid = 1,
       filename = "../../../tilesets/Core Tiles.tsx",
-      exportfilename = "../../../tilesets/core_tiles.lua"
+      exportfilename = "../../../tilesets/Core Tiles.lua"
     },
     {
       name = "gateway",

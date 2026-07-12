@@ -14,7 +14,8 @@ return {
   properties = {
     ["border"] = "shelterdark",
     ["light"] = true,
-    ["music"] = "core_approach"
+    ["music"] = "core_approach",
+    ["step_sound"] = "metal"
   },
   tilesets = {},
   layers = {
@@ -199,8 +200,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 341.751,
-          y = 1297.14,
+          x = 335,
+          y = 1296.64,
           width = 0,
           height = 0,
           rotation = 0,

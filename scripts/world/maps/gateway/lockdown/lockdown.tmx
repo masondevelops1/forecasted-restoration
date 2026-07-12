@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="52">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="53">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -57,7 +57,7 @@
 3244,260,0,0,0,0,0,0,0,0,0,0,0,0,0,666,667,668,669,670,670,
 3244,3244,0,0,0,0,0,0,0,0,0,0,0,0,0,698,699,700,701,702,702,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,429,429,429,0,0,0,0,0,0,0,0,0,0,0,1070,0,0,
+0,0,0,0,429,429,429,0,0,0,0,0,0,0,0,0,0,0,1069,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,1281,175,175,175,175,175,175,312,312,312,312,0,0,0,0,0,0,
 0,0,0,0,1281,0,0,0,0,0,0,312,312,312,312,0,0,0,0,0,0,
@@ -88,51 +88,39 @@
 </data>
  </layer>
  <objectgroup id="2" name="collisions">
-  <object id="32" x="0.00554902" y="219.25" width="832.994" height="20.5"/>
-  <object id="36" x="-0.635291" y="360.169" width="839.976" height="200.429"/>
+  <object id="32" x="0" y="200" width="840" height="39.75"/>
+  <object id="36" x="0" y="360" width="840.635" height="40"/>
  </objectgroup>
  <objectgroup id="3" name="objects">
   <object id="11" name="floormirror" x="-0.479738" y="244" width="200.647" height="109.167"/>
-  <object id="35" name="transition" x="840.028" y="240.833" width="29.833" height="117.167">
+  <object id="35" name="transition" x="840" y="240" width="29.833" height="114.455">
    <properties>
     <property name="map" value="gateway/hallway"/>
     <property name="marker" value="spawn"/>
    </properties>
   </object>
-  <object id="39" name="transition" x="-149.63" y="240.337" width="160.333" height="119.285">
+  <object id="39" name="transition" x="-40" y="240" width="40" height="120">
    <properties>
     <property name="map" value="gateway/gateway2"/>
     <property name="marker" value="spawn1"/>
    </properties>
   </object>
-  <object id="47" name="interactable" x="709.25" y="199.75" width="60" height="40">
+  <object id="47" name="interactable" x="710" y="200" width="60" height="40">
    <properties>
-    <property name="plotmax" value="*gateway_lockdown_off"/>
-    <property name="text1" value="[color:#ff4444]* Warning:[wait:5] Gateway Sector B is on Lockdown.[wait:5] If maintenance is needed,[wait:5] disable the lockdown."/>
-    <property name="text2" value="[color:#ff4444]* You can turn off the two Gateway terminals to disable Lockdown."/>
+    <property name="cutscene" value="coreTerminals.lockdown"/>
    </properties>
   </object>
-  <object id="50" name="interactable" x="839.853" y="240.227" width="1.8333" height="119">
+  <object id="52" name="forcefield" x="760" y="240" width="40" height="120">
    <properties>
-    <property name="plotmax" value="*gateway_lockdown_off"/>
-    <property name="plotmin" value="gateway_enter"/>
-    <property name="solid" type="bool" value="true"/>
-    <property name="text1" value="* There's a giant metal door blocking the way to Sector B."/>
-   </properties>
-  </object>
-  <object id="51" name="interactable" x="709.083" y="199.75" width="60" height="40">
-   <properties>
-    <property name="plotmin" value="gateway_lockdown_off"/>
-    <property name="text1" value="[color:#ff4444]* Power levels:[wait:5] UNSTABLE."/>
-    <property name="text2" value="[color:#ff4444]* Recharging will take 48 days...[wait:5] Recharging..."/>
+    <property name="plotMax" value="*gateway_lockdown_off"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="4" name="markers">
-  <object id="1" name="spawn" x="61.678" y="289.455">
+  <object id="1" name="spawn" x="40" y="300">
    <point/>
   </object>
-  <object id="24" name="spawn1" x="800.833" y="296.5">
+  <object id="24" name="spawn1" x="800" y="300">
    <point/>
   </object>
   <object id="41" name="spawn2" x="240" y="486">

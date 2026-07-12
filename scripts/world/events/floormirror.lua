@@ -10,6 +10,13 @@ function FloorMirror:init(data)
 
         ["walk/left"] = "walk/left",
         ["walk/right"] = "walk/right",
+
+        ["walk_stressed/down"] = "walk/down",
+        ["walk_stressed/up"] = "walk/up",
+
+
+        ["walk_stressed/left"] = "walk/left",
+        ["walk_stressed/right"] = "walk/right",
     }
     
     super.init(self, data)
@@ -25,6 +32,7 @@ function FloorMirror:init(data)
     self.offset = properties["offset"] or 0
     self.offset = self.offset - 60
     self.opacity = properties["opacity"] or 0.6
+    self.gradient = properties["gradient"] or false
 
     self.bottom = self.y + self.height
     self.flip_y = true
@@ -125,6 +133,13 @@ function FloorMirror:draw()
     Draw.popCanvas()
 
     Draw.setColor(1, 1, 1, self.opacity)
+    local alpha_mult = 1
+    if self.gradient then
+        local idfk = (Game.world.player.x - self.x) / self.width
+        idfk = Utils.clamp(idfk, 0, 1)
+        alpha_mult = 1 - idfk
+    end
+    Draw.setColor(1, 1, 1, alpha_mult * self.opacity)
     if self.mask then
         love.graphics.stencil(function ()
             local last_shader = love.graphics.getShader()

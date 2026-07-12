@@ -85,6 +85,8 @@ function Mod:afmPostInit(new_file)
                 end
             end
         end
+
+        Game.lw_money = 34
     
         local inventory = Mod.info.inventory
         if inventory then
@@ -146,24 +148,33 @@ function Mod:init()
         end
         return orig(self, x, y, color)
     end)
-
     Utils.hook(Battle, "postInit", function(orig, self, ...)
         ---@cast self Battle
         orig(self,...)
-        if self.encounter.background then
-            self.background = GonerBackground2();
-            self:addChild(self.background)
-            self.background:setLayer(BATTLE_LAYERS["bottom"] - 1)
+        if Game:isLight() then
+            self.battle_ui.action_boxes[2].buttons[2].disabled = true
+            self.battle_ui.action_boxes[3].buttons[2].disabled = true
         end
     end)
-    Utils.hook(Battle, "update", function (orig, self, ...)
+    Utils.hook(BattleBackground, "init", function(orig, self, ...)
+        ---@cast self Battle
+        orig(self,...)
+        self.background = GonerBackground2();
+        self:addChild(self.background)
+        self.background:setLayer(BATTLE_LAYERS["bottom"] - 50)
+    end)
+    Utils.hook(BattleBackground, "drawBackground", function(orig, self, ...)
+        ---@cast self Battle
+        orig(self,...)
+    end)
+    Utils.hook(BattleBackground, "update", function (orig, self, ...)
         ---@cast self Battle
         orig(self, ...)
         if self.background then
-            self.background.alpha = self.transition_timer / 10
+            self.background.alpha = self.alpha
         end
     end)
-    Utils.hook(Battle, "onStateChange", function (orig, self, old, new)
+    Utils.hook(BattleBackground, "onStateChange", function (orig, self, old, new)
         ---@cast self Battle
         if new == "VICTORY" and self.background then
             self.background.timer.active = false

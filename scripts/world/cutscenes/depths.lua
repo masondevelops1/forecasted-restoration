@@ -12,8 +12,12 @@ function depths.start(cutscene)
     susie:setSprite("fell")
     kris:setPosition(Game.world.map:getMarker("spawn"))
     susie:setPosition(Game.world.map:getMarker("susiespawn"))
+    Game.world.camera.keep_in_bounds = false
     cutscene:wait(1)
-    cutscene:fadeIn(0, {global = true})
+    cutscene:panTo(320, -240, 0, "linear")
+    cutscene:fadeIn(1.5, {global = true})
+    cutscene:panTo(320, 240, 5, "out-cubic")
+    cutscene:wait(3.5)
     Assets.playSound("noise")
     cutscene:wait(1)
     cutscene:text("* Ughhh...[wait:5] the hell happened...?", "bangs_neutral", susie)
@@ -45,7 +49,6 @@ function depths.start(cutscene)
     cutscene:interpolateFollowers()
     cutscene:attachCamera()
     cutscene:wait(cutscene:attachFollowers())
-    Game:getQuest("mainline"):unlock()
 end
 
 return depths

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 47,
-  nextobjectid = 87,
+  nextobjectid = 89,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -990,19 +990,6 @@ return {
             { x = 0, y = 40 }
           },
           properties = {}
-        },
-        {
-          id = 86,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 3587,
-          y = 184.25,
-          width = 13,
-          height = 220,
-          rotation = 0,
-          visible = true,
-          properties = {}
         }
       }
     },
@@ -1304,6 +1291,23 @@ return {
           visible = true,
           properties = {
             ["text1"] = "* (It's locked...)"
+          }
+        },
+        {
+          id = 87,
+          name = "script",
+          type = "",
+          shape = "rectangle",
+          x = 440,
+          y = 200,
+          width = 40,
+          height = 240,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "nightCutscenes.noellething",
+            ["plotmax"] = "*holidayhouse_enter",
+            ["plotmin"] = "night_met_susie"
           }
         }
       }

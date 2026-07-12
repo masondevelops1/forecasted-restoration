@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 19,
-  nextobjectid = 54,
+  nextobjectid = 57,
   properties = {
     ["border"] = "core",
     ["light"] = true,
@@ -310,7 +310,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* GATEWAY COLLAPSE IMMINENT. AUDIO LOGS OFFLINE."
+            ["cutscene"] = "coreTerminals.powerOut"
           }
         },
         {

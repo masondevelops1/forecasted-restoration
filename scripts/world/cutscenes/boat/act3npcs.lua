@@ -130,7 +130,6 @@ stay on the Evergroves Cruise!
         cutscene:text("* Dang,[wait:5] guess we really overslept,[wait:5] huh...?", "suspicious")
         cutscene:text("* Now's the time we get off the boat,[wait:5] can't even say goodbye either...", "nervous")
         cutscene:text("* ... well,[wait:5] let's get going!", "smile")
-        Game:getQuest("mystery"):complete()
     end,
 
     stain = function(cutscene, event)

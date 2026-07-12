@@ -157,18 +157,18 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["color_1"] = "#ff6a5d7b",
+            ["color_1"] = "#ff1c1921",
             ["color_2"] = "#ff362f42",
-            ["color_3"] = "#ff1c1921",
-            ["dest_1"] = "gateway/creation",
+            ["color_3"] = "#ff6a5d7b",
+            ["dest_1"] = "gateway/broken",
             ["dest_2"] = "gateway/basement",
-            ["dest_3"] = "gateway/broken",
-            ["length_1"] = 400,
-            ["length_2"] = 1040,
-            ["length_3"] = 400,
-            ["name_1"] = "Gateway B1",
+            ["dest_3"] = "gateway/creation",
+            ["length_1"] = 250,
+            ["length_2"] = 250,
+            ["length_3"] = 250,
+            ["name_1"] = "Gateway B3",
             ["name_2"] = "Gateway B2",
-            ["name_3"] = "Gateway B3"
+            ["name_3"] = "Gateway B1"
           }
         },
         {
@@ -184,8 +184,8 @@ return {
           visible = true,
           properties = {
             ["plotmax"] = "*gateway_terminal1",
-            ["text1"] = "[color:#ff4444]* Warning:[wait:5] Gateway Elevator is on Lockdown.",
-            ["text2"] = "[color:#ff4444]* Please disable Lockdown to continue use."
+            ["text1"] = "[voice:voicemail][color:#ff4444]* Warning:[wait:5] Gateway Elevator is on Lockdown.",
+            ["text2"] = "[voice:voicemail][color:#ff4444]* Please disable Lockdown to continue use."
           }
         }
       }

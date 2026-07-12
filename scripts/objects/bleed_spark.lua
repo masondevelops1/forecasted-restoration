@@ -22,7 +22,7 @@ function Spark:update()
 
     if self.collider:collidesWith(Game.battle.soul) then
         Assets.playSound("power")
-        Game.battle.soul.bleed_time = Game.battle.soul.bleed_time - 1
+        --Game.battle.soul.bleed_time = Game.battle.soul.bleed_time - 1
         self:remove()
         self.sprite:remove()
         Game.battle.waves[1].finished = true

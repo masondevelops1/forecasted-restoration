@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="121">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="141">
  <editorsettings>
   <export target="livingroom.lua" format="lua"/>
  </editorsettings>
@@ -8,8 +8,8 @@
   <property name="light" type="bool" value="true"/>
   <property name="music" value="noellehouse"/>
  </properties>
- <imagelayer id="2" name="house" offsetx="12" offsety="7">
-  <image source="../../../../../assets/sprites/backgrounds/livingroom normal.png" width="682" height="498"/>
+ <imagelayer id="2" name="house">
+  <image source="../../../../../assets/sprites/backgrounds/livingroom normal.png" width="704" height="512"/>
  </imagelayer>
  <layer id="1" name="Tile Layer 1" width="22" height="16">
   <data encoding="csv">
@@ -31,93 +31,71 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="6" name="collisions">
-  <object id="5" x="32" y="-150" width="672" height="172"/>
-  <object id="6" x="65.3333" y="178" width="46" height="51.3333"/>
-  <object id="8" x="447.5" y="329.5" width="37.5" height="27"/>
-  <object id="10" x="386.5" y="355" width="160" height="84"/>
-  <object id="11" x="690.227" y="204.568" width="93.5" height="92.5"/>
-  <object id="86" x="46.7087" y="33.948" width="537" height="172"/>
-  <object id="87" x="67.042" y="167.615" width="46" height="51.3333"/>
-  <object id="88" x="447.334" y="325.073" width="37.5" height="27"/>
-  <object id="89" x="385.626" y="352.281" width="160" height="84"/>
-  <object id="90" x="9.93565" y="381.766" width="41.5" height="101.333"/>
-  <object id="91" x="11.9587" y="7.19801" width="51.5" height="248.333"/>
-  <object id="92" x="439.334" y="346.323" width="37.5" height="27"/>
-  <object id="93" x="455.334" y="313.823" width="29.625" height="27"/>
-  <object id="94" x="891.709" y="293.448">
-   <polyline points="0,0 -288,0.75 -336.75,48.75 -336,152.25"/>
-  </object>
-  <object id="95" x="349.527" y="443.539" width="208.583" height="203.708"/>
-  <object id="96" x="10.7505" y="445.094" width="243.25" height="203.708"/>
-  <object id="97" x="675.042" y="32.5313" width="216.333" height="172"/>
-  <object id="98" x="120.209" y="141.948" width="160" height="84"/>
- </objectgroup>
+ <objectgroup id="6" name="collisions"/>
  <objectgroup id="4" name="markers">
   <object id="1" name="spawn1" x="38.5" y="310.5">
-   <point/>
-  </object>
-  <object id="2" name="door" x="630.75" y="231.5">
-   <point/>
-  </object>
-  <object id="3" name="susie1" x="535" y="225">
-   <point/>
-  </object>
-  <object id="14" name="susie2" x="207" y="222.333">
-   <point/>
-  </object>
-  <object id="17" name="susie3" x="386.667" y="282.667">
-   <point/>
-  </object>
-  <object id="18" name="focus" x="350.667" y="260.333">
-   <point/>
-  </object>
-  <object id="19" name="susie4" x="556.667" y="209.333">
-   <point/>
-  </object>
-  <object id="21" name="door2" x="631" y="212.333">
-   <point/>
-  </object>
-  <object id="25" name="spawn" x="669.75" y="247.25">
    <point/>
   </object>
   <object id="29" name="offscreen" x="-120.554" y="307.59">
    <point/>
   </object>
-  <object id="118" name="basement" x="630.811" y="231.595">
-   <point/>
-  </object>
  </objectgroup>
  <objectgroup id="8" name="objects">
-  <object id="114" name="interactable" x="-29.375" y="255.458" width="41.5" height="126.833">
-   <properties>
-    <property name="solid" type="bool" value="true"/>
-    <property name="text1" value="* (No need to go upstairs...)"/>
-   </properties>
-  </object>
-  <object id="115" name="transition" x="584.205" y="152.841" width="90.5" height="36.5">
-   <properties>
-    <property name="map" value="noelles house/basement/basement"/>
-    <property name="marker" value="spawn"/>
-   </properties>
-  </object>
-  <object id="116" name="interactable" x="254.114" y="504.962" width="95.5" height="36.5">
+  <object id="116" name="interactable" x="244" y="512" width="94" height="35">
    <properties>
     <property name="solid" type="bool" value="true"/>
     <property name="text1" value="* No need to go back..."/>
    </properties>
   </object>
-  <object id="119" name="transition" x="0.916667" y="255.583" width="14.5" height="126.5">
+  <object id="120" name="interactable" x="569.756" y="169.815" width="94.0909" height="32">
+   <properties>
+    <property name="cutscene" value="nightCutscenes.basementBlock"/>
+    <property name="solid" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="127" name="transition" x="-30" y="224" width="30.0909" height="160">
    <properties>
     <property name="map" value="noelles house/kitchen"/>
     <property name="marker" value="spawn"/>
    </properties>
   </object>
-  <object id="120" name="interactable" x="584" y="77.8335" width="91.3182" height="126.833">
+  <object id="128" name="interactable" x="124.182" y="222">
    <properties>
-    <property name="cutscene" value="houseText.basement"/>
     <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* It's a nicely decorated couch."/>
+   </properties>
+   <polygon points="0,0 129.455,0.181818 140.545,-11.6364 140.909,-19.8182 -10.1818,-19.8182 -10.1818,-12 -3.81818,-0.181818"/>
+  </object>
+  <object id="140" name="interactable" x="370.955" y="329" width="165.091" height="106.667">
+   <properties>
+    <property name="solid" type="bool" value="false"/>
+    <property name="text1" value="* The laptop screen is full of spreadsheet windows."/>
    </properties>
   </object>
  </objectgroup>
+ <objectgroup color="#0000ff" id="9" name="collision">
+  <object id="131" x="374" y="432">
+   <polygon points="0,0 0.0909091,-85.8182 159.727,-86 160,0 152.273,-0.0909091 152.091,-10 8,-10.0909 8,0"/>
+  </object>
+  <object id="132" x="338.25" y="511.75">
+   <polyline points="0,0 0,-73.5 203.5,-74 204,-177.5 252.25,-225.75 357.25,-225.75 357.5,-310 -298.25,-309.75 -298.5,-270 -338,-270.25"/>
+  </object>
+  <object id="133" x="0.25" y="376">
+   <polyline points="0,0 39.5,0 39.625,61.875 243.5,61.875 243.5,135.375"/>
+  </object>
+  <object id="135" x="243.754" y="511.375">
+   <polyline points="0,0 -0.0117188,0.730469"/>
+  </object>
+  <object id="137" x="45.9091" y="422">
+   <polygon points="0,0 0.181818,-23.9091 1.81818,-24 2.27273,-26 6,-25.9091 5.90909,-29.8182 0.0909091,-30.2727 0,-31.8182 -1.81818,-32 -1.90909,-34 -4.09091,-33.9091 -4,-35.9091 1.81818,-36 1.90909,-38 4.45455,-38 4.18182,-43.9091 6.09091,-44 6.09091,-46 0.181818,-45.9091 -3.81818,-50.0909 -3.72727,-51.9091 4,-52 14,-63.8182 18.2727,-75.8182 14.0909,-78 21.1818,-85.0909 27.0909,-79.1818 23.0909,-74.9091 23.1818,-70.9091 29.9091,-63.9091 30.1818,-60 36.1818,-54 40,-53.9091 40.0909,-51.9091 46.1818,-51.9091 42.0909,-46.2727 34,-46.0909 34,-41.9091 38.2727,-37.8182 42,-38 42.0909,-36 48,-36 43.9091,-30 36.2727,-30.0909 36,-26 40.0909,-25.9091 40.0909,-24 41.9091,-24.0909 41.9091,-0.0909091 32.0909,13.9091 14.2727,15.7273 4,8.27273"/>
+  </object>
+  <object id="138" x="67.75" y="215.75">
+   <polygon points="0,0 18.125,0.25 24.125,-3.875 24.25,-11.375 21.75,-13.5 -1.875,-13.875 -5.375,-9.75 -5.75,-4"/>
+  </object>
+  <object id="139" x="427.636" y="345.273">
+   <polygon points="0,0 16.3636,-9.27273 16.5455,-35.2727 18.5455,-37.2727 24,-37.2727 30.3636,-29.8182 33.8182,-29.0909 37.0909,-33.0909 41.8182,-33.6364 45.8182,-29.4545 46.3636,-0.181818 46.5455,0.727273"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff0000" id="10" name="paths"/>
+ <objectgroup color="#00c000" id="11" name="controllers"/>
 </map>

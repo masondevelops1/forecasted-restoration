@@ -803,8 +803,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* (It's locked...)",
-            ["text2"] = "* (...[wait:5] the town it's pretty empty today.)"
+            ["text1"] = "* (It's locked.)"
           }
         },
         {
@@ -819,8 +818,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* (It's locked...)",
-            ["text2"] = "* (...[wait:5] the town it's pretty empty today.)"
+            ["text1"] = "* (It's locked.)"
           }
         },
         {
@@ -898,7 +896,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* (Despite the store's sign, it's closed.)"
+            ["text1"] = "* (Despite the store's sign, the door is locked.)"
           }
         },
         {
@@ -913,7 +911,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* (Despite the store's sign, it's closed.)"
+            ["text1"] = "* (It's locked.)"
           }
         },
         {
@@ -928,7 +926,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* (Despite the store's sign, it's closed.)"
+            ["text1"] = "* (It's locked.)"
           }
         }
       }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="49">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="52">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -17,15 +17,15 @@
  </objectgroup>
  <layer id="1" name="Tile Layer 1" width="21" height="14">
   <data encoding="csv">
-3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,
-3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,
-3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,3244,
-166,841,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,843,
-198,905,106,106,106,106,106,106,906,906,906,906,906,906,906,906,906,906,906,106,107,
-230,833,866,833,866,865,866,932,866,865,866,865,866,865,866,865,866,865,866,865,866,
+972,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,1004,973,
+940,807,807,807,807,807,807,807,807,807,807,807,807,807,807,807,807,807,807,807,941,
+938,804,804,804,804,804,804,804,804,804,804,804,804,804,804,804,804,804,804,804,939,
+166,841,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,842,971,
+198,905,106,106,106,106,106,106,906,906,906,906,906,906,906,906,906,906,906,106,1003,
+230,833,866,833,866,865,866,932,866,865,866,865,866,865,866,865,866,865,866,865,1035,
 13,13,13,13,1281,175,175,175,1104,1105,1106,0,0,0,0,0,0,0,0,0,0,
 1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,
-13,13,13,13,1281,341,425,111,111,111,111,0,0,0,0,0,0,0,0,0,0,
+13,13,13,13,1562,341,425,111,111,111,111,0,0,0,0,0,0,0,0,0,0,
 13,13,13,13,1281,309,309,309,309,309,165,0,0,0,0,0,0,0,0,0,0,
 13,13,13,13,341,341,341,341,341,341,197,0,0,0,0,0,0,0,0,0,0,
 13,13,13,13,373,373,373,373,373,373,229,0,0,0,0,0,0,0,0,0,0,
@@ -57,7 +57,7 @@
 3244,260,0,0,0,0,0,0,0,0,0,0,0,0,0,666,667,668,669,670,670,
 3244,3244,0,0,0,0,0,0,0,0,0,0,0,0,0,698,699,700,701,702,702,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,429,429,429,0,0,0,0,0,0,0,0,0,0,0,1069,0,0,
+0,0,0,0,0,429,429,0,0,0,0,0,0,0,0,0,0,0,1069,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,1281,175,175,175,175,175,175,312,312,312,312,0,0,0,0,0,0,
 0,0,0,0,1281,0,0,0,0,0,0,312,312,312,312,0,0,0,0,0,0,
@@ -75,38 +75,38 @@
 3244,668,669,670,670,670,670,670,670,670,670,670,670,670,669,1163,1163,670,670,670,670,
 699,700,701,702,702,702,702,702,702,702,702,702,702,702,670,670,1163,1163,1163,1163,1163,
 0,0,0,0,0,665,666,667,668,698,699,700,701,702,702,702,669,669,669,669,669,
-0,0,1036,1037,1038,1196,1036,1069,1038,701,1036,1069,1038,701,1036,1037,1038,1036,1069,1038,701,
+0,0,0,1036,1037,1038,1036,1069,1038,701,1036,1069,1038,701,1036,1037,1038,1036,1069,1038,701,
 272,273,273,273,273,273,273,273,273,273,273,272,273,273,273,273,273,273,273,273,273,
-305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,305,
-1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,
-337,337,337,337,337,337,337,337,337,337,337,337,337,337,337,337,344,344,344,344,344,
-396,0,0,0,1281,1282,1282,1283,0,0,0,0,0,0,0,0,0,0,0,0,0,
-396,0,0,0,1281,1282,1282,1283,0,0,0,0,0,0,0,0,0,0,0,0,0,
-13,0,0,0,1281,1282,1282,1283,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,1281,1282,1282,1283,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,1281,1282,1282,1283,0,0,0,0,0,0,0,0,0,0,0,0,0
+305,305,306,1558,1160,1160,1160,1160,1559,304,305,305,305,305,305,305,305,305,305,305,305,
+1112,1112,1113,1590,1192,1192,1192,1192,1591,1111,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,1112,
+337,337,338,1622,1562,1192,1192,1561,1623,336,337,337,337,337,337,337,344,344,344,344,344,
+396,0,0,0,1590,1282,1282,1591,0,0,0,0,0,0,0,0,0,0,0,0,0,
+396,0,0,0,1590,1282,1282,1591,0,0,0,0,0,0,0,0,0,0,0,0,0,
+13,0,0,0,1590,1282,1282,1591,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1590,1282,1282,1591,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1590,1282,1282,1591,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
  <objectgroup id="2" name="collisions">
-  <object id="32" x="0.00554902" y="219.25" width="832.994" height="20.5"/>
+  <object id="32" x="0.00554902" y="200" width="839.994" height="39.75"/>
   <object id="36" x="-0.635291" y="360.169" width="160.476" height="200.429"/>
-  <object id="37" x="319.78" y="360.318" width="518.5" height="200.333"/>
+  <object id="37" x="319.78" y="360.318" width="520.22" height="200.333"/>
  </objectgroup>
  <objectgroup id="3" name="objects">
-  <object id="11" name="floormirror" x="-0.479738" y="244" width="839.98" height="109.167"/>
-  <object id="30" name="transition" x="160.137" y="542.576" width="160.333" height="26.667">
+  <object id="11" name="floormirror" x="0" y="240" width="120.48" height="112"/>
+  <object id="30" name="transition" x="160" y="560" width="160.333" height="40">
    <properties>
     <property name="map" value="gateway/creation"/>
     <property name="marker" value="spawn1"/>
    </properties>
   </object>
-  <object id="35" name="transition" x="825.417" y="241.083" width="29.833" height="117.167">
+  <object id="35" name="transition" x="840" y="240" width="29.833" height="117.167">
    <properties>
     <property name="map" value="gateway/lockdown"/>
     <property name="marker" value="spawn"/>
    </properties>
   </object>
-  <object id="39" name="transition" x="-12.9633" y="240.337" width="23.6663" height="119.285">
+  <object id="39" name="transition" x="-40" y="240" width="40" height="119.285">
    <properties>
     <property name="map" value="gateway/core"/>
     <property name="marker" value="exiting"/>
@@ -114,34 +114,28 @@
   </object>
   <object id="42" name="savepoint" x="600" y="200" width="40" height="40">
    <properties>
-    <property name="text1">* A great feeling of electricity
-courses through you.</property>
-    <property name="text2">* You are filled with the power
-of Hometown.</property>
-   </properties>
-  </object>
-  <object id="43" name="interactable" x="110.75" y="199.5" width="60" height="40">
-   <properties>
-    <property name="text1" value="* It's run out of power."/>
+    <property name="marker" value="save"/>
    </properties>
   </object>
   <object id="45" name="interactable" x="269.5" y="200" width="60" height="40">
    <properties>
-    <property name="text1" value="[color:#ff00ff]* Welcome to Gateway Sector:[wait:5] A."/>
-    <property name="text2" value="[color:#ff00ff]* Current status:[wait:5] NOMINAL."/>
+    <property name="cutscene" value="coreTerminals.sectorA"/>
    </properties>
   </object>
   <object id="46" name="interactable" x="429.75" y="199.5" width="60" height="40">
    <properties>
-    <property name="text1" value="[color:#ff00ff]* Gateway Sector:[wait:5] A:[wait:5] is currently under maintenance."/>
-    <property name="text2" value="[color:#ff00ff]* Security Guards are deployed in the:[wait:5] Control Offices."/>
+    <property name="cutscene" value="coreTerminals.maintenanceAlert"/>
    </properties>
   </object>
   <object id="47" name="interactable" x="709.25" y="199.75" width="60" height="40">
    <properties>
-    <property name="text1" value="[color:#ff00ff]* Thank you for visiting Gateway Sector:[wait:5] A."/>
-    <property name="text2">[color:#ff00ff]* Gateway Guide:
-[wait:5]- Sector B [wait:5]&gt;[wait:5]&gt;[wait:5]&gt;</property>
+    <property name="cutscene" value="coreTerminals.gatewayGuide"/>
+   </properties>
+  </object>
+  <object id="49" name="floormirror" x="360" y="240" width="480" height="112"/>
+  <object id="51" name="interactable" x="150.47" y="199.864" width="60" height="40">
+   <properties>
+    <property name="cutscene" value="coreTerminals.powerOut"/>
    </properties>
   </object>
  </objectgroup>
@@ -152,7 +146,10 @@ of Hometown.</property>
   <object id="24" name="spawn1" x="800.833" y="296.5">
    <point/>
   </object>
-  <object id="41" name="spawn2" x="240" y="486">
+  <object id="41" name="spawn2" x="240" y="520">
+   <point/>
+  </object>
+  <object id="50" name="save" x="620" y="280">
    <point/>
   </object>
  </objectgroup>

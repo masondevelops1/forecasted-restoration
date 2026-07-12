@@ -159,4 +159,12 @@ function character:drawPowerStat(index, x, y, menu)
     end
 end
 
+function character:getSoulPriority()
+    if Game.party[1] == self then
+        return 9999999
+    else
+        return super.getSoulPriority(self)
+    end
+end
+
 return character

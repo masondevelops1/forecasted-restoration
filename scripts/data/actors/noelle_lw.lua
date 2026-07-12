@@ -7,6 +7,21 @@ function actor:init()
     -- Path to this actor's sprites (defaults to "")
     self.path = "party/noelle/light"
    -- Table of sprite animations
+    self.reflect_offsets = {
+        ["walk_stressed/down"] = {0, 4.5},
+        ["walk_stressed/left"] = {0, 4.5},
+        ["walk_stressed/right"] = {0, 4.5},
+        ["walk_stressed/up"] = {0, 4.5},
+        ["walk_unhappy/down"] = {0, 4.5},
+        ["walk_unhappy/left"] = {0, 4.5},
+        ["walk_unhappy/right"] = {0, 4.5},
+        ["walk_unhappy/up"] = {0, 4.5},
+        ["walk/down"] = {0, 4.5},
+        ["walk/left"] = {0, 4.5},
+        ["walk/right"] = {0, 4.5},
+        ["walk/up"] = {0, 4.5},
+    }
+    Kristal.Console:warn(self.default)
     Utils.merge(self.animations, {
         -- Battle animations
         ["battle/idle"]         = {"battle/idle", 1/6, true},
@@ -30,7 +45,7 @@ function actor:init()
         ["battle/swooned"]      = {"battle/defeat", 1/15, false},
 
         ["battle/transition"]   = {"battle/intro", 1/15, false},
-        ["battle/victory"]      = {"battle/victory", 1/10, false},
+        ["battle/victory"]      = {"battle/victory", 1/4.5, false},
         
         -- Cutscene animations
         ["laugh"]               = {"laugh", 4/30, true},
@@ -126,18 +141,6 @@ function actor:init()
         ["head_lowered_look_left"] = {0, 0},
         ["head_lowered_look_right"] = {0, 0},
     }, false)
-end
-function actor:getDefault()
-    if not (Game and Game.world and Game.world.map and Game.world.map.id) then
-        return super.getDefault(self)
-    end
-    if Utils.startsWith(Game.world.map.id, "gateway/") then
-        if Mod.shared_gonerbg and Mod.shared_gonerbg.saturation > 0 then
-            return "walk_stressed"
-        end
-        return "walk_unhappy"
-    end
-    return super.getDefault(self)
 end
 
 return actor
